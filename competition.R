@@ -47,3 +47,37 @@ count <- comp2 %>% group_by(Pair,Disturbance,Spcode) %>%
 count <- count %>% group_by(Pair, Disturbance) %>% 
   slice_max(stemcount,n=6)
 
+#scale up to per ha
+b1 <- 66
+c1 <- 46
+b2 <- 31
+c2 <- 30
+b3 <- 30
+c3 <- 45
+b4 <- 43
+c4 <- 19
+b5 <- 10 
+c5 <- 13
+b6 <- 28
+c6 <- 32
+
+plotarea <- 0.0001
+
+count <- count %>% mutate(Density=if_else(
+  Pair=="1" & Disturbance=="B",
+  stemcount/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
+  stemcount/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
+  stemcount/b2/plotarea,if_else(Pair=="2" & Disturbance=="C",
+  stemcount/c2/plotarea,if_else(Pair=="3" & Disturbance=="B",
+  stemcount/b3/plotarea,if_else(Pair=="3" & Disturbance=="C",
+  stemcount/c3/plotarea,if_else(Pair=="4" & Disturbance=="B",
+  stemcount/b4/plotarea,if_else(Pair=="4" & Disturbance=="C",
+  stemcount/c4/plotarea,if_else(Pair=="5" & Disturbance=="B",
+  stemcount/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
+  stemcount/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
+  stemcount/b6/plotarea,stemcount/c6/plotarea)))))))))))) 
+
+    
+
+  
+
