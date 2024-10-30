@@ -45,7 +45,7 @@ count <- comp2 %>% group_by(Pair,Disturbance,Spcode) %>%
   summarize(stemcount=sum(Count))
 
 count <- count %>% group_by(Pair, Disturbance) %>% 
-  slice_max(stemcount,n=6)
+  slice_max(stemcount,n=4)
 
 #scale up to per ha
 b1 <- 66
@@ -77,7 +77,18 @@ count <- count %>% mutate(Density=if_else(
   stemcount/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
   stemcount/b6/plotarea,stemcount/c6/plotarea)))))))))))) 
 
-    
+count$Density <- round(count$Density,0)
 
+#visualize stem density
+bc <- c("B"="#CC6677","C"="#88CCEE")
+
+count %>% 
+ggplot(aes(x=Spcode,y=Density,fill=Disturbance))+
+  geom_col(width=0.6,position=position_dodge(width=0.7))+
+  facet_wrap(vars(Pair),scales="free")+
+  scale_fill_manual(values=bc)+
+  theme_light()+
+  xlab("Species")+
+  ylab("Stem count (per ha)")
   
 
