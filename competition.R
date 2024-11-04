@@ -81,14 +81,16 @@ count$Density <- round(count$Density,0)
 
 #visualize stem density
 bc <- c("B"="#CC6677","C"="#88CCEE")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
 
 count %>% 
-ggplot(aes(x=Spcode,y=Density,fill=Disturbance))+
-  geom_col(width=0.6,position=position_dodge(width=0.7))+
-  facet_wrap(vars(Pair),scales="free")+
-  scale_fill_manual(values=bc)+
+ggplot(aes(x=Spcode,y=Density))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_col(aes(fill=Disturbance),width=0.6,
+           position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_wrap(vars(Pair),scales='free')+
   theme_light()+
   xlab("Species")+
   ylab("Stem count (per ha)")
-  
-

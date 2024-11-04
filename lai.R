@@ -73,14 +73,14 @@ plot(phPair)
 
 #plot by pair and burn y/n
 bc <- c("B"="#CC6677","C"="#88CCEE")
-p3 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
 
-lai2 %>% filter(Pair %in% c("1","2","3")) %>% 
+lai2 %>% 
   ggplot(aes(Pair,avgLAI))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
   geom_boxplot(aes(fill=Disturbance))+
-  scale_fill_manual(values=c(p3,bc))+
+  scale_fill_manual(values=c(p6,bc))+
   facet_grid(~Pair,scales='free_x')+
   theme_minimal()+
   theme(text=element_text(size=30))+
