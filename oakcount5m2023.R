@@ -51,38 +51,37 @@ c5 <- 13
 b6 <- 28
 c6 <- 32
 
-plotarea <- 0.0001
+plotarea <- 0.00785398163397448
 
 #summarize data
-summary <- count23x %>% na.omit() %>% 
-  group_by(Pair,Disturbance) %>% 
-  summarize(stemcount=sum(OAKcount))
+count23x <- count23x %>% na.omit() %>% 
+  mutate(Density=OAKcount/plotarea)
 
-summary <- summary %>% mutate(Density=if_else(
-  Pair=="1" & Disturbance=="B",
-  stemcount/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
-  stemcount/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
-  stemcount/b2/plotarea,if_else(Pair=="2" & Disturbance=="C",
-  stemcount/c2/plotarea,if_else(Pair=="3" & Disturbance=="B",
-  stemcount/b3/plotarea,if_else(Pair=="3" & Disturbance=="C",
-  stemcount/c3/plotarea,if_else(Pair=="4" & Disturbance=="B",
-  stemcount/b4/plotarea,if_else(Pair=="4" & Disturbance=="C",
-  stemcount/c4/plotarea,if_else(Pair=="5" & Disturbance=="B",
-  stemcount/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
-  stemcount/c5/plotarea,if_else(Pair=="6" & Disturbance=="B", 
-  stemcount/b6/plotarea,stemcount/c6/plotarea)))))))))))) 
+#count23x <- count23x %>% mutate(Density=if_else(
+#  Pair=="1" & Disturbance=="B",
+#  OAKcount/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
+#  OAKcount/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
+#  OAKcount/b2/plotarea,if_else(Pair=="2" & Disturbance=="C",
+#  OAKcount/c2/plotarea,if_else(Pair=="3" & Disturbance=="B",
+#  OAKcount/b3/plotarea,if_else(Pair=="3" & Disturbance=="C",
+#  OAKcount/c3/plotarea,if_else(Pair=="4" & Disturbance=="B",
+#  OAKcount/b4/plotarea,if_else(Pair=="4" & Disturbance=="C",
+#  OAKcount/c4/plotarea,if_else(Pair=="5" & Disturbance=="B",
+#  OAKcount/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
+#  OAKcount/c5/plotarea,if_else(Pair=="6" & Disturbance=="B", 
+#  OAKcount/b6/plotarea,OAKcount/c6/plotarea)))))))))))) 
 
-summary$Density <- round(summary$Density,0)
+count23x$Density <- round(count23x$Density,0)
 
 #visualize stem density
 bc <- c("B"="#CC6677","C"="#88CCEE")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
 
-summary %>% 
+count23x %>% 
   ggplot(aes(x=Pair,y=Density,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
-  geom_col(width=0.6,position=position_dodge(width=0.7))+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
   scale_fill_manual(values=c(p6,bc))+
   facet_grid(~Pair,scales='free_x')+
   theme_minimal()+
@@ -94,16 +93,15 @@ summary %>%
 leveneTest(summary$Density~summary$Disturbance)
 
 #anova
-summary <- summary %>% filter(Pair %in% c("1","2","3","4"))
-
-one.way <- aov(Density ~ Disturbance, data = summary)
+count23x <- count23x %>% filter(Pair %in% c("1","2","3","4"))
+one.way <- aov(OAKcount~Disturbance+Pair,data=count23x)
 summary(one.way)
 
 tukey <- TukeyHSD(one.way)
 tukey
 
 #Extracting significant pairs
-tukey_df <- as.data.frame(tukey$Disturbance)
+tukey_df <- as.data.frame(tukey$Pair)
 names(tukey_df)[names(tukey_df) == "p adj"] <- "p.adj"
 sig_pairs <- subset(tukey_df,p.adj < 0.05)
 tukey_df

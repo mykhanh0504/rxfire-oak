@@ -1,0 +1,3576 @@
+Location,Unit,Disturbance,Transect,Plot,Spcode,Condition,DBH (cm)
+Bartlett Experimental Forest,44B,B,1,25,PRPE,1,2.3
+Bartlett Experimental Forest,44B,B,1,25,PRPE,1,2.5
+Bartlett Experimental Forest,44B,B,1,25,PRPE,1,2.7
+Bartlett Experimental Forest,44B,B,1,25,PRPE,1,2
+Bartlett Experimental Forest,44B,B,1,25,POTR,1,2.3
+Bartlett Experimental Forest,44B,B,1,25,PRPE,1,2.4
+Bartlett Experimental Forest,44B,B,1,25,PRPE,1,2.3
+Bartlett Experimental Forest,44B,B,1,25,POTR,1,2.5
+Bartlett Experimental Forest,44B,B,1,35,PRPE,1,2.2
+Bartlett Experimental Forest,44B,B,1,45,FAGR,0,5.5
+Bartlett Experimental Forest,44B,B,1,45,FAGR,0,9
+Bartlett Experimental Forest,44B,B,1,45,FAGR,0,4
+Bartlett Experimental Forest,44B,B,1,45,PRPE,1,2
+Bartlett Experimental Forest,44B,B,1,45,FAGR,0,2.9
+Bartlett Experimental Forest,44B,B,1,45,FAGR,0,2.5
+Bartlett Experimental Forest,44B,B,1,5,POTR,1,2.2
+Bartlett Experimental Forest,44B,B,1,5,POTR,1,2
+Bartlett Experimental Forest,44B,B,1,5,POTR,1,2.2
+Bartlett Experimental Forest,44B,B,1,55,FAGR,0,6.4
+Bartlett Experimental Forest,44B,B,1,55,FAGR,0,3.7
+Bartlett Experimental Forest,44B,B,1,65,PRPE,1,2.3
+Bartlett Experimental Forest,44B,B,1,65,PRPE,1,2.5
+Bartlett Experimental Forest,44B,B,1,65,PRPE,1,2.5
+Bartlett Experimental Forest,44B,B,1,65,PRPE,1,2.2
+Bartlett Experimental Forest,44B,B,1,65,PIRU,0,4.9
+Bartlett Experimental Forest,44B,B,1,65,PRPE,1,3
+Bartlett Experimental Forest,44B,B,1,65,PRPE,1,2.1
+Bartlett Experimental Forest,44B,B,1,65,FAGR,0,5
+Bartlett Experimental Forest,44B,B,1,65,FAGR,0,2.2
+Bartlett Experimental Forest,44B,B,1,65,PRPE,1,2.9
+Bartlett Experimental Forest,44B,B,1,65,FAGR,0,2.6
+Bartlett Experimental Forest,44B,B,1,75,FAGR,0,3.2
+Bartlett Experimental Forest,44B,B,1,75,PRPE,1,2.3
+Bartlett Experimental Forest,44B,B,1,75,PRPE,1,2.4
+Bartlett Experimental Forest,44B,B,1,75,PRPE,1,2.5
+Bartlett Experimental Forest,44B,B,1,75,PRPE,1,2.1
+Bartlett Experimental Forest,44B,B,1,75,FAGR,0,2.1
+Bartlett Experimental Forest,44B,B,1,75,PRPE,1,2
+Bartlett Experimental Forest,44B,B,1,85,FAGR,0,2.3
+Bartlett Experimental Forest,44B,B,1,85,PRPE,1,3.6
+Bartlett Experimental Forest,44B,B,1,85,PRPE,1,2.5
+Bartlett Experimental Forest,44B,B,1,85,PRPE,1,2.4
+Bartlett Experimental Forest,44B,B,1,95,PRPE,1,2.7
+Bartlett Experimental Forest,44B,B,1,95,PRPE,1,2.3
+Bartlett Experimental Forest,44B,B,1,95,PRPE,1,2
+Bartlett Experimental Forest,44B,B,1,95,PRPE,1,2.1
+Bartlett Experimental Forest,44B,B,1,95,PRPE,1,2.4
+Bartlett Experimental Forest,44B,B,1,95,PRPE,1,2.1
+Bartlett Experimental Forest,44B,B,1,95,PRPE,1,2.4
+Bartlett Experimental Forest,45C,C,1,15,POTR,1,3.5
+Bartlett Experimental Forest,45C,C,1,25,PRPE,1,2.6
+Bartlett Experimental Forest,45C,C,1,25,FAGR,0,5
+Bartlett Experimental Forest,45C,C,1,25,FAGR,1,4
+Bartlett Experimental Forest,45C,C,1,45,ACRU,1,2.5
+Bartlett Experimental Forest,45C,C,1,45,ACRU,1,2.2
+Bartlett Experimental Forest,45C,C,1,45,ACRU,1,2.8
+Bartlett Experimental Forest,45C,C,1,45,ACRU,1,2.2
+Bartlett Experimental Forest,45C,C,1,45,ACRU,1,2.3
+Bartlett Experimental Forest,45C,C,1,45,ACRU,1,2.3
+Bartlett Experimental Forest,45C,C,1,45,PRPE,1,3.8
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,2.2
+Bartlett Experimental Forest,45C,C,1,5,PRPE,1,2
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,2.6
+Bartlett Experimental Forest,45C,C,1,5,ACRU,1,2.2
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,2
+Bartlett Experimental Forest,45C,C,1,5,ACRU,1,2.2
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,2.1
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,2.8
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,3
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,2.1
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,2.6
+Bartlett Experimental Forest,45C,C,1,5,POTR,1,5.1
+Bartlett Experimental Forest,45C,C,1,55,FAGR,1,4.4
+Bartlett Experimental Forest,45C,C,1,55,FAGR,1,5.8
+Bartlett Experimental Forest,45C,C,1,55,FAGR,1,7.2
+Bartlett Experimental Forest,45C,C,1,55,FAGR,1,7.5
+Bartlett Experimental Forest,45C,C,1,55,FAGR,1,9.9
+Bartlett Experimental Forest,45C,C,1,55,FAGR,1,2.6
+Bartlett Experimental Forest,45C,C,1,65,FAGR,1,4
+Bartlett Experimental Forest,45C,C,1,65,UNK,1,2.3
+Bartlett Experimental Forest,45C,C,1,65,UNK,1,2.4
+Bartlett Experimental Forest,45C,C,1,75,PRPE,1,3
+Bartlett Experimental Forest,45C,C,1,75,PRPE,1,3.4
+Bartlett Experimental Forest,45C,C,1,75,PRPE,1,3
+Bartlett Experimental Forest,45C,C,1,75,PRPE,1,2.8
+Bartlett Experimental Forest,45C,C,1,75,PRPE,1,2.7
+Bartlett Experimental Forest,45C,C,2,25,FAGR,0,4
+Bartlett Experimental Forest,45C,C,2,35,FAGR,1,3
+Bartlett Experimental Forest,45C,C,2,35,FAGR,1,11.7
+Bartlett Experimental Forest,45C,C,2,35,PRPE,1,2.4
+Bartlett Experimental Forest,45C,C,2,35,PRPE,1,2.4
+Bartlett Experimental Forest,45C,C,2,35,PRPE,1,2.8
+Bartlett Experimental Forest,45C,C,2,35,PRPE,1,3.1
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.3
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,3.9
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.8
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,3.3
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,3.5
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.5
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.1
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.4
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.8
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,3.4
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.6
+Bartlett Experimental Forest,45C,C,2,5,POGR,1,2.9
+Bartlett Experimental Forest,45C,C,2,5,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,1,45,FAGR,1,2.2
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,2
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,2.1
+Bartlett Experimental Forest,46B,B,1,5,BEAL,0,0.8
+Bartlett Experimental Forest,46B,B,1,5,BEAL,0,4.1
+Bartlett Experimental Forest,46B,B,1,5,PRPE,1,2
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,3
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,3.1
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,7.5
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,5
+Bartlett Experimental Forest,46B,B,1,5,BEAL,0,4.2
+Bartlett Experimental Forest,46B,B,1,5,BEAL,0,3.4
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,2.7
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,2.8
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,2.8
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,2.4
+Bartlett Experimental Forest,46B,B,1,5,FAGR,0,2.3
+Bartlett Experimental Forest,46B,B,1,5,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,2.6
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,2
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,3
+Bartlett Experimental Forest,46B,B,2,15,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,2,25,FAGR,0,6.8
+Bartlett Experimental Forest,46B,B,2,25,FAGR,0,3.7
+Bartlett Experimental Forest,46B,B,2,25,FAGR,0,3.3
+Bartlett Experimental Forest,46B,B,2,25,FAGR,0,3.7
+Bartlett Experimental Forest,46B,B,2,35,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,2,35,PRPE,1,3.2
+Bartlett Experimental Forest,46B,B,2,35,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,2,35,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,35,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,2,35,PRPE,1,2.6
+Bartlett Experimental Forest,46B,B,2,35,FAGR,0,7
+Bartlett Experimental Forest,46B,B,2,35,FAGR,0,5.9
+Bartlett Experimental Forest,46B,B,2,35,FAGR,0,5.8
+Bartlett Experimental Forest,46B,B,2,45,PRPE,1,7.2
+Bartlett Experimental Forest,46B,B,2,45,FAGR,1,4.9
+Bartlett Experimental Forest,46B,B,2,45,FAGR,0,5
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.7
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.3
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.8
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.3
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.8
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,4
+Bartlett Experimental Forest,46B,B,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,3,15,PRPE,1,3.5
+Bartlett Experimental Forest,46B,B,3,15,PRPE,1,2
+Bartlett Experimental Forest,46B,B,3,15,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,3,15,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,3,15,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,3,15,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,3,25,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,3,25,FAGR,0,3.2
+Bartlett Experimental Forest,46B,B,3,25,PRPE,1,2.3
+Bartlett Experimental Forest,46B,B,3,25,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,3,25,PRPE,1,2.3
+Bartlett Experimental Forest,46B,B,3,35,FAGR,0,4.5
+Bartlett Experimental Forest,46B,B,3,35,FAGR,0,2.4
+Bartlett Experimental Forest,46B,B,3,35,FAGR,0,2.8
+Bartlett Experimental Forest,46B,B,3,35,FAGR,0,4.2
+Bartlett Experimental Forest,46B,B,3,45,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,3
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,2.8
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,2.3
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,2
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,3.2
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,3.5
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,3.3
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,3.1
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,3.5
+Bartlett Experimental Forest,46B,B,3,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,3,55,FAGR,0,11.3
+Bartlett Experimental Forest,46B,B,3,55,FAGR,0,2.7
+Bartlett Experimental Forest,46B,B,3,55,FAGR,0,6.7
+Bartlett Experimental Forest,46B,B,3,55,FAGR,0,2.9
+Bartlett Experimental Forest,46B,B,3,55,FAGR,0,5.9
+Bartlett Experimental Forest,46B,B,3,65,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,3,65,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,3,65,FAGR,0,2.8
+Bartlett Experimental Forest,46B,B,3,65,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,3,75,PRPE,1,3.2
+Bartlett Experimental Forest,46B,B,3,95,PRPE,1,2
+Bartlett Experimental Forest,46B,B,3,95,PRPE,1,2
+Bartlett Experimental Forest,46B,B,3,95,PRPE,1,2
+Bartlett Experimental Forest,46B,B,3,95,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,2.8
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,3.8
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,3.6
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,3.2
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,4,25,PRPE,1,3
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.7
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.3
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.9
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,3.4
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,4,35,PRPE,1,2
+Bartlett Experimental Forest,46B,B,4,45,FAGR,0,3.9
+Bartlett Experimental Forest,46B,B,4,45,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,4,45,PRPE,1,3
+Bartlett Experimental Forest,46B,B,4,45,PRPE,1,2.8
+Bartlett Experimental Forest,46B,B,4,5,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,4,5,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,4,55,FAGR,0,4.4
+Bartlett Experimental Forest,46B,B,4,55,PRPE,1,2.4
+Bartlett Experimental Forest,46B,B,4,55,FAGR,0,3.8
+Bartlett Experimental Forest,46B,B,4,55,FAGR,0,3.6
+Bartlett Experimental Forest,46B,B,4,55,FAGR,1,2.3
+Bartlett Experimental Forest,46B,B,4,55,FAGR,0,4.5
+Bartlett Experimental Forest,46B,B,4,55,FAGR,1,3.3
+Bartlett Experimental Forest,46B,B,4,55,PRPE,1,3.2
+Bartlett Experimental Forest,46B,B,4,55,FAGR,0,3
+Bartlett Experimental Forest,46B,B,4,65,PRPE,1,2.3
+Bartlett Experimental Forest,46B,B,4,65,PRPE,1,2
+Bartlett Experimental Forest,46B,B,4,65,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,4,75,PRPE,1,2.5
+Bartlett Experimental Forest,46B,B,4,75,PRPE,1,2.1
+Bartlett Experimental Forest,46B,B,4,75,PRPE,1,2.2
+Bartlett Experimental Forest,46B,B,4,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,15,PRPE,1,3.6
+Bartlett Experimental Forest,46C,C,1,15,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,15,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,15,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,15,PRPE,1,4.1
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,25,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.6
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.6
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,1,35,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,1,45,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,45,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,1,45,PRPE,1,2
+Bartlett Experimental Forest,46C,C,1,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,45,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,5,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,1,55,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,3.4
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,3
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,1,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,1,75,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,1,75,PRPE,1,2
+Bartlett Experimental Forest,46C,C,1,75,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,1,75,PRPE,1,3
+Bartlett Experimental Forest,46C,C,1,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,15,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,15,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,15,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,2.2
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,6.5
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,2
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,2.2
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,3.2
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,10.7
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,3
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,2.2
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,3
+Bartlett Experimental Forest,46C,C,2,25,FAGR,1,3.5
+Bartlett Experimental Forest,46C,C,2,35,FAGR,0,2.3
+Bartlett Experimental Forest,46C,C,2,35,PRPE,1,2
+Bartlett Experimental Forest,46C,C,2,35,FAGR,1,3.7
+Bartlett Experimental Forest,46C,C,2,35,FAGR,1,2.6
+Bartlett Experimental Forest,46C,C,2,35,FAGR,1,4
+Bartlett Experimental Forest,46C,C,2,35,FAGR,1,2.4
+Bartlett Experimental Forest,46C,C,2,35,FAGR,1,2.2
+Bartlett Experimental Forest,46C,C,2,35,FAGR,1,2.4
+Bartlett Experimental Forest,46C,C,2,35,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,2,35,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,2,35,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,45,PRPE,1,2
+Bartlett Experimental Forest,46C,C,2,45,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,45,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,2,45,PRPE,1,3
+Bartlett Experimental Forest,46C,C,2,45,PRPE,1,3.4
+Bartlett Experimental Forest,46C,C,2,45,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,45,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,5,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,2,5,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,2,5,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,2,5,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,5,PRPE,1,3
+Bartlett Experimental Forest,46C,C,2,5,PRPE,1,3.4
+Bartlett Experimental Forest,46C,C,2,5,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,55,PRPE,1,2
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,2,65,FAGR,1,2.8
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,3
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,3
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,3
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2
+Bartlett Experimental Forest,46C,C,2,75,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,15,FAGR,1,2
+Bartlett Experimental Forest,46C,C,3,15,FAGR,1,2.1
+Bartlett Experimental Forest,46C,C,3,15,FAGR,1,3.7
+Bartlett Experimental Forest,46C,C,3,15,FAGR,0,2.3
+Bartlett Experimental Forest,46C,C,3,15,FAGR,1,2
+Bartlett Experimental Forest,46C,C,3,15,FAGR,1,3
+Bartlett Experimental Forest,46C,C,3,15,FAGR,1,3.8
+Bartlett Experimental Forest,46C,C,3,15,FAGR,1,9.2
+Bartlett Experimental Forest,46C,C,3,15,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,25,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,3,25,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,25,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,25,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,25,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,35,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,35,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,35,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,35,FAGR,0,3.1
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,45,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,5,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,5,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,5,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,5,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,5,ACRU,1,2.5
+Bartlett Experimental Forest,46C,C,3,5,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,5,FAGR,1,3.5
+Bartlett Experimental Forest,46C,C,3,5,FAGR,1,2.3
+Bartlett Experimental Forest,46C,C,3,5,FAGR,1,3.2
+Bartlett Experimental Forest,46C,C,3,5,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,3.4
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,4.3
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,55,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.7
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,4.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.1
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,3,65,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3.3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,4.8
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3.9
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,3,75,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,4,15,FAGR,0,3.4
+Bartlett Experimental Forest,46C,C,4,15,FAGR,0,3.6
+Bartlett Experimental Forest,46C,C,4,15,FAGR,0,3.4
+Bartlett Experimental Forest,46C,C,4,15,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,4,15,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,4,15,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,4,15,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,4,15,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,4,25,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,4,25,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,4,25,PRPE,1,2
+Bartlett Experimental Forest,46C,C,4,25,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,4,25,PRPE,1,2.8
+Bartlett Experimental Forest,46C,C,4,25,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,4,25,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,4,35,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,4,35,FAGR,1,6.7
+Bartlett Experimental Forest,46C,C,4,45,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,4,45,PRPE,1,2
+Bartlett Experimental Forest,46C,C,4,45,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,4,45,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,4,45,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,4,45,FAGR,0,2.7
+Bartlett Experimental Forest,46C,C,4,5,PRPE,1,2.9
+Bartlett Experimental Forest,46C,C,4,5,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,4,5,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,4,5,PRPE,1,3
+Bartlett Experimental Forest,46C,C,4,5,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,4,5,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,4,5,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,4,55,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,4,55,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,4,55,FAGR,0,2.3
+Bartlett Experimental Forest,46C,C,4,55,FAGR,1,6.3
+Bartlett Experimental Forest,46C,C,4,55,FAGR,1,3.3
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,3.2
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,3.5
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.7
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.6
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,4,65,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.2
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.1
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.4
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.3
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,4.1
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2.5
+Bartlett Experimental Forest,46C,C,4,75,PRPE,1,2
+Crawford Notch State Park,NA,B,1,105,FAGR,0,2.8
+Crawford Notch State Park,NA,B,1,105,FAGR,0,10.5
+Crawford Notch State Park,NA,B,1,105,FAGR,0,3.1
+Crawford Notch State Park,NA,B,1,105,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,105,FAGR,0,6.9
+Crawford Notch State Park,NA,B,1,105,ACSA,0,6.3
+Crawford Notch State Park,NA,B,1,105,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,105,FAGR,0,10.9
+Crawford Notch State Park,NA,B,1,105,FAGR,0,8.3
+Crawford Notch State Park,NA,B,1,105,ACSA,1,21.5
+Crawford Notch State Park,NA,B,1,105,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,105,ACSA,1,17.8
+Crawford Notch State Park,NA,B,1,105,ACSA,1,28
+Crawford Notch State Park,NA,B,1,105,FAGR,0,2.8
+Crawford Notch State Park,NA,B,1,105,ACSA,0,7.3
+Crawford Notch State Park,NA,B,1,115,BEAL,1,24.1
+Crawford Notch State Park,NA,B,1,115,ACSA,1,38
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.1
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.5
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.6
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.1
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.5
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.9
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.3
+Crawford Notch State Park,NA,B,1,115,FAGR,0,8.6
+Crawford Notch State Park,NA,B,1,115,FAGR,0,4.4
+Crawford Notch State Park,NA,B,1,115,ACSA,0,8
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.9
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,115,FAGR,0,5.5
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.5
+Crawford Notch State Park,NA,B,1,115,FAGR,0,4.2
+Crawford Notch State Park,NA,B,1,115,FAGR,0,13.2
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.8
+Crawford Notch State Park,NA,B,1,115,FAGR,0,2.9
+Crawford Notch State Park,NA,B,1,115,ACSA,1,13.3
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.7
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.3
+Crawford Notch State Park,NA,B,1,115,FAGR,0,4.3
+Crawford Notch State Park,NA,B,1,115,FAGR,0,3.6
+Crawford Notch State Park,NA,B,1,125,FAGR,0,6.1
+Crawford Notch State Park,NA,B,1,125,FAGR,0,5.9
+Crawford Notch State Park,NA,B,1,125,FAGR,0,3.7
+Crawford Notch State Park,NA,B,1,125,ACSA,0,8.7
+Crawford Notch State Park,NA,B,1,125,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,125,FAGR,0,3.2
+Crawford Notch State Park,NA,B,1,125,QURU,1,68.9
+Crawford Notch State Park,NA,B,1,125,ACSA,1,15.5
+Crawford Notch State Park,NA,B,1,125,FAGR,0,11.1
+Crawford Notch State Park,NA,B,1,125,FAGR,0,12
+Crawford Notch State Park,NA,B,1,125,FAGR,0,12
+Crawford Notch State Park,NA,B,1,125,ACSA,0,18.4
+Crawford Notch State Park,NA,B,1,125,FAGR,0,2.3
+Crawford Notch State Park,NA,B,1,125,FAGR,0,5.3
+Crawford Notch State Park,NA,B,1,125,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,125,FAGR,0,9.6
+Crawford Notch State Park,NA,B,1,125,FAGR,0,6.2
+Crawford Notch State Park,NA,B,1,125,FAGR,0,2.8
+Crawford Notch State Park,NA,B,1,125,ACSA,1,26
+Crawford Notch State Park,NA,B,1,125,ACSA,1,10.5
+Crawford Notch State Park,NA,B,1,125,FAGR,0,3.5
+Crawford Notch State Park,NA,B,1,125,FAGR,0,3
+Crawford Notch State Park,NA,B,1,125,FAGR,0,4.1
+Crawford Notch State Park,NA,B,1,135,FAGR,0,4.9
+Crawford Notch State Park,NA,B,1,135,FAGR,0,5.7
+Crawford Notch State Park,NA,B,1,135,FAGR,0,24.4
+Crawford Notch State Park,NA,B,1,135,FAGR,0,3.9
+Crawford Notch State Park,NA,B,1,135,FAGR,0,14.2
+Crawford Notch State Park,NA,B,1,135,FAGR,0,21.3
+Crawford Notch State Park,NA,B,1,135,FAGR,0,3.3
+Crawford Notch State Park,NA,B,1,135,FAGR,0,6.3
+Crawford Notch State Park,NA,B,1,135,FAGR,0,4
+Crawford Notch State Park,NA,B,1,135,FAGR,0,2.6
+Crawford Notch State Park,NA,B,1,135,FAGR,0,19.8
+Crawford Notch State Park,NA,B,1,135,FAGR,0,12.9
+Crawford Notch State Park,NA,B,1,135,FAGR,0,6
+Crawford Notch State Park,NA,B,1,135,FAGR,0,4.5
+Crawford Notch State Park,NA,B,1,135,FAGR,0,5.9
+Crawford Notch State Park,NA,B,1,145,FAGR,0,8.2
+Crawford Notch State Park,NA,B,1,145,FAGR,0,34.3
+Crawford Notch State Park,NA,B,1,145,FAGR,0,4.3
+Crawford Notch State Park,NA,B,1,145,ACSA,0,17.5
+Crawford Notch State Park,NA,B,1,145,QURU,1,38.7
+Crawford Notch State Park,NA,B,1,145,FAGR,0,2.3
+Crawford Notch State Park,NA,B,1,145,FAGR,0,4
+Crawford Notch State Park,NA,B,1,145,FAGR,0,2.9
+Crawford Notch State Park,NA,B,1,145,FAGR,0,5.7
+Crawford Notch State Park,NA,B,1,145,FAGR,0,3
+Crawford Notch State Park,NA,B,1,145,FAGR,0,29.7
+Crawford Notch State Park,NA,B,1,145,FAGR,0,12.7
+Crawford Notch State Park,NA,B,1,145,FAGR,0,19.4
+Crawford Notch State Park,NA,B,1,145,FAGR,0,5
+Crawford Notch State Park,NA,B,1,145,FAGR,0,4
+Crawford Notch State Park,NA,B,1,145,FAGR,0,7.6
+Crawford Notch State Park,NA,B,1,145,FAGR,0,6.4
+Crawford Notch State Park,NA,B,1,15,BEAL,1,33.2
+Crawford Notch State Park,NA,B,1,15,FAGR,0,4.7
+Crawford Notch State Park,NA,B,1,15,FAGR,0,4.8
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.1
+Crawford Notch State Park,NA,B,1,15,FAGR,0,2.9
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.3
+Crawford Notch State Park,NA,B,1,15,FAGR,0,7.6
+Crawford Notch State Park,NA,B,1,15,FAGR,0,2.1
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.2
+Crawford Notch State Park,NA,B,1,15,FAGR,0,4
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.5
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.1
+Crawford Notch State Park,NA,B,1,15,FAGR,0,2.4
+Crawford Notch State Park,NA,B,1,15,FAGR,0,2.3
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.9
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.9
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.8
+Crawford Notch State Park,NA,B,1,15,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.4
+Crawford Notch State Park,NA,B,1,15,ACSA,1,22.8
+Crawford Notch State Park,NA,B,1,15,FAGR,0,2.8
+Crawford Notch State Park,NA,B,1,15,ACSA,1,11.1
+Crawford Notch State Park,NA,B,1,15,FAGR,0,3.9
+Crawford Notch State Park,NA,B,1,155,QURU,1,18
+Crawford Notch State Park,NA,B,1,155,FAGR,0,9.7
+Crawford Notch State Park,NA,B,1,155,FAGR,0,9.1
+Crawford Notch State Park,NA,B,1,155,FAGR,0,4.8
+Crawford Notch State Park,NA,B,1,155,FAGR,0,3.4
+Crawford Notch State Park,NA,B,1,155,FAGR,0,2.9
+Crawford Notch State Park,NA,B,1,155,ACSA,0,10
+Crawford Notch State Park,NA,B,1,155,FAGR,0,5.1
+Crawford Notch State Park,NA,B,1,155,ACPE,0,4.7
+Crawford Notch State Park,NA,B,1,155,FAGR,0,6.7
+Crawford Notch State Park,NA,B,1,155,FAGR,0,19.7
+Crawford Notch State Park,NA,B,1,165,FAGR,0,3.6
+Crawford Notch State Park,NA,B,1,165,FAGR,0,11.5
+Crawford Notch State Park,NA,B,1,165,FAGR,0,14.3
+Crawford Notch State Park,NA,B,1,165,FAGR,0,2.7
+Crawford Notch State Park,NA,B,1,165,FAGR,0,8.2
+Crawford Notch State Park,NA,B,1,165,ACSA,1,17
+Crawford Notch State Park,NA,B,1,165,FAGR,0,3
+Crawford Notch State Park,NA,B,1,165,FAGR,0,11.1
+Crawford Notch State Park,NA,B,1,165,FAGR,0,10.2
+Crawford Notch State Park,NA,B,1,185,FAGR,0,15.6
+Crawford Notch State Park,NA,B,1,185,QURU,1,59.1
+Crawford Notch State Park,NA,B,1,185,FAGR,0,3.2
+Crawford Notch State Park,NA,B,1,185,FAGR,0,3.6
+Crawford Notch State Park,NA,B,1,185,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,185,FAGR,0,5.9
+Crawford Notch State Park,NA,B,1,185,QURU,1,49.6
+Crawford Notch State Park,NA,B,1,185,ACPE,0,4.2
+Crawford Notch State Park,NA,B,1,185,ACPE,0,5.3
+Crawford Notch State Park,NA,B,1,185,BEAL,0,3.3
+Crawford Notch State Park,NA,B,1,185,BEAL,1,16
+Crawford Notch State Park,NA,B ,1,195,ACPE,0,4.1
+Crawford Notch State Park,NA,B ,1,195,ACPE,0,6.8
+Crawford Notch State Park,NA,B ,1,195,ACSA,0,4.8
+Crawford Notch State Park,NA,B ,1,195,ACSA,1,59
+Crawford Notch State Park,NA,B ,1,195,ACPE,0,4.4
+Crawford Notch State Park,NA,B ,1,195,FAGR,1,32.6
+Crawford Notch State Park,NA,B ,1,195,FAGR,1,23.5
+Crawford Notch State Park,NA,B ,1,195,BEAL,1,34.2
+Crawford Notch State Park,NA,B ,1,195,ACPE,0,4.3
+Crawford Notch State Park,NA,B ,1,195,ACPE,0,6.4
+Crawford Notch State Park,NA,B,1,25,FAGR,0,6.1
+Crawford Notch State Park,NA,B,1,25,FAGR,0,2.4
+Crawford Notch State Park,NA,B,1,25,FAGR,0,2.6
+Crawford Notch State Park,NA,B,1,25,FAGR,0,5.2
+Crawford Notch State Park,NA,B,1,25,FAGR,0,7
+Crawford Notch State Park,NA,B,1,25,FAGR,0,21.3
+Crawford Notch State Park,NA,B,1,25,FAGR,0,2.2
+Crawford Notch State Park,NA,B,1,25,FAGR,0,7.5
+Crawford Notch State Park,NA,B,1,25,FAGR,0,3.2
+Crawford Notch State Park,NA,B,1,25,FAGR,0,12.1
+Crawford Notch State Park,NA,B,1,25,FAGR,0,3
+Crawford Notch State Park,NA,B,1,25,FAGR,0,2
+Crawford Notch State Park,NA,B,1,25,FAGR,0,5.2
+Crawford Notch State Park,NA,B,1,25,FAGR,0,2.7
+Crawford Notch State Park,NA,B,1,25,FAGR,0,21.4
+Crawford Notch State Park,NA,B,1,25,FAGR,0,7.5
+Crawford Notch State Park,NA,B,1,25,FAGR,0,2.4
+Crawford Notch State Park,NA,B,1,35,FAGR,0,2.8
+Crawford Notch State Park,NA,B,1,35,BEPA,1,26.1
+Crawford Notch State Park,NA,B,1,35,ACSA,0,33.8
+Crawford Notch State Park,NA,B,1,35,FAGR,0,10.8
+Crawford Notch State Park,NA,B,1,35,FAGR,1,28.4
+Crawford Notch State Park,NA,B,1,35,FAGR,0,2.6
+Crawford Notch State Park,NA,B,1,35,FAGR,0,5.3
+Crawford Notch State Park,NA,B,1,35,FAGR,1,29
+Crawford Notch State Park,NA,B,1,35,FAGR,0,8.5
+Crawford Notch State Park,NA,B,1,45,ACSA,0,30.9
+Crawford Notch State Park,NA,B,1,45,FAGR,0,14
+Crawford Notch State Park,NA,B,1,45,FAGR,0,7.4
+Crawford Notch State Park,NA,B,1,45,ACSA,0,12.7
+Crawford Notch State Park,NA,B,1,45,FAGR,1,17.9
+Crawford Notch State Park,NA,B,1,45,FAGR,0,12.5
+Crawford Notch State Park,NA,B,1,45,BEAL,0,44.4
+Crawford Notch State Park,NA,B,1,45,FAGR,1,13.5
+Crawford Notch State Park,NA,B,1,45,FAGR,0,7.8
+Crawford Notch State Park,NA,B,1,45,FAGR,0,8.4
+Crawford Notch State Park,NA,B,1,45,FAGR,0,38.4
+Crawford Notch State Park,NA,B,1,45,FAGR,0,15.6
+Crawford Notch State Park,NA,B,1,5,FAGR,0,2.1
+Crawford Notch State Park,NA,B,1,5,FAGR,0,28.8
+Crawford Notch State Park,NA,B,1,5,ACPE,0,4.3
+Crawford Notch State Park,NA,B,1,5,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,5,FAGR,0,5
+Crawford Notch State Park,NA,B,1,5,FAGR,0,4
+Crawford Notch State Park,NA,B,1,5,FAGR,0,4.6
+Crawford Notch State Park,NA,B,1,5,ACSA,1,20.6
+Crawford Notch State Park,NA,B,1,5,FAGR,0,8.9
+Crawford Notch State Park,NA,B,1,5,FAGR,0,15.8
+Crawford Notch State Park,NA,B,1,55,FAGR,0,4
+Crawford Notch State Park,NA,B,1,55,FAGR,0,11.1
+Crawford Notch State Park,NA,B,1,55,FAGR,0,12.1
+Crawford Notch State Park,NA,B,1,55,FAGR,0,4.3
+Crawford Notch State Park,NA,B,1,55,FAGR,0,3.1
+Crawford Notch State Park,NA,B,1,55,FAGR,0,4.2
+Crawford Notch State Park,NA,B,1,55,FAGR,0,4.3
+Crawford Notch State Park,NA,B,1,55,FAGR,0,38.4
+Crawford Notch State Park,NA,B,1,55,FAGR,0,3.1
+Crawford Notch State Park,NA,B,1,55,FAGR,0,4.9
+Crawford Notch State Park,NA,B,1,55,FAGR,0,5.8
+Crawford Notch State Park,NA,B,1,55,FAGR,0,3
+Crawford Notch State Park,NA,B,1,55,FAGR,0,7.8
+Crawford Notch State Park,NA,B,1,55,FAGR,0,20.2
+Crawford Notch State Park,NA,B,1,55,FAGR,0,3.7
+Crawford Notch State Park,NA,B,1,65,FAGR,0,17.8
+Crawford Notch State Park,NA,B,1,65,ACSA,1,19.1
+Crawford Notch State Park,NA,B,1,65,FAGR,0,14.3
+Crawford Notch State Park,NA,B,1,65,FAGR,1,29.8
+Crawford Notch State Park,NA,B,1,75,FAGR,0,11.5
+Crawford Notch State Park,NA,B,1,75,BEAL,0,24.6
+Crawford Notch State Park,NA,B,1,75,BEAL,0,16.3
+Crawford Notch State Park,NA,B,1,75,FAGR,0,5.4
+Crawford Notch State Park,NA,B,1,75,FAGR,0,10.1
+Crawford Notch State Park,NA,B,1,75,FAGR,0,4.1
+Crawford Notch State Park,NA,B,1,75,FAGR,0,3.8
+Crawford Notch State Park,NA,B,1,85,FAGR,0,5.7
+Crawford Notch State Park,NA,B,1,85,FAGR,0,4.5
+Crawford Notch State Park,NA,B,1,85,FAGR,0,9.7
+Crawford Notch State Park,NA,B,1,85,FAGR,0,10.4
+Crawford Notch State Park,NA,B,1,85,FAGR,0,3.5
+Crawford Notch State Park,NA,B,1,85,FAGR,0,4.4
+Crawford Notch State Park,NA,B,1,85,FAGR,0,3.5
+Crawford Notch State Park,NA,B,1,85,ACSA,1,9.9
+Crawford Notch State Park,NA,B,1,85,FAGR,0,2.5
+Crawford Notch State Park,NA,B,1,85,FAGR,0,40.3
+Crawford Notch State Park,NA,B,1,85,FAGR,0,41.9
+Crawford Notch State Park,NA,B,1,85,ACSA,1,22
+Crawford Notch State Park,NA,B,1,85,FAGR,0,7.7
+Crawford Notch State Park,NA,B,1,95,FAGR,0,3
+Crawford Notch State Park,NA,B,1,95,FAGR,0,4.1
+Crawford Notch State Park,NA,B,1,95,FAGR,0,3.2
+Crawford Notch State Park,NA,B,1,95,ACSA,0,24
+Crawford Notch State Park,NA,B,1,95,FAGR,0,7.1
+Crawford Notch State Park,NA,B,1,95,FAGR,0,2.3
+Crawford Notch State Park,NA,B,1,95,ACSA,0,9.9
+Crawford Notch State Park,NA,B,1,95,FAGR,0,5.8
+Crawford Notch State Park,NA,B,1,95,FAGR,0,10.2
+Crawford Notch State Park,NA,B,1,95,FAGR,0,4.5
+Crawford Notch State Park,NA,B,1,95,FAGR,0,8.2
+Crawford Notch State Park,NA,B,1,95,FAGR,0,6.4
+Crawford Notch State Park,NA,B,1,95,ACSA,0,9
+Crawford Notch State Park,NA,B,2,15,FAGR,0,27.2
+Crawford Notch State Park,NA,B,2,15,FAGR,0,12.5
+Crawford Notch State Park,NA,B,2,15,FAGR,0,4.4
+Crawford Notch State Park,NA,B,2,15,FAGR,0,2.4
+Crawford Notch State Park,NA,B,2,15,FAGR,0,3
+Crawford Notch State Park,NA,B,2,15,BEAL,0,10.5
+Crawford Notch State Park,NA,B,2,15,ACPE,0,10.4
+Crawford Notch State Park,NA,B,2,15,ACPE,0,5.2
+Crawford Notch State Park,NA,B,2,15,ACPE,0,9.2
+Crawford Notch State Park,NA,B,2,15,ACPE,0,4.7
+Crawford Notch State Park,NA,B,2,25,ACSA,1,18.5
+Crawford Notch State Park,NA,B,2,25,FAGR,0,6.8
+Crawford Notch State Park,NA,B,2,25,FAGR,0,3
+Crawford Notch State Park,NA,B,2,25,FAGR,0,4.4
+Crawford Notch State Park,NA,B,2,25,FAGR,0,10.6
+Crawford Notch State Park,NA,B,2,25,FAGR,0,10.6
+Crawford Notch State Park,NA,B,2,25,FAGR,0,2.1
+Crawford Notch State Park,NA,B,2,25,FAGR,0,7.2
+Crawford Notch State Park,NA,B,2,25,FAGR,0,2.7
+Crawford Notch State Park,NA,B,2,25,UNK,0,26.9
+Crawford Notch State Park,NA,B,2,25,FAGR,1,14.1
+Crawford Notch State Park,NA,B,2,35,ACSA,0,9.3
+Crawford Notch State Park,NA,B,2,35,FAGR,0,4
+Crawford Notch State Park,NA,B,2,35,FAGR,0,3.7
+Crawford Notch State Park,NA,B,2,35,FAGR,0,3.2
+Crawford Notch State Park,NA,B,2,35,FAGR,0,21.8
+Crawford Notch State Park,NA,B,2,35,FAGR,0,6.7
+Crawford Notch State Park,NA,B,2,35,FAGR,0,2.8
+Crawford Notch State Park,NA,B,2,35,FAGR,0,4.7
+Crawford Notch State Park,NA,B,2,35,FAGR,0,11.9
+Crawford Notch State Park,NA,B,2,35,FAGR,0,5.8
+Crawford Notch State Park,NA,B,2,35,FAGR,0,5.5
+Crawford Notch State Park,NA,B,2,35,FAGR,0,2
+Crawford Notch State Park,NA,B,2,35,FAGR,0,3.7
+Crawford Notch State Park,NA,B,2,35,FAGR,0,4.4
+Crawford Notch State Park,NA,B,2,35,FAGR,0,27.7
+Crawford Notch State Park,NA,B,2,35,FAGR,0,23.7
+Crawford Notch State Park,NA,B,2,35,FAGR,0,4.5
+Crawford Notch State Park,NA,B,2,35,FAGR,0,4
+Crawford Notch State Park,NA,B,2,35,FAGR,0,12.2
+Crawford Notch State Park,NA,B,2,35,FAGR,0,5.2
+Crawford Notch State Park,NA,B,2,35,FAGR,0,3.8
+Crawford Notch State Park,NA,B,2,35,FAGR,0,7.1
+Crawford Notch State Park,NA,B,2,35,FAGR,0,8.6
+Crawford Notch State Park,NA,B,2,45,FAGR,0,2.6
+Crawford Notch State Park,NA,B,2,45,QURU,1,49.5
+Crawford Notch State Park,NA,B,2,45,FAGR,0,4.8
+Crawford Notch State Park,NA,B,2,45,FAGR,0,5.9
+Crawford Notch State Park,NA,B,2,45,FAGR,0,4.2
+Crawford Notch State Park,NA,B,2,45,ACPE,0,3.3
+Crawford Notch State Park,NA,B,2,45,ACPE,0,3
+Crawford Notch State Park,NA,B,2,45,ACPE,0,5.5
+Crawford Notch State Park,NA,B,2,45,ACPE,0,4
+Crawford Notch State Park,NA,B,2,45,ACSA,0,4
+Crawford Notch State Park,NA,B,2,45,ACPE,0,2.3
+Crawford Notch State Park,NA,B,2,5,FAGR,0,18.3
+Crawford Notch State Park,NA,B,2,5,FAGR,0,11.4
+Crawford Notch State Park,NA,B,2,5,FAGR,0,10.5
+Crawford Notch State Park,NA,B,2,5,FAGR,0,23.3
+Crawford Notch State Park,NA,B,2,5,FAGR,0,6.1
+Crawford Notch State Park,NA,B,2,5,FAGR,0,6.4
+Crawford Notch State Park,NA,B,2,5,FAGR,0,3.9
+Crawford Notch State Park,NA,B,2,5,FAGR,0,4.5
+Crawford Notch State Park,NA,B,2,5,FAGR,0,3.7
+Crawford Notch State Park,NA,B,2,5,FAGR,0,5.5
+Crawford Notch State Park,NA,B,2,5,FAGR,0,9.5
+Crawford Notch State Park,NA,B,2,5,FAGR,0,12
+Crawford Notch State Park,NA,B,2,5,FAGR,0,6.9
+Crawford Notch State Park,NA,B,2,5,FAGR,0,8.4
+Crawford Notch State Park,NA,B,3,15,QURU,0,31.9
+Crawford Notch State Park,NA,B,3,15,FAGR,0,2.4
+Crawford Notch State Park,NA,B,3,15,ACSA,0,16
+Crawford Notch State Park,NA,B,3,15,ACSA,0,8.5
+Crawford Notch State Park,NA,B,3,15,ACSA,0,10.3
+Crawford Notch State Park,NA,B,3,15,ACSA,0,12.2
+Crawford Notch State Park,NA,B,3,15,FAGR,0,2.8
+Crawford Notch State Park,NA,B,3,15,FAGR,0,3.2
+Crawford Notch State Park,NA,B,3,15,ACSA,0,16.1
+Crawford Notch State Park,NA,B,3,15,FAGR,0,2.5
+Crawford Notch State Park,NA,B,3,15,FAGR,0,2.3
+Crawford Notch State Park,NA,B,3,15,ACSA,0,13
+Crawford Notch State Park,NA,B,3,25,FAGR,0,2.7
+Crawford Notch State Park,NA,B,3,25,FAGR,0,9.7
+Crawford Notch State Park,NA,B,3,25,FAGR,0,14.1
+Crawford Notch State Park,NA,B,3,25,FAGR,0,6.5
+Crawford Notch State Park,NA,B,3,25,FAGR,0,6.4
+Crawford Notch State Park,NA,B,3,25,FAGR,0,9.3
+Crawford Notch State Park,NA,B,3,25,FAGR,0,6.5
+Crawford Notch State Park,NA,B,3,25,QURU,1,37.1
+Crawford Notch State Park,NA,B,3,25,QURU,1,44.3
+Crawford Notch State Park,NA,B,3,35,QURU,1,81.4
+Crawford Notch State Park,NA,B,3,35,FAGR,0,8.9
+Crawford Notch State Park,NA,B,3,35,FAGR,0,24.5
+Crawford Notch State Park,NA,B,3,35,FAGR,0,3.7
+Crawford Notch State Park,NA,B,3,35,FAGR,0,5
+Crawford Notch State Park,NA,B,3,35,ACPE,0,3.3
+Crawford Notch State Park,NA,B,3,35,FAGR,1,3.8
+Crawford Notch State Park,NA,B,3,35,ACSA,0,15.4
+Crawford Notch State Park,NA,B,3,35,FAGR,0,12.6
+Crawford Notch State Park,NA,B,3,35,FAGR,0,13.6
+Crawford Notch State Park,NA,B,3,35,ACSA,0,7
+Crawford Notch State Park,NA,B,3,35,QURU,1,46.4
+Crawford Notch State Park,NA,B,3,35,FAGR,0,2
+Crawford Notch State Park,NA,B,3,45,FAGR,0,10.5
+Crawford Notch State Park,NA,B,3,45,FAGR,0,3.1
+Crawford Notch State Park,NA,B,3,45,ACSA,0,14.3
+Crawford Notch State Park,NA,B,3,45,ACSA,0,9.5
+Crawford Notch State Park,NA,B,3,45,FAGR,0,2.3
+Crawford Notch State Park,NA,B,3,45,FAGR,0,2.2
+Crawford Notch State Park,NA,B,3,45,FAGR,0,8.5
+Crawford Notch State Park,NA,B,3,45,FAGR,0,4.4
+Crawford Notch State Park,NA,B,3,45,FAGR,0,2.7
+Crawford Notch State Park,NA,B,3,45,QURU,1,60.7
+Crawford Notch State Park,NA,B,3,45,QURU,1,34.3
+Crawford Notch State Park,NA,B,3,45,ACSA,0,17
+Crawford Notch State Park,NA,B,3,45,ACSA,0,13.4
+Crawford Notch State Park,NA,B,3,45,FAGR,0,2.6
+Crawford Notch State Park,NA,B,3,45,FAGR,0,2.3
+Crawford Notch State Park,NA,B,3,45,FAGR,0,7.6
+Crawford Notch State Park,NA,B,3,45,FAGR,0,7.4
+Crawford Notch State Park,NA,B,3,45,QURU,1,32.4
+Crawford Notch State Park,NA,B,3,5,FAGR,0,8.4
+Crawford Notch State Park,NA,B,3,5,FAGR,0,14.9
+Crawford Notch State Park,NA,B,3,5,QURU,0,34.9
+Crawford Notch State Park,NA,B,3,5,FAGR,0,4.4
+Crawford Notch State Park,NA,B,3,5,FAGR,0,9.8
+Crawford Notch State Park,NA,B,3,5,FAGR,0,3.5
+Crawford Notch State Park,NA,B,3,5,ACSA,0,16.5
+Crawford Notch State Park,NA,B,3,5,TSCA,0,4
+Crawford Notch State Park,NA,B,3,5,QURU,0,47.1
+Crawford Notch State Park,NA,B,3,5,FAGR,0,3.5
+Crawford Notch State Park,NA,B,3,5,FAGR,0,7.3
+Crawford Notch State Park,NA,B,3,5,FAGR,0,9.2
+Crawford Notch State Park,NA,B,3,55,FAGR,0,2.8
+Crawford Notch State Park,NA,B,3,55,FAGR,0,2.9
+Crawford Notch State Park,NA,B,3,55,FAGR,0,3.4
+Crawford Notch State Park,NA,B,3,55,FAGR,0,3.3
+Crawford Notch State Park,NA,B,3,55,FAGR,0,2.4
+Crawford Notch State Park,NA,B,3,55,FAGR,0,2.3
+Crawford Notch State Park,NA,B,3,55,FAGR,0,3
+Crawford Notch State Park,NA,B,3,55,FAGR,0,5.2
+Crawford Notch State Park,NA,B,3,55,ACSA,0,6.8
+Crawford Notch State Park,NA,B,3,55,ACSA,1,11
+Crawford Notch State Park,NA,B,3,55,ACPE,0,3.8
+Crawford Notch State Park,NA,B,3,55,FAGR,0,2.5
+Crawford Notch State Park,NA,B,3,55,FAGR,0,4.5
+Crawford Notch State Park,NA,B,3,55,FAGR,0,4
+Crawford Notch State Park,NA,B,3,55,ACSA,0,22.6
+Crawford Notch State Park,NA,B,3,55,FAGR,0,5.4
+Crawford Notch State Park,NA,B,3,55,FAGR,0,2.1
+Crawford Notch State Park,NA,B,3,55,FAGR,0,4.5
+Crawford Notch State Park,NA,B,3,55,FAGR,1,13.7
+Crawford Notch State Park,NA,B,3,55,FAGR,1,5.8
+Crawford Notch State Park,NA,B,3,55,FAGR,1,26.5
+Crawford Notch State Park,NA,B,3,55,FAGR,0,4.3
+Crawford Notch State Park,NA,B,3,65,FAGR,0,7
+Crawford Notch State Park,NA,B,3,65,FAGR,0,5
+Crawford Notch State Park,NA,B,3,65,FAGR,0,3.5
+Crawford Notch State Park,NA,B,3,65,FAGR,0,5.3
+Crawford Notch State Park,NA,B,3,65,FAGR,0,3.3
+Crawford Notch State Park,NA,B,3,65,ACSA,0,14.2
+Crawford Notch State Park,NA,B,3,65,ACSA,0,7
+Crawford Notch State Park,NA,B,3,65,QURU,1,51.2
+Crawford Notch State Park,NA,B,3,65,QURU,1,10
+Crawford Notch State Park,NA,B,3,65,FAGR,0,6
+Crawford Notch State Park,NA,B,3,65,ACSA,1,25.5
+Crawford Notch State Park,NA,B,3,65,FAGR,0,3.5
+Crawford Notch State Park,NA,B,3,65,FAGR,0,4.4
+Crawford Notch State Park,NA,B,3,65,FAGR,0,5.1
+Crawford Notch State Park,NA,B,3,65,FAGR,0,2.2
+Crawford Notch State Park,NA,B,3,65,FAGR,0,2
+Crawford Notch State Park,NA,B,3,65,FAGR,0,4.7
+Crawford Notch State Park,NA,B,3,65,FAGR,0,9
+Crawford Notch State Park,NA,B,3,65,FAGR,0,7.4
+Crawford Notch State Park,NA,B,3,65,FAGR,0,11.8
+Crawford Notch State Park,NA,B,3,65,FAGR,0,5
+Crawford Notch State Park,NA,B,3,65,FAGR,0,4
+Crawford Notch State Park,NA,B,3,65,FAGR,0,13.5
+Crawford Notch State Park,NA,B,3,65,FAGR,0,2.3
+Crawford Notch State Park,NA,B,3,75,FAGR,0,6.7
+Crawford Notch State Park,NA,B,3,75,FAGR,0,19.1
+Crawford Notch State Park,NA,B,3,75,FAGR,0,5.7
+Crawford Notch State Park,NA,B,3,75,BEAL,0,8.4
+Crawford Notch State Park,NA,B,3,75,FAGR,0,5.6
+Crawford Notch State Park,NA,B,3,75,FAGR,0,16.8
+Crawford Notch State Park,NA,B,3,75,ACSA,1,39.2
+Crawford Notch State Park,NA,B,3,75,FAGR,0,4
+Crawford Notch State Park,NA,B,3,75,FAGR,0,4.5
+Crawford Notch State Park,NA,B,3,75,ACSA,0,7.9
+Crawford Notch State Park,NA,B,3,75,FAGR,0,9.8
+Crawford Notch State Park,NA,B,3,75,FAGR,0,3.3
+Crawford Notch State Park,NA,B,3,75,FAGR,0,4.5
+Crawford Notch State Park,NA,B,3,75,FAGR,0,9.1
+Crawford Notch State Park,NA,B,3,75,FAGR,0,12.5
+Crawford Notch State Park,NA,B,4,15,ACSA,0,10.5
+Crawford Notch State Park,NA,B,4,15,ACPE,0,4.7
+Crawford Notch State Park,NA,B,4,15,FAGR,0,2
+Crawford Notch State Park,NA,B,4,15,ACSA,0,15
+Crawford Notch State Park,NA,B,4,15,ACPE,0,5.6
+Crawford Notch State Park,NA,B,4,15,ACPE,0,4
+Crawford Notch State Park,NA,B,4,15,FAGR,0,7.5
+Crawford Notch State Park,NA,B,4,15,FAGR,0,10.4
+Crawford Notch State Park,NA,B,4,15,FAGR,0,5.3
+Crawford Notch State Park,NA,B,4,15,FAGR,0,6
+Crawford Notch State Park,NA,B,4,15,FAGR,0,12
+Crawford Notch State Park,NA,B,4,15,FAGR,0,30
+Crawford Notch State Park,NA,B,4,15,FAGR,0,5.1
+Crawford Notch State Park,NA,B,4,15,FAGR,0,8.8
+Crawford Notch State Park,NA,B,4,15,ACPE,0,2.9
+Crawford Notch State Park,NA,B,4,15,ACSA,0,13
+Crawford Notch State Park,NA,B,4,15,ACRU,0,9.1
+Crawford Notch State Park,NA,B,4,15,FAGR,0,2.1
+Crawford Notch State Park,NA,B,4,25,FAGR,0,11
+Crawford Notch State Park,NA,B,4,25,FAGR,0,7.8
+Crawford Notch State Park,NA,B,4,25,ACSA,0,9.7
+Crawford Notch State Park,NA,B,4,25,FAGR,0,5.4
+Crawford Notch State Park,NA,B,4,25,FAGR,0,18.1
+Crawford Notch State Park,NA,B,4,25,ACSA,0,12.3
+Crawford Notch State Park,NA,B,4,25,FAGR,0,6
+Crawford Notch State Park,NA,B,4,25,ACSA,0,4.5
+Crawford Notch State Park,NA,B,4,25,FAGR,0,11.2
+Crawford Notch State Park,NA,B,4,25,QURU,0,22.7
+Crawford Notch State Park,NA,B,4,25,FAGR,0,6.2
+Crawford Notch State Park,NA,B,4,25,FAGR,0,25.1
+Crawford Notch State Park,NA,B,4,25,FAGR,0,3.8
+Crawford Notch State Park,NA,B,4,25,FAGR,0,24.6
+Crawford Notch State Park,NA,B,4,25,FAGR,0,11.3
+Crawford Notch State Park,NA,B,4,35,ACSA,0,12.2
+Crawford Notch State Park,NA,B,4,35,ACSA,0,17.7
+Crawford Notch State Park,NA,B,4,35,FAGR,0,5
+Crawford Notch State Park,NA,B,4,35,FAGR,0,3.2
+Crawford Notch State Park,NA,B,4,35,FAGR,0,12.2
+Crawford Notch State Park,NA,B,4,35,FAGR,0,10.5
+Crawford Notch State Park,NA,B,4,35,FAGR,0,16.7
+Crawford Notch State Park,NA,B,4,35,FAGR,0,2.3
+Crawford Notch State Park,NA,B,4,35,FAGR,0,2.9
+Crawford Notch State Park,NA,B,4,35,FAGR,0,2.8
+Crawford Notch State Park,NA,B,4,35,FAGR,0,8
+Crawford Notch State Park,NA,B,4,35,FAGR,0,3
+Crawford Notch State Park,NA,B,4,35,FAGR,0,4.8
+Crawford Notch State Park,NA,B,4,45,QURU,0,47.8
+Crawford Notch State Park,NA,B,4,45,QURU,0,35.1
+Crawford Notch State Park,NA,B,4,45,FAGR,0,9.1
+Crawford Notch State Park,NA,B,4,45,ACSA,0,12.5
+Crawford Notch State Park,NA,B,4,45,FAGR,0,2.1
+Crawford Notch State Park,NA,B,4,45,FAGR,0,6.6
+Crawford Notch State Park,NA,B,4,45,FAGR,0,17.8
+Crawford Notch State Park,NA,B,4,45,FAGR,0,21.8
+Crawford Notch State Park,NA,B,4,45,FAGR,0,6.2
+Crawford Notch State Park,NA,B,4,45,FAGR,0,3.3
+Crawford Notch State Park,NA,B,4,45,ACSA,0,12.8
+Crawford Notch State Park,NA,B,4,45,FAGR,0,2.8
+Crawford Notch State Park,NA,B,4,5,BEAL,0,19.9
+Crawford Notch State Park,NA,B,4,5,BEAL,1,17.4
+Crawford Notch State Park,NA,B,4,5,FAGR,0,3.5
+Crawford Notch State Park,NA,B,4,5,FAGR,1,20.4
+Crawford Notch State Park,NA,B,4,5,FAGR,0,22
+Crawford Notch State Park,NA,B,4,5,QURU,1,39.8
+Crawford Notch State Park,NA,B,4,5,FAGR,0,4.7
+Crawford Notch State Park,NA,B,4,5,ACSA,0,5.3
+Crawford Notch State Park,NA,B,4,5,QURU,1,45
+Crawford Notch State Park,NA,B,4,55,FAGR,0,19.2
+Crawford Notch State Park,NA,B,4,55,ACPE,0,2.6
+Crawford Notch State Park,NA,B,4,55,ACSA,0,24.7
+Crawford Notch State Park,NA,B,4,55,FAGR,0,3
+Crawford Notch State Park,NA,B,4,55,QURU,1,56.9
+Crawford Notch State Park,NA,B,4,55,ACSA,0,3.7
+Crawford Notch State Park,NA,B,4,55,FAGR,0,7.1
+Crawford Notch State Park,NA,B,4,55,FAGR,0,3.5
+Crawford Notch State Park,NA,B,4,55,FAGR,0,5.4
+Crawford Notch State Park,NA,B,4,55,FAGR,0,11
+Crawford Notch State Park,NA,B,4,55,FAGR,0,4.4
+Crawford Notch State Park,NA,B,4,65,FAGR,0,3.5
+Crawford Notch State Park,NA,B,4,65,FAGR,0,17.1
+Crawford Notch State Park,NA,B,4,65,FAGR,0,10.2
+Crawford Notch State Park,NA,B,4,65,FAGR,0,3.3
+Crawford Notch State Park,NA,B,4,65,FAGR,0,2.3
+Crawford Notch State Park,NA,B,4,65,FAGR,0,16.5
+Crawford Notch State Park,NA,B,4,65,FAGR,0,16.9
+Crawford Notch State Park,NA,B,4,65,FAGR,0,3
+Crawford Notch State Park,NA,B,4,65,FAGR,0,18
+Crawford Notch State Park,NA,B,4,65,FAGR,0,6.6
+Crawford Notch State Park,NA,B,4,65,FAGR,0,4.8
+Crawford Notch State Park,NA,B,4,65,FAGR,0,3.4
+Crawford Notch State Park,NA,B,4,65,FAGR,0,5.5
+Crawford Notch State Park,NA,B,4,65,FAGR,0,3.2
+Crawford Notch State Park,NA,B,4,65,FAGR,0,24.4
+Crawford Notch State Park,NA,B,4,65,FAGR,0,5.4
+Crawford Notch State Park,NA,B,4,65,FAGR,0,10.3
+Crawford Notch State Park,NA,B,4,65,FAGR,0,2.9
+Crawford Notch State Park,NA,B,4,65,FAGR,0,3.1
+Crawford Notch State Park,NA,B,4,65,FAGR,0,3.1
+Crawford Notch State Park,NA,B,4,75,QURU,1,46
+Crawford Notch State Park,NA,B,4,75,QURU,1,29.8
+Crawford Notch State Park,NA,B,4,75,FAGR,0,5.9
+Crawford Notch State Park,NA,B,4,75,QURU,1,48.4
+Crawford Notch State Park,NA,B,4,75,QURU,1,20.8
+Crawford Notch State Park,NA,B,4,75,QURU,1,43.7
+Crawford Notch State Park,NA,B,4,75,FAGR,0,2.3
+Crawford Notch State Park,NA,B,4,75,FAGR,0,4.2
+Crawford Notch State Park,NA,B,4,75,FAGR,0,3.3
+Crawford Notch State Park,NA,B,4,75,ACSA,0,2.4
+Crawford Notch State Park,NA,B,4,75,FAGR,0,4.5
+Crawford Notch State Park,NA,B,4,75,ACSA,0,3.6
+Crawford Notch State Park,NA,B,4,75,FAGR,0,12.6
+Crawford Notch State Park,NA,B,4,75,QURU,1,27.4
+Crawford Notch State Park,NA,B,4,75,FAGR,0,12
+Crawford Notch State Park,NA,B,4,75,FAGR,0,4.9
+Crawford Notch State Park,NA,B,4,85,QURU,1,43.2
+Crawford Notch State Park,NA,B,4,85,ACSA,0,10
+Crawford Notch State Park,NA,B,4,85,QURU,1,56.9
+Crawford Notch State Park,NA,B,4,85,QURU,1,30.4
+Crawford Notch State Park,NA,B,4,85,FAGR,0,4.7
+Crawford Notch State Park,NA,B,4,95,ACSA,0,11.5
+Crawford Notch State Park,NA,B,4,95,ACPE,0,4.1
+Crawford Notch State Park,NA,B,4,95,ACPE,0,3.3
+Crawford Notch State Park,NA,B,4,95,ACPE,0,10.8
+Crawford Notch State Park,NA,B,4,95,QURU,1,45.7
+Crawford Notch State Park,NA,B,4,95,ACPE,0,6.7
+Crawford Notch State Park,NA,B,4,95,ACPE,0,6.9
+Crawford Notch State Park,NA,B,4,95,ACSA,0,11
+Crawford Notch State Park,NA,C,1,15,FAGR,1,3.5
+Crawford Notch State Park,NA,C,1,15,FAGR,1,6.7
+Crawford Notch State Park,NA,C,1,15,FAGR,1,10
+Crawford Notch State Park,NA,C,1,15,FAGR,1,2.4
+Crawford Notch State Park,NA,C,1,15,FAGR,1,4.3
+Crawford Notch State Park,NA,C,1,15,FAGR,1,22.4
+Crawford Notch State Park,NA,C,1,15,FAGR,1,3.1
+Crawford Notch State Park,NA,C,1,15,FAGR,1,3.6
+Crawford Notch State Park,NA,C,1,25,FAGR,1,4.5
+Crawford Notch State Park,NA,C,1,25,FAGR,1,13.8
+Crawford Notch State Park,NA,C,1,25,FAGR,1,9.4
+Crawford Notch State Park,NA,C,1,25,FAGR,1,4
+Crawford Notch State Park,NA,C,1,25,FAGR,1,7.7
+Crawford Notch State Park,NA,C,1,25,ACSA,1,17
+Crawford Notch State Park,NA,C,1,25,ACSA,1,25.8
+Crawford Notch State Park,NA,C,1,25,BEAL,1,30.5
+Crawford Notch State Park,NA,C,1,25,FAGR,1,3
+Crawford Notch State Park,NA,C,1,35,FAGR,1,4.2
+Crawford Notch State Park,NA,C,1,35,FAGR,1,13.1
+Crawford Notch State Park,NA,C,1,35,FAGR,1,6.3
+Crawford Notch State Park,NA,C,1,35,FAGR,1,4.7
+Crawford Notch State Park,NA,C,1,35,ACSA,1,37.7
+Crawford Notch State Park,NA,C,1,35,FAGR,1,8.9
+Crawford Notch State Park,NA,C,1,45,FAGR,1,3.5
+Crawford Notch State Park,NA,C,1,45,FAGR,1,3.1
+Crawford Notch State Park,NA,C,1,45,FAGR,1,4.4
+Crawford Notch State Park,NA,C,1,45,ACSA,1,7.8
+Crawford Notch State Park,NA,C,1,45,FAGR,1,2.8
+Crawford Notch State Park,NA,C,1,45,FAGR,1,29.5
+Crawford Notch State Park,NA,C,1,45,FAGR,1,2
+Crawford Notch State Park,NA,C,1,45,FAGR,1,3.2
+Crawford Notch State Park,NA,C,1,45,FAGR,1,3
+Crawford Notch State Park,NA,C,1,45,FAGR,1,2
+Crawford Notch State Park,NA,C,1,45,FAGR,1,2.6
+Crawford Notch State Park,NA,C,1,5,FAGR,1,8.5
+Crawford Notch State Park,NA,C,1,5,FAGR,1,4.7
+Crawford Notch State Park,NA,C,1,5,FAGR,1,5.2
+Crawford Notch State Park,NA,C,1,5,BEAL,1,41
+Crawford Notch State Park,NA,C,1,5,FAGR,1,4.5
+Crawford Notch State Park,NA,C,1,5,FAGR,1,4
+Crawford Notch State Park,NA,C,1,5,FAGR,1,13.2
+Crawford Notch State Park,NA,C,1,5,FAGR,1,14
+Crawford Notch State Park,NA,C,1,5,FAGR,1,7.1
+Crawford Notch State Park,NA,C,1,5,FAGR,1,6.1
+Crawford Notch State Park,NA,C,1,55,FAGR,1,2.8
+Crawford Notch State Park,NA,C,1,55,FAGR,1,3.7
+Crawford Notch State Park,NA,C,1,55,FAGR,1,27.5
+Crawford Notch State Park,NA,C,1,55,FAGR,1,6.7
+Crawford Notch State Park,NA,C,1,55,FAGR,1,8.2
+Crawford Notch State Park,NA,C,1,65,FAGR,1,4.7
+Crawford Notch State Park,NA,C,1,65,FRAM,1,46.9
+Crawford Notch State Park,NA,C,1,65,ACSA,1,7.5
+Crawford Notch State Park,NA,C,1,65,FAGR,1,7.5
+Crawford Notch State Park,NA,C,1,65,FAGR,1,4.7
+Crawford Notch State Park,NA,C,1,65,ACSA,1,6.8
+Crawford Notch State Park,NA,C,1,65,ACSA,1,9.1
+Crawford Notch State Park,NA,C,1,75,FAGR,1,33.8
+Crawford Notch State Park,NA,C,1,75,FAGR,1,7.6
+Crawford Notch State Park,NA,C,1,75,FRAM,1,40.3
+Crawford Notch State Park,NA,C,1,75,QURU,1,34.3
+Crawford Notch State Park,NA,C,1,75,FAGR,1,8.5
+Crawford Notch State Park,NA,C,1,75,ACSA,1,44.3
+Crawford Notch State Park,NA,C,1,75,FAGR,1,4.4
+Crawford Notch State Park,NA,C,1,75,FAGR,1,2.6
+Crawford Notch State Park,NA,C,1,75,FAGR,1,2.9
+Crawford Notch State Park,NA,C,1,75,FAGR,1,6
+Crawford Notch State Park,NA,C,1,75,FAGR,1,2.2
+Crawford Notch State Park,NA,C,1,75,FAGR,1,12.3
+Crawford Notch State Park,NA,C,1,85,FAGR,1,17.1
+Crawford Notch State Park,NA,C,1,85,ACSA,1,23.5
+Crawford Notch State Park,NA,C,1,85,FAGR,1,12.4
+Crawford Notch State Park,NA,C,1,85,FAGR,1,2
+Crawford Notch State Park,NA,C,1,85,FRAM,1,45.7
+Crawford Notch State Park,NA,C,1,85,ACSA,1,13
+Crawford Notch State Park,NA,C,1,85,FAGR,1,10.3
+Crawford Notch State Park,NA,C,1,85,ACSA,1,14.5
+Crawford Notch State Park,NA,C,1,95,FAGR,1,16.6
+Crawford Notch State Park,NA,C,1,95,ACSA,1,18.7
+Crawford Notch State Park,NA,C,1,95,ACSA,1,10.5
+Crawford Notch State Park,NA,C,1,95,ACSA,1,4.9
+Crawford Notch State Park,NA,C,1,95,FAGR,1,7.6
+Crawford Notch State Park,NA,C,1,95,ACSA,1,10.3
+Crawford Notch State Park,NA,C,1,95,ACSA,1,6.6
+Crawford Notch State Park,NA,C,1,95,ACSA,1,3
+Crawford Notch State Park,NA,C,1,95,ACSA,1,10.4
+Crawford Notch State Park,NA,C,1,95,ACSA,1,3.8
+Crawford Notch State Park,NA,C,1,95,ACSA,1,5.5
+Crawford Notch State Park,NA,C,1,95,FRAM,1,50.4
+Crawford Notch State Park,NA,C,1,95,ACSA,1,28.2
+Crawford Notch State Park,NA,C,2,15,FAGR,1,2.9
+Crawford Notch State Park,NA,C,2,15,ACSA,1,27
+Crawford Notch State Park,NA,C,2,15,FAGR,1,5.5
+Crawford Notch State Park,NA,C,2,15,ACSA,1,10
+Crawford Notch State Park,NA,C,2,15,FAGR,1,12.9
+Crawford Notch State Park,NA,C,2,15,ACSA,1,27.7
+Crawford Notch State Park,NA,C,2,15,FAGR,1,15.5
+Crawford Notch State Park,NA,C,2,15,ACSA,1,29
+Crawford Notch State Park,NA,C,2,15,FAGR,1,5.4
+Crawford Notch State Park,NA,C,2,15,FAGR,0,7.8
+Crawford Notch State Park,NA,C,2,15,FAGR,1,3.8
+Crawford Notch State Park,NA,C,2,25,FRAM,0,29.4
+Crawford Notch State Park,NA,C,2,25,FAGR,1,3.3
+Crawford Notch State Park,NA,C,2,25,FAGR,1,3.3
+Crawford Notch State Park,NA,C,2,25,FAGR,1,19.8
+Crawford Notch State Park,NA,C,2,25,FAGR,1,4.5
+Crawford Notch State Park,NA,C,2,25,QURU,1,69.8
+Crawford Notch State Park,NA,C,2,25,QURU,1,57.8
+Crawford Notch State Park,NA,C,2,25,FAGR,1,8.5
+Crawford Notch State Park,NA,C,2,25,FAGR,0,2.9
+Crawford Notch State Park,NA,C,2,25,FAGR,1,2.9
+Crawford Notch State Park,NA,C,2,25,FAGR,1,3.6
+Crawford Notch State Park,NA,C,2,25,FAGR,1,20.8
+Crawford Notch State Park,NA,C,2,25,FAGR,1,4.8
+Crawford Notch State Park,NA,C,2,35,FAGR,1,4.9
+Crawford Notch State Park,NA,C,2,35,FAGR,1,10.1
+Crawford Notch State Park,NA,C,2,35,FAGR,0,6.6
+Crawford Notch State Park,NA,C,2,35,FAGR,1,12.3
+Crawford Notch State Park,NA,C,2,35,FAGR,1,5.2
+Crawford Notch State Park,NA,C,2,35,FAGR,1,37.4
+Crawford Notch State Park,NA,C,2,35,FAGR,1,8.9
+Crawford Notch State Park,NA,C,2,35,FAGR,0,9.7
+Crawford Notch State Park,NA,C,2,35,ACSA,0,7
+Crawford Notch State Park,NA,C,2,35,QURU,1,49.3
+Crawford Notch State Park,NA,C,2,35,QURU,1,47.3
+Crawford Notch State Park,NA,C,2,45,QURU,1,39.2
+Crawford Notch State Park,NA,C,2,45,OSVI,1,3.3
+Crawford Notch State Park,NA,C,2,45,ACSA,1,27.7
+Crawford Notch State Park,NA,C,2,45,ACSA,1,37
+Crawford Notch State Park,NA,C,2,45,FAGR,1,4.2
+Crawford Notch State Park,NA,C,2,45,FAGR,1,17.6
+Crawford Notch State Park,NA,C,2,45,FAGR,1,2.6
+Crawford Notch State Park,NA,C,2,45,FAGR,1,19.7
+Crawford Notch State Park,NA,C,2,45,QURU,1,55.2
+Crawford Notch State Park,NA,C,2,5,FAGR,1,2.8
+Crawford Notch State Park,NA,C,2,5,ACSA,1,9.5
+Crawford Notch State Park,NA,C,2,5,FAGR,1,4.1
+Crawford Notch State Park,NA,C,2,5,FAGR,1,5.2
+Crawford Notch State Park,NA,C,2,5,ACSA,1,10
+Crawford Notch State Park,NA,C,2,5,FAGR,1,5.8
+Crawford Notch State Park,NA,C,2,55,ACSA,1,13.8
+Crawford Notch State Park,NA,C,2,55,OSVI,1,7.3
+Crawford Notch State Park,NA,C,2,55,ACPE,1,2.6
+Crawford Notch State Park,NA,C,2,55,FAGR,1,3.2
+Crawford Notch State Park,NA,C,2,55,FAGR,1,28
+Crawford Notch State Park,NA,C,2,55,FAGR,1,15
+Crawford Notch State Park,NA,C,2,55,FAGR,1,3.9
+Crawford Notch State Park,NA,C,2,55,FAGR,1,2.2
+Crawford Notch State Park,NA,C,2,55,FAGR,1,9.1
+Crawford Notch State Park,NA,C,2,55,FAGR,1,7.7
+Crawford Notch State Park,NA,C,2,55,FAGR,1,29.9
+Crawford Notch State Park,NA,C,2,55,FAGR,1,6.6
+Crawford Notch State Park,NA,C,2,65,FAGR,1,3.9
+Crawford Notch State Park,NA,C,2,65,FAGR,1,10.3
+Crawford Notch State Park,NA,C,2,65,FAGR,1,7.5
+Crawford Notch State Park,NA,C,2,65,FAGR,1,12.1
+Crawford Notch State Park,NA,C,2,65,ACSA,1,17.1
+Crawford Notch State Park,NA,C,2,65,OSVI,1,6.6
+Crawford Notch State Park,NA,C,2,65,ACSA,1,10.3
+Crawford Notch State Park,NA,C,2,65,ACSA,1,29.5
+Crawford Notch State Park,NA,C,2,65,OSVI,1,3.7
+Crawford Notch State Park,NA,C,2,65,FAGR,1,2.3
+Crawford Notch State Park,NA,C,2,65,FAGR,1,12.2
+Crawford Notch State Park,NA,C,2,65,FAGR,1,2.2
+Crawford Notch State Park,NA,C,2,75,FRAM,1,26.5
+Crawford Notch State Park,NA,C,2,75,FAGR,1,13
+Crawford Notch State Park,NA,C,2,75,FAGR,1,5.9
+Crawford Notch State Park,NA,C,2,75,FAGR,1,10.9
+Crawford Notch State Park,NA,C,2,75,FAGR,1,9.5
+Crawford Notch State Park,NA,C,2,75,FAGR,1,3.5
+Crawford Notch State Park,NA,C,2,85,FAGR,1,6.5
+Crawford Notch State Park,NA,C,2,85,OSVI,1,6
+Crawford Notch State Park,NA,C,2,85,ACSA,1,31
+Crawford Notch State Park,NA,C,2,85,ACSA,1,20.5
+Crawford Notch State Park,NA,C,2,85,OSVI,1,3.5
+Crawford Notch State Park,NA,C,2,85,ACSA,1,21.8
+Crawford Notch State Park,NA,C,2,85,OSVI,1,6
+Crawford Notch State Park,NA,C,2,85,OSVI,1,3.6
+Crawford Notch State Park,NA,C,2,85,ACSA,1,31.7
+Crawford Notch State Park,NA,C,2,85,ACSA,1,7.9
+Hogsback (Blueberry Mountain),12/2,C,1,15,ACSA,1,65.8
+Hogsback (Blueberry Mountain),12/2,C,1,15,ACSA,1,21.8
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.7
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,9
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,8.6
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,1,15,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,25,FAGR,1,2.7
+Hogsback (Blueberry Mountain),12/2,C,1,25,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,1,25,FAGR,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,1,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,1,25,FAGR,1,5.1
+Hogsback (Blueberry Mountain),12/2,C,1,25,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,16.4
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,3.4
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,1,35,ACPE,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,13.6
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,9.5
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,4.1
+Hogsback (Blueberry Mountain),12/2,C,1,35,QURU,1,72.2
+Hogsback (Blueberry Mountain),12/2,C,1,35,BEAL,1,15.3
+Hogsback (Blueberry Mountain),12/2,C,1,35,FAGR,1,4.1
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,8.3
+Hogsback (Blueberry Mountain),12/2,C,1,45,OSVI,1,12.2
+Hogsback (Blueberry Mountain),12/2,C,1,45,OSVI,1,11.5
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,11.6
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,6.7
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,1,45,ACSA,1,33.3
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,30.3
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,7.1
+Hogsback (Blueberry Mountain),12/2,C,1,45,FAGR,1,7.2
+Hogsback (Blueberry Mountain),12/2,C,1,5,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,1,5,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,1,5,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,1,5,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,1,5,FAGR,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,1,5,FAGR,1,7.9
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,5.7
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,2,15,ACPE,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,2,15,ACPE,1,8.7
+Hogsback (Blueberry Mountain),12/2,C,2,15,ACPE,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,2,15,ACPE,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,2,15,QURU,1,41.1
+Hogsback (Blueberry Mountain),12/2,C,2,15,QURU,1,42.9
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,12.4
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,16
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,2,15,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,2,25,FAGR,1,17.5
+Hogsback (Blueberry Mountain),12/2,C,2,25,BEAL,1,10.8
+Hogsback (Blueberry Mountain),12/2,C,2,25,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,2,25,FAGR,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,2,25,FAGR,1,9.1
+Hogsback (Blueberry Mountain),12/2,C,2,25,ACPE,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,2,25,FAGR,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,2,25,BEAL,1,5.6
+Hogsback (Blueberry Mountain),12/2,C,2,25,ACPE,1,4.6
+Hogsback (Blueberry Mountain),12/2,C,2,25,ACPE,1,7.4
+Hogsback (Blueberry Mountain),12/2,C,2,25,QURU,1,50.3
+Hogsback (Blueberry Mountain),12/2,C,2,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,2,25,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,2,25,BEAL,1,11
+Hogsback (Blueberry Mountain),12/2,C,2,35,FAGR,1,20.3
+Hogsback (Blueberry Mountain),12/3,C,2,35,FAGR,1,8.3
+Hogsback (Blueberry Mountain),12/4,C,2,35,BEAL,1,4.2
+Hogsback (Blueberry Mountain),12/5,C,2,35,BEAL,1,5
+Hogsback (Blueberry Mountain),12/6,C,2,35,BEAL,1,5.9
+Hogsback (Blueberry Mountain),12/7,C,2,35,BEAL,1,2.9
+Hogsback (Blueberry Mountain),12/8,C,2,35,BEAL,1,5.6
+Hogsback (Blueberry Mountain),12/9,C,2,35,ACSA,1,7.3
+Hogsback (Blueberry Mountain),12/10,C,2,35,ACSA,1,4.4
+Hogsback (Blueberry Mountain),12/11,C,2,35,FAGR,1,13.6
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,10.1
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,9.1
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,7.4
+Hogsback (Blueberry Mountain),12/2,C,2,45,BEAL,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,8.4
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,10.5
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,9.9
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,10.1
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,7
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,7.3
+Hogsback (Blueberry Mountain),12/2,C,2,45,ACPE,1,5
+Hogsback (Blueberry Mountain),12/2,C,2,45,QURU,1,55.2
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,0,10.6
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,0,4.9
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,20.9
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,2,45,ACPE,1,9.7
+Hogsback (Blueberry Mountain),12/2,C,2,45,ACPE,1,10
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,2,45,FAGR,1,3.8
+Hogsback (Blueberry Mountain),12/2,C,2,5,FAGR,1,24.1
+Hogsback (Blueberry Mountain),12/2,C,2,5,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,2,5,FAGR,1,4.8
+Hogsback (Blueberry Mountain),12/2,C,2,5,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,2,5,FAGR,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,3,15,BEAL,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,3,15,BEAL,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,3,15,FAGR,1,5.9
+Hogsback (Blueberry Mountain),12/2,C,3,15,BEAL,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,3,15,FAGR,1,8.7
+Hogsback (Blueberry Mountain),12/2,C,3,15,FAGR,1,2.7
+Hogsback (Blueberry Mountain),12/2,C,3,15,BEAL,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,3,15,BEAL,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,3,15,OSVI,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,3,25,BEAL,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,3,25,BEAL,1,12.8
+Hogsback (Blueberry Mountain),12/2,C,3,25,ACRU,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,4.7
+Hogsback (Blueberry Mountain),12/2,C,3,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,12.4
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,4.4
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,2
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,3,35,QURU,1,43.1
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,3,35,BEAL,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,3
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACPE,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,3,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACRU,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACRU,1,5.1
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACRU,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACRU,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,3,35,ACRU,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,3,45,FAGR,1,20.5
+Hogsback (Blueberry Mountain),12/2,C,3,45,FAGR,1,8.9
+Hogsback (Blueberry Mountain),12/2,C,3,45,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,3,45,FAGR,1,6
+Hogsback (Blueberry Mountain),12/2,C,3,5,FAGR,1,45.3
+Hogsback (Blueberry Mountain),12/2,C,3,5,FAGR,1,22
+Hogsback (Blueberry Mountain),12/2,C,3,5,FAGR,1,10.4
+Hogsback (Blueberry Mountain),12/2,C,3,5,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,3,5,FAGR,1,36.2
+Hogsback (Blueberry Mountain),12/2,C,3,5,FAGR,1,7.9
+Hogsback (Blueberry Mountain),12/2,C,3,5,FAGR,1,6.8
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,3.4
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,7.8
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,7.8
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,4.1
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,3.7
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,4
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,9.8
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,12.7
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,10.7
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,4.6
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,23
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,5.5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,34.4
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,4.2
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,4,15,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,35.8
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,4,25,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,20.2
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,35,QURU,1,39.9
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,9
+Hogsback (Blueberry Mountain),12/2,C,4,35,FAGR,1,14.5
+Hogsback (Blueberry Mountain),12/2,C,4,35,ACPE,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,35,ACPE,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,45,QURU,1,42.5
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,5.1
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,5.3
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,12.5
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,7
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,45,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,6.5
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,9.4
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,4,5,TSCA,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,4,5,TSCA,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,3.6
+Hogsback (Blueberry Mountain),12/2,C,4,5,ACRU,1,43.3
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,28.3
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,4
+Hogsback (Blueberry Mountain),12/2,C,4,5,TSCA,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,16
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,5.9
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,9.3
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,41.4
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,16.1
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,3.6
+Hogsback (Blueberry Mountain),12/2,C,4,5,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,3.7
+Hogsback (Blueberry Mountain),12/2,C,4,55,ACPE,1,4.1
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,5.1
+Hogsback (Blueberry Mountain),12/2,C,4,55,ACPE,1,11.4
+Hogsback (Blueberry Mountain),12/2,C,4,55,ACPE,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,8.8
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,7.9
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,3.8
+Hogsback (Blueberry Mountain),12/2,C,4,55,FAGR,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,0,2.7
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,45.5
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,14.3
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,3.4
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,5.4
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,10.2
+Hogsback (Blueberry Mountain),12/2,C,4,65,FAGR,1,5.7
+Hogsback (Blueberry Mountain),12/2,C,4,75,FAGR,1,18.4
+Hogsback (Blueberry Mountain),12/2,C,4,75,QURU,1,56
+Hogsback (Blueberry Mountain),12/2,C,4,75,FAGR,1,5
+Hogsback (Blueberry Mountain),12/2,C,4,75,FAGR,1,5
+Hogsback (Blueberry Mountain),12/2,C,4,75,ACPE,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,4,75,FAGR,1,9.8
+Hogsback (Blueberry Mountain),12/2,C,4,75,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,75,FAGR,1,3.7
+Hogsback (Blueberry Mountain),12/2,C,4,75,ACRU,1,43.6
+Hogsback (Blueberry Mountain),12/2,C,4,85,FAGR,1,10
+Hogsback (Blueberry Mountain),12/2,C,4,85,FAGR,1,5.2
+Hogsback (Blueberry Mountain),12/2,C,4,85,FAGR,1,3.6
+Hogsback (Blueberry Mountain),12/2,C,4,85,FAGR,1,8.2
+Hogsback (Blueberry Mountain),12/2,C,4,85,FAGR,1,21.8
+Hogsback (Blueberry Mountain),12/2,C,4,85,FAGR,1,8.1
+Hogsback (Blueberry Mountain),12/2,C,4,85,ACPE,1,9.4
+Hogsback (Blueberry Mountain),12/2,C,4,85,ACPE,1,8.6
+Hogsback (Blueberry Mountain),12/2,C,4,85,TSCA,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,4,85,FAGR,1,7.9
+Hogsback (Blueberry Mountain),12/2,C,4,95,QURU,1,55.1
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,13.8
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,8.1
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,7.9
+Hogsback (Blueberry Mountain),12/2,C,4,95,ACPE,1,5.6
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,18.5
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,4.7
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,6.4
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,4.6
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,4.8
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,4.4
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,5.5
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,4,95,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,4,95,ACPE,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,4,95,ACPE,1,2
+Hogsback (Blueberry Mountain),12/2,C,4,95,ACPE,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,105,OSVI,1,10.4
+Hogsback (Blueberry Mountain),12/2,C,5,105,QURU,1,72.2
+Hogsback (Blueberry Mountain),12/2,C,5,105,TIAM,1,3.4
+Hogsback (Blueberry Mountain),12/2,C,5,115,ACSA,1,56.3
+Hogsback (Blueberry Mountain),12/2,C,5,115,OSVI,1,4.8
+Hogsback (Blueberry Mountain),12/2,C,5,115,OSVI,1,6.7
+Hogsback (Blueberry Mountain),12/2,C,5,115,TIAM,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,115,OSVI,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,5,115,OSVI,1,8.9
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACSA,1,42.7
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,125,OSVI,1,5.9
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,3.4
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,6.7
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,3.4
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,3.8
+Hogsback (Blueberry Mountain),12/2,C,5,125,ACPE,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,5,125,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,5,125,OSVI,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,5,125,OSVI,1,8.5
+Hogsback (Blueberry Mountain),12/2,C,5,125,OSVI,1,9.1
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACSP,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,5,135,PRSE,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,5,135,BEAL,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACSA,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,5,135,FRAM,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,5,135,BEAL,1,4.7
+Hogsback (Blueberry Mountain),12/2,C,5,135,BEAL,1,3.7
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,5,135,ACPE,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,1,5.9
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,1,6.9
+Hogsback (Blueberry Mountain),12/2,C,5,145,OSVI,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,0,5
+Hogsback (Blueberry Mountain),12/2,C,5,145,OSVI,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,1,6.9
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,1,3.9
+Hogsback (Blueberry Mountain),12/2,C,5,145,PIRU,1,9
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,145,QURU,1,59
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,21.6
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,3.8
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,6.5
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,145,QURU,1,62
+Hogsback (Blueberry Mountain),12/2,C,5,145,FAGR,1,21.8
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,1,6.4
+Hogsback (Blueberry Mountain),12/2,C,5,145,ACPE,0,3.8
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,4.2
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,3.9
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,16.2
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,5,15,QURU,1,68.5
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,10.6
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,18.4
+Hogsback (Blueberry Mountain),12/2,C,5,15,QURU,1,49.5
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,8.4
+Hogsback (Blueberry Mountain),12/2,C,5,15,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,25,ACRU,1,43.5
+Hogsback (Blueberry Mountain),12/2,C,5,25,FAGR,1,9.1
+Hogsback (Blueberry Mountain),12/2,C,5,25,FAGR,1,11.5
+Hogsback (Blueberry Mountain),12/2,C,5,25,FAGR,1,18.7
+Hogsback (Blueberry Mountain),12/2,C,5,25,FAGR,1,13.3
+Hogsback (Blueberry Mountain),12/2,C,5,25,FAGR,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,5,35,FAGR,1,36.1
+Hogsback (Blueberry Mountain),12/2,C,5,35,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,35,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,35,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,35,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,35,FAGR,1,2.8
+Hogsback (Blueberry Mountain),12/2,C,5,45,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,5,45,FAGR,1,2.4
+Hogsback (Blueberry Mountain),12/2,C,5,45,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,45,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,45,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,45,ACRU,1,55.5
+Hogsback (Blueberry Mountain),12/2,C,5,45,FAGR,1,8.3
+Hogsback (Blueberry Mountain),12/2,C,5,45,BEAL,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,5,45,BEAL,1,3.7
+Hogsback (Blueberry Mountain),12/2,C,5,5,TSCA,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,5,5,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,5,FAGR,1,2.7
+Hogsback (Blueberry Mountain),12/2,C,5,5,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,5,FAGR,1,2.7
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,4.1
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,2.1
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,3.2
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,14.2
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,21.5
+Hogsback (Blueberry Mountain),12/2,C,5,55,FAGR,1,4.4
+Hogsback (Blueberry Mountain),12/2,C,5,65,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,65,ACPE,1,7.1
+Hogsback (Blueberry Mountain),12/2,C,5,75,ACPE,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,5,75,ACRU,1,5.2
+Hogsback (Blueberry Mountain),12/2,C,5,75,ACRU,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,5,75,ACRU,1,3.8
+Hogsback (Blueberry Mountain),12/2,C,5,75,ACRU,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,75,BEAL,1,2.6
+Hogsback (Blueberry Mountain),12/2,C,5,75,BEAL,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,75,ACPE,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,75,BEAL,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,75,BEAL,1,2.9
+Hogsback (Blueberry Mountain),12/2,C,5,75,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,5,75,FAGR,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,5,75,BEAL,1,16.7
+Hogsback (Blueberry Mountain),12/2,C,5,75,BEAL,1,17.3
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,13.5
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,5,85,QURU,1,52.7
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,2.5
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,3
+Hogsback (Blueberry Mountain),12/2,C,5,85,QURU,1,7.5
+Hogsback (Blueberry Mountain),12/2,C,5,85,OSVI,1,8.2
+Hogsback (Blueberry Mountain),12/2,C,5,85,OSVI,1,4.8
+Hogsback (Blueberry Mountain),12/2,C,5,85,QURU,1,49.3
+Hogsback (Blueberry Mountain),12/2,C,5,85,ACSA,1,15.3
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,20.5
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,14.8
+Hogsback (Blueberry Mountain),12/2,C,5,85,FAGR,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,5,95,OSVI,1,8.3
+Hogsback (Blueberry Mountain),12/2,C,5,95,OSVI,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,5,95,PRSE,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,5,95,OSVI,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,6,15,QURU,1,50.5
+Hogsback (Blueberry Mountain),12/2,C,6,15,OSVI,1,16.2
+Hogsback (Blueberry Mountain),12/2,C,6,15,OSVI,1,18.4
+Hogsback (Blueberry Mountain),12/2,C,6,15,ACPE,1,6.1
+Hogsback (Blueberry Mountain),12/2,C,6,15,FAGR,1,4.1
+Hogsback (Blueberry Mountain),12/2,C,6,15,OSVI,1,19.7
+Hogsback (Blueberry Mountain),12/2,C,6,25,OSVI,1,5.5
+Hogsback (Blueberry Mountain),12/2,C,6,25,OSVI,1,16.4
+Hogsback (Blueberry Mountain),12/2,C,6,25,FAGR,1,17.1
+Hogsback (Blueberry Mountain),12/2,C,6,25,QURU,1,45.1
+Hogsback (Blueberry Mountain),12/2,C,6,25,FAGR,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,6,25,OSVI,1,3.1
+Hogsback (Blueberry Mountain),12/2,C,6,25,QURU,1,47.2
+Hogsback (Blueberry Mountain),12/2,C,6,35,ACPE,1,13.2
+Hogsback (Blueberry Mountain),12/2,C,6,35,ACPE,1,4.6
+Hogsback (Blueberry Mountain),12/2,C,6,35,ACPE,1,8.4
+Hogsback (Blueberry Mountain),12/2,C,6,35,FAGR,1,2.3
+Hogsback (Blueberry Mountain),12/2,C,6,35,OSVI,1,14.7
+Hogsback (Blueberry Mountain),12/2,C,6,45,OSVI,1,4.9
+Hogsback (Blueberry Mountain),12/2,C,6,45,ACPE,1,6.8
+Hogsback (Blueberry Mountain),12/2,C,6,45,ACPE,1,15.4
+Hogsback (Blueberry Mountain),12/2,C,6,45,OSVI,1,5.9
+Hogsback (Blueberry Mountain),12/2,C,6,45,OSVI,1,3
+Hogsback (Blueberry Mountain),12/2,C,6,45,OSVI,0,13.2
+Hogsback (Blueberry Mountain),12/2,C,6,45,FAGR,1,8.8
+Hogsback (Blueberry Mountain),12/2,C,6,45,OSVI,1,3.3
+Hogsback (Blueberry Mountain),12/2,C,6,45,ACPE,1,7.2
+Hogsback (Blueberry Mountain),12/2,C,6,45,ACPE,1,6
+Hogsback (Blueberry Mountain),12/2,C,6,45,ACPE,1,10
+Hogsback (Blueberry Mountain),12/2,C,6,45,ACPE,1,13.7
+Hogsback (Blueberry Mountain),12/2,C,6,45,PIRU,1,3.5
+Hogsback (Blueberry Mountain),12/2,C,6,45,OSVI,1,2.2
+Hogsback (Blueberry Mountain),12/2,C,6,45,OSVI,1,6.5
+Hogsback (Blueberry Mountain),12/2,C,6,5,BEAL,1,8.6
+Hogsback (Blueberry Mountain),12/2,C,6,5,FAGR,1,4.3
+Hogsback (Blueberry Mountain),12/2,C,6,5,QURU,1,50.3
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,8.4
+Hogsback (Blueberry Mountain),12/2,C,6,5,FAGR,1,2
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,9.1
+Hogsback (Blueberry Mountain),12/2,C,6,5,PIRU,1,3.8
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,8.7
+Hogsback (Blueberry Mountain),12/2,C,6,5,FAGR,1,7.9
+Hogsback (Blueberry Mountain),12/2,C,6,5,QURU,1,49.9
+Hogsback (Blueberry Mountain),12/2,C,6,5,OSVI,1,3.7
+Hogsback (Blueberry Mountain),12/2,C,6,5,FAGR,1,31.3
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,6.2
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,4
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,5.3
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,1,7.2
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,1,17.2
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,1,4.8
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,0,10.8
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,1,10.9
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,1,4.5
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,5
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,1,7.2
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACSA,1,4
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,6.8
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,9.6
+Hogsback (Blueberry Mountain),12/2,C,6,5,ACPE,1,6.9
+Hogsback (Blueberry Mountain),20/2,B,1,15,BEAL,0,35.8
+Hogsback (Blueberry Mountain),20/2,B,1,15,ACSA,1,29.5
+Hogsback (Blueberry Mountain),20/2,B,1,15,ACRU,0,33.4
+Hogsback (Blueberry Mountain),20/2,B,1,15,PIRU,0,3.5
+Hogsback (Blueberry Mountain),20/2,B,1,25,BEAL,0,12.2
+Hogsback (Blueberry Mountain),20/2,B,1,25,ACRU,1,12.1
+Hogsback (Blueberry Mountain),20/2,B,1,25,PIRU,0,4.5
+Hogsback (Blueberry Mountain),20/2,B,1,25,PIRU,0,3.1
+Hogsback (Blueberry Mountain),20/2,B,1,35,ACRU,1,26
+Hogsback (Blueberry Mountain),20/2,B,1,35,FAGR,1,10.2
+Hogsback (Blueberry Mountain),20/2,B,1,35,PIST,1,10.4
+Hogsback (Blueberry Mountain),20/2,B,1,35,FAGR,1,6.7
+Hogsback (Blueberry Mountain),20/2,B,1,35,ABBA,0,9
+Hogsback (Blueberry Mountain),20/2,B,1,5,ACSA,1,19.6
+Hogsback (Blueberry Mountain),20/2,B,1,5,ABBA,0,9.8
+Hogsback (Blueberry Mountain),20/2,B,1,5,ABBA,0,8.7
+Hogsback (Blueberry Mountain),20/2,B,1,5,ABBA,0,11.2
+Hogsback (Blueberry Mountain),20/2,B,1,5,PIRU,0,4.5
+Hogsback (Blueberry Mountain),20/2,B,1,5,ACRU,0,7
+Hogsback (Blueberry Mountain),20/2,B,1,5,ACRU,1,50.9
+Hogsback (Blueberry Mountain),20/2,B,1,5,ABBA,0,11.7
+Hogsback (Blueberry Mountain),20/2,B,1,5,ACSA,0,2.6
+Hogsback (Blueberry Mountain),20/2,B,1,55,ACSA,1,7
+Hogsback (Blueberry Mountain),20/2,B,1,55,PIST,1,4
+Hogsback (Blueberry Mountain),20/2,B,1,55,ACSA,1,15.6
+Hogsback (Blueberry Mountain),20/2,B,1,55,BEAL,1,6.3
+Hogsback (Blueberry Mountain),20/2,B,1,55,QURU,1,12.5
+Hogsback (Blueberry Mountain),20/2,B,1,55,ACRU,1,27.7
+Hogsback (Blueberry Mountain),20/2,B,1,55,FAGR,1,21
+Hogsback (Blueberry Mountain),20/2,B,1,55,UNK,0,28.9
+Hogsback (Blueberry Mountain),20/2,B,1,55,ACPE,1,2.5
+Hogsback (Blueberry Mountain),20/2,B,1,55,ACPE,1,2
+Hogsback (Blueberry Mountain),20/2,B,1,55,ACPE,1,2
+Hogsback (Blueberry Mountain),20/2,B,1,55,BEAL,1,6.7
+Hogsback (Blueberry Mountain),20/2,B,1,55,BEAL,1,2.7
+Hogsback (Blueberry Mountain),20/2,B,1,65,BEAL,1,6.2
+Hogsback (Blueberry Mountain),20/2,B,1,65,BEAL,0,10.5
+Hogsback (Blueberry Mountain),20/2,B,1,75,BEAL,0,14.2
+Hogsback (Blueberry Mountain),20/2,B,1,75,BEAL,0,6.7
+Hogsback (Blueberry Mountain),20/2,B,1,75,ACSA,0,19.5
+Hogsback (Blueberry Mountain),20/2,B,1,75,ACSA,1,20.9
+Hogsback (Blueberry Mountain),20/2,B,1,75,BEAL,1,10.3
+Hogsback (Blueberry Mountain),20/2,B,1,75,ACSA,1,7.1
+Hogsback (Blueberry Mountain),20/2,B,1,75,BEAL,1,3.6
+Hogsback (Blueberry Mountain),20/2,B,1,85,FRAM,1,15.2
+Hogsback (Blueberry Mountain),20/2,B,1,85,BEAL,1,9.8
+Hogsback (Blueberry Mountain),20/2,B,1,85,BEAL,1,2.2
+Hogsback (Blueberry Mountain),20/2,B,1,85,QURU,1,17.3
+Hogsback (Blueberry Mountain),20/2,B,1,95,QURU,1,60.6
+Hogsback (Blueberry Mountain),20/2,B,1,95,ACRU,0,5.7
+Hogsback (Blueberry Mountain),20/2,B,2,15,BEAL,1,2.3
+Hogsback (Blueberry Mountain),20/2,B,2,15,BEAL,1,2
+Hogsback (Blueberry Mountain),20/2,B,2,15,BEPA,1,2.2
+Hogsback (Blueberry Mountain),20/2,B,2,15,FAGR,1,7.1
+Hogsback (Blueberry Mountain),20/2,B,2,25,QURU,1,41.4
+Hogsback (Blueberry Mountain),20/2,B,2,25,ACSA,1,16.2
+Hogsback (Blueberry Mountain),20/2,B,2,25,FAGR,1,2.3
+Hogsback (Blueberry Mountain),20/2,B,2,25,FAGR,1,2.4
+Hogsback (Blueberry Mountain),20/2,B,2,25,QURU,1,46.2
+Hogsback (Blueberry Mountain),20/2,B,2,35,ACSA,1,29.4
+Hogsback (Blueberry Mountain),20/2,B,2,35,FAGR,0,26.2
+Hogsback (Blueberry Mountain),20/2,B,2,45,FAGR,0,33.1
+Hogsback (Blueberry Mountain),20/2,B,2,45,ACRU,0,21.5
+Hogsback (Blueberry Mountain),20/2,B,2,5,QURU,1,66.9
+Hogsback (Blueberry Mountain),20/2,B,3,25,BEAL,1,2
+Hogsback (Blueberry Mountain),20/2,B,3,25,ACRU,1,30.3
+Hogsback (Blueberry Mountain),20/2,B,3,25,ACRU,1,30.2
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,39.7
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,2.4
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,2.9
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,3
+Hogsback (Blueberry Mountain),20/2,B,3,35,ACRU,1,40.3
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,2.6
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,4.9
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,2.5
+Hogsback (Blueberry Mountain),20/2,B,3,35,FAGR,1,3.9
+Hogsback (Blueberry Mountain),20/2,B,3,35,PIST,1,7.9
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,3.2
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.1
+Hogsback (Blueberry Mountain),20/2,B,3,45,PRPE,1,2.1
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.1
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.8
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,3
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.5
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.1
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.4
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.2
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,2.9
+Hogsback (Blueberry Mountain),20/2,B,3,45,FAGR,1,4.2
+Hogsback (Blueberry Mountain),20/2,B,3,45,PRPE,1,3.1
+Hogsback (Blueberry Mountain),20/2,B,3,45,ACRU,1,29.1
+Hogsback (Blueberry Mountain),20/2,B,3,5,ACSA,0,12.7
+Hogsback (Blueberry Mountain),20/2,B,3,5,ACRU,1,27.9
+Hogsback (Blueberry Mountain),20/2,B,3,5,ACSA,1,12.1
+Hogsback (Blueberry Mountain),20/2,B,3,5,ACRU,1,43
+Hogsback (Blueberry Mountain),20/2,B,3,55,ACRU,1,49.2
+Hogsback (Blueberry Mountain),20/2,B,3,55,ACSA,1,16.5
+Hogsback (Blueberry Mountain),20/2,B,3,55,ACSA,0,14.5
+Hogsback (Blueberry Mountain),20/2,B,3,65,BEAL,1,2.1
+Hogsback (Blueberry Mountain),20/2,B,3,65,BEAL,1,2.2
+Hogsback (Blueberry Mountain),20/2,B,3,65,BEAL,1,2.1
+Hogsback (Blueberry Mountain),20/2,B,3,75,POTR,1,2.4
+Hogsback (Blueberry Mountain),20/2,B,3,75,POTR,1,3.4
+Hogsback (Blueberry Mountain),20/2,B,4,15,QURU,1,37.9
+Hogsback (Blueberry Mountain),20/2,B,4,15,FAGR,0,40.6
+Hogsback (Blueberry Mountain),20/2,B,4,15,FAGR,0,14.9
+Hogsback (Blueberry Mountain),20/2,B,4,15,QURU,1,50
+Hogsback (Blueberry Mountain),20/2,B,4,25,FAGR,0,36.3
+Hogsback (Blueberry Mountain),20/2,B,4,25,FAGR,0,35.4
+Hogsback (Blueberry Mountain),20/2,B,4,25,BEPA,1,3.2
+Hogsback (Blueberry Mountain),20/2,B,4,35,ACRU,0,32.5
+Hogsback (Blueberry Mountain),20/2,B,4,45,QURU,1,55.9
+Hogsback (Blueberry Mountain),20/2,B,4,45,BEPA,1,2.2
+Hogsback (Blueberry Mountain),20/2,B,4,5,QURU,1,44.8
+Hogsback (Blueberry Mountain),20/2,B,4,55,FAGR,1,3.4
+Hogsback (Blueberry Mountain),20/3,B,4,55,FAGR,1,27.6
+Hogsback (Blueberry Mountain),20/4,B,4,55,ACRU,1,36.1
+Hogsback (Blueberry Mountain),20/2,B,4,75,FAGR,0,25.6
+Hogsback (Blueberry Mountain),28/2,B,1,15,QURU,1,39
+Hogsback (Blueberry Mountain),28/2,B,1,15,QURU,1,47.2
+Hogsback (Blueberry Mountain),28/2,B,1,25,QURU,1,38.9
+Hogsback (Blueberry Mountain),28/2,B,1,25,QURU,1,46
+Hogsback (Blueberry Mountain),28/2,B,1,35,ACSA,0,8.8
+Hogsback (Blueberry Mountain),28/2,B,1,45,QURU,1,50.6
+Hogsback (Blueberry Mountain),28/2,B,1,45,QURU,1,58
+Hogsback (Blueberry Mountain),28/2,B,1,45,QURU,1,47.8
+Hogsback (Blueberry Mountain),28/2,B,1,45,QURU,1,49.3
+Hogsback (Blueberry Mountain),28/2,B,1,5,QURU,1,20.4
+Hogsback (Blueberry Mountain),28/2,B,1,5,PIST,1,59.9
+Hogsback (Blueberry Mountain),28/2,B,1,5,UNK,0,7.7
+Hogsback (Blueberry Mountain),28/2,B,1,55,QURU,1,49.5
+Hogsback (Blueberry Mountain),28/2,B,1,65,BEAL,1,3.6
+Hogsback (Blueberry Mountain),28/2,B,1,65,ACRU,0,31.2
+Hogsback (Blueberry Mountain),28/2,B,1,65,QURU,0,37.6
+Hogsback (Blueberry Mountain),28/2,B,1,75,QURU,1,50.4
+Hogsback (Blueberry Mountain),28/2,B,1,75,QURU,0,37.3
+Hogsback (Blueberry Mountain),28/2,B,1,75,QURU,0,49
+Hogsback (Blueberry Mountain),28/2,B,1,85,FAGR,0,19.5
+Hogsback (Blueberry Mountain),28/2,B,2,15,QURU,1,51.8
+Hogsback (Blueberry Mountain),28/2,B,2,15,BEAL,0,7.5
+Hogsback (Blueberry Mountain),28/2,B,2,25,QURU,1,48.3
+Hogsback (Blueberry Mountain),28/2,B,2,35,QURU,1,55.6
+Hogsback (Blueberry Mountain),28/2,B,2,35,QURU,1,49.5
+Hogsback (Blueberry Mountain),28/2,B,2,5,ACRU,0,6.8
+Hogsback (Blueberry Mountain),28/2,B,2,55,QURU,1,47.5
+Hogsback (Blueberry Mountain),28/2,B,2,65,QURU,1,44.9
+Hogsback (Blueberry Mountain),28/2,B,2,75,QURU,1,42.4
+Hogsback (Blueberry Mountain),28/2,B,2,85,QURU,1,39.9
+Hogsback (Blueberry Mountain),28/2,B,2,85,QURU,1,63.8
+Hogsback (Blueberry Mountain),28/2,B,2,85,FAGR,0,18.7
+Hogsback (Blueberry Mountain),28/2,B,2,85,QURU,1,48.4
+Hogsback (Blueberry Mountain),28/2,B,2,85,QURU,1,47.4
+Hogsback (Blueberry Mountain),28/2,B,2,95,QURU,1,51.1
+Hogsback (Blueberry Mountain),28/2,B,2,95,QURU,1,45.2
+Hogsback (Blueberry Mountain),28/2,B,3,15,UNK,0,18.3
+Hogsback (Blueberry Mountain),28/2,B,3,25,ACRU,1,13.1
+Hogsback (Blueberry Mountain),28/2,B,3,45,QURU,1,55.8
+Hogsback (Blueberry Mountain),28/2,B,3,5,ACRU,1,21.7
+Hogsback (Blueberry Mountain),28/2,B,3,5,QURU,1,54.5
+Hogsback (Blueberry Mountain),28/2,B,3,5,ACRU,0,3.9
+Hogsback (Blueberry Mountain),28/2,B,3,5,ACRU,1,11.8
+Hogsback (Blueberry Mountain),28/2,B,3,5,UNK,0,29.3
+Hogsback (Blueberry Mountain),28/2,B,3,5,ACSA,1,10.4
+Hogsback (Blueberry Mountain),28/2,B,3,5,QURU,1,53.3
+Hogsback (Blueberry Mountain),28/2,B,3,65,FAGR,0,14
+Hogsback (Blueberry Mountain),28/2,B,3,65,QURU,1,66.4
+Hogsback (Blueberry Mountain),28/2,B,3,75,QURU,1,45.4
+Hogsback (Blueberry Mountain),28/2,B,3,85,QURU,1,59.6
+Hogsback (Blueberry Mountain),28/2,B,3,85,BEAL,1,4.9
+Hogsback (Blueberry Mountain),28/2,B,3,95,BEAL,1,51.1
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,3
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,3
+Hogsback (Blueberry Mountain),3/1,C,1,15,OSVI,1,17.1
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,1,15,OSVI,1,7.9
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,1,15,OSVI,1,6.3
+Hogsback (Blueberry Mountain),3/1,C,1,15,FAGR,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,1,15,OSVI,1,3.8
+Hogsback (Blueberry Mountain),3/1,C,1,25,OSVI,1,6.4
+Hogsback (Blueberry Mountain),3/1,C,1,25,ACRU,1,41.3
+Hogsback (Blueberry Mountain),3/1,C,1,25,OSVI,1,6.9
+Hogsback (Blueberry Mountain),3/1,C,1,25,OSVI,1,5.9
+Hogsback (Blueberry Mountain),3/1,C,1,25,FAGR,1,3.4
+Hogsback (Blueberry Mountain),3/1,C,1,25,OSVI,1,5.8
+Hogsback (Blueberry Mountain),3/1,C,1,25,OSVI,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,1,25,QURU,1,49.3
+Hogsback (Blueberry Mountain),3/1,C,1,25,QURU,1,44.6
+Hogsback (Blueberry Mountain),3/1,C,1,25,OSVI,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,1,25,ACRU,1,37.9
+Hogsback (Blueberry Mountain),3/1,C,1,25,ACPE,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,25,ACPE,1,4.7
+Hogsback (Blueberry Mountain),3/1,C,1,25,ACPE,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,1,25,BEAL,0,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,25,BEAL,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,1,25,OSVI,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,4.7
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,1,35,ACPE,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,1,35,ACPE,1,7
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,3
+Hogsback (Blueberry Mountain),3/1,C,1,35,OSVI,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,35,ACSA,1,5.1
+Hogsback (Blueberry Mountain),3/1,C,1,35,ACSA,1,43.3
+Hogsback (Blueberry Mountain),3/1,C,1,35,ACPE,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,1,35,ACPE,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,35,FAGR,1,3
+Hogsback (Blueberry Mountain),3/1,C,1,35,FAGR,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,3.4
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,35,FAGR,1,3
+Hogsback (Blueberry Mountain),3/1,C,1,35,FAGR,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,3.8
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,35,BEAL,1,2.2
+Hogsback (Blueberry Mountain),3/1,C,1,35,OSVI,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,1,35,OSVI,1,6.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,8.2
+Hogsback (Blueberry Mountain),3/1,C,1,45,FAGR,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,1,45,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,4
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,ACSA,1,44.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,ACSA,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,4.7
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,5.9
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,5.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,BEAL,1,3.4
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,4
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,5.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,5.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,ACPE,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,3.4
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,7.5
+Hogsback (Blueberry Mountain),3/1,C,1,45,FAGR,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,45,OSVI,1,8.1
+Hogsback (Blueberry Mountain),3/1,C,1,5,ACPE,1,3.6
+Hogsback (Blueberry Mountain),3/1,C,1,5,ACRU,1,13.1
+Hogsback (Blueberry Mountain),3/1,C,1,5,ACSA,1,4.1
+Hogsback (Blueberry Mountain),3/1,C,1,5,BEAL,1,7.1
+Hogsback (Blueberry Mountain),3/1,C,1,5,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,5,OSVI,1,4.3
+Hogsback (Blueberry Mountain),3/1,C,1,5,BEAL,1,2.2
+Hogsback (Blueberry Mountain),3/1,C,1,5,BEAL,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,4.1
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,2.2
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,55,ACSA,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,3.7
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,5.8
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,3.8
+Hogsback (Blueberry Mountain),3/1,C,1,55,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,55,FAGR,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,55,ACPE,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,55,ACSA,1,34.8
+Hogsback (Blueberry Mountain),3/1,C,1,55,BEAL,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,55,ACSA,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,1,55,ACSA,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,1,55,ACSA,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,55,OSVI,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,6.4
+Hogsback (Blueberry Mountain),3/1,C,1,75,ACPE,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,6.9
+Hogsback (Blueberry Mountain),3/1,C,1,75,FAGR,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,75,ACSA,1,17
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,8.7
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,5.4
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,3.6
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,14.5
+Hogsback (Blueberry Mountain),3/1,C,1,75,ACSA,1,21.3
+Hogsback (Blueberry Mountain),3/1,C,1,75,ACSA,1,45.9
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,6
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,7.3
+Hogsback (Blueberry Mountain),3/1,C,1,75,OSVI,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,1,75,ACSA,1,36.5
+Hogsback (Blueberry Mountain),3/1,C,1,75,ACSA,1,17.7
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,1,85,ACPE,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.2
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,1,85,ACRU,1,42.1
+Hogsback (Blueberry Mountain),3/1,C,1,85,FAGR,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,3
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,4.1
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,1,85,OSVI,1,2.2
+Hogsback (Blueberry Mountain),3/1,C,1,95,BEAL,1,16.1
+Hogsback (Blueberry Mountain),3/1,C,1,95,ACSA,1,19.1
+Hogsback (Blueberry Mountain),3/1,C,1,95,ACSA,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,1,95,FAGR,1,3.6
+Hogsback (Blueberry Mountain),3/1,C,1,95,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,1,95,OSVI,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,1,95,OSVI,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,1,95,ACPE,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,1,95,OSVI,1,2
+Hogsback (Blueberry Mountain),3/1,C,1,95,FAGR,1,13.8
+Hogsback (Blueberry Mountain),3/1,C,2,15,FAGR,1,9.8
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,8.6
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,2,15,FAGR,1,26.9
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,9.3
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,5.4
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,9.1
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,10.3
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,4.9
+Hogsback (Blueberry Mountain),3/1,C,2,15,PIRU,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,7.4
+Hogsback (Blueberry Mountain),3/1,C,2,15,PIRU,1,3
+Hogsback (Blueberry Mountain),3/1,C,2,15,OSVI,1,8.1
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,4
+Hogsback (Blueberry Mountain),3/1,C,2,15,PIRU,1,4.3
+Hogsback (Blueberry Mountain),3/1,C,2,15,PIRU,1,7.3
+Hogsback (Blueberry Mountain),3/1,C,2,15,ACPE,1,6
+Hogsback (Blueberry Mountain),3/1,C,2,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,5.4
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,5.7
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,5.1
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,9.9
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACRU,1,8.6
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACRU,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACRU,1,3
+Hogsback (Blueberry Mountain),3/1,C,2,25,QURU,1,58.9
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,8.7
+Hogsback (Blueberry Mountain),3/1,C,2,25,OSVI,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,2,25,OSVI,1,4.3
+Hogsback (Blueberry Mountain),3/1,C,2,25,FAGR,1,14.7
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,2,25,ACPE,1,5.2
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACPE,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,2,35,BEAL,1,11.2
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACRU,1,23.7
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACRU,1,20.9
+Hogsback (Blueberry Mountain),3/1,C,2,35,FAGR,1,4
+Hogsback (Blueberry Mountain),3/1,C,2,35,BEAL,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACPE,1,5.4
+Hogsback (Blueberry Mountain),3/1,C,2,35,BEAL,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACRU,1,3.6
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACRU,1,18
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACRU,1,12.2
+Hogsback (Blueberry Mountain),3/1,C,2,35,OSVI,1,3
+Hogsback (Blueberry Mountain),3/1,C,2,35,OSVI,1,6.9
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACPE,1,7.9
+Hogsback (Blueberry Mountain),3/1,C,2,35,PIRU,1,6.4
+Hogsback (Blueberry Mountain),3/1,C,2,35,ACPE,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,2,35,PIRU,1,5.6
+Hogsback (Blueberry Mountain),3/1,C,2,35,QURU,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,3.7
+Hogsback (Blueberry Mountain),3/1,C,2,45,OSVI,1,3.7
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,9.5
+Hogsback (Blueberry Mountain),3/1,C,2,45,OSVI,1,4
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,0,3.8
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,0,5.4
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,6.5
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,4.6
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,0,5
+Hogsback (Blueberry Mountain),3/1,C,2,45,FAGR,1,6
+Hogsback (Blueberry Mountain),3/1,C,2,45,FAGR,1,19.9
+Hogsback (Blueberry Mountain),3/1,C,2,45,ACPE,1,3.6
+Hogsback (Blueberry Mountain),3/1,C,2,5,TSCA,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,2,5,FAGR,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,2,5,ACPE,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,2,5,ACPE,1,8.6
+Hogsback (Blueberry Mountain),3/1,C,2,5,FAGR,1,9.3
+Hogsback (Blueberry Mountain),3/1,C,2,5,FAGR,1,5
+Hogsback (Blueberry Mountain),3/1,C,2,5,ACPE,1,4.6
+Hogsback (Blueberry Mountain),3/1,C,2,5,ACPE,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,2,5,ACPE,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,2,5,ACPE,1,4.3
+Hogsback (Blueberry Mountain),3/1,C,2,5,TSCA,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,2,55,FAGR,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,2,55,ACPE,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,2,55,ACPE,1,6.6
+Hogsback (Blueberry Mountain),3/1,C,2,55,ACPE,1,11.2
+Hogsback (Blueberry Mountain),3/1,C,2,55,OSVI,1,12.7
+Hogsback (Blueberry Mountain),3/1,C,2,55,ACPE,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,2,55,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,55,ACPE,0,7.4
+Hogsback (Blueberry Mountain),3/1,C,2,65,OSVI,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,2,65,OSVI,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,2,65,OSVI,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,65,QURU,1,50.5
+Hogsback (Blueberry Mountain),3/1,C,2,65,OSVI,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,2,65,OSVI,1,5.3
+Hogsback (Blueberry Mountain),3/1,C,2,65,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,75,QURU,1,53.6
+Hogsback (Blueberry Mountain),3/1,C,2,75,OSVI,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,5.2
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2.2
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,75,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,75,ACPE,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,2,75,OSVI,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,5.1
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,5.3
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,2
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,4.7
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,3
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACSA,1,17.7
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,4.8
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,5
+Hogsback (Blueberry Mountain),3/1,C,2,85,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACSA,1,15
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,6.9
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,4.4
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,8
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,2,85,OSVI,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,2,85,ACPE,1,5.7
+Hogsback (Blueberry Mountain),3/1,C,2,85,QURU,1,58.5
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,2,95,FRAM,1,2.2
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,9.4
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,2,95,ACPE,1,8.3
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,8
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,3.2
+Hogsback (Blueberry Mountain),3/1,C,2,95,QURU,1,68.6
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,5.4
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,2.8
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,7.3
+Hogsback (Blueberry Mountain),3/1,C,2,95,FAGR,1,12.8
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,7.8
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,9.1
+Hogsback (Blueberry Mountain),3/1,C,2,95,OSVI,1,7.8
+Hogsback (Blueberry Mountain),3/1,C,3,15,FAGR,1,7.9
+Hogsback (Blueberry Mountain),3/1,C,3,15,FAGR,0,31.2
+Hogsback (Blueberry Mountain),3/1,C,3,15,FAGR,1,13.4
+Hogsback (Blueberry Mountain),3/1,C,3,15,ACRU,1,25.2
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,7.9
+Hogsback (Blueberry Mountain),3/1,C,3,15,ACPE,1,4
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,3.4
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,7.3
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,3
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,9.7
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,6.3
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,5
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,4.9
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,8.7
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,5.5
+Hogsback (Blueberry Mountain),3/1,C,3,15,BEAL,0,2.9
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,8.8
+Hogsback (Blueberry Mountain),3/1,C,3,15,QURU,1,80.1
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,4
+Hogsback (Blueberry Mountain),3/1,C,3,15,ACPE,1,6.7
+Hogsback (Blueberry Mountain),3/1,C,3,15,ACPE,1,8.3
+Hogsback (Blueberry Mountain),3/1,C,3,15,FAGR,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,6.3
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,3.8
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,3,15,FAGR,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,4.9
+Hogsback (Blueberry Mountain),3/1,C,3,15,OSVI,1,4.6
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,8.2
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,0,5.4
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,8.5
+Hogsback (Blueberry Mountain),3/1,C,3,25,OSVI,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,8.6
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,18
+Hogsback (Blueberry Mountain),3/1,C,3,25,OSVI,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,5.6
+Hogsback (Blueberry Mountain),3/1,C,3,25,OSVI,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,3,25,OSVI,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,3,25,OSVI,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,3,25,FAGR,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,3,35,ACSA,1,59.5
+Hogsback (Blueberry Mountain),3/1,C,3,35,OSVI,1,16.6
+Hogsback (Blueberry Mountain),3/1,C,3,35,OSVI,1,3
+Hogsback (Blueberry Mountain),3/1,C,3,35,FAGR,1,4.4
+Hogsback (Blueberry Mountain),3/1,C,3,35,OSVI,1,3
+Hogsback (Blueberry Mountain),3/1,C,3,35,FAGR,1,4
+Hogsback (Blueberry Mountain),3/1,C,3,35,ACSA,1,16.3
+Hogsback (Blueberry Mountain),3/1,C,3,35,OSVI,1,7.3
+Hogsback (Blueberry Mountain),3/1,C,3,35,OSVI,1,2.6
+Hogsback (Blueberry Mountain),3/1,C,3,35,FAGR,1,3.7
+Hogsback (Blueberry Mountain),3/1,C,3,35,FAGR,1,3.9
+Hogsback (Blueberry Mountain),3/1,C,3,35,OSVI,1,8.1
+Hogsback (Blueberry Mountain),3/1,C,3,35,ACPE,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,3,35,OSVI,1,6
+Hogsback (Blueberry Mountain),3/1,C,3,35,ACPE,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,3,45,BEAL,1,10
+Hogsback (Blueberry Mountain),3/1,C,3,45,ACPE,1,9.4
+Hogsback (Blueberry Mountain),3/1,C,3,45,ACSP,0,5.1
+Hogsback (Blueberry Mountain),3/1,C,3,45,ACSP,0,5.1
+Hogsback (Blueberry Mountain),3/1,C,3,45,ACSP,0,2.3
+Hogsback (Blueberry Mountain),3/1,C,3,45,ACSP,0,4.5
+Hogsback (Blueberry Mountain),3/1,C,3,45,ACSP,0,3.2
+Hogsback (Blueberry Mountain),3/1,C,3,45,BEAL,1,4.1
+Hogsback (Blueberry Mountain),3/1,C,3,45,ACPE,1,9.8
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,0,47.9
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,3,5,ACPE,1,6.3
+Hogsback (Blueberry Mountain),3/1,C,3,5,OSVI,1,5.6
+Hogsback (Blueberry Mountain),3/1,C,3,5,OSVI,1,4.6
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,2
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,9.3
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,2.3
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,2
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,2.1
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,9.9
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,7
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,9.2
+Hogsback (Blueberry Mountain),3/1,C,3,5,FAGR,1,6.9
+Hogsback (Blueberry Mountain),3/1,C,3,55,OSVI,1,6.9
+Hogsback (Blueberry Mountain),3/1,C,3,55,ACPE,1,10.6
+Hogsback (Blueberry Mountain),3/1,C,3,55,ACPE,1,9.1
+Hogsback (Blueberry Mountain),3/1,C,3,55,QURU,1,51.8
+Hogsback (Blueberry Mountain),3/1,C,3,55,QURU,1,55.1
+Hogsback (Blueberry Mountain),3/1,C,3,55,ACPE,1,7.4
+Hogsback (Blueberry Mountain),3/1,C,3,55,ACPE,1,7.4
+Hogsback (Blueberry Mountain),3/1,C,3,55,BEAL,1,23.9
+Hogsback (Blueberry Mountain),3/1,C,3,65,FAGR,0,24.4
+Hogsback (Blueberry Mountain),3/1,C,3,65,POGR,1,45.6
+Hogsback (Blueberry Mountain),3/1,C,3,65,PIRU,1,17.2
+Hogsback (Blueberry Mountain),3/1,C,3,65,ACRU,0,47.8
+Hogsback (Blueberry Mountain),3/1,C,3,65,FAGR,1,4.5
+Hogsback (Blueberry Mountain),3/1,C,3,65,OSVI,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,3,65,ACSA,1,23.2
+Hogsback (Blueberry Mountain),3/1,C,3,65,FAGR,1,3.5
+Hogsback (Blueberry Mountain),3/1,C,3,75,ACPE,1,4.8
+Hogsback (Blueberry Mountain),3/1,C,3,75,ACPE,1,5.5
+Hogsback (Blueberry Mountain),3/1,C,3,75,ACPE,1,2.7
+Hogsback (Blueberry Mountain),3/1,C,3,75,BEAL,1,5.5
+Hogsback (Blueberry Mountain),3/1,C,3,75,FAGR,1,8.9
+Hogsback (Blueberry Mountain),3/1,C,3,75,BEAL,1,18
+Hogsback (Blueberry Mountain),3/1,C,3,75,FAGR,1,5.3
+Hogsback (Blueberry Mountain),3/1,C,3,75,QURU,1,32.2
+Hogsback (Blueberry Mountain),3/1,C,3,75,FAGR,1,2.9
+Hogsback (Blueberry Mountain),3/1,C,3,75,FAGR,1,3
+Hogsback (Blueberry Mountain),3/1,C,3,85,FAGR,0,6.7
+Hogsback (Blueberry Mountain),3/1,C,3,85,FAGR,1,7.2
+Hogsback (Blueberry Mountain),3/1,C,3,85,FAGR,1,6.3
+Hogsback (Blueberry Mountain),3/1,C,3,85,FAGR,1,7.7
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,7.4
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,4.2
+Hogsback (Blueberry Mountain),3/1,C,3,95,PIRU,1,34.7
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,5.7
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,7.3
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,7.5
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,7.7
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,5.8
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,3.3
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,6
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,2.5
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,3.1
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,0,3.2
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,6.2
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,2.4
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,7
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,31.2
+Hogsback (Blueberry Mountain),3/1,C,3,95,FAGR,1,4.7
+Hogsback (Blueberry Mountain),3/1,C,3,95,TSCA,0,7.8
+Stevens Brook (Plummers Ledge),3/16,B,1,105,QURU,1,35.7
+Stevens Brook (Plummers Ledge),3/16,B,1,115,QURU,1,32.8
+Stevens Brook (Plummers Ledge),3/16,B,1,125,PIST,1,62.7
+Stevens Brook (Plummers Ledge),3/16,B,1,125,ACSA,1,15.7
+Stevens Brook (Plummers Ledge),3/16,B,1,135,PIST,1,44.8
+Stevens Brook (Plummers Ledge),3/16,B,1,145,ACSA,1,20.2
+Stevens Brook (Plummers Ledge),3/16,B,1,145,ACRU,1,12.9
+Stevens Brook (Plummers Ledge),3/16,B,1,145,TSCA,1,52.8
+Stevens Brook (Plummers Ledge),3/16,B,1,15,FAGR,1,33.9
+Stevens Brook (Plummers Ledge),3/16,B,1,15,TSCA,1,19.3
+Stevens Brook (Plummers Ledge),3/16,B,1,155,PIST,1,78.2
+Stevens Brook (Plummers Ledge),3/16,B,1,155,QURU,1,76.8
+Stevens Brook (Plummers Ledge),3/16,B,1,155,BEAL,1,19.2
+Stevens Brook (Plummers Ledge),3/16,B,1,155,TSCA,1,12.5
+Stevens Brook (Plummers Ledge),3/16,B,1,155,ACRU,1,13.1
+Stevens Brook (Plummers Ledge),3/16,B,1,155,PIST,0,5.6
+Stevens Brook (Plummers Ledge),3/16,B,1,165,QURU,1,35.4
+Stevens Brook (Plummers Ledge),3/16,B,1,165,ACRU,1,31.9
+Stevens Brook (Plummers Ledge),3/16,B,1,165,QURU,1,29.1
+Stevens Brook (Plummers Ledge),3/16,B,1,185,TSCA,0,21.9
+Stevens Brook (Plummers Ledge),3/16,B,1,185,TSCA,1,33.3
+Stevens Brook (Plummers Ledge),3/16,B,1,185,BEPA,1,28
+Stevens Brook (Plummers Ledge),3/16,B,1,195,QURU,1,69.2
+Stevens Brook (Plummers Ledge),3/16,B,1,195,FAGR,0,3.8
+Stevens Brook (Plummers Ledge),3/16,B,1,195,FAGR,0,2.9
+Stevens Brook (Plummers Ledge),3/16,B,1,195,TSCA,1,38.2
+Stevens Brook (Plummers Ledge),3/16,B,1,205,TSCA,1,21.3
+Stevens Brook (Plummers Ledge),3/16,B,1,215,FAGR,0,14.4
+Stevens Brook (Plummers Ledge),3/16,B,1,215,QURU,1,36.5
+Stevens Brook (Plummers Ledge),3/16,B,1,215,QURU,1,40.9
+Stevens Brook (Plummers Ledge),3/16,B,1,215,QURU,1,51.6
+Stevens Brook (Plummers Ledge),3/16,B,1,215,ACSA,1,15.6
+Stevens Brook (Plummers Ledge),3/16,B,1,225,FAGR,1,17.3
+Stevens Brook (Plummers Ledge),3/16,B,1,225,QURU,1,51.6
+Stevens Brook (Plummers Ledge),3/16,B,1,5,ACRU,1,30.4
+Stevens Brook (Plummers Ledge),3/16,B,1,5,ACRU,1,47.8
+Stevens Brook (Plummers Ledge),3/16,B,1,5,TSCA,1,17.3
+Stevens Brook (Plummers Ledge),3/16,B,1,5,TSCA,0,8.6
+Stevens Brook (Plummers Ledge),3/16,B,2,15,TSCA,1,56.8
+Stevens Brook (Plummers Ledge),3/16,B,2,15,FAGR,0,18.7
+Stevens Brook (Plummers Ledge),3/16,B,2,15,ACRU,1,33.4
+Stevens Brook (Plummers Ledge),3/16,B,2,15,FAGR,1,12.6
+Stevens Brook (Plummers Ledge),3/16,B,2,15,FAGR,1,19.1
+Stevens Brook (Plummers Ledge),3/16,B,2,25,ACRU,1,38
+Stevens Brook (Plummers Ledge),3/16,B,2,25,ACSA,1,8.8
+Stevens Brook (Plummers Ledge),3/16,B,2,25,ACRU,1,23.3
+Stevens Brook (Plummers Ledge),3/16,B,2,25,ACRU,1,29.9
+Stevens Brook (Plummers Ledge),3/16,B,2,35,ACSA,1,14
+Stevens Brook (Plummers Ledge),3/16,B,2,35,FAGR,1,27.9
+Stevens Brook (Plummers Ledge),3/16,B,2,35,FAGR,0,24.3
+Stevens Brook (Plummers Ledge),3/16,B,2,35,ACRU,1,38.5
+Stevens Brook (Plummers Ledge),3/16,B,2,35,ACRU,1,31.1
+Stevens Brook (Plummers Ledge),3/16,B,2,35,FAGR,1,2
+Stevens Brook (Plummers Ledge),3/16,B,2,35,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),3/16,B,2,35,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FRAM,1,34.8
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FRAM,1,32.4
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,4.8
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,11.1
+Stevens Brook (Plummers Ledge),3/16,B,2,45,BEAL,1,31
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),3/16,B,2,45,ACSA,1,10.4
+Stevens Brook (Plummers Ledge),3/16,B,2,45,ACSA,1,10
+Stevens Brook (Plummers Ledge),3/16,B,2,45,ACSA,1,12.8
+Stevens Brook (Plummers Ledge),3/16,B,2,45,ACSA,1,8.1
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FRAM,1,32.2
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,7.5
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,11.7
+Stevens Brook (Plummers Ledge),3/16,B,2,45,FAGR,1,3.4
+Stevens Brook (Plummers Ledge),3/16,B,2,45,BEAL,1,2.6
+Stevens Brook (Plummers Ledge),3/16,B,2,5,FAGR,0,5.3
+Stevens Brook (Plummers Ledge),3/16,B,2,5,FAGR,1,34.4
+Stevens Brook (Plummers Ledge),3/16,B,2,5,FAGR,1,7.2
+Stevens Brook (Plummers Ledge),3/16,B,2,5,FAGR,0,2.6
+Stevens Brook (Plummers Ledge),3/16,B,2,5,FAGR,0,18.4
+Stevens Brook (Plummers Ledge),3/16,B,2,5,FAGR,1,10.2
+Stevens Brook (Plummers Ledge),3/16,B,2,55,FAGR,1,17.5
+Stevens Brook (Plummers Ledge),3/16,B,2,55,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),3/16,B,2,55,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),3/16,B,2,55,ACRU,1,61.2
+Stevens Brook (Plummers Ledge),3/16,B,2,55,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,6.6
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,8.5
+Stevens Brook (Plummers Ledge),3/16,B,2,65,ACSA,1,18.5
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,8.4
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,35.6
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,4
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,7.5
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,12.3
+Stevens Brook (Plummers Ledge),3/16,B,2,65,FAGR,1,5.6
+Stevens Brook (Plummers Ledge),3/16,B,2,75,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),3/16,B,2,75,ACSA,1,18.5
+Stevens Brook (Plummers Ledge),3/16,B,2,75,FAGR,1,6.2
+Stevens Brook (Plummers Ledge),3/16,B,2,75,BEAL,1,20.6
+Stevens Brook (Plummers Ledge),3/16,B,2,75,ACPE,1,5.2
+Stevens Brook (Plummers Ledge),3/16,B,2,75,ACPE,1,4
+Stevens Brook (Plummers Ledge),3/16,B,2,75,FAGR,1,3
+Stevens Brook (Plummers Ledge),3/16,B,2,75,FAGR,1,5.6
+Stevens Brook (Plummers Ledge),3/16,B,2,75,FAGR,1,6.9
+Stevens Brook (Plummers Ledge),3/16,B,2,75,ACSA,1,30.6
+Stevens Brook (Plummers Ledge),3/16,B,2,85,TSCA,1,29
+Stevens Brook (Plummers Ledge),3/16,B,2,85,OSVI,1,19.6
+Stevens Brook (Plummers Ledge),3/16,B,2,85,ACSA,1,16.2
+Stevens Brook (Plummers Ledge),3/16,B,2,85,TSCA,1,41
+Stevens Brook (Plummers Ledge),3/16,B,2,85,TSCA,1,57.4
+Stevens Brook (Plummers Ledge),3/16,B,2,95,TSCA,1,47.9
+Stevens Brook (Plummers Ledge),3/16,B,3,15,ACRU,1,21.1
+Stevens Brook (Plummers Ledge),3/16,B,3,15,TSCA,0,2.8
+Stevens Brook (Plummers Ledge),3/16,B,3,15,TSCA,1,6.4
+Stevens Brook (Plummers Ledge),3/16,B,3,15,ACSA,1,6.2
+Stevens Brook (Plummers Ledge),3/16,B,3,25,ACRU,1,6.9
+Stevens Brook (Plummers Ledge),3/16,B,3,25,QURU,1,50.6
+Stevens Brook (Plummers Ledge),3/16,B,3,25,FAGR,1,5.3
+Stevens Brook (Plummers Ledge),3/16,B,3,25,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),3/16,B,3,25,ACSA,1,18.1
+Stevens Brook (Plummers Ledge),3/16,B,3,25,FAGR,1,3.8
+Stevens Brook (Plummers Ledge),3/16,B,3,25,ACSA,1,16
+Stevens Brook (Plummers Ledge),3/16,B,3,25,PIST,1,64.8
+Stevens Brook (Plummers Ledge),3/16,B,3,25,PIST,1,46.9
+Stevens Brook (Plummers Ledge),3/16,B,3,25,FAGR,1,7.7
+Stevens Brook (Plummers Ledge),3/16,B,1,35,TSCA,1,44.6
+Stevens Brook (Plummers Ledge),3/16,B,3,35,QURU,1,67.5
+Stevens Brook (Plummers Ledge),3/16,B,3,35,TSCA,1,5.6
+Stevens Brook (Plummers Ledge),3/16,B,3,35,TSCA,1,3.9
+Stevens Brook (Plummers Ledge),3/16,B,3,35,ACRU,1,12.8
+Stevens Brook (Plummers Ledge),3/16,B,3,35,FAGR,1,8.4
+Stevens Brook (Plummers Ledge),3/16,B,3,35,ACSA,1,3.4
+Stevens Brook (Plummers Ledge),3/16,B,3,35,TSCA,1,13.6
+Stevens Brook (Plummers Ledge),3/16,B,3,35,BEAL,1,13.5
+Stevens Brook (Plummers Ledge),3/16,B,3,35,QURU,1,40.6
+Stevens Brook (Plummers Ledge),3/16,B,3,35,ACPE,1,7.6
+Stevens Brook (Plummers Ledge),3/16,B,3,35,FAGR,0,5
+Stevens Brook (Plummers Ledge),3/16,B,3,35,FAGR,1,3.4
+Stevens Brook (Plummers Ledge),3/16,B,3,35,ACPE,1,10.9
+Stevens Brook (Plummers Ledge),3/16,B,3,35,FAGR,1,2
+Stevens Brook (Plummers Ledge),3/16,B,3,35,FAGR,1,3.6
+Stevens Brook (Plummers Ledge),3/16,B,3,45,QURU,1,47
+Stevens Brook (Plummers Ledge),3/16,B,3,45,TSCA,1,49.4
+Stevens Brook (Plummers Ledge),3/16,B,3,45,TSCA,1,12.2
+Stevens Brook (Plummers Ledge),3/16,B,3,45,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),3/16,B,3,5,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),3/16,B,3,5,FAGR,1,6.7
+Stevens Brook (Plummers Ledge),3/16,B,3,5,TSCA,1,74.2
+Stevens Brook (Plummers Ledge),3/16,B,3,5,BEAL,1,2.7
+Stevens Brook (Plummers Ledge),3/16,B,3,5,BEAL,1,2.3
+Stevens Brook (Plummers Ledge),3/16,B,3,5,PIRU,1,13.1
+Stevens Brook (Plummers Ledge),3/16,B,3,5,QURU,1,52.4
+Stevens Brook (Plummers Ledge),3/16,B,3,5,TSCA,1,3.7
+Stevens Brook (Plummers Ledge),3/16,B,3,5,TSCA,1,4.7
+Stevens Brook (Plummers Ledge),3/16,B,3,5,TSCA,1,11.1
+Stevens Brook (Plummers Ledge),3/16,B,4,15,FAGR,1,14.8
+Stevens Brook (Plummers Ledge),3/16,B,4,25,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),3/16,B,4,25,OSVI,1,15.1
+Stevens Brook (Plummers Ledge),3/16,B,4,25,TSCA,1,3.4
+Stevens Brook (Plummers Ledge),3/16,B,4,25,ACPE,1,11
+Stevens Brook (Plummers Ledge),3/16,B,4,25,FAGR,1,6.5
+Stevens Brook (Plummers Ledge),3/16,B,4,25,FAGR,1,13.8
+Stevens Brook (Plummers Ledge),3/16,B,4,25,FRAM,1,36.4
+Stevens Brook (Plummers Ledge),3/16,B,4,25,FAGR,1,11.9
+Stevens Brook (Plummers Ledge),3/16,B,4,25,OSVI,1,5
+Stevens Brook (Plummers Ledge),3/16,B,4,35,TSCA,1,11
+Stevens Brook (Plummers Ledge),3/16,B,4,35,ACSA,1,20.9
+Stevens Brook (Plummers Ledge),3/16,B,4,35,OSVI,1,13.5
+Stevens Brook (Plummers Ledge),3/16,B,4,35,FAGR,1,6.9
+Stevens Brook (Plummers Ledge),3/16,B,4,35,OSVI,1,23.1
+Stevens Brook (Plummers Ledge),3/16,B,4,35,ACRU,1,23.1
+Stevens Brook (Plummers Ledge),3/16,B,1,45,ACRU,1,53.9
+Stevens Brook (Plummers Ledge),3/16,B,1,45,ACRU,1,42.9
+Stevens Brook (Plummers Ledge),3/16,B,1,45,ACRU,1,37.5
+Stevens Brook (Plummers Ledge),3/16,B,4,45,FAGR,1,3.6
+Stevens Brook (Plummers Ledge),3/16,B,4,45,FAGR,1,9.9
+Stevens Brook (Plummers Ledge),3/16,B,4,45,QURU,1,67.1
+Stevens Brook (Plummers Ledge),3/16,B,4,45,ACPE,1,8.6
+Stevens Brook (Plummers Ledge),3/16,B,4,45,ACRU,1,16.1
+Stevens Brook (Plummers Ledge),3/16,B,4,45,OSVI,1,2.7
+Stevens Brook (Plummers Ledge),3/16,B,4,45,FAGR,0,11.3
+Stevens Brook (Plummers Ledge),3/16,B,4,45,ACRU,1,29.2
+Stevens Brook (Plummers Ledge),3/16,B,4,45,ACRU,1,17.4
+Stevens Brook (Plummers Ledge),3/16,B,4,45,ACRU,1,11.7
+Stevens Brook (Plummers Ledge),3/16,B,4,45,FAGR,1,10
+Stevens Brook (Plummers Ledge),3/16,B,4,5,PIST,1,63.9
+Stevens Brook (Plummers Ledge),3/16,B,4,5,PIST,1,47.7
+Stevens Brook (Plummers Ledge),3/16,B,4,5,PIST,1,59.6
+Stevens Brook (Plummers Ledge),3/16,B,5,105,QURU,1,25.7
+Stevens Brook (Plummers Ledge),3/16,B,5,105,FAGR,1,23.7
+Stevens Brook (Plummers Ledge),3/16,B,5,115,ACRU,1,80
+Stevens Brook (Plummers Ledge),3/16,B,5,115,FAGR,1,17.9
+Stevens Brook (Plummers Ledge),3/16,B,5,115,ACRU,1,34.9
+Stevens Brook (Plummers Ledge),3/16,B,5,115,FAGR,1,8.7
+Stevens Brook (Plummers Ledge),3/16,B,5,115,TSCA,1,34.7
+Stevens Brook (Plummers Ledge),3/16,B,5,125,FAGR,1,5.7
+Stevens Brook (Plummers Ledge),3/16,B,5,125,FAGR,1,10.7
+Stevens Brook (Plummers Ledge),3/16,B,5,125,ACRU,0,3.5
+Stevens Brook (Plummers Ledge),3/16,B,5,125,FAGR,1,4.6
+Stevens Brook (Plummers Ledge),3/16,B,5,125,TSCA,0,31.4
+Stevens Brook (Plummers Ledge),3/16,B,5,125,FAGR,1,9.6
+Stevens Brook (Plummers Ledge),3/16,B,5,125,QURU,1,55.9
+Stevens Brook (Plummers Ledge),3/16,B,5,135,ACSA,1,31.1
+Stevens Brook (Plummers Ledge),3/16,B,5,135,QURU,1,40.3
+Stevens Brook (Plummers Ledge),3/16,B,5,145,QURU,1,36.2
+Stevens Brook (Plummers Ledge),3/16,B,5,145,QURU,1,70
+Stevens Brook (Plummers Ledge),3/16,B,5,145,QURU,1,51.2
+Stevens Brook (Plummers Ledge),3/16,B,5,145,OSVI,1,3.2
+Stevens Brook (Plummers Ledge),3/16,B,5,145,FAGR,1,7.8
+Stevens Brook (Plummers Ledge),3/16,B,5,145,FRAM,1,5.1
+Stevens Brook (Plummers Ledge),3/16,B,5,145,FRAM,0,2.8
+Stevens Brook (Plummers Ledge),3/16,B,5,15,OSVI,1,10.3
+Stevens Brook (Plummers Ledge),3/16,B,5,15,ACSA,1,16.1
+Stevens Brook (Plummers Ledge),3/16,B,5,15,QURU,1,18
+Stevens Brook (Plummers Ledge),3/16,B,5,15,OSVI,1,7.1
+Stevens Brook (Plummers Ledge),3/16,B,5,15,QURU,1,33.1
+Stevens Brook (Plummers Ledge),3/16,B,5,155,QURU,1,50.6
+Stevens Brook (Plummers Ledge),3/16,B,5,155,FRAM,1,5.5
+Stevens Brook (Plummers Ledge),3/16,B,5,155,HAVI,0,5.1
+Stevens Brook (Plummers Ledge),3/16,B,5,155,HAVI,1,7.8
+Stevens Brook (Plummers Ledge),3/16,B,5,155,HAVI,1,2.6
+Stevens Brook (Plummers Ledge),3/16,B,5,165,QURU,1,33.8
+Stevens Brook (Plummers Ledge),3/16,B,5,165,PIRU,1,9.7
+Stevens Brook (Plummers Ledge),3/16,B,5,165,ACSA,1,9
+Stevens Brook (Plummers Ledge),3/16,B,5,165,ACSA,1,8.3
+Stevens Brook (Plummers Ledge),3/16,B,5,165,ACSA,1,9.7
+Stevens Brook (Plummers Ledge),3/16,B,5,165,TSCA,1,19.9
+Stevens Brook (Plummers Ledge),3/16,B,5,165,ACRU,1,21.2
+Stevens Brook (Plummers Ledge),3/16,B,5,165,QURU,1,40
+Stevens Brook (Plummers Ledge),3/16,B,5,175,QURU,1,56.8
+Stevens Brook (Plummers Ledge),3/16,B,5,175,QURU,1,54.8
+Stevens Brook (Plummers Ledge),3/16,B,5,175,ACRU,1,17.1
+Stevens Brook (Plummers Ledge),3/16,B,5,175,FAGR,1,8.1
+Stevens Brook (Plummers Ledge),3/16,B,5,175,FAGR,1,5
+Stevens Brook (Plummers Ledge),3/16,B,5,175,FAGR,1,14.3
+Stevens Brook (Plummers Ledge),3/16,B,5,175,FAGR,1,5.9
+Stevens Brook (Plummers Ledge),3/16,B,5,175,TSCA,1,3.3
+Stevens Brook (Plummers Ledge),3/16,B,5,185,OSVI,1,35
+Stevens Brook (Plummers Ledge),3/16,B,5,185,FAGR,1,11.8
+Stevens Brook (Plummers Ledge),3/16,B,5,185,FAGR,1,6.3
+Stevens Brook (Plummers Ledge),3/16,B,5,185,FAGR,1,6.2
+Stevens Brook (Plummers Ledge),3/16,B,5,185,FAGR,0,3.5
+Stevens Brook (Plummers Ledge),3/16,B,5,185,BEAL,1,36.8
+Stevens Brook (Plummers Ledge),3/16,B,5,185,TSCA,1,17.6
+Stevens Brook (Plummers Ledge),3/16,B,5,195,QURU,1,28.2
+Stevens Brook (Plummers Ledge),3/16,B,5,195,QURU,1,40.1
+Stevens Brook (Plummers Ledge),3/16,B,5,195,FAGR,1,16.7
+Stevens Brook (Plummers Ledge),3/16,B,5,195,PIRU,1,9.7
+Stevens Brook (Plummers Ledge),3/16,B,5,195,FAGR,1,5.4
+Stevens Brook (Plummers Ledge),3/16,B,5,195,TSCA,1,5.8
+Stevens Brook (Plummers Ledge),3/16,B,5,195,FAGR,0,4.1
+Stevens Brook (Plummers Ledge),3/16,B,5,195,TSCA,0,2.2
+Stevens Brook (Plummers Ledge),3/16,B,5,195,UNK,0,4.5
+Stevens Brook (Plummers Ledge),3/16,B,5,195,FAGR,1,7.1
+Stevens Brook (Plummers Ledge),3/16,B,5,195,ACSA,1,7.6
+Stevens Brook (Plummers Ledge),3/16,B,5,205,PIST,1,56.2
+Stevens Brook (Plummers Ledge),3/16,B,5,205,QURU,1,39.1
+Stevens Brook (Plummers Ledge),3/16,B,5,205,TSCA,1,5
+Stevens Brook (Plummers Ledge),3/16,B,5,205,QURU,1,36.3
+Stevens Brook (Plummers Ledge),3/16,B,5,205,ACRU,1,12.6
+Stevens Brook (Plummers Ledge),3/16,B,5,205,TSCA,1,12.8
+Stevens Brook (Plummers Ledge),3/16,B,5,205,ACSA,1,5
+Stevens Brook (Plummers Ledge),3/16,B,5,215,ACSA,1,13
+Stevens Brook (Plummers Ledge),3/16,B,5,215,TSCA,0,4
+Stevens Brook (Plummers Ledge),3/16,B,5,215,FAGR,1,17.3
+Stevens Brook (Plummers Ledge),3/16,B,5,215,FAGR,1,18.5
+Stevens Brook (Plummers Ledge),3/16,B,5,215,FAGR,1,11.9
+Stevens Brook (Plummers Ledge),3/16,B,5,225,ACRU,1,51.6
+Stevens Brook (Plummers Ledge),3/16,B,5,225,FAGR,0,11.1
+Stevens Brook (Plummers Ledge),3/16,B,5,225,FAGR,1,11.7
+Stevens Brook (Plummers Ledge),3/16,B,5,225,ACSA,1,12.9
+Stevens Brook (Plummers Ledge),3/16,B,5,225,ACSA,1,10.7
+Stevens Brook (Plummers Ledge),3/16,B,5,225,ACSA,1,11.8
+Stevens Brook (Plummers Ledge),3/16,B,5,225,FAGR,1,6.7
+Stevens Brook (Plummers Ledge),3/16,B,5,25,PIST,1,59.3
+Stevens Brook (Plummers Ledge),3/16,B,5,25,FAGR,0,5.3
+Stevens Brook (Plummers Ledge),3/16,B,5,25,OSVI,0,17.3
+Stevens Brook (Plummers Ledge),3/16,B,5,35,OSVI,1,21.5
+Stevens Brook (Plummers Ledge),3/16,B,5,35,TSCA,1,46.8
+Stevens Brook (Plummers Ledge),3/16,B,5,45,UNK,0,17.2
+Stevens Brook (Plummers Ledge),3/16,B,5,45,QURU,1,62.6
+Stevens Brook (Plummers Ledge),3/16,B,5,5,QURU,1,32.7
+Stevens Brook (Plummers Ledge),3/16,B,5,5,ACSA,1,5.6
+Stevens Brook (Plummers Ledge),3/16,B,5,5,ACRU,1,10.7
+Stevens Brook (Plummers Ledge),3/16,B,5,5,QURU,1,52.4
+Stevens Brook (Plummers Ledge),3/16,B,5,5,FAGR,1,10
+Stevens Brook (Plummers Ledge),3/16,B,5,5,ACRU,1,8.6
+Stevens Brook (Plummers Ledge),3/16,B,5,5,ACRU,0,7.7
+Stevens Brook (Plummers Ledge),3/16,B,1,55,TSCA,1,44.9
+Stevens Brook (Plummers Ledge),3/16,B,1,55,TSCA,1,15.2
+Stevens Brook (Plummers Ledge),3/16,B,5,55,PIST,0,14.9
+Stevens Brook (Plummers Ledge),3/16,B,5,55,PIST,0,28.2
+Stevens Brook (Plummers Ledge),3/16,B,5,55,PIST,1,65.4
+Stevens Brook (Plummers Ledge),3/16,B,5,65,OSVI,0,11.2
+Stevens Brook (Plummers Ledge),3/16,B,5,65,QURU,1,57.9
+Stevens Brook (Plummers Ledge),3/16,B,5,75,ACRU,1,15.2
+Stevens Brook (Plummers Ledge),3/16,B,5,75,ACRU,1,17.3
+Stevens Brook (Plummers Ledge),3/16,B,5,75,TSCA,1,6
+Stevens Brook (Plummers Ledge),3/16,B,5,85,FAGR,1,7.8
+Stevens Brook (Plummers Ledge),3/16,B,5,85,ACPE,1,2.8
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,5.4
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,4.6
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,3.4
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,2.1
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,13.8
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,11.2
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,10.5
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,7.8
+Stevens Brook (Plummers Ledge),3/16,B,5,85,TSCA,1,6
+Stevens Brook (Plummers Ledge),3/16,B,5,85,QURU,1,49.4
+Stevens Brook (Plummers Ledge),3/16,B,5,85,QURU,1,19.8
+Stevens Brook (Plummers Ledge),3/16,B,5,85,FAGR,1,9.2
+Stevens Brook (Plummers Ledge),3/16,B,5,85,ACRU,1,16.9
+Stevens Brook (Plummers Ledge),3/16,B,5,85,FAGR,0,3.2
+Stevens Brook (Plummers Ledge),3/16,B,5,95,FAGR,1,18
+Stevens Brook (Plummers Ledge),3/16,B,5,95,FAGR,1,16.2
+Stevens Brook (Plummers Ledge),3/16,B,5,95,FAGR,1,17.1
+Stevens Brook (Plummers Ledge),3/16,B,5,95,ACSA,1,18.5
+Stevens Brook (Plummers Ledge),3/16,B,5,95,QURU,1,51.4
+Stevens Brook (Plummers Ledge),3/16,B,5,95,FAGR,1,4.3
+Stevens Brook (Plummers Ledge),3/16,B,5,95,FAGR,1,6.3
+Stevens Brook (Plummers Ledge),3/16,B,5,95,FAGR,1,15.2
+Stevens Brook (Plummers Ledge),3/16,B,5,95,FAGR,0,3.3
+Stevens Brook (Plummers Ledge),3/16,B,1,65,TSCA,1,32.5
+Stevens Brook (Plummers Ledge),3/16,B,1,65,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),3/16,B,1,65,TSCA,1,35.5
+Stevens Brook (Plummers Ledge),3/16,B,1,65,TSCA,1,31.1
+Stevens Brook (Plummers Ledge),3/16,B,1,75,BEAL,1,46.9
+Stevens Brook (Plummers Ledge),3/16,B,1,75,ACSA,1,33.2
+Stevens Brook (Plummers Ledge),3/16,B,1,85,TSCA,1,13.6
+Stevens Brook (Plummers Ledge),3/16,B,1,85,TSCA,1,47.3
+Stevens Brook (Plummers Ledge),3/16,B,1,85,TSCA,0,6.7
+Stevens Brook (Plummers Ledge),3/16,B,1,95,TSCA,1,34.5
+Stevens Brook (Plummers Ledge),3/16,B,1,95,TSCA,1,28.4
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,4.7
+Stevens Brook (Plummers Ledge),5/15,C,1,105,QURU,1,39.4
+Stevens Brook (Plummers Ledge),5/15,C,1,105,QURU,1,11.1
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,18.7
+Stevens Brook (Plummers Ledge),5/15,C,1,105,ACRU,1,28.3
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,13.5
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,105,ACRU,1,27.9
+Stevens Brook (Plummers Ledge),5/15,C,1,105,ACRU,0,9
+Stevens Brook (Plummers Ledge),5/15,C,1,105,ACRU,0,11.2
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,3.4
+Stevens Brook (Plummers Ledge),5/15,C,1,105,QURU,1,31.2
+Stevens Brook (Plummers Ledge),5/15,C,1,105,QURU,1,35.3
+Stevens Brook (Plummers Ledge),5/15,C,1,105,FAGR,1,5
+Stevens Brook (Plummers Ledge),5/15,C,1,105,ACPE,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,4.2
+Stevens Brook (Plummers Ledge),5/15,C,1,115,QURU,1,38.7
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,115,BEAL,1,17.8
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,9.7
+Stevens Brook (Plummers Ledge),5/15,C,1,115,FAGR,1,24.6
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,4.6
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,125,ACRU,1,52.3
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,4.5
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,1,125,BEAL,1,22.5
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,7.9
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,9.9
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,5.3
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,125,BEAL,1,20.5
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,5.9
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,125,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,135,FAGR,1,19.5
+Stevens Brook (Plummers Ledge),5/15,C,1,135,ACRU,1,29.5
+Stevens Brook (Plummers Ledge),5/15,C,1,135,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,135,FAGR,0,12.4
+Stevens Brook (Plummers Ledge),5/15,C,1,135,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,135,FRAM,1,5.5
+Stevens Brook (Plummers Ledge),5/15,C,1,135,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,135,ACRU,1,28.1
+Stevens Brook (Plummers Ledge),5/15,C,1,135,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,1,145,FAGR,1,8
+Stevens Brook (Plummers Ledge),5/15,C,1,145,QURU,1,25.9
+Stevens Brook (Plummers Ledge),5/15,C,1,145,FAGR,1,8.7
+Stevens Brook (Plummers Ledge),5/15,C,1,145,FAGR,1,5.2
+Stevens Brook (Plummers Ledge),5/15,C,1,145,FAGR,1,10.5
+Stevens Brook (Plummers Ledge),5/15,C,1,145,PIRU,1,21.5
+Stevens Brook (Plummers Ledge),5/15,C,1,145,FAGR,1,4.9
+Stevens Brook (Plummers Ledge),5/15,C,1,145,QURU,1,49.5
+Stevens Brook (Plummers Ledge),5/15,C,1,145,FAGR,1,16.5
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,15,QURU,1,28.5
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,15,PIST,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,15,PIST,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,15,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,6.4
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,4.1
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,1,155,QURU,1,39.8
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,4.7
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,155,ACPE,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,1,155,ACPE,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,155,ACPE,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,155,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,165,PIST,1,52.6
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,12.2
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,4.5
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,13.7
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,3.8
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,3.6
+Stevens Brook (Plummers Ledge),5/15,C,1,165,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,10
+Stevens Brook (Plummers Ledge),5/15,C,1,175,QURU,1,20.4
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,0,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,175,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,10
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,6.7
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,6.2
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,14.5
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,6.1
+Stevens Brook (Plummers Ledge),5/15,C,1,185,PIST,1,39.8
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,6.8
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,7.4
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,16.1
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,3.8
+Stevens Brook (Plummers Ledge),5/15,C,1,185,ACPE,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,1,185,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,10.8
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,7.8
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,1,195,BEAL,1,8.7
+Stevens Brook (Plummers Ledge),5/15,C,1,195,QURU,1,61.4
+Stevens Brook (Plummers Ledge),5/15,C,1,195,QURU,1,39.7
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,1,195,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,1,25,PIST,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,25,PIST,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,25,BEAL,1,5.5
+Stevens Brook (Plummers Ledge),5/15,C,1,25,QURU,1,44.6
+Stevens Brook (Plummers Ledge),5/15,C,1,25,PIST,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,25,ACSA,1,16.2
+Stevens Brook (Plummers Ledge),5/15,C,1,25,ABBA,1,5.2
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,25,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,35,QURU,1,29.8
+Stevens Brook (Plummers Ledge),5/15,C,1,35,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,35,PIST,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,35,QURU,1,20.3
+Stevens Brook (Plummers Ledge),5/15,C,1,35,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,35,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,35,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,35,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,35,ABBA,1,5
+Stevens Brook (Plummers Ledge),5/15,C,1,35,ABBA,1,13.7
+Stevens Brook (Plummers Ledge),5/15,C,1,35,QURU,1,52.2
+Stevens Brook (Plummers Ledge),5/15,C,1,45,ACRU,1,44.6
+Stevens Brook (Plummers Ledge),5/15,C,1,45,ABBA,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,1,45,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,1,45,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,1,45,BEAL,1,10.4
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,5,QURU,1,53.9
+Stevens Brook (Plummers Ledge),5/15,C,1,5,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,1,55,QURU,1,56.5
+Stevens Brook (Plummers Ledge),5/15,C,1,55,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,55,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,55,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,55,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,65,ACRU,1,23.5
+Stevens Brook (Plummers Ledge),5/15,C,1,65,ACRU,1,31.8
+Stevens Brook (Plummers Ledge),5/15,C,1,65,ACRU,1,23.8
+Stevens Brook (Plummers Ledge),5/15,C,1,65,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,1,65,FAGR,1,16.4
+Stevens Brook (Plummers Ledge),5/15,C,1,65,QURU,1,55.6
+Stevens Brook (Plummers Ledge),5/15,C,1,75,FAGR,1,17.7
+Stevens Brook (Plummers Ledge),5/15,C,1,75,FAGR,1,12.4
+Stevens Brook (Plummers Ledge),5/15,C,1,75,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,75,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,1,75,FAGR,1,9.8
+Stevens Brook (Plummers Ledge),5/15,C,1,75,FAGR,1,11.5
+Stevens Brook (Plummers Ledge),5/15,C,1,75,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,1,75,ACRU,1,16.3
+Stevens Brook (Plummers Ledge),5/15,C,1,75,ACRU,1,9.2
+Stevens Brook (Plummers Ledge),5/15,C,1,75,ABBA,1,5.2
+Stevens Brook (Plummers Ledge),5/15,C,1,75,ABBA,1,6.2
+Stevens Brook (Plummers Ledge),5/15,C,1,75,ACRU,1,8.6
+Stevens Brook (Plummers Ledge),5/15,C,1,85,ACRU,1,16.5
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,7.2
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,1,85,QURU,1,31.3
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,10
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,5.3
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,3.8
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,4.8
+Stevens Brook (Plummers Ledge),5/15,C,1,85,HAVI,1,4
+Stevens Brook (Plummers Ledge),5/15,C,1,85,HAVI,1,4.2
+Stevens Brook (Plummers Ledge),5/15,C,1,85,HAVI,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,1,85,HAVI,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,1,85,FAGR,1,6.2
+Stevens Brook (Plummers Ledge),5/15,C,1,95,QURU,1,51.2
+Stevens Brook (Plummers Ledge),5/15,C,1,95,QURU,1,41.3
+Stevens Brook (Plummers Ledge),5/15,C,1,95,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,1,95,FAGR,1,6.9
+Stevens Brook (Plummers Ledge),5/15,C,1,95,FAGR,1,4.6
+Stevens Brook (Plummers Ledge),5/15,C,1,95,FAGR,1,7.9
+Stevens Brook (Plummers Ledge),5/15,C,1,95,FAGR,1,5.6
+Stevens Brook (Plummers Ledge),5/15,C,1,95,FAGR,1,7.2
+Stevens Brook (Plummers Ledge),5/15,C,1,95,FAGR,1,4
+Stevens Brook (Plummers Ledge),5/15,C,2,15,FRAM,1,3.6
+Stevens Brook (Plummers Ledge),5/15,C,2,15,ACPE,1,4.9
+Stevens Brook (Plummers Ledge),5/15,C,2,15,ACPE,1,3.8
+Stevens Brook (Plummers Ledge),5/15,C,2,15,BEAL,0,27.7
+Stevens Brook (Plummers Ledge),5/15,C,2,15,BEAL,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,2,15,BEAL,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,2,15,FAGR,1,6
+Stevens Brook (Plummers Ledge),5/15,C,2,15,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,4.7
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,4.4
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,2,25,TSCA,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,4.2
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FRAM,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FRAM,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,25,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,2,25,ACPE,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,3
+Stevens Brook (Plummers Ledge),5/15,C,2,25,PIST,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,2,25,TSCA,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,2,35,PIST,1,2
+Stevens Brook (Plummers Ledge),5/15,C,2,35,PIST,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,2,35,FAGR,1,4.1
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACPE,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,2,35,FRAM,1,20.4
+Stevens Brook (Plummers Ledge),5/15,C,2,35,HAVI,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,35,PIST,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACPE,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACPE,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACPE,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACPE,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACRU,1,3.4
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACRU,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,2,35,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,2,35,ACPE,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,35,HAVI,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,2,35,HAVI,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,2,35,HAVI,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,2,35,HAVI,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,2,45,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,2,45,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,2,45,ACPE,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,2,45,PIST,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,2,45,HAVI,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,2,45,HAVI,1,3.4
+Stevens Brook (Plummers Ledge),5/15,C,2,45,ACPE,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,2,45,HAVI,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,45,HAVI,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,45,ACRU,1,5.9
+Stevens Brook (Plummers Ledge),5/15,C,2,45,ACRU,1,7.9
+Stevens Brook (Plummers Ledge),5/15,C,2,45,ACRU,1,6.2
+Stevens Brook (Plummers Ledge),5/15,C,2,45,ACRU,1,4.6
+Stevens Brook (Plummers Ledge),5/15,C,2,45,ACRU,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,2,45,HAVI,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,2,5,PIST,1,73.4
+Stevens Brook (Plummers Ledge),5/15,C,2,5,PIRU,1,10.5
+Stevens Brook (Plummers Ledge),5/15,C,2,5,QURU,1,54.7
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,2,50,HAVI,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,2,50,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,2,60,ACRU,1,25.4
+Stevens Brook (Plummers Ledge),5/15,C,2,60,ACRU,1,22.3
+Stevens Brook (Plummers Ledge),5/15,C,2,60,QURU,1,26.7
+Stevens Brook (Plummers Ledge),5/15,C,2,60,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,2,60,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,2,70,POTR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,2,70,HAVI,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,70,ACRU,1,4.2
+Stevens Brook (Plummers Ledge),5/15,C,2,70,FRAM,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,2,70,ACRU,1,30.6
+Stevens Brook (Plummers Ledge),5/15,C,2,70,HAVI,1,2
+Stevens Brook (Plummers Ledge),5/15,C,2,70,HAVI,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,2,70,HAVI,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,2,70,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,2,70,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,3,15,QURU,1,48.3
+Stevens Brook (Plummers Ledge),5/15,C,3,15,ACPE,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,15,ACPE,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,5.9
+Stevens Brook (Plummers Ledge),5/15,C,3,15,QURU,1,40.3
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,3,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,15,ACPE,1,3
+Stevens Brook (Plummers Ledge),5/15,C,3,15,ACPE,1,3
+Stevens Brook (Plummers Ledge),5/15,C,3,15,ACPE,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,3,15,ACPE,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,3,25,ACPE,1,5.8
+Stevens Brook (Plummers Ledge),5/15,C,3,25,PIST,1,45.7
+Stevens Brook (Plummers Ledge),5/15,C,3,25,FAGR,1,3.8
+Stevens Brook (Plummers Ledge),5/15,C,3,25,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,3,25,QURU,1,16.1
+Stevens Brook (Plummers Ledge),5/15,C,3,25,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,3,25,ACPE,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,3,25,PIRU,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,25,FAGR,1,4.6
+Stevens Brook (Plummers Ledge),5/15,C,3,25,QURU,1,19.9
+Stevens Brook (Plummers Ledge),5/15,C,3,25,QURU,1,28.4
+Stevens Brook (Plummers Ledge),5/15,C,3,25,ACRU,1,11
+Stevens Brook (Plummers Ledge),5/15,C,3,25,QURU,1,31.3
+Stevens Brook (Plummers Ledge),5/15,C,3,25,FAGR,1,17.3
+Stevens Brook (Plummers Ledge),5/15,C,3,25,QURU,1,33.4
+Stevens Brook (Plummers Ledge),5/15,C,3,25,FAGR,0,5
+Stevens Brook (Plummers Ledge),5/15,C,3,35,FAGR,1,18
+Stevens Brook (Plummers Ledge),5/15,C,3,35,UNK,0,12.3
+Stevens Brook (Plummers Ledge),5/15,C,3,35,PIST,1,26.5
+Stevens Brook (Plummers Ledge),5/15,C,3,35,FAGR,1,6.5
+Stevens Brook (Plummers Ledge),5/15,C,3,35,TSCA,1,34.3
+Stevens Brook (Plummers Ledge),5/15,C,3,35,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,35,FAGR,1,10
+Stevens Brook (Plummers Ledge),5/15,C,3,35,FAGR,1,8.4
+Stevens Brook (Plummers Ledge),5/15,C,3,35,FAGR,1,8
+Stevens Brook (Plummers Ledge),5/15,C,3,35,OSVI,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,3,35,QURU,1,54.4
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,8.1
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,18.9
+Stevens Brook (Plummers Ledge),5/15,C,3,45,QURU,1,34.9
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,13.6
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,9.8
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,9.4
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,5.5
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,4.1
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,3.6
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,33.7
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,4.6
+Stevens Brook (Plummers Ledge),5/15,C,3,45,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,3,5,FAGR,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,3,5,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,3,5,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,3,5,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,3,5,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,3,5,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,3,5,QURU,1,24.4
+Stevens Brook (Plummers Ledge),5/15,C,3,5,ACRU,1,13
+Stevens Brook (Plummers Ledge),5/15,C,3,5,ACRU,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,3,5,ACRU,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,3,5,FAGR,1,19.6
+Stevens Brook (Plummers Ledge),5/15,C,3,5,QURU,1,44.3
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,30.5
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,3.6
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,4.2
+Stevens Brook (Plummers Ledge),5/15,C,3,55,BEPO,1,26.2
+Stevens Brook (Plummers Ledge),5/15,C,3,55,ACPE,1,6.8
+Stevens Brook (Plummers Ledge),5/15,C,3,55,PIRU,1,8
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,5.5
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,5.8
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,4.8
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,4.7
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,12
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,10
+Stevens Brook (Plummers Ledge),5/15,C,3,55,QURU,1,41.9
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,14
+Stevens Brook (Plummers Ledge),5/15,C,3,55,FAGR,1,15
+Stevens Brook (Plummers Ledge),5/15,C,3,55,ACPE,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,10.9
+Stevens Brook (Plummers Ledge),5/15,C,3,65,ACPE,1,12.3
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,5.2
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,3,65,ACPE,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,11.7
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,4.7
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,8.6
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,0,2.2
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,3.6
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,4.2
+Stevens Brook (Plummers Ledge),5/15,C,3,65,QURU,1,13.6
+Stevens Brook (Plummers Ledge),5/15,C,3,65,ACPE,1,3
+Stevens Brook (Plummers Ledge),5/15,C,3,65,ACPE,1,4.1
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,9.3
+Stevens Brook (Plummers Ledge),5/15,C,3,65,ACPE,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,4.4
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,3,65,QURU,1,49.8
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,4.5
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,15.4
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,9.9
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,4.2
+Stevens Brook (Plummers Ledge),5/15,C,3,65,FAGR,1,4.4
+Stevens Brook (Plummers Ledge),5/15,C,3,75,PIST,1,50.3
+Stevens Brook (Plummers Ledge),5/15,C,3,75,ACPE,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,6.3
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,13.6
+Stevens Brook (Plummers Ledge),5/15,C,3,75,OSVI,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,3,75,ACPE,1,3.6
+Stevens Brook (Plummers Ledge),5/15,C,3,75,ACPE,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,3,75,FAGR,1,4.3
+Stevens Brook (Plummers Ledge),5/15,C,3,75,ACPE,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,3,75,ACPE,1,2
+Stevens Brook (Plummers Ledge),5/15,C,3,75,ACPE,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,15,QURU,1,30.2
+Stevens Brook (Plummers Ledge),5/15,C,4,15,QURU,1,30.4
+Stevens Brook (Plummers Ledge),5/15,C,4,15,ACSA,1,11
+Stevens Brook (Plummers Ledge),5/15,C,4,15,PIST,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,4,15,QURU,1,32.4
+Stevens Brook (Plummers Ledge),5/15,C,4,15,FRAM,1,4.9
+Stevens Brook (Plummers Ledge),5/15,C,4,25,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,25,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,4,25,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,25,QURU,1,27.7
+Stevens Brook (Plummers Ledge),5/15,C,4,25,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,25,ACRU,1,41.4
+Stevens Brook (Plummers Ledge),5/15,C,4,25,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,35,QURU,1,41.3
+Stevens Brook (Plummers Ledge),5/15,C,4,35,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,4,35,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,4,35,QURU,1,44.2
+Stevens Brook (Plummers Ledge),5/15,C,4,35,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,35,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,4,35,PIST,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,4,35,PIST,1,61.2
+Stevens Brook (Plummers Ledge),5/15,C,4,45,ACRU,1,22.7
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,4,45,ACRU,1,30.8
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,4,45,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,4,5,PIST,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,5,PIST,1,5
+Stevens Brook (Plummers Ledge),5/15,C,4,5,PIST,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,5,PIST,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,4,5,QURU,1,51.6
+Stevens Brook (Plummers Ledge),5/15,C,4,5,BEAL,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,4,5,PIST,1,2.1
+Stevens Brook (Plummers Ledge),5/15,C,4,5,PIST,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,4,5,QURU,1,39.6
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,4,5,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,5,15,QURU,1,45.7
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,4.7
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,3.8
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.3
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.6
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,4
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,5,15,QURU,1,41.8
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,17.5
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,6.4
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.5
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,2.8
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,3.1
+Stevens Brook (Plummers Ledge),5/15,C,5,15,FAGR,1,6.2
+Stevens Brook (Plummers Ledge),5/15,C,5,25,ACRU,1,15.5
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,4.4
+Stevens Brook (Plummers Ledge),5/15,C,5,25,QURU,1,47
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,9.8
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,6.8
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,7.8
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,5,25,ACRU,1,5.7
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,8
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,15.9
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,2.4
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,4.9
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,3.2
+Stevens Brook (Plummers Ledge),5/15,C,5,25,FAGR,1,3
+Stevens Brook (Plummers Ledge),5/15,C,5,35,QURU,1,49.5
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,6.8
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,4.9
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,4
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,5.9
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,11
+Stevens Brook (Plummers Ledge),5/15,C,5,35,ACRU,1,15.5
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,4.5
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,10.7
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,6.1
+Stevens Brook (Plummers Ledge),5/15,C,5,35,OSVI,1,8.5
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,5.9
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,3.5
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,4.6
+Stevens Brook (Plummers Ledge),5/15,C,5,35,FAGR,1,3.7
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,15.3
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,2
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,2.7
+Stevens Brook (Plummers Ledge),5/15,C,5,5,QURU,1,36.5
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,5.8
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,2.9
+Stevens Brook (Plummers Ledge),5/15,C,5,5,QURU,1,35.2
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,3.9
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,2.2
+Stevens Brook (Plummers Ledge),5/15,C,5,5,ACRU,1,12.4
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,6.7
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,3.3
+Stevens Brook (Plummers Ledge),5/15,C,5,5,ACRU,1,10.6
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,3.8
+Stevens Brook (Plummers Ledge),5/15,C,5,5,ACRU,1,18.7
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,28.7
+Stevens Brook (Plummers Ledge),5/15,C,5,5,FAGR,1,2
