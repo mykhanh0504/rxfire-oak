@@ -92,3 +92,70 @@ tally %>%
   theme_light()+
   xlab("Species")+
   ylab("Tree count (per ha)")
+
+#dbh classes
+trees2 <- trees2 %>% mutate(dbhClass=if_else(
+  `DBH (cm)`<=5,"2-5",if_else(`DBH (cm)`>5 & `DBH (cm)`<=10,
+                "5-10",if_else(`DBH (cm)`>10 & `DBH (cm)`<=20,
+                "10-20",if_else(`DBH (cm)`>20 & `DBH (cm)`<=30,
+                "20-30",if_else(`DBH (cm)`>30 & `DBH (cm)`<=40,
+                "30-40",if_else(`DBH (cm)`>40 & `DBH (cm)`<=50,
+                "40-50",if_else(`DBH (cm)`>50 & `DBH (cm)`<=60,
+                "50-60",">60"))))))))
+
+trees2 <- trees2 %>% mutate(dbhClass=fct_relevel(dbhClass,"2-5","5-10","10-20",
+                                                "20-30","30-40","40-50","50-60",">60"))
+
+#basal areas
+trees2 <- trees2 %>% mutate(ba=0.00007854*(`DBH (cm)`^2))
+
+sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba)
+sumba <- sumba %>% group_by(Pair,Disturbance,Spcode,dbhClass) %>% 
+  summarize(sumba=sum(ba))
+
+#scale up to per ha
+b1 <- 66
+c1 <- 46
+b2 <- 31
+c2 <- 30
+b3 <- 30
+c3 <- 45
+b4 <- 43
+c4 <- 19
+b5 <- 10 
+c5 <- 13
+b6 <- 28
+c6 <- 32
+
+plotarea <- 0.00785398163397448
+
+sumba <- sumba %>% mutate(m2ha=if_else(
+  Pair=="1" & Disturbance=="B",
+  sumba/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
+  sumba/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
+  sumba/b2/plotarea,if_else(Pair=="2" & Disturbance=="C",
+  sumba/c2/plotarea,if_else(Pair=="3" & Disturbance=="B",
+  sumba/b3/plotarea,if_else(Pair=="3" & Disturbance=="C",
+  sumba/c3/plotarea,if_else(Pair=="4" & Disturbance=="B",
+  sumba/b4/plotarea,if_else(Pair=="4" & Disturbance=="C",
+  sumba/c4/plotarea,if_else(Pair=="5" & Disturbance=="B",
+  sumba/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
+  sumba/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
+  sumba/b6/plotarea,sumba/c6/plotarea)))))))))))) 
+
+#let's try to plot this lol
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+sumba %>% 
+  ggplot(aes(x=dbhClass,y=m2ha))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  scale_fill_manual(values=p6)+
+  geom_col(aes(color=Spcode))+
+  facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
+  theme_light()+
+  xlab("DBH size classes (cm)")+
+  ylab("Basal area (per ha)")
+
+
+#we have not taken into account dead/alive trees
