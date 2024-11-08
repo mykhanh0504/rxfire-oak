@@ -1,6 +1,8 @@
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
+library(RColorBrewer)
+library(viridis)
 
 trees <- read_csv("overstory.csv")
 
@@ -143,19 +145,43 @@ sumba <- sumba %>% mutate(m2ha=if_else(
   sumba/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
   sumba/b6/plotarea,sumba/c6/plotarea)))))))))))) 
 
+sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
+                                        "BEAL","BEPA","BEPO","FAGR",
+                                        "FRAM","OSVI","PIRU","PIST",
+                                        "POGR","POTR","PRPE","PRSE",
+                                        "QURU","TIAM","TSCA"))
+
 #let's try to plot this lol
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+sp <- c( "ABBA"="#000004FF","ACPE"= "#08071EFF","ACRU"= "#180F3EFF",
+         "ACSA"= "#2D1160FF","BEAL"= "#451077FF","BEPA"= "#5C167FFF",
+         "BEPO"="#721F81FF","FAGR"= "#882781FF","FRAM"= "#9F2F7FFF",
+         "OSVI"="#B63679FF","PIRU"= "#CD4071FF","PIST"= "#E24D66FF",
+         "POGR"= "#F1605DFF","POTR"= "#F9795DFF","PRPE"= "#FD9567FF",
+         "PRSE"= "#FEAF77FF","QURU"= "#FEC98DFF","TIAM"= "#FDE3A5FF","TSCA"= "#FCFDBFFF")
+
+n <- 22
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, 
+                           qual_col_pals$maxcolors, 
+                           rownames(qual_col_pals)))
+pie(rep(1,n), col=sample(col_vector, n))
+
+viridis_pal(option = "A")(19)
+
+
 
 sumba %>% 
   ggplot(aes(x=dbhClass,y=m2ha))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
-  scale_fill_manual(values=p6)+
-  geom_col(aes(color=Spcode))+
+  geom_col(aes(fill=Spcode))+
+  scale_fill_manual(values=c(p6,sp))+
   facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
   theme_light()+
   xlab("DBH size classes (cm)")+
   ylab("Basal area (per ha)")
+
 
 
 #we have not taken into account dead/alive trees
