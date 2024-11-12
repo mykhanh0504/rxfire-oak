@@ -26,10 +26,10 @@ count23x <- count23x %>% mutate(Pair=case_when(
 
 count23x <- count23x %>% mutate(Location=as.factor(Location)) %>% 
   mutate(Location=fct_recode(Location,
-                                    "BEF"="Bartlett Experimental Forest",
-                                    "CF"="Crawford Notch State Park",
-                                    "HOG"="Hogsback (Blueberry Mountain)",
-                                    "SB"="Stevens Brook (Plummers Ledge)"))
+                             "BEF"="Bartlett Experimental Forest",
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
 
 count23x <- count23x %>% 
   mutate(Unit=as.factor(Unit),
