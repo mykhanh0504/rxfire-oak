@@ -63,7 +63,7 @@ The selected pairs of burn and control forest stands for this study are paired b
 *Table A. Stand pairs in each study site*
 
 | Pair | Stand | Burn year | Harvest year | Harvest treatment |
-|---------------|---------------|---------------|---------------|---------------|
+|----|----|----|----|----|
 | 1 | Stevens Brooks `SB_3/16B` | 2017 | 2010 | Shelterwood |
 | 1 | `SB_5/15C` | \- | 2011 | Shelterwood |
 | 2 | Hogsback `HOG_20/2B` | 2017 | 2012 | Seedtree |

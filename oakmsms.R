@@ -61,4 +61,148 @@ ms24x <- ms24x %>%
   mutate(Unit=as.factor(Unit),
          Disturbance=as.factor(Disturbance),
          Treatment=as.factor(Treatment),
-         Pair=as.factor(Pair))
+         Pair=as.factor(Pair),
+         Survey=as.factor(Survey))
+
+ms24x <- ms24x %>% drop_na()
+
+ms24x <- ms24x %>% mutate(herbivory_pct=na_if(herbivory_pct,"na")) %>% 
+  mutate(Pathogen_damage_pct=na_if(Pathogen_damage_pct,"na"))
+
+#anova 2023
+aov_drc23 <- aov(DRC_mm~Disturbance+Pair,data=ms23x)
+summary(aov_drc23)
+
+#visualize
+bc <- c("B"="#CC6677","C"="#88CCEE")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
+        "4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+ms23x %>% 
+  ggplot(aes(x=Pair,y=DRC_mm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2023 diameter at root collar (mm)")+
+  labs(fill="Pairs")
+
+#anova 2024
+aov_height24 <- aov(Height_cm~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_height24)
+
+#visualize
+ms24x %>% 
+  ggplot(aes(x=Pair,y=Height_cm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 height (cm)")+
+  labs(fill="Pairs")
+
+aov_exgr24 <- aov(Extension_growth_cm~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_exgr24)
+
+#visualize
+ms24x %>% 
+  ggplot(aes(x=Pair,y=Extension_growth_cm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 extension growth (cm)")+
+  labs(fill="Pairs")
+
+aov_drc24 <- aov(DRC_mm~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_drc24)
+
+#visualize
+ms24x %>% 
+  ggplot(aes(x=Pair,y=DRC_mm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 diameter at root collar (mm)")+
+  labs(fill="Pairs")
+
+aov_lb24 <- aov(nlive_branches~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_lb24)
+
+ms24x %>% filter(Survey=="1") %>% 
+  ggplot(aes(x=Pair,y=nlive_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of live branches, survey 1")+
+  labs(fill="Pairs")
+
+ms24x %>% filter(Survey=="2") %>% 
+  ggplot(aes(x=Pair,y=nlive_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of live branches, survey 2")+
+  labs(fill="Pairs")
+
+aov_db24 <- aov(ndead_branches~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_db24)
+
+ms24x %>% filter(Survey=="1") %>% 
+  ggplot(aes(x=Pair,y=ndead_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of dead branches, survey 1")+
+  labs(fill="Pairs")
+
+ms24x %>% filter(Survey=="2") %>% 
+  ggplot(aes(x=Pair,y=ndead_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of dead branches, survey 2")+
+  labs(fill="Pairs")
+
+aov_damage24 <- aov(Pathogen_damage_pct~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_damage24)
+
+ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
+  as.numeric()
+
+aov_leaves24 <- aov(nleaves~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_leaves24)
+
+tukey <- TukeyHSD(aov_leaves24)
+tukey
+
+#Extracting significant pairs
+tukey_df <- as.data.frame(tukey$Pair)
+names(tukey_df)[names(tukey_df) == "p adj"] <- "p.adj"
+sig_pairs <- subset(tukey_df,p.adj < 0.05)
+tukey_df
+
+# Create list of comparisons from significant pairs
+comparisons <- strsplit(row.names(sig_pairs), "-")
+comparisons

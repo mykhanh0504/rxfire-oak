@@ -182,6 +182,4 @@ sumba %>%
   xlab("DBH size classes (cm)")+
   ylab("Basal area (per ha)")
 
-
-
 #we have not taken into account dead/alive trees

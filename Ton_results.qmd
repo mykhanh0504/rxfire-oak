@@ -1,0 +1,600 @@
+---
+title: "Oak at the Edge"
+author: "Khanh Ton"
+institute: "University of New Hampshire"
+date: "Last updated `r format(Sys.time(), '%m/%d/%Y')`"
+bibliography: [references.bib,packages.bib]
+csl: ecology.csl
+documentclass: article
+papersize: a4
+mainfont: Arial
+fontsize: 11pt
+linestretch: 2
+format: html
+output: bookdown::html_document2
+editor: visual
+---
+
+```{r,include=FALSE,message=FALSE,warning=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(tinytex)
+library(shiny)
+library(knitcitations)
+library(RColorBrewer)
+library(viridis)
+library(gt)
+library(car)
+library(multcomp)
+```
+
+## Results
+
+### Stand characterization
+
+#### Understory competition
+
+```{r clean,include=FALSE,message=FALSE,warning=FALSE}
+comp <- read_csv("competition.csv")
+
+#Add Treatment & Pair columns
+comp2 <- comp %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+comp2 <- comp2 %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+comp2 <- comp2 %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","20/3","20/4","20/5","3/1")~"2",
+  Unit %in% c("28/2","28/3","12/2")~"3",
+  Unit=="Unnamed"~"4",
+  Unit %in% c("44B","45C")~"5",
+  Unit %in% c("46B","46C")~"6"))
+
+comp2$Spcode <- replace(comp2$Spcode,
+                        comp2$Spcode %in% c("RUID","RUFR","RUOC"),
+                        "RUS")
+
+comp2 <- comp2 %>% filter(Spcode %in% 
+                            c("ABBA","ACPE","ACRU","ACSA",
+                              "BEAL","BEPA","BEPO","FAGR",
+                              "FRAM","OSVI","PIST","POGR",
+                              "POTR","PRPE","RUS","SACA",
+                              "TSCA"))
+
+comp2 <- comp2 %>% 
+  mutate(Location=as.factor(Location),
+         Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair),
+         Spcode=as.factor(Spcode))
+
+#spcode count
+count <- comp2 %>% group_by(Pair,Disturbance,Spcode) %>% 
+  summarize(stemcount=sum(Count))
+
+count <- count %>% group_by(Pair, Disturbance) %>% 
+  slice_max(stemcount,n=4)
+
+#scale up to per ha
+b1 <- 66
+c1 <- 46
+b2 <- 31
+c2 <- 30
+b3 <- 30
+c3 <- 45
+b4 <- 43
+c4 <- 19
+b5 <- 10 
+c5 <- 13
+b6 <- 28
+c6 <- 32
+
+plotarea <- 0.0001
+
+count <- count %>% mutate(Density=if_else(
+  Pair=="1" & Disturbance=="B",
+  stemcount/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
+  stemcount/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
+  stemcount/b2/plotarea,if_else(Pair=="2" & Disturbance=="C",
+  stemcount/c2/plotarea,if_else(Pair=="3" & Disturbance=="B",
+  stemcount/b3/plotarea,if_else(Pair=="3" & Disturbance=="C",
+  stemcount/c3/plotarea,if_else(Pair=="4" & Disturbance=="B",
+  stemcount/b4/plotarea,if_else(Pair=="4" & Disturbance=="C",
+  stemcount/c4/plotarea,if_else(Pair=="5" & Disturbance=="B",
+  stemcount/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
+  stemcount/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
+  stemcount/b6/plotarea,stemcount/c6/plotarea)))))))))))) 
+
+count$Density <- round(count$Density,0)
+```
+
+```{r graph,echo=FALSE}
+#visualize stem density
+bc <- c("B"="#CC6677","C"="#88CCEE")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+count %>% 
+ggplot(aes(x=Spcode,y=Density))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_col(aes(fill=Disturbance),width=0.6,
+           position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_wrap(vars(Pair),scales='free')+
+  theme_light()+
+  xlab("Species")+
+  ylab("Stem count (per ha)")
+```
+
+In burned stands, *Q. rubra* mainly competes with early successional seedlings e.g. *Rubus spp.* `RUS`, *A. rubrum* `ACRU`, *B. alleghaniensis* `BEAL` and stump sprouts e.g. *F. grandifolia* `FAGR`.
+
+#### Overstory composition
+
+```{r clean, include=FALSE,message=FALSE,warning=FALSE}
+trees <- read_csv("overstory.csv")
+
+#Add Treatment & Pair columns
+trees2 <- trees %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+trees2 <- trees2 %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+trees2 <- trees2 %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","20/3","20/4","3/1")~"2",
+  Unit %in% c("28/2","12/2","12/3","12/4","12/5","12/6",
+              "12/7","12/8","12/9","12/10","12/11")~"3",
+  Unit=="Unnamed"~"4",
+  Unit %in% c("44B","45C")~"5",
+  Unit %in% c("46B","46C")~"6"))
+
+trees2 <- trees2 %>% mutate(Location=as.factor(Location)) %>% 
+  mutate(Location=fct_recode(Location,
+                             "BEF"="Bartlett Experimental Forest",
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
+
+trees2 <- trees2 %>% 
+  mutate(Location=as.factor(Location),
+         Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair),
+         Spcode=as.factor(Spcode))
+
+#dbh classes
+trees2 <- trees2 %>% mutate(dbhClass=if_else(
+  `DBH (cm)`<=5,"2-5",if_else(`DBH (cm)`>5 & `DBH (cm)`<=10,
+                "5-10",if_else(`DBH (cm)`>10 & `DBH (cm)`<=20,
+                "10-20",if_else(`DBH (cm)`>20 & `DBH (cm)`<=30,
+                "20-30",if_else(`DBH (cm)`>30 & `DBH (cm)`<=40,
+                "30-40",if_else(`DBH (cm)`>40 & `DBH (cm)`<=50,
+                "40-50",if_else(`DBH (cm)`>50 & `DBH (cm)`<=60,
+                "50-60",">60"))))))))
+
+trees2 <- trees2 %>% mutate(dbhClass=fct_relevel(dbhClass,"2-5","5-10","10-20",
+                                                "20-30","30-40","40-50","50-60",">60"))
+
+#basal areas
+trees2 <- trees2 %>% mutate(ba=0.00007854*(`DBH (cm)`^2))
+
+sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba)
+sumba <- sumba %>% group_by(Pair,Disturbance,Spcode,dbhClass) %>% 
+  summarize(sumba=sum(ba))
+
+#scale up to per ha
+b1 <- 66
+c1 <- 46
+b2 <- 31
+c2 <- 30
+b3 <- 30
+c3 <- 45
+b4 <- 43
+c4 <- 19
+b5 <- 10 
+c5 <- 13
+b6 <- 28
+c6 <- 32
+
+plotarea <- 0.00785398163397448
+
+sumba <- sumba %>% mutate(m2ha=if_else(
+  Pair=="1" & Disturbance=="B",
+  sumba/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
+  sumba/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
+  sumba/b2/plotarea,if_else(Pair=="2" & Disturbance=="C",
+  sumba/c2/plotarea,if_else(Pair=="3" & Disturbance=="B",
+  sumba/b3/plotarea,if_else(Pair=="3" & Disturbance=="C",
+  sumba/c3/plotarea,if_else(Pair=="4" & Disturbance=="B",
+  sumba/b4/plotarea,if_else(Pair=="4" & Disturbance=="C",
+  sumba/c4/plotarea,if_else(Pair=="5" & Disturbance=="B",
+  sumba/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
+  sumba/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
+  sumba/b6/plotarea,sumba/c6/plotarea)))))))))))) 
+
+sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
+                                        "BEAL","BEPA","BEPO","FAGR",
+                                        "FRAM","OSVI","PIRU","PIST",
+                                        "POGR","POTR","PRPE","PRSE",
+                                        "QURU","TIAM","TSCA"))
+```
+
+```{r graph,echo=FALSE}
+#let's try to plot this lol
+sp <- c( "ABBA"="#000004FF","ACPE"= "#08071EFF","ACRU"= "#180F3EFF",
+         "ACSA"= "#2D1160FF","BEAL"= "#451077FF","BEPA"= "#5C167FFF",
+         "BEPO"="#721F81FF","FAGR"= "#882781FF","FRAM"= "#9F2F7FFF",
+         "OSVI"="#B63679FF","PIRU"= "#CD4071FF","PIST"= "#E24D66FF",
+         "POGR"= "#F1605DFF","POTR"= "#F9795DFF","PRPE"= "#FD9567FF",
+         "PRSE"= "#FEAF77FF","QURU"= "#FEC98DFF","TIAM"= "#FDE3A5FF","TSCA"= "#FCFDBFFF")
+
+sumba %>% 
+  ggplot(aes(x=dbhClass,y=m2ha))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_col(aes(fill=Spcode))+
+  scale_fill_manual(values=c(p6,sp))+
+  facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
+  theme_light()+
+  xlab("DBH size classes (cm)")+
+  ylab("Basal area (per ha)")
+
+#we have not taken into account dead/alive trees
+```
+
+\[commentary here\]
+
+### Oak seedling density and measurements
+
+#### 2023 oak seedling density
+
+```{r clean,include=FALSE,message=FALSE,warning=FALSE}
+count23 <- read_csv("oakcount5m2023.csv")
+
+#Add Treatment & Pair columns
+count23x <- count23 %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+count23x <- count23x %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+count23x <- count23x %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","20/3","20/4","20/5","3/1")~"2",
+  Unit %in% c("28/2","28/3","12/2")~"3",
+  Unit=="Unnamed"~"4",
+  Unit %in% c("44B","45C")~"5",
+  Unit %in% c("46B","46C")~"6"))
+
+count23x <- count23x %>% mutate(Location=as.factor(Location)) %>% 
+  mutate(Location=fct_recode(Location,
+                             "BEF"="Bartlett Experimental Forest",
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
+
+count23x <- count23x %>% 
+  mutate(Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair))
+
+plotarea <- 0.00785398163397448
+
+#summarize data
+count23x <- count23x %>% na.omit() %>% 
+  mutate(Density=OAKcount/plotarea)
+
+count23x$Density <- round(count23x$Density,0)
+```
+
+```{r graph,echo=FALSE}
+#visualize stem density
+count23x %>% filter(Pair==c("1","2","3","4")) %>% 
+  ggplot(aes(x=Pair,y=Density,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  theme(text=element_text(size=30))+
+  ylab("Stem count (per ha)")+
+  labs(fill="Pairs")
+```
+
+```{r anova,echo=FALSE}
+#levenes test
+leveneTest(count23x$Density~count23x$Disturbance)
+
+#anova
+count23x <- count23x %>% filter(Pair %in% c("1","2","3","4"))
+one.way <- aov(OAKcount~Disturbance+Pair,data=count23x)
+summary(one.way)
+```
+
+#### 2023 diameter at root collar (DRC, mm)
+
+```{r clean,include=FALSE,message=FALSE,warning=FALSE}
+ms23 <- read_csv("oakmsms23.csv")
+
+ms23 <- ms23 %>% mutate(Location=as.factor(Location)) %>% 
+  mutate(Location=fct_recode(Location,
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
+
+#Add Treatment & Pair columns
+ms23x <- ms23 %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+ms23x <- ms23x %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+ms23x <- ms23x %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","3/1")~"2",
+  Unit %in% c("28/2","12/2")~"3",
+  Unit=="Unnamed"~"4"))
+
+ms23x <- ms23x %>% 
+  mutate(Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair))
+```
+
+```{r graph,echo=FALSE,warning=FALSE}
+ms23x %>% 
+  ggplot(aes(x=Pair,y=DRC_mm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2023 diameter at root collar (mm)")+
+  labs(fill="Pairs")
+```
+
+```{r anova,echo=FALSE}
+leveneTest(ms23x$DRC_mm~ms23x$Disturbance)
+
+aov_drc23 <- aov(DRC_mm~Disturbance+Pair,data=ms23x)
+summary(aov_drc23)
+```
+
+#### 2024 extension growth (cm)
+
+```{r clean,include=FALSE}
+ms24 <- read_csv("oakmsms24.csv")
+
+ms24 <- ms24 %>% mutate(Location=as.factor(Location)) %>% 
+  mutate(Location=fct_recode(Location,
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
+
+ms24x <- ms24 %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+ms24x <- ms24x %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+ms24x <- ms24x %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","3/1")~"2",
+  Unit %in% c("28/2","12/2")~"3",
+  Unit=="Unnamed"~"4"))
+
+ms24x <- ms24x %>% 
+  mutate(Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair),
+         Survey=as.factor(Survey))
+
+ms24x <- ms24x %>% drop_na()
+
+ms24x <- ms24x %>% mutate(herbivory_pct=na_if(herbivory_pct,"na")) %>% 
+  mutate(Pathogen_damage_pct=na_if(Pathogen_damage_pct,"na"))
+```
+
+```{r graph,echo=FALSE}
+ms24x %>% 
+  ggplot(aes(x=Pair,y=Extension_growth_cm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 extension growth (cm)")+
+  labs(fill="Pairs")
+```
+
+```{r anova,echo=FALSE}
+leveneTest(ms24x$Extension_growth_cm~ms24x$Disturbance)
+
+aov_exgr24 <- aov(Extension_growth_cm~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_exgr24)
+```
+
+#### 2024 number of live branches
+
+```{r graph,echo=FALSE}
+ms24x %>% filter(Survey=="1") %>% 
+  ggplot(aes(x=Pair,y=nlive_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of live branches, survey 1")+
+  labs(fill="Pairs")
+
+ms24x %>% filter(Survey=="2") %>% 
+  ggplot(aes(x=Pair,y=nlive_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of live branches, survey 2")+
+  labs(fill="Pairs")
+```
+
+```{r anova,echo=FALSE}
+leveneTest(ms24x$nlive_branches~ms24x$Disturbance)
+
+aov_lb24 <- aov(nlive_branches~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_lb24)
+```
+
+#### 2024 number of dead branches
+
+```{r graph,echo=FALSE}
+ms24x %>% filter(Survey=="1") %>% 
+  ggplot(aes(x=Pair,y=ndead_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of dead branches, survey 1")+
+  labs(fill="Pairs")
+
+ms24x %>% filter(Survey=="2") %>% 
+  ggplot(aes(x=Pair,y=ndead_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of dead branches, survey 2")+
+  labs(fill="Pairs")
+```
+
+```{r anova,echo=FALSE}
+leveneTest(ms24x$ndead_branches~ms24x$Disturbance)
+
+aov_db24 <- aov(ndead_branches~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_db24)
+```
+
+#### 2024 number of leaves
+
+```{r graph,echo=FALSE}
+ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
+  as.numeric()
+
+ms24x %>% 
+  ggplot(aes(x=Pair,y=nleaves,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of leaves")+
+  labs(fill="Pairs")
+```
+
+```{r anova,echo=FALSE}
+leveneTest(ms24x$nleaves~ms24x$Disturbance)
+
+aov_leaves24 <- aov(nleaves~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_leaves24)
+
+tukey <- TukeyHSD(aov_leaves24)
+tukey
+
+#Extracting significant pairs
+tukey_df <- as.data.frame(tukey$Pair)
+names(tukey_df)[names(tukey_df) == "p adj"] <- "p.adj"
+sig_pairs <- subset(tukey_df,p.adj < 0.05)
+tukey_df
+
+# Create list of comparisons from significant pairs
+comparisons <- strsplit(row.names(sig_pairs), "-")
+comparisons
+```
+
+### Leaf Area Index (LAI)
+
+```{r,include=FALSE,message=FALSE,warning=FALSE}
+lai <- read_csv("LAIR.csv")
+
+#Add Treatment & Pair columns
+lai2 <- lai %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+lai2 <- lai2 %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+lai2 <- lai2 %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","3/1")~"2",
+  Unit %in% c("28/2","12/2")~"3",
+  Unit=="Unnamed"~"4",
+  Unit %in% c("44B","45C")~"5",
+  Unit %in% c("46B","46C")~"6"))
+
+lai2 <- lai2 %>% 
+  mutate(Location=as.factor(Location),
+         Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair))
+```
+
+```{r,echo=FALSE}
+#LAI! plot by pair and burn y/n
+bc <- c("B"="#CC6677","C"="#88CCEE")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
+        "4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+lai2 %>% 
+  ggplot(aes(Pair,avgLAI))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(aes(fill=Disturbance))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  theme(text=element_text(size=30))+
+  ylab("Average LAI values")
+```
+
+\[commentary here\]
+
+## Citations
+
+### R packages
+
+```{r generateBibliography,results="asis",echo=FALSE}
+read.bibtex(file="packages.bib")
+```
