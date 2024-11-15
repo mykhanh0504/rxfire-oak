@@ -4,6 +4,7 @@ library(ggplot2)
 library(gt)
 library(car)
 library(multcomp)
+library(rstatix)
 
 ms23 <- read_csv("oakmsms23.csv")
 
@@ -69,11 +70,28 @@ ms24x <- ms24x %>% drop_na()
 ms24x <- ms24x %>% mutate(herbivory_pct=na_if(herbivory_pct,"na")) %>% 
   mutate(Pathogen_damage_pct=na_if(Pathogen_damage_pct,"na"))
 
-#anova 2023
+ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
+  as.numeric()
+
+#Stats 2023
+ms23b <- ms23x %>% filter(Disturbance=="B")
+stats_ms23b <- get_summary_stats(ms23b)
+stats_ms23b <- stats_ms23b %>% select(variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","DRC_mm",
+                         "nlive_branches","ndead_branches"))
+stats_ms23b
+
+ms23c <- ms23x %>% filter(Disturbance=="C")
+stats_ms23c <- get_summary_stats(ms23c)
+stats_ms23c <- stats_ms23c %>% select(variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","DRC_mm",
+                         "nlive_branches","ndead_branches"))
+stats_ms23c
+
+#DRC 2023
 aov_drc23 <- aov(DRC_mm~Disturbance+Pair,data=ms23x)
 summary(aov_drc23)
 
-#visualize
 bc <- c("B"="#CC6677","C"="#88CCEE")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
         "4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
@@ -89,11 +107,25 @@ ms23x %>%
   ylab("2023 diameter at root collar (mm)")+
   labs(fill="Pairs")
 
-#anova 2024
+#stats 2024
+ms24b <- ms24x %>% filter(Disturbance=="B")
+stats_ms24b <- get_summary_stats(ms24b)
+stats_ms24b <- stats_ms24b %>% select(variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","Extension_growth_cm","DRC_mm",
+                         "nleaves","nlive_branches","ndead_branches"))
+stats_ms24b
+
+ms24c <- ms24x %>% filter(Disturbance=="C")
+stats_ms24c <- get_summary_stats(ms24c)
+stats_ms24c <- stats_ms24c %>% select(variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","Extension_growth_cm","DRC_mm",
+                         "nleaves","nlive_branches","ndead_branches"))
+stats_ms24c
+
+#height 2024
 aov_height24 <- aov(Height_cm~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_height24)
 
-#visualize
 ms24x %>% 
   ggplot(aes(x=Pair,y=Height_cm,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -105,10 +137,10 @@ ms24x %>%
   ylab("2024 height (cm)")+
   labs(fill="Pairs")
 
+#EXTENSION GROWTH 2024
 aov_exgr24 <- aov(Extension_growth_cm~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_exgr24)
 
-#visualize
 ms24x %>% 
   ggplot(aes(x=Pair,y=Extension_growth_cm,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -120,10 +152,10 @@ ms24x %>%
   ylab("2024 extension growth (cm)")+
   labs(fill="Pairs")
 
+#DRC 2024
 aov_drc24 <- aov(DRC_mm~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_drc24)
 
-#visualize
 ms24x %>% 
   ggplot(aes(x=Pair,y=DRC_mm,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -135,6 +167,7 @@ ms24x %>%
   ylab("2024 diameter at root collar (mm)")+
   labs(fill="Pairs")
 
+#LIVE BRANCHES 2024
 aov_lb24 <- aov(nlive_branches~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_lb24)
 
@@ -160,6 +193,7 @@ ms24x %>% filter(Survey=="2") %>%
   ylab("2024 number of live branches, survey 2")+
   labs(fill="Pairs")
 
+#DEAD BRANCHES 2024
 aov_db24 <- aov(ndead_branches~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_db24)
 
@@ -188,21 +222,17 @@ ms24x %>% filter(Survey=="2") %>%
 aov_damage24 <- aov(Pathogen_damage_pct~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_damage24)
 
-ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
-  as.numeric()
-
+#LEAVES 2024
 aov_leaves24 <- aov(nleaves~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_leaves24)
 
 tukey <- TukeyHSD(aov_leaves24)
 tukey
 
-#Extracting significant pairs
 tukey_df <- as.data.frame(tukey$Pair)
 names(tukey_df)[names(tukey_df) == "p adj"] <- "p.adj"
 sig_pairs <- subset(tukey_df,p.adj < 0.05)
 tukey_df
 
-# Create list of comparisons from significant pairs
 comparisons <- strsplit(row.names(sig_pairs), "-")
 comparisons

@@ -4,6 +4,7 @@ library(ggplot2)
 library(gt)
 library(car)
 library(multcomp)
+library(rstatix)
 
 count23 <- read_csv("oakcount5m2023.csv")
 
@@ -109,3 +110,15 @@ tukey_df
 # Create list of comparisons from significant pairs
 comparisons <- strsplit(row.names(sig_pairs), "-")
 comparisons
+
+count23b <- count23x %>% filter(Disturbance=="B")
+stats_count23b <- get_summary_stats(count23b)
+stats_count23b <- stats_count23b %>% filter(variable=="Density") %>% 
+  select(variable,min,max,median,mean,sd,se)
+stats_count23b
+
+count23c <- count23x %>% filter(Disturbance=="C")
+stats_count23c <- get_summary_stats(count23c)
+stats_count23c <- stats_count23c %>% filter(variable=="Density") %>% 
+  select(variable,min,max,median,mean,sd,se)
+stats_count23c
