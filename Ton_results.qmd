@@ -10,7 +10,9 @@ mainfont: Arial
 fontsize: 11pt
 geometry: margin=1in
 linestretch: 1.5
-format: html
+output: word_document
+always_allow_html: true
+format: docx
 editor: visual
 ---
 
@@ -29,9 +31,35 @@ library(car)
 library(multcomp)
 library(rstatix)
 library(kableExtra)
+library(webshot2)
 ```
 
 ## Results
+
+| Species code | Scientific name | Common name |
+|----|----|----|
+| `ABBA` | *Abies balsamea* | Balsam fir |
+| `ACPE` | *Acer pensylvanicum* | Striped maple |
+| `ACRU` | *Acer rubrum* | Red maple |
+| `ACSA` | *Acer saccharum* | Sugar maple |
+| `BEAL` | *Betula alleghaniensis* | Yellow birch |
+| `BEPA` | *Betula papyrifera* | Paper birch |
+| `BEPO` | *Betula populifolia* | Gray birch |
+| `FAGR` | *Fagus grandifolia* | American beech |
+| `FRAM` | *Fraxinus americana* | White ash |
+| `OSVI` | *Ostrya virginiana* | American hophornbeam |
+| `PIRU` | *Picea rubens* | Red spruce |
+| `PIST` | *Pinus strobus* | White pine |
+| `POGR` | *Populus grandidentata* | Bigtooth aspen |
+| `POTR` | *Populus tremuloides* | Quaking aspen |
+| `PRPE` | *Prunus pensylvanica* | Pin cherry |
+| `PRSE` | *Prunus serotina* | Black cherry |
+| `RUS` | *Rubus spp.* | Brambles genus, including raspberries and blackberries |
+| `QURU` | *Quercus rubra* | Northern red oak |
+| `TIAM` | *Tilia americana* | American basswood |
+| `TSCA` | *Tsuga canadensis* | Eastern hemlock |
+
+: Species codes
 
 ### Stand characterization
 
@@ -139,7 +167,7 @@ ggplot(aes(x=Spcode,y=Density))+
 
 #### Overstory composition
 
-\[commentary here\]
+Burn stands have lower overstory basal areas than control stands. Pairs 5 and 6 stand out especially due to their clearcut treatment i.e. absence of mature trees of 20 cm and above in DBH. Their compositions are also the least diverse, consisting of *Prunus* (`PRPE`,`PRSE`), *Populus* (`POGR`,`POTR`), and *Betula spp.* (`BEAL`,`BEPO`,`BEPA`). The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* spp. of mid-ranged DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *Pinus strobus* `PIST`.
 
 ```{r, include=FALSE,message=FALSE,warning=FALSE}
 trees <- read_csv("overstory.csv")
