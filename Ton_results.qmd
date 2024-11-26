@@ -492,6 +492,9 @@ ms24x <- ms24x %>% mutate(herbivory_pct=na_if(herbivory_pct,"na")) %>%
 ```
 
 ```{r, echo=FALSE,message=FALSE}
+ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
+  as.numeric()
+
 ms24b <- ms24x %>% filter(Disturbance=="B")
 stats_ms24b <- get_summary_stats(ms24b)
 stats_ms24b <- stats_ms24b %>% mutate(Disturbance="B")
@@ -572,9 +575,6 @@ summary(aov_lb24)
 Seedlings in burned stands sprouted more leaves (16+/-1) than in control stands (7+/-1, p\<0.001).
 
 ```{r,echo=FALSE,fig.cap="2024 number of leaves per seedling by study stands"}
-ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
-  as.numeric()
-
 ms24x %>% 
   ggplot(aes(x=Pair,y=nleaves,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,

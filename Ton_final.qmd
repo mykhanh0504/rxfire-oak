@@ -3,15 +3,17 @@ title: "Oak at the Edge"
 author: "Khanh Ton"
 institute: "University of New Hampshire"
 date: "Last updated `r format(Sys.time(), '%m/%d/%Y')`"
-bibliography: [packages.bib, references.bib]
+bibliography: [references.bib,packages.bib]
 csl: ecology.csl
 documentclass: article
-papersize: a4
 mainfont: Arial
 fontsize: 11pt
-linestretch: 2
-format: html
+geometry: margin=1in
+linestretch: 1.5
+papersize: a4
+format: pdf
 output: bookdown::html_document2
+always_allow_html: true
 editor: visual
 ---
 
@@ -21,12 +23,19 @@ library(dplyr)
 library(ggplot2)
 library(knitr)
 library(tinytex)
-library(citr)
+#library(citr)
 library(shiny)
 library(knitcitations)
 library(RColorBrewer)
 library(viridis)
+library(gt)
+library(car)
+library(multcomp)
+library(rstatix)
+library(kableExtra)
 ```
+
+*You can access my codes here:* <https://github.com/mykhanh0504/rxfire-oak>
 
 ## Introduction
 
@@ -52,7 +61,7 @@ Six pairs of burn and control forest stands from four locations across the White
 
 **H1:** *Q. rubra* possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots [@abramsFireDevelopmentOak1992]. Mother oak trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback [@deyReviewDynamicsPrescribed2018]. Prescribed fire burns can promote oak regeneration at any and all critical life stages including pollination, flowering, seed set, and germination (Arthur et al. 2012).
 
-**Q2:** Does prescribed fire improve the growth of *Q. rubra* seedlings relative to other forest management practices, and if so, what key mechanisms are involvedat play?
+**Q2:** Does prescribed fire improve the growth of *Q. rubra* seedlings relative to other forest management practices, and if so, what key mechanisms are at play?
 
 **H2:** Fire temporarily increases available nitrogen pools [@wan2001] and fluxes [@wang2014] and seedlings can take advantage of them to grow faster. Additionally, fire reduces pathogen loads that can negatively affect seedling growth [@filip1997]. Once reaching an appropriate height and an appropriate density, *Q. rubra* seedlings can be more competitive against their mesophytic counterparts (Iverson et al. 2008).
 
@@ -61,8 +70,6 @@ Six pairs of burn and control forest stands from four locations across the White
 ### Study sites
 
 The selected pairs of burn and control forest stands for this study are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (Table A, Figure 1). One pair does not have any notable management history, and its burn stand experienced wildfire instead. There is a gradient of burn intensities and silvicultural treatments represented among these projects, along with variable burn intensity at smaller spatial scales within each unit most probably due to topographical variables.
-
-*Table A. Stand pairs in each study site*
 
 | Pair | Stand | Burn year | Harvest year | Harvest treatment |
 |----|----|----|----|----|
@@ -79,43 +86,9 @@ The selected pairs of burn and control forest stands for this study are paired b
 | 6 | Bartlett Experimental Forest `BEF_46B` | 2021 | 2019 | Clearcut |
 | 6 | `BEF_46C` | \- | 2019 | Clearcut |
 
-![Figure 1. Map of the study sites](images/map.jpg){fig-align="center"}
+: Stand pairs in each study site
 
-### Site characteristics
-
-Field measurements were conducted at four locations across the White Mountains National Forest (WMNF) in northern New Hampshire: Crawford Notch State Park (CF), Mount Hogsback (HOG), Stevens Brook (SB), and Bartlett Experimental Forest (BEF).
-
-CF (44.18 North, 71.39 West)
-
--   mean annual precipitation: 1476 mm (<https://ncei-normals-mapper.rcc-acis.org/>)
-
--   soil classification:
-
--   forest composition
-
-HOG (44.04 North, 71.94 West)
-
--   mean annual precipitation: 1074 mm
-
--   soil classification
-
--   forest composition
-
-SB (43.84 North, 71.88 West)
-
--   mean annual precipitation: 1029 mm
-
--   soil classification
-
--   forest composition
-
-BEF (44.06 North, 71.30 West)
-
--   mean annual precipitation: 1405 mm
-
--   soil classification
-
--   forest composition
+![Map of the study sites](images/map.jpg){fig-align="center"}
 
 ### Field data collection
 
@@ -135,13 +108,40 @@ During the peak of the 2024 growth season, leaf area index (LAI) measurements we
 
 ### Data visualization and analysis
 
-Understory competition and overstory composition will be visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius oak seedling counts, these plot-level stem counts and estimated basal areas will be scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements will also be constructed. Suitable statistical analyses, most likely ANOVA with blocking, will be carried out for each response variable to test if prescribed fire has an effect on them, and if so, whether it is significant. The entirety of data visualization and analysis will take place in RStudio using multiple packages cited below.
+Understory competition and overstory composition were visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius oak seedling counts, these plot-level stem counts and estimated basal areas were scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly ANOVA with blocking, were carried out for each response variable to test if prescribed fire had an effect on them, and if so, whether it was significant. The entirety of data visualization and analysis took place in RStudio using multiple packages cited below.
 
 ## Results
+
+| Species code | Scientific name | Common name |
+|------------------------|------------------------|------------------------|
+| `ABBA` | *Abies balsamea* | Balsam fir |
+| `ACPE` | *Acer pensylvanicum* | Striped maple |
+| `ACRU` | *Acer rubrum* | Red maple |
+| `ACSA` | *Acer saccharum* | Sugar maple |
+| `BEAL` | *Betula alleghaniensis* | Yellow birch |
+| `BEPA` | *Betula papyrifera* | Paper birch |
+| `BEPO` | *Betula populifolia* | Gray birch |
+| `FAGR` | *Fagus grandifolia* | American beech |
+| `FRAM` | *Fraxinus americana* | White ash |
+| `OSVI` | *Ostrya virginiana* | American hophornbeam |
+| `PIRU` | *Picea rubens* | Red spruce |
+| `PIST` | *Pinus strobus* | White pine |
+| `POGR` | *Populus grandidentata* | Bigtooth aspen |
+| `POTR` | *Populus tremuloides* | Quaking aspen |
+| `PRPE` | *Prunus pensylvanica* | Pin cherry |
+| `PRSE` | *Prunus serotina* | Black cherry |
+| `RUS` | *Rubus spp.* | Brambles genus, including raspberries and blackberries |
+| `QURU` | *Quercus rubra* | Northern red oak |
+| `TIAM` | *Tilia americana* | American basswood |
+| `TSCA` | *Tsuga canadensis* | Eastern hemlock |
+
+: Species codes
 
 ### Stand characterization
 
 #### Understory competition
+
+In burned stands, *Q. rubra* mainly competes with early successional seedlings e.g. *Rubus spp.* `RUS`, *A. rubrum* `ACRU`, *B. alleghaniensis* `BEAL` and stump sprouts e.g. *F. grandifolia* `FAGR`.
 
 ```{r,include=FALSE,message=FALSE,warning=FALSE}
 comp <- read_csv("competition.csv")
@@ -222,7 +222,7 @@ count <- count %>% mutate(Density=if_else(
 count$Density <- round(count$Density,0)
 ```
 
-```{r,echo=FALSE}
+```{r,echo=FALSE,fig.cap="Stem density (per ha) of understory species in study stands"}
 #visualize stem density
 bc <- c("B"="#CC6677","C"="#88CCEE")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
@@ -236,12 +236,14 @@ ggplot(aes(x=Spcode,y=Density))+
   scale_fill_manual(values=c(p6,bc))+
   facet_wrap(vars(Pair),scales='free')+
   theme_light()+
-  theme(text=element_text(size=30))+
+  theme(text=element_text(size=8.5))+
   xlab("Species")+
   ylab("Stem count (per ha)")
 ```
 
 #### Overstory composition
+
+Burn stands have lower overstory basal areas than control stands. Pairs 5 and 6 stand out especially due to their clearcut treatment i.e. absence of mature trees of 20 cm and above in DBH. Their compositions are also the least diverse, consisting of *Prunus* (`PRPE`,`PRSE`), *Populus* (`POGR`,`POTR`), and *Betula spp.* (`BEAL`,`BEPO`,`BEPA`). The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* spp. of mid-ranged DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *Pinus strobus* `PIST`.
 
 ```{r, include=FALSE,message=FALSE,warning=FALSE}
 trees <- read_csv("overstory.csv")
@@ -336,16 +338,14 @@ sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
                                         "QURU","TIAM","TSCA"))
 ```
 
-```{r,echo=FALSE}
+```{r,echo=FALSE, fig.cap="Basal area (per ha) of overstory species in study stands by DBH size classes"}
 #let's try to plot this lol
-p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
 sp <- c( "ABBA"="#000004FF","ACPE"= "#08071EFF","ACRU"= "#180F3EFF",
          "ACSA"= "#2D1160FF","BEAL"= "#451077FF","BEPA"= "#5C167FFF",
          "BEPO"="#721F81FF","FAGR"= "#882781FF","FRAM"= "#9F2F7FFF",
          "OSVI"="#B63679FF","PIRU"= "#CD4071FF","PIST"= "#E24D66FF",
          "POGR"= "#F1605DFF","POTR"= "#F9795DFF","PRPE"= "#FD9567FF",
-         "PRSE"= "#FEAF77FF","QURU"= "#FEC98DFF","TIAM"= "#FDE3A5FF",
-         "TSCA"= "#FCFDBFFF")
+         "PRSE"= "#FEAF77FF","QURU"= "#FEC98DFF","TIAM"= "#FDE3A5FF","TSCA"= "#FCFDBFFF")
 
 sumba %>% 
   ggplot(aes(x=dbhClass,y=m2ha))+
@@ -355,6 +355,7 @@ sumba %>%
   scale_fill_manual(values=c(p6,sp))+
   facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
   theme_light()+
+  theme(text=element_text(size=8.5))+
   xlab("DBH size classes (cm)")+
   ylab("Basal area (per ha)")
 
@@ -364,6 +365,8 @@ sumba %>%
 ### Oak seedling density and measurements
 
 #### 2023 oak seedling density
+
+Seedling density increased threefold in burned stands (2359+/-211 per ha) relative to control stands (778+/-121 per ha, p\<0.001).
 
 ```{r,include=FALSE,message=FALSE,warning=FALSE}
 count23 <- read_csv("oakcount5m2023.csv")
@@ -407,11 +410,23 @@ count23x <- count23x %>% na.omit() %>%
 count23x$Density <- round(count23x$Density,0)
 ```
 
-```{r,echo=FALSE}
-#visualize stem density
-bc <- c("B"="#CC6677","C"="#88CCEE")
-p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+```{r,echo=FALSE,message=FALSE}
+count23b <- count23x %>% filter(Disturbance=="B")
+stats_count23b <- get_summary_stats(count23b)
+stats_count23b <- stats_count23b %>% mutate(Disturbance="B")
+stats_count23b <- stats_count23b %>% filter(variable=="Density") %>% select(Disturbance,min,max,median,mean,sd,se)
 
+count23c <- count23x %>% filter(Disturbance=="C")
+stats_count23c <- get_summary_stats(count23c)
+stats_count23c <- stats_count23c %>% mutate(Disturbance="C")
+stats_count23c <- stats_count23c %>% filter(variable=="Density") %>% select(Disturbance,min,max,median,mean,sd,se)
+
+stats_count23 <- stats_count23b %>% full_join(stats_count23c)
+stats_count23 %>% kable(caption="Summarized statistics of 2023 oak seedling density per ha") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+```
+
+```{r,echo=FALSE,warning=FALSE,fig.cap="2023 oak seedling density per ha of study stands"}
+#visualize stem density
 count23x %>% filter(Pair==c("1","2","3","4")) %>% 
   ggplot(aes(x=Pair,y=Density,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -420,12 +435,11 @@ count23x %>% filter(Pair==c("1","2","3","4")) %>%
   scale_fill_manual(values=c(p6,bc))+
   facet_grid(~Pair,scales='free_x')+
   theme_minimal()+
-  theme(text=element_text(size=30))+
   ylab("Stem count (per ha)")+
   labs(fill="Pairs")
 ```
 
-```{r,echo=FALSE}
+```{r,include=FALSE}
 #levenes test
 leveneTest(count23x$Density~count23x$Disturbance)
 
@@ -433,8 +447,229 @@ leveneTest(count23x$Density~count23x$Disturbance)
 count23x <- count23x %>% filter(Pair %in% c("1","2","3","4"))
 one.way <- aov(OAKcount~Disturbance+Pair,data=count23x)
 summary(one.way)
+```
 
-tukey <- TukeyHSD(one.way)
+#### 2023 diameter at root collar (DRC, mm)
+
+DRC was greater for seedlings in burned stands (4.6+/-0.3 mm) versus control stands (3.3+/-0.3 mm, p\<0.01).
+
+```{r,include=FALSE,message=FALSE,warning=FALSE}
+ms23 <- read_csv("oakmsms23.csv")
+
+ms23 <- ms23 %>% mutate(Location=as.factor(Location)) %>% 
+  mutate(Location=fct_recode(Location,
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
+
+#Add Treatment & Pair columns
+ms23x <- ms23 %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+ms23x <- ms23x %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+ms23x <- ms23x %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","3/1")~"2",
+  Unit %in% c("28/2","12/2")~"3",
+  Unit=="Unnamed"~"4"))
+
+ms23x <- ms23x %>% 
+  mutate(Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair))
+```
+
+```{r,echo=FALSE,message=FALSE}
+ms23b <- ms23x %>% filter(Disturbance=="B")
+stats_ms23b <- get_summary_stats(ms23b)
+stats_ms23b <- stats_ms23b %>% mutate(Disturbance="B")
+stats_ms23b <- stats_ms23b %>% 
+  select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","DRC_mm",
+                         "nlive_branches","ndead_branches"))
+
+ms23c <- ms23x %>% filter(Disturbance=="C")
+stats_ms23c <- get_summary_stats(ms23c)
+stats_ms23c <- stats_ms23c %>% mutate(Disturbance="C")
+stats_ms23c <- stats_ms23c %>% 
+  select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","DRC_mm",
+                         "nlive_branches","ndead_branches"))
+
+stats_ms23 <- stats_ms23b %>% full_join(stats_ms23c)
+stats_ms23 %>% 
+  kable(caption="Summarized statistics of 2023 oak seedling measurements") %>%
+  kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+```
+
+```{r,echo=FALSE,warning=FALSE,fig.cap="2023 seedling DRCs by study stands"}
+ms23x %>% 
+  ggplot(aes(x=Pair,y=DRC_mm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2023 diameter at root collar (mm)")+
+  labs(fill="Pairs")
+```
+
+```{r,include=FALSE}
+leveneTest(ms23x$DRC_mm~ms23x$Disturbance)
+
+aov_drc23 <- aov(DRC_mm~Disturbance+Pair,data=ms23x)
+summary(aov_drc23)
+```
+
+#### 2024 extension growth (cm)
+
+Extension growth was greater for seedlings in burned stands (6.43+/-0.5 cm) versus control stand (2.6+/-0.4 cm, p\<0.001).
+
+```{r,include=FALSE}
+ms24 <- read_csv("oakmsms24.csv")
+
+ms24 <- ms24 %>% mutate(Location=as.factor(Location)) %>% 
+  mutate(Location=fct_recode(Location,
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
+
+ms24x <- ms24 %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+ms24x <- ms24x %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+ms24x <- ms24x %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","3/1")~"2",
+  Unit %in% c("28/2","12/2")~"3",
+  Unit=="Unnamed"~"4"))
+
+ms24x <- ms24x %>% 
+  mutate(Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair),
+         Survey=as.factor(Survey))
+
+ms24x <- ms24x %>% drop_na()
+
+ms24x <- ms24x %>% mutate(herbivory_pct=na_if(herbivory_pct,"na")) %>% 
+  mutate(Pathogen_damage_pct=na_if(Pathogen_damage_pct,"na"))
+```
+
+```{r, echo=FALSE,message=FALSE}
+ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
+  as.numeric()
+
+ms24b <- ms24x %>% filter(Disturbance=="B")
+stats_ms24b <- get_summary_stats(ms24b)
+stats_ms24b <- stats_ms24b %>% mutate(Disturbance="B")
+stats_ms24b <- stats_ms24b %>% 
+  select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","Extension_growth_cm","DRC_mm",
+                         "nleaves","nlive_branches","ndead_branches"))
+
+ms24c <- ms24x %>% filter(Disturbance=="C")
+stats_ms24c <- get_summary_stats(ms24c)
+stats_ms24c <- stats_ms24c %>% mutate(Disturbance="C")
+stats_ms24c <- stats_ms24c %>% 
+  select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","Extension_growth_cm","DRC_mm",
+                         "nleaves","nlive_branches","ndead_branches"))
+
+stats_ms24 <- stats_ms24b %>% full_join(stats_ms24c)
+stats_ms24 %>% kable(caption="Summarized statistics of 2024 oak seedling measurements") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+```
+
+```{r,echo=FALSE,fig.cap="2024 seedling extension growths by study stands"}
+ms24x %>%
+  ggplot(aes(x=Pair,y=Extension_growth_cm,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 extension growth (cm)")+
+  labs(fill="Pairs")
+```
+
+```{r,include=FALSE}
+leveneTest(ms24x$Extension_growth_cm~ms24x$Disturbance)
+
+aov_exgr24 <- aov(Extension_growth_cm~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_exgr24)
+```
+
+#### 2024 number of live branches
+
+There were more live branches per seedling in the burned stands than the control stands, respectively 4+/-0 and 2+/-0 (p\<0.001).
+
+```{r,echo=FALSE,fig.cap="2024 number of live branches per seedling by study stands and surveys"}
+ms24x %>% filter(Survey=="1") %>% 
+  ggplot(aes(x=Pair,y=nlive_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of live branches, survey 1")+
+  labs(fill="Pairs")
+
+ms24x %>% filter(Survey=="2") %>% 
+  ggplot(aes(x=Pair,y=nlive_branches,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of live branches, survey 2")+
+  labs(fill="Pairs")
+```
+
+```{r,include=FALSE}
+leveneTest(ms24x$nlive_branches~ms24x$Disturbance)
+
+aov_lb24 <- aov(nlive_branches~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_lb24)
+```
+
+#### 2024 number of leaves
+
+Seedlings in burned stands sprouted more leaves (16+/-1) than in control stands (7+/-1, p\<0.001).
+
+```{r,echo=FALSE,fig.cap="2024 number of leaves per seedling by study stands"}
+ms24x %>% 
+  ggplot(aes(x=Pair,y=nleaves,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2024 number of leaves")+
+  labs(fill="Pairs")
+```
+
+```{r,include=FALSE}
+leveneTest(ms24x$nleaves~ms24x$Disturbance)
+
+aov_leaves24 <- aov(nleaves~Disturbance+Pair+Survey,data=ms24x)
+summary(aov_leaves24)
+
+tukey <- TukeyHSD(aov_leaves24)
 tukey
 
 #Extracting significant pairs
@@ -449,6 +684,8 @@ comparisons
 ```
 
 ### Leaf Area Index (LAI)
+
+Burned stands have lower LAI values (averaging 3.2+/-0.2) than control stands (5.4+/-0.2, p\<0.001).
 
 ```{r,include=FALSE,message=FALSE,warning=FALSE}
 lai <- read_csv("LAIR.csv")
@@ -478,7 +715,24 @@ lai2 <- lai2 %>%
          Pair=as.factor(Pair))
 ```
 
-```{r,echo=FALSE}
+```{r,echo=FALSE,message=FALSE}
+laib <- lai2 %>% filter(Disturbance=="B")
+stats_laib <- get_summary_stats(laib)
+stats_laib <- stats_laib %>% mutate(Disturbance="B")
+stats_laib <- stats_laib %>% filter(variable=="avgLAI") %>% 
+  select(Disturbance,min,max,median,mean,sd,se)
+
+laic <- lai2 %>% filter(Disturbance=="C")
+stats_laic <- get_summary_stats(laic)
+stats_laic <- stats_laic %>% mutate(Disturbance="C")
+stats_laic <- stats_laic %>% filter(variable=="avgLAI") %>% 
+  select(Disturbance,min,max,median,mean,sd,se)
+
+stats_lai <- stats_laib %>% full_join(stats_laic)
+stats_lai %>% kable(caption="Summarized statistics of LAI values") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+```
+
+```{r,echo=FALSE,fig.cap="LAI values by study stands"}
 #LAI! plot by pair and burn y/n
 bc <- c("B"="#CC6677","C"="#88CCEE")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
@@ -492,11 +746,48 @@ lai2 %>%
   scale_fill_manual(values=c(p6,bc))+
   facet_grid(~Pair,scales='free_x')+
   theme_minimal()+
-  theme(text=element_text(size=30))+
   ylab("Average LAI values")
 ```
 
+```{r,include=FALSE}
+leveneTest(lai2$avgLAI~lai2$Disturbance)
+
+aov_lai <- aov(avgLAI~Disturbance+Pair,data=lai2)
+summary(aov_lai)
+
+tukey <- TukeyHSD(aov_lai)
+tukey
+
+#Extracting significant pairs
+tukey_df <- as.data.frame(tukey$Pair)
+names(tukey_df)[names(tukey_df) == "p adj"] <- "p.adj"
+sig_pairs <- subset(tukey_df,p.adj < 0.05)
+tukey_df
+
+# Create list of comparisons from significant pairs
+comparisons <- strsplit(row.names(sig_pairs), "-")
+comparisons
+```
+
 ## Discussion
+
+### *Q. rubra* seedling recruitment by prescribed fire
+
+*Q. rubra* seedling density in burned stands is triple that in control stands, supporting the hypothesis that prescribed fire promotes seedling recruitment (Figure 4). The different cutting treatments did not have significant effects on such recruitment. When these cutting treatments took place, management intentionally left behind mostly *Q. rubra* trees in the highest DBH size classes (Figure 3). The mother trees survived the burns better than their mesophytic competitors and possibly took advantage of their regrowth time to reproduce [@deyReviewDynamicsPrescribed2018]. Their survival rates are higher due to thicker barks and rapid compartmentalization, among other factors. There is evidence that acorn production is positively correlated to tree vigor i.e full-crowned dominant trees of larger DBHs produce more acorns [@bogdziewicz2020]. Even though acorn production is also dependent on tree genetics [@smith2022], meaning that “good” producers are more likely to yield larger crops, thinning and burning to release the healthiest-looking individuals raises the chance of achieving better yields.
+
+Additionally, fire can alter soil resource supply by accelerating nutrient cycling and hence releasing more of them [@chapin2012]. A sudden increase in nitrogen availability in the nitrogen-limited temperate forest [@bae2015] may help promote flowering and acorn production [@callahan2008]. In terms of acorn germination success, fire is assumed to decrease acorn herbivory, which can lead to nonviable seeds or low-vigor seedlings, by interfering with insects’ life cycle portions spent in the soil [@riccardi2004]. Another benefit fire provides is lessening the litter thickness, which in turns aids root penetration and avoids long and weak stems growing through thick litter [@hutchinson2024].
+
+It is also worth evaluating fire effects on competitors at the germination and seedling establishment stage. Fire can reduce seed bank abundance [@schuler2010], but it is more likely that the seed bank remains abundant after one-time burns like in our study. In the understory, early successional seedlings are plentiful, mostly comprising *Rubus spp.*, *A. rubrum*, and *Betula spp.* (Figure 2). The latter two produce high volumes of wind-dispersed seeds that germinate well in the postfire exposed mineral soil. *A. rubrum*, together with *F. grandifolia*, also have strong sprouting responses to disturbances. Prescribed burns can only be considered an effective management tool for *Q. rubra* regeneration if their effects are net positive. 
+
+### *Q. rubra* seedling growth promoted by prescribed fires
+
+Diameter at root collar and extension growth are significantly greater for *Q. rubra* seedlings in burned stands versus control stands (Figures 5-6). Seedlings in burned stands also have more leaves and live branches (Figures 7-9). They might have grown bigger diameter-wise by taking advantage of the temporary increases in available nitrogen pools [@wan2001] and fluxes [@wang2014] immediately after fires to store carbon into the stems. On the other hand, the significantly larger annual extension growths and leaf and branch sproutings in the past two summers imply that the positive fire effects still linger 3-7 years post-treatment. Forest recovery generally takes decades after a major disturbance. @cuevas-gonzález2009 found that effect duration is dependent on the dominant forest type. @yang2017 echoed the same sentiments, highlighting that stands in higher latitudes experience it for longer. Other variables include vegetation density, richness, and abundance: dense areas tend to recover slower while plant species richness and abundance increase with more time elapsed since fire [@smith-ramírez2022].
+
+While mesophytic competitors experience dieback and invest their resources in regrowing, *Q. rubra* seedlings make use of nutrients, space, and light that are more available than ever (Figure 10) to grow taller vertically and horizontally as well as produce leaves to expedite photosynthesis. These photophilic seedlings put on twice the number of live branches (Figures 7-8) and leaves (Figure 9) in the burned stands compared to the control stands. While the mechanisms at play remain unclear, a 2023 mesocosm experiment growing acorns in soils collected from study pairs 4 also showed that seedlings in burned soils have greater DRCs than those in control soils (Cleavitt et al. *in prep*). The study design isolated the effects of burned soils by having acorns sourced from the same mother tree and soils from the same locations to minimize genetic and micro-topographical differences respectively. Arbuscular mycorrhizal fungi (AMF), a symbiotic network that exchanges nutrients with plant roots, was hypothesized to colonize burned soils more extensively but the differences among soil treatments were insignificant. The next step in this investigation of mycorrhizal fungal colonization is analyzing seedling roots harvested from the study sites, in which ectomycorrhizal (EcMF) structures are expected as well.
+
+### Limitations
+
+One major limitation of this study is that specific burn dates are unknown. Knowing only the burn years makes determining when vegetation started its post-disturbance recovery a difficult job, especially when early successional species only take a few months to regenerate and take up space. On top of that, no pre-treatment vegetation surveys were done to have meaningful within-site comparisons. Our between-site comparisons can be impacted by confounded variables like differences in micro-topography, soil properties, and existing seed banks. Lastly, *Q. rubra* is known to allocate more resources belowground in the first few years than aboveground [@kolb1990]. While destructive harvesting of tagged seedlings lies outside of this project, their belowground structures would have provided a more comprehensive understanding of what role fire plays in this resource allocation.
 
 ## Citations
 
