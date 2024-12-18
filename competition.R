@@ -44,8 +44,8 @@ comp2 <- comp2 %>%
 count <- comp2 %>% group_by(Pair,Disturbance,Spcode) %>% 
   summarize(stemcount=sum(Count))
 
-count <- count %>% group_by(Pair, Disturbance) %>% 
-  slice_max(stemcount,n=4)
+count <- count %>% group_by(Pair,Disturbance) %>% 
+  slice_max(stemcount,n=3)
 
 #scale up to per ha
 b1 <- 66
@@ -88,9 +88,9 @@ ggplot(aes(x=Spcode,y=Density))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
   geom_col(aes(fill=Disturbance),width=0.6,
-           position=position_dodge(width=0.7))+
+           position=position_dodge(preserve='single'))+
   scale_fill_manual(values=c(p6,bc))+
   facet_wrap(vars(Pair),scales='free')+
-  theme_light()+
+  theme(aspect.ratio=1)+
   xlab("Species")+
   ylab("Stem count (per ha)")

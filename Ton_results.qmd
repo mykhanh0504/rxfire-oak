@@ -10,9 +10,9 @@ mainfont: Arial
 fontsize: 11pt
 geometry: margin=1in
 linestretch: 1.5
-output: word_document
+output: pdf
 always_allow_html: true
-format: docx
+format: pdf
 editor: visual
 ---
 
@@ -37,7 +37,7 @@ library(webshot2)
 ## Results
 
 | Species code | Scientific name | Common name |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `ABBA` | *Abies balsamea* | Balsam fir |
 | `ACPE` | *Acer pensylvanicum* | Striped maple |
 | `ACRU` | *Acer rubrum* | Red maple |
@@ -110,6 +110,9 @@ comp2 <- comp2 %>%
 count <- comp2 %>% group_by(Pair,Disturbance,Spcode) %>% 
   summarize(stemcount=sum(Count))
 
+count <- count %>% group_by(Pair,Disturbance) %>% 
+  slice_max(stemcount,n=3)
+
 #scale up to per ha
 b1 <- 66
 c1 <- 46
@@ -141,9 +144,6 @@ count <- count %>% mutate(Density=if_else(
   stemcount/b6/plotarea,stemcount/c6/plotarea)))))))))))) 
 
 count$Density <- round(count$Density,0)
-
-count <- count %>% group_by(Pair, Disturbance) %>% 
-  slice_max(Density,n=3)
 ```
 
 ```{r,echo=FALSE,fig.cap="Stem density (per ha) of understory species in study stands"}
@@ -156,11 +156,11 @@ ggplot(aes(x=Spcode,y=Density))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
   geom_col(aes(fill=Disturbance),width=0.6,
-           position=position_dodge(width=0.7))+
+           position=position_dodge(preserve='single'))+
   scale_fill_manual(values=c(p6,bc))+
   facet_wrap(vars(Pair),scales='free')+
+  theme(aspect.ratio=1)+
   theme_light()+
-  theme(text=element_text(size=8.5))+
   xlab("Species")+
   ylab("Stem count (per ha)")
 ```

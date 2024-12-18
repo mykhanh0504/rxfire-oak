@@ -90,6 +90,14 @@ The selected pairs of burn and control forest stands for this study are paired b
 
 ![Map of the study sites](images/map.jpg){fig-align="center"}
 
+#### Stevens Brook (SB, Pair 1)
+
+#### Hogsback (HOG, Pairs 2-3)
+
+#### Crawford Notch State Park (CF, Pair 4)
+
+#### Bartlett Experimental Forest (BEF, Pairs 5-6)
+
 ### Field data collection
 
 #### Site characterization
@@ -113,7 +121,7 @@ Understory competition and overstory composition were visualized by bar graphs t
 ## Results
 
 | Species code | Scientific name | Common name |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | `ABBA` | *Abies balsamea* | Balsam fir |
 | `ACPE` | *Acer pensylvanicum* | Striped maple |
 | `ACRU` | *Acer rubrum* | Red maple |
