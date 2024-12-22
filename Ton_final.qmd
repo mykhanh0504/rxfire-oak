@@ -58,7 +58,7 @@ trackdown_auth_configure(path = "client.json")
 
 Even when seedlings are established, they risk getting eaten, especially by deer [@mcsheaForestryMattersDecline2007]. *Q. rubra* is also susceptible to some fungal pathogens including *Phytophthora* and *Armillaria*, which cause sudden oak death and Armillaria root rot respectively. Lastly, its shade intolerance retards its seedling recruitment when there is insufficient light in the understory [@nowackiDemiseFireMesophication2008]. Seedling growth might be slow due to competition from more shade-tolerant species such as *Acer rubrum* and *Fagus grandifolia*. 
 
-### \[Fire-oak relationship through time\] 
+### \[Fire-oak relationship through time\]
 
 #### Pre-settlement fire usage
 
@@ -68,9 +68,9 @@ Even when seedlings are established, they risk getting eaten, especially by deer
 
 However, fire suppression became mainstream policy in the 1920s and promoted forest mesophication [@nowackiDemiseFireMesophication2008].
 
-Not only does the perception of wildfires differ among groups of people, but it also changes through time. In the United States, such perception has framed the “ebbs and flows” of federal wildland fire management policies since the inception of forestry as a professional field in the late 1800s. The first generation of professional foresters was educated in humid Germany, where native forests had long ceased to exist (Donovan & Brown, 2007). To them, fires were a menace to timber and should be put out at all costs. Frederick Olmsted, considered one of the founders of American forestry, made the following argument in 1911: “This is not forestry; not conservation; it is simple destruction… the Government, first of all, must keep its land producing timber crops indefinitely, and \[...\] bring to maturity every bit of natural young growth.” (Carle & Kaufmann, 2002). On the other hand, timberland owners had already recognized that light burning could manage fuels and reduce future wildfire risks (Hoxie, 1910). Nonetheless, this argument was completely extinguished by the “Big Burn” in 1910, the largest wildfire in US history that spread across 3 million acres in Idaho and western Montana (Apple, n.d.). The newly established and extremely short-staffed USFS was determined to codify suppression as the main tool to fire management. Its “10 AM” policy went into effect in 1935, requiring all forest fires to be suppressed before 10 AM the next day (Donovan & Brown, 2007). Together with the 1911 Weeks Act that funded states with fire suppression plans, this policy kick-started almost a century of fire suppression legacy in the United States. 
+Not only does the perception of wildfires differ among groups of people, but it also changes through time. In the United States, such perception has framed the “ebbs and flows” of federal wildland fire management policies since the inception of forestry as a professional field in the late 1800s. The first generation of professional foresters was educated in humid Germany, where native forests had long ceased to exist [@donovan2007]. To them, fires were a menace to timber and should be put out at all costs. Frederick Olmsted, considered one of the founders of American forestry, made the following argument in 1911: “This is not forestry; not conservation; it is simple destruction… the Government, first of all, must keep its land producing timber crops indefinitely, and \[...\] bring to maturity every bit of natural young growth.” [@carle2002]. On the other hand, timberland owners had already recognized that light burning could manage fuels and reduce future wildfire risks [@hoxie1910]. Nonetheless, this argument was completely extinguished by the “Big Burn” in 1910, the largest wildfire in US history that spread across 3 million acres in Idaho and western Montana. The newly established and extremely short-staffed USFS was determined to codify suppression as the main tool to fire management. Its “10 AM” policy went into effect in 1935, requiring all forest fires to be suppressed before 10 AM the next day [@donovan2007]. Together with the 1911 Weeks Act that funded states with fire suppression plans, this policy kick-started almost a century of fire suppression legacy in the United States. 
 
-Six years later, as many young people enlisted in the military in the aftermath of the attack on Pearl Harbor, the USFS started to worry about its lack of manpower and equipment (Smith, 1956). Together with the USDA, the National Association of State Foresters, and the Wartime Advertising Council (Ad Council at present), it created the Cooperative Forest Fire Prevention (CFFP) Program in 1942, through which fire prevention propaganda was produced and distributed in newspapers, radio shows, bus stops, etc. The program was proven to be effective as man-caused forest fires hit an all-time low in 1945, from around 210 thousand fires before World War II to 124728 fires. After the war, the Ad Council and the advertising firm Foote, Cone & Belding (FCB) created the Smokey Bear character, particularly to attract children’s attention. Using the iconic “Only you can prevent forest fires” motto, both the 1942 CFFP Program and the 1945 Smokey Bear Campaign helped relieve the federal firefighting logistical challenges by shifting the bulk of fire-suppressing responsibility onto the public. The campaign was further expanded in the next decade with the 1952 Smokey Bear Act and the 1953 creation of the Junior Forest Ranger (JFR) program. The Smokey Bear Act was passed unanimously in Congress to protect the character from misuse and to issue licenses for the production and sale of Smokey Bear products, whose profits are further used for wildland fire management. The JFR program attracted hundreds of thousands of children, who also ensured that their parents were well-aware of fire prevention.
+Six years later, as many young people enlisted in the military in the aftermath of the attack on Pearl Harbor, the USFS started to worry about its lack of manpower and equipment [@smith1956]. Together with the USDA, the National Association of State Foresters, and the Wartime Advertising Council (Ad Council at present), it created the Cooperative Forest Fire Prevention (CFFP) Program in 1942, through which fire prevention propaganda was produced and distributed in newspapers, radio shows, bus stops, etc. The program was proven to be effective as man-caused forest fires hit an all-time low in 1945, from around 210 thousand fires before World War II to 124728 fires. After the war, the Ad Council and the advertising firm Foote, Cone & Belding (FCB) created the Smokey Bear character, particularly to attract children’s attention. Using the iconic “Only you can prevent forest fires” motto, both the 1942 CFFP Program and the 1945 Smokey Bear Campaign helped relieve the federal firefighting logistical challenges by shifting the bulk of fire-suppressing responsibility onto the public. The campaign was further expanded in the next decade with the 1952 Smokey Bear Act and the 1953 creation of the Junior Forest Ranger (JFR) program. The Smokey Bear Act was passed unanimously in Congress to protect the character from misuse and to issue licenses for the production and sale of Smokey Bear products, whose profits are further used for wildland fire management. The JFR program attracted hundreds of thousands of children, who also ensured that their parents were well-aware of fire prevention.
 
 #### Fire-oak hypothesis
 
@@ -88,7 +88,7 @@ As the eastern landscape becomes wetter and more shady, mesic microenvironmental
 
 -   used by policymakers to plan for the type of future they hope to help create
 
-Associated numbers represent the expected change in radiative forcing from the year 1750 to 2100. RCP 4.5 would mean an increase of 4.5W/m2 in this period.
+Associated numbers represent the expected change in radiative forcing from the year 1750 to 2100. RCP 4.5 would mean an increase of 4.5W/m^2^ in this period.
 
 -   RCP 4.5, middle of the road: the world follows a path in which social, economic, and technological trends do not shift markedly from historical pattern
 
@@ -106,17 +106,17 @@ Six pairs of burn and control forest stands from four locations across the White
 
 **Q1:** Does prescribed fire promote the recruitment of *Q. rubra* seedlings relative to other forest management practices, and if so, what mechanisms are at play?
 
-**H1:** *Q. rubra* possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots [@abramsFireDevelopmentOak1992]. Mother oak trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback [@deyReviewDynamicsPrescribed2018]. Prescribed fire burns can promote oak regeneration at any and all critical life stages including pollination, flowering, seed set, and germination (Arthur et al. 2012).
+**H1:** *Q. rubra* possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots [@abramsFireDevelopmentOak1992]. Mother oak trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback [@deyReviewDynamicsPrescribed2018]. Prescribed fire burns can promote oak regeneration at any and all critical life stages including pollination, flowering, seed set, and germination [@arthurRefiningOakFireHypothesis2012].
 
 **Q2:** Does prescribed fire improve the growth of *Q. rubra* seedlings relative to other forest management practices, and if so, what key mechanisms are at play?
 
-**H2:** Fire temporarily increases available nitrogen pools [@wan2001] and fluxes [@wang2014] and seedlings can take advantage of them to grow faster. Additionally, fire reduces pathogen loads that can negatively affect seedling growth [@filip1997]. Once reaching an appropriate height and an appropriate density, *Q. rubra* seedlings can be more competitive against their mesophytic counterparts (Iverson et al. 2008).
+**H2:** Fire temporarily increases available nitrogen pools [@wan2001] and fluxes [@wang2014] and seedlings can take advantage of them to grow faster. Additionally, fire reduces pathogen loads that can negatively affect seedling growth [@filip1997]. Once reaching an appropriate height and an appropriate density, *Q. rubra* seedlings can be more competitive against their mesophytic counterparts [@iverson2008].
 
 ## Methods
 
 ### Study sites
 
-The selected pairs of burn and control forest stands for this study are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (Table A, Figure 1). One pair does not have any notable management history, and its burn stand experienced wildfire instead. There is a gradient of burn intensities and silvicultural treatments represented among these projects, along with variable burn intensity at smaller spatial scales within each unit most probably due to topographical variables.
+The selected pairs of burn and control forest stands for this study are located in the White Mountains National Forest (WMNF). They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (Table A, Figure 1). One pair does not have any notable management history, and its burn stand experienced wildfire instead. There is a gradient of burn intensities and silvicultural treatments represented among these projects, along with variable burn intensity at smaller spatial scales within each unit most probably due to topographical variables.
 
 | Pair | Stand | Burn year | Harvest year | Harvest treatment |
 |----|----|----|----|----|
@@ -137,6 +137,8 @@ The selected pairs of burn and control forest stands for this study are paired b
 
 ![Map of the study sites](images/map.jpg){fig-align="center"}
 
+#### White Mountains National Forest overview
+
 #### Stevens Brook (SB, Pair 1)
 
 #### Hogsback (HOG, Pairs 2-3)
@@ -145,25 +147,79 @@ The selected pairs of burn and control forest stands for this study are paired b
 
 #### Bartlett Experimental Forest (BEF, Pairs 5-6)
 
+These 2600 acres were set aside by the US Forest Service in 1931 to conduct research on the ecology and management of northern forest ecosystems, including forest dynamics and structure as well as wildlife relationship with forest management [@gamal-eldin1998]. The forest was chosen for its typical New England conditions in terms of soils, elevation gradients, climate, and tree species composition. It was selectively logged through the late 19th into the early 20th century for high-value timber, fuel, and building roads. At present, different silvicultural systems are implemented in different compartments to be studied over a long period of time [@leak2011].
+
+There are three types of stands at Bartlett: (1) unmanaged since last logged in the early 20th century, (2) managed by different silvicultural treatments in different compartments, and (3) reserves which are the last 3200 acres to the south and east of the experimental forest added in 2005 (Figure 1). The first represents what “old-growth,” in which natural succession is the dominant agent of change, looks like in New England – dominated by shade-tolerant species like beech and sugar maple in more fertile sites and hemlock and spruce in shallow and rocky soil. 
+
+The managed stands consist of both even-aged and uneven-aged systems. Three compartments were clear-cut in 2018, and half of each also received prescribed fires in 2021. Whole tree harvesting as such promoted multi-species composition, especially allowing the successional paper birch and aspen to regenerate. Slash was left behind and evenly distributed mechanically to put nutrients back into the soil. Group selection has been ongoing in other compartments for about 50 years. In these group cuts of between one-tenth to two acres, more sugar maple is found than in the 42-year-old single tree selection system despite its similar, if not more aggressive, promotion of shade-tolerant species. Selective cuttings have already taken place five times, last in 2019. Finally, the shelterwood method has been carried out for 21 years, during which the basal area was reduced from 100 to 30 – 40 ft^2^/ac. Two compartments were further thinned in 2019 to 20 – 30 ft^2^/ac.
+
+Over almost a century of research, scientific findings at Bartlett have better our understanding of managing New England forests for specific timber species as well as the general patterns of regeneration and growth. For example, 25 years after the 1933 clearcut of 22 acres, heavy thinning around crop trees was demonstrated to extremely benefit birch by doubling their growth, while keeping a balanced proportion of slower-growing maple and beech [@gamal-eldin1998]. Even-aged management as such is emphasized to regenerate shade-intolerant early successional species as selection systems were found to favor shade-tolerant species. 
+
+Despite being the predominant regeneration on granitic soils, beech is not as long-lived and healthy since the arrival of beech bark disease in 1939 [@costello2023]. Nevertheless, a 50-year study suggested that single tree selection can majorly improve the disease resistance and merchantable potential of the stand: the managed stand had over 70% of its basal area in disease-free or -resistant trees, as opposed to the paired unmanaged stand with over 60% of basal area in damaged trees [@leak2006].
+
+Last but not least is a broader long-term investigation of residual stand density in 1946 – in which 48 one-third-acre plots were cut to four levels of stem density. The results showed stem growth, as well as its diameter growth, were twice as fast in the lower-density stands [@gamal-eldin1998]. Northern hardwoods are estimated to grow about half a cord per acre per year, and the best growth happens with 60 – 80 ft^2^/ac of residual basal area with 25 – 30 ft^2^ of sawtimber [@leak2011].
+
+Managing for multi-species composition is of utter importance following two findings: that natural succession is the dominant agent of change that steers a northern forest towards dominance by shade-tolerant species, and that something more than single tree selection is needed to maintain a diverse component. Different-size and -density cuts with varied rotation cycle lengths depending on site quality (100 years on average, shorter for poorer sites) are hence implemented to explore this topic. Regenerating successional species is a connected issue, which researchers seem to have found the answer to, “cut and cut hard.”
+
+The ultimate goal is to make Bartlett a mixed stand with multiple age classes, a diverse tree species composition, and appropriate levels of stocking. Diversity is a fantastic bet-hedging strategy because it helps with “staggering” life histories. With regards to carbon sequestration, despite the common misunderstanding of old-growth forests having the largest potential, foresters pay more attention to how carbon is accumulated in relation to stock and rate. From this point of view, any form of harvest is beneficial because it encourages regeneration and growth. Long-term management studies will continue to inform us on their effects on forest dynamics and structure as well as their relationships to wildlife. 
+
+Many call Bartlett home and their lives are closely tied to the changing forest structure. A number of bird species end up fledging and starting to migrate from disturbed stands even though their parents may have nested in older stands. This is because they tend to have higher insect diversity, higher fruit abundance, better cover, and sometimes standing cavity trees that serve as good nesting habitats. Depending on the percent residual density after a cut, it is possible to recruit early successional birds. The moose population at Bartlett also benefits from disturbed stands – especially those between 10 – 15 years old for similar reasons – more forage of higher nutrient value. 
+
+Two potential major obstacles that could prevent sustainable production are diseases and public perception. A pertinent tree health problem is the invasion of emerald ash borer, which currently has no cure and is projected to wipe out the entire ash population. Public preference for proforestation due to concerns of aesthetics and old-growth carbon accumulation efficiency might interfere with the implementation of even-aged systems. 
+
 ### Field data collection
 
 #### Site characterization
 
 In summer 2023, a number of transects (anywhere between 50 and 225 m long) were laid 30 to 50 m apart in each study stand; they are either parallel or perpendicular from each other. They are marked by wooden stakes every 25 m. Along a transect is a series of 1 m² quadrats (hereafter referred to as “plots") spaced 10 m apart from their centers. In total, there were 43 transects laid in 6 pairs of burn-control stands, amounting to 393 plots. Percent slope, aspect, microtopography, burn evidence, and oak litter presence were recorded for each plot. Percent slope was determined with a hypsometer and later validated with topography maps, and aspect with a compass. Microtopography was described qualitatively, using remarks like “slight slope,” “steep slope,” “mid slope,” “concave,” and “convex.” Burn evidence was confirmed with charcoal presence. Percent cover was estimated for bareground, woody debris, leaf litter, rock (which should all amount to 100%), as well as live vegetation at breast height and below. Woody species with diameter at breast height (DBH) smaller than 2 cm were identified and their stems counted. 
 
-#### Oak seedling measurements
+#### *Q. rubra* seedling measurements
 
 If oak seedlings were present, they were tagged, aged, measured for height (cm) and diameter at root collar (DRC, mm), and checked for evidence of herbivory and pathogen damage. In summer 2024, they were resurveyed twice, once at the beginning and again at the end, to capture growth between the two growth seasons and within this season alone. More variables were added to this survey, including number of leaves and number of live and dead branches. Herbivory and pathogen damage were quantified percentage-wise as well as described qualitatively. 
 
 In the 5 m radius of each plot, trees were identified and measured for DBH, providing they were 2cm or larger. The number of oak seedlings was also counted. In summer 2024, oak seedling abundance was re-estimated twice, once at the beginning and again at the end of the season.
 
+#### *Q. rubra* leaf and root sample collection
+
+A 8-mm-diameter hole punch was used to collect leaf samples from tagged oak seedlings in study plots along established transects. For every seedling, a targeted number of 5 holes (3 at minimum and 10 at maximum) were punched to achieve representative C and N contents for analysis. As for roots, samples were destructively obtained from oak seedlings in study stands but outside of established transects. Soils surrounding each seedling were dug lightly to reveal a lateral root, which was then followed through and collected entirely to ensure all tertiary roots were preserved. Samples were brought back to the lab to be analyzed for ectomycorrhizal and arbuscular mycorrhizal colonization rates.
+
 #### LAI measurements
 
 During the peak of the 2024 growth season, leaf area index (LAI) measurements were carried out at the center of each plot to quantify the amount of leaf material in its canopy. The LI-COR LAI-2200C Plant Canopy Analyzer was propped at knee height to simulate the light availability to seedlings and faced away from the sunlight direction. LAI data will be matched, calibrated, and analyzed using the LI-COR FV2200 software.
 
+### Mesocosm experiment setup
+
+Burned soils were collected at the location of the May 2022 Bemis Fire at Crawford Notch State Park (Hart’s Location, NH) in May 2023. The top 15 cm of soil, including both organic (Oa) and mineral (E, Bh, Bs) horizons, was collected from areas within 5 m of a live, co-dominant *Q. rubra*, selecting microsites where the Oi and Oe layer had been thoroughly consumed by the fire. Leaf litter from fall 2022 was excluded from the sample. Control soils were collected from a similar location adjacent to the burned area, following the same procedure after removing the Oi horizon. Each batch of soil was homogenized after collection, removing only large roots and rocks but keeping the majority of fine roots as part of the sample. Half of each batch was heat-treated at 60∘C for 48 hours. They were then mixed 1:1 with PRO-MIX HPCC MYCORRHIZAE, a potting mix containing *Rhizophagus irregularis*. This potting mix was the leftover from another greenhouse experiment from the previous year. 
+
+A total of 955 acorns were collected from two mother trees in Shelburne and Thornton, NH in fall 2022. After a float test to determine viability, 754 were cold-stratified over the winter. In April 2023, acorns were soaked and the 175 individuals that germinated were planted in pots in May. There were 30-40 replicate pots for each of the five soil treatments: (1) burned soil, (2) unburned soil, (3) heat-treated burned soil, (4) heat-treated unburned soil, and (5) potting mix only (control). Seedlings were placed into rows at random under a mesh tent that lets in moderate sunlight. They were rotated once and watered twice weekly.
+
+### Lab processing of collected samples
+
+#### Soil
+
+#### Isotope weighing of leaf punches
+
+#### Root scoring for ectomycorrhizal (EcM) fungi colonization
+
+#### Root clearing, staining, and scoring for arbuscular mycorrhizal (AM) fungi colonization
+
+In August 2023, a subsample of 48 seedlings from a total of 175 were harvested for their roots. Root lengths and number of lateral roots were counted for all, and a smaller subset (PVF seedling roots) was also weighed. The root clearing, staining, and scoring protocol was adapted from @cleavitt2008 . Roots were bleached and submerged in 20 ml glass vials containing 10% ethanol solutions. However, the solution was not effective at stopping pathogenic fungal growth because, at the time of analysis, 5 samples were completely unusable considering the vast extent of their fungal colonization. Thirty were in usable condition, in which the solutions remained relatively clear and there was little to no fungal colonization; 13 other were salvageable, their solutions less clear with more or less spread out colonization.
+
+The 30 usable samples were cleared and stained in spring 2024. Root segments were taken out of vials into test tubes, submerged in 10% KOH solutions, and placed in a 94∘C water bath. The solutions were changed every half an hour until they stopped changing color. At this point, the roots became somewhat translucent and light brown in color. After that, they were acidified with 10% HCl solutions for one hour and then stained with 1:1 glycerol-vinegar solutions overnight. The following day, roots were rinsed and kept in 1:1 glycerol-vinegar destaining solutions in 20ml glass vials (Figure 8).
+
+Samples were individually mounted on a gridded microscope slide (grid size = 1 mm\*1 mm) with a cover slip. A compound microscope was used at 200x magnification to count for different AMF structures. It is worth noting that only AMF structures were present in these samples, despite *Q. rubra* being typically ectomycorrhizal. At 100 intersections in each sample taken at 1 mm intervals, one of the following categories was determined: NS - no structure present, A - arbuscules, V - vesicles, C - coils, and MH - mycorrhizal hyphae (e.g. Figure 9).
+
 ### Data visualization and analysis
 
-Understory competition and overstory composition were visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius oak seedling counts, these plot-level stem counts and estimated basal areas were scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly ANOVA with blocking, were carried out for each response variable to test if prescribed fire had an effect on them, and if so, whether it was significant. The entirety of data visualization and analysis took place in RStudio using multiple packages cited below.
+#### Observational field data
+
+Understory competition and overstory composition were visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius oak seedling counts, these plot-level stem counts and estimated basal areas were scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out for each response variable to test if prescribed fire had an effect on them, and if so, whether it was significant. The entirety of data visualization and analysis took place in RStudio using multiple packages including \[\].
+
+#### Soil and root data
+
+Control, burned, and unburned soil samples from the half batch that did not get heat-treated were sent to the University of New Hampshire Cooperative Extension in December 2023 to be tested for soil pH and concentrations of calcium (Ca), magnesium (Mg), potassium (K), phosphorus (P), lead (Pb), and organic matter (OM).
+
+Percent root colonization for each structure (A, V, and C) was calculated as the ratio of the abundance of the specific structure over the total number of observations (O). Percent hyphal colonization was the ratio of the sum of all structures observed (A, V, C, MH) over O. They were then separately analyzed by one-way ANOVA with burning as the main effect. More one-way ANOVA analyses were carried out with percent hyphal colonization as the response variable and individual soil treatment measurements as the factor variables. Additionally, a multiple linear regression was run to tease apart the relationships between percent hyphal colonization and root lateral abundance, root length, root weight, stem length, stem DRC, and stem weight.
 
 ## Results
 
@@ -417,9 +473,9 @@ sumba %>%
 #we have not taken into account dead/alive trees
 ```
 
-### Oak seedling density and measurements
+### *Q. rubra* seedling density and measurements
 
-#### 2023 oak seedling density
+#### 2023 seedling density
 
 Seedling density increased threefold in burned stands (2359+/-211 per ha) relative to control stands (778+/-121 per ha, p\<0.001).
 
