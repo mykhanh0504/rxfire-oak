@@ -36,6 +36,16 @@ trackdown_auth_configure(path = "client.json")
 
 *You can access my codes here:* <https://github.com/mykhanh0504/rxfire-oak>
 
+## Abstract
+
+\[TITLE IN WORKING PROCESS\]
+
+By
+
+Khanh Ton
+
+University of New Hampshire, May 2025
+
 ## Introduction
 
 ### *Quercus rubra* regeneration landscape at present
@@ -100,17 +110,31 @@ The other important consideration for oak regeneration is that *Q. rubra* is pro
 
 Nevertheless, adaptive silviculture can be implemented to ensure a seamless transition for the species north of its current range limit and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations (e.g., @iverson2008, @granger2018, @bassett2020, @dee2022). My study will build on this research and further explore its role in oak range expansion.
 
+#### Fire effects on mycorrhizal fungi colonization
+
+##### Ectomycorrhizal fungi (EcMF)
+
+##### Arbuscular mycorrhizal fungi (AMF)
+
+Besides creating new aboveground conditions for vegetation succession, fire modifies the physical, chemical, and biotic soil environment. This comprises soil heating [@choromanska2002], charcoal and ash deposition [@ball2010], alteration of biogeochemical processes [@chapin2012], and changing the microbial community including arbuscular mycorrhizal dynamics. Previous studies show that whether AMF mycorrhizal colonization increases or decreases post-fire is site- and fire-specific. In a literature review by @cairney2007, fire effects on AMF vary by fire type (prescribed or wildfire), vegetation type, and time elapsed since the fire. Even then, none of these factors is a good predictor of AMF colonization. For example, @bentivenga1991 and @dhillion1988 both focused on prescribed fires in the prairie ecosystem and sampled for soil fungi relatively soon after the burning events, but the former found an increase in root colonization while the latter detected a decrease in spore density and root colonization. Other potential variables at play are burning temperature, soil moisture level, sampling depth, and methods of collecting and analyzing data. Regardless, there is very little research on the interactions between fire and AMF colonization in the temperate forest ecosystem. Fulfilling this knowledge gap can help inform whether forest management using prescribed burns can promote mycorrhizal symbiosis or, if it does not, can outweigh the reduction of mycorrhizal benefits to oak regeneration. It is worth noting that *Q. rubra* is ectomycorrhizal in nature, but seedlings involved in our experiment were grown from acorns in soil mediums containing arbuscular mycorrhizae (see Limitations for further clarifications). AMF colonization occurred in place of EcMF as a result.
+
 ### Research questions and hypotheses
+
+#### \[Whether prescribed fires promote *Q. rubra* regeneration\]
 
 Six pairs of burn and control forest stands from four locations across the White Mountains ecoregion are picked for my study. They are part of a novel landscape-scale project implemented by the USFS over the past decade. There is a gradient of burn intensities and silvicultural treatments represented among these locations, along with variable burn intensity at smaller spatial scales within each stand. Assessment of how these factors have affected oak regeneration success will help to inform management considerations. The applied silvicultural prescriptions were all targeted towards oak regeneration, and my study investigates their results to answer the research questions below: 
 
 **Q1:** Does prescribed fire promote the recruitment of *Q. rubra* seedlings relative to other forest management practices, and if so, what mechanisms are at play?
 
-**H1:** *Q. rubra* possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots [@abramsFireDevelopmentOak1992]. Mother oak trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback [@deyReviewDynamicsPrescribed2018]. Prescribed fire burns can promote oak regeneration at any and all critical life stages including pollination, flowering, seed set, and germination [@arthurRefiningOakFireHypothesis2012].
+**H1:** *Q. rubra* possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots [@abramsFireDevelopmentOak1992]. Mother trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback [@deyReviewDynamicsPrescribed2018]. Prescribed fire burns can promote *Q. rubra* regeneration at any and all critical life stages including pollination, flowering, seed set, and germination [@arthurRefiningOakFireHypothesis2012].
 
 **Q2:** Does prescribed fire improve the growth of *Q. rubra* seedlings relative to other forest management practices, and if so, what key mechanisms are at play?
 
 **H2:** Fire temporarily increases available nitrogen pools [@wan2001] and fluxes [@wang2014] and seedlings can take advantage of them to grow faster. Additionally, fire reduces pathogen loads that can negatively affect seedling growth [@filip1997]. Once reaching an appropriate height and an appropriate density, *Q. rubra* seedlings can be more competitive against their mesophytic counterparts [@iverson2008].
+
+#### \[Whether fire effects on mycorrhizal fungi colonization is a factor at play\]
+
+This study explored whether fire benefits oak regeneration in terms of promoting AMF colonization of seedling roots in a mesocosm setup. In this experimental design, oak seedlings were grown from acorns in burned and unburned soil treatments for four months before having their roots harvested. Our objective was to compare the extent of AMF root colonization across seedlings grown in these soils. We hypothesized that AMF root colonization in the burned soils would be more extensive than that in the unburned soils as the fungal structures took advantage of the nutrients released by the burn.
 
 ## Methods
 
@@ -171,17 +195,19 @@ Two potential major obstacles that could prevent sustainable production are dise
 
 #### Site characterization
 
-In summer 2023, a number of transects (anywhere between 50 and 225 m long) were laid 30 to 50 m apart in each study stand; they are either parallel or perpendicular from each other. They are marked by wooden stakes every 25 m. Along a transect is a series of 1 m² quadrats (hereafter referred to as “plots") spaced 10 m apart from their centers. In total, there were 43 transects laid in 6 pairs of burn-control stands, amounting to 393 plots. Percent slope, aspect, microtopography, burn evidence, and oak litter presence were recorded for each plot. Percent slope was determined with a hypsometer and later validated with topography maps, and aspect with a compass. Microtopography was described qualitatively, using remarks like “slight slope,” “steep slope,” “mid slope,” “concave,” and “convex.” Burn evidence was confirmed with charcoal presence. Percent cover was estimated for bareground, woody debris, leaf litter, rock (which should all amount to 100%), as well as live vegetation at breast height and below. Woody species with diameter at breast height (DBH) smaller than 2 cm were identified and their stems counted. 
+In summer 2023, a number of transects (anywhere between 50 and 225 m long) were laid 30 to 50 m apart in each study stand; they are either parallel or perpendicular from each other. They are marked by wooden stakes every 25 m. Along a transect is a series of 1 m² quadrats (hereafter referred to as “plots") spaced 10 m apart from their centers. In total, there were 43 transects laid in 6 pairs of burn-control stands, amounting to 393 plots. Percent slope, aspect, microtopography, burn evidence, and *Q. rubra* litter presence were recorded for each plot. Percent slope was determined with a hypsometer and later validated with topography maps, and aspect with a compass. Microtopography was described qualitatively, using remarks like “slight slope,” “steep slope,” “mid slope,” “concave,” and “convex.” Burn evidence was confirmed with charcoal presence. Percent cover was estimated for bareground, woody debris, leaf litter, rock (which should all amount to 100%), as well as live vegetation at breast height and below. Woody species with diameter at breast height (DBH) smaller than 2 cm were identified and their stems counted. 
+
+Composite soil samples of the top 10 cm representing each study site were collected to characterize soil parameters of relevance to seedlings.
 
 #### *Q. rubra* seedling measurements
 
-If oak seedlings were present, they were tagged, aged, measured for height (cm) and diameter at root collar (DRC, mm), and checked for evidence of herbivory and pathogen damage. In summer 2024, they were resurveyed twice, once at the beginning and again at the end, to capture growth between the two growth seasons and within this season alone. More variables were added to this survey, including number of leaves and number of live and dead branches. Herbivory and pathogen damage were quantified percentage-wise as well as described qualitatively. 
+If *Q. rubra* seedlings were present, they were tagged, aged, measured for height (cm) and diameter at root collar (DRC, mm), and checked for evidence of herbivory and pathogen damage. In summer 2024, they were resurveyed twice, once at the beginning and again at the end, to capture growth between the two growth seasons and within this season alone. More variables were added to this survey, including number of leaves and number of live and dead branches. Herbivory and pathogen damage were quantified percentage-wise as well as described qualitatively. 
 
-In the 5 m radius of each plot, trees were identified and measured for DBH, providing they were 2cm or larger. The number of oak seedlings was also counted. In summer 2024, oak seedling abundance was re-estimated twice, once at the beginning and again at the end of the season.
+In the 5 m radius of each plot, trees were identified and measured for DBH, providing they were 2cm or larger. The number of *Q. rubra* seedlings was also counted. In summer 2024, seedling abundance was re-estimated twice, once at the beginning and again at the end of the season.
 
 #### *Q. rubra* leaf and root sample collection
 
-A 8-mm-diameter hole punch was used to collect leaf samples from tagged oak seedlings in study plots along established transects. For every seedling, a targeted number of 5 holes (3 at minimum and 10 at maximum) were punched to achieve representative C and N contents for analysis. As for roots, samples were destructively obtained from oak seedlings in study stands but outside of established transects. Soils surrounding each seedling were dug lightly to reveal a lateral root, which was then followed through and collected entirely to ensure all tertiary roots were preserved. Samples were brought back to the lab to be analyzed for ectomycorrhizal and arbuscular mycorrhizal colonization rates.
+A 8-mm-diameter hole punch was used to collect leaf samples from tagged *Q. rubra* seedlings in study plots along established transects. For every seedling, a targeted number of 5 holes (3 at minimum and 10 at maximum) were punched to achieve representative C and N contents for analysis. As for roots, samples were destructively obtained from *Q. rubra* seedlings in study stands but outside of established transects. Soils surrounding each seedling were dug lightly to reveal a lateral root, which was then followed through and collected entirely to ensure all tertiary roots were preserved. Samples were brought back to the lab to be analyzed for ectomycorrhizal and arbuscular mycorrhizal colonization rates.
 
 #### LAI measurements
 
@@ -197,7 +223,11 @@ A total of 955 acorns were collected from two mother trees in Shelburne and Thor
 
 #### Soil
 
+Field and unheated experiment soil samples were homogenized and sieved using a 2-mm sieve to filter out gravel and partially weathered parent material. They were then sent to the University of New Hampshire Cooperative Extension in December 2023 to be tested for soil pH and concentrations of calcium (Ca), magnesium (Mg), potassium (K), phosphorus (P), lead (Pb), and organic matter (OM).
+
 #### Isotope weighing of leaf punches
+
+Leaf punches were oven-dried at 60^o^C overnight and stored in air-tight conditions. They were then cut into small pieces and packed in 8\*5-mm tin capsules to achieve samples weighing 3±1 g. A total of 66 samples and \[\] duplicates were put in the 96-well cell plate to analyze for %C, %N, and C:N ratio following combustion using the Elementar GeoVision elemental analyzer isotope ratio mass spectrometer.
 
 #### Root scoring for ectomycorrhizal (EcM) fungi colonization
 
@@ -213,11 +243,9 @@ Samples were individually mounted on a gridded microscope slide (grid size = 1 m
 
 #### Observational field data
 
-Understory competition and overstory composition were visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius oak seedling counts, these plot-level stem counts and estimated basal areas were scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out for each response variable to test if prescribed fire had an effect on them, and if so, whether it was significant. The entirety of data visualization and analysis took place in RStudio using multiple packages including \[\].
+Understory competition and overstory composition were visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius *Q. rubra* seedling counts, these plot-level stem counts and estimated basal areas were scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out in RStudio for each response variable to test if prescribed fire had an effect on them, and if so, whether it was significant.
 
-#### Soil and root data
-
-Control, burned, and unburned soil samples from the half batch that did not get heat-treated were sent to the University of New Hampshire Cooperative Extension in December 2023 to be tested for soil pH and concentrations of calcium (Ca), magnesium (Mg), potassium (K), phosphorus (P), lead (Pb), and organic matter (OM).
+#### Root EcMF and AMF colonization data
 
 Percent root colonization for each structure (A, V, and C) was calculated as the ratio of the abundance of the specific structure over the total number of observations (O). Percent hyphal colonization was the ratio of the sum of all structures observed (A, V, C, MH) over O. They were then separately analyzed by one-way ANOVA with burning as the main effect. More one-way ANOVA analyses were carried out with percent hyphal colonization as the response variable and individual soil treatment measurements as the factor variables. Additionally, a multiple linear regression was run to tease apart the relationships between percent hyphal colonization and root lateral abundance, root length, root weight, stem length, stem DRC, and stem weight.
 
@@ -880,6 +908,48 @@ comparisons <- strsplit(row.names(sig_pairs), "-")
 comparisons
 ```
 
+### Soil nutrient contents
+
+The three soil treatments had similar high levels of Mg and very low levels of Pb (Table 1). The control sample was the most basic and contained the most Ca and the least OM, while the unburned sample contained the least amounts of K and P. Percent hyphal colonization did not differ significantly among different levels of nutrients (p\>0.1).
+
+Table 1. Test results of soil treatments: colors signify whether values lie within the optimal range (white - very low, red - low, yellow - optimal, green - high)
+
+|  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|
+| **Soil** | **pH** | **Ca (ppm)** | **Mg (ppm)** | **K (ppm)** | **P (ppm)** | **Pb (ppm)** | **%OM** |
+| Control | 5.70 | 814.4 | 430 | 202 | 72 | 0.58 | 6.30 |
+| Burned | 5.10 | 614.4 | 255 | 184 | 40 | 2.75 | 10.10 |
+| Unburned | 5.05 | 441.0 | 235 | 148 | 29 | 2.30 | 10.33 |
+
+### Leaf nutrient content
+
+### Root mycorrhizal fungal colonization extent
+
+#### EcMF colonization
+
+#### AMF colonization
+
+There were no significant differences in the extent of hyphal colonization among unburned, burned, and control soil treatments (p=0.2). The average hyphal colonization percentages were 13.9±4.3, 15.6±3.9, and 1.0±0.8 respectively (Figure 1). Similarly, arbuscular colonization among soil treatments was not significantly different (p=0.4). The mean arbuscular colonization of roots in unburned soils was 7.4±2.8, in burned soils 6.3±2.1, and in control 0.5±0.3 (Figure 2). Coil colonization also did not significantly differ (p=0.4), with the average extent in unburned soils being 5.2±2.7, burned soils 8.1±2.8, and control 0.5±0.6 (Figure 3).
+
+Percent hyphal colonization was not significantly correlated to the six seedling measurements: root lateral abundance, root length, root weight, stem length, stem DRC, and stem weight (Figures 4 & 5). Hyphal colonization seemed to have a positive relationship with root lateral abundance and stem weight while having an inverse relationship with the remaining variables, but all correlation coefficients were close to 0 (Table 2).
+
+Table 2. Correlation coefficients between AMF hyphal colonization and seedling measurements
+
+|  |  |  |  |  |  |
+|----|----|----|----|----|----|
+| Root length (mm) | Root weight (g) | Number of laterals | Stem length (mm) | Stem DRC (mm) | Stem weight (g) |
+| -0.01 (p=0.95) | -0.27 (p=0.40) | 0.08 (p=0.73) | -0.09 (p=0.67) | -0.08 (p=0.71) | 0.03 (p=0.92) |
+
+Figure 1. AMF hyphal colonization of Q. rubra grown in different soil mixtures (x indicates average colonization extent)
+
+Figure 2. AMF arbuscular colonization of Q. rubra grown in different soil mixtures (x indicates average colonization extent)
+
+Figure 3. AMF coil colonization of Q. rubra grown in different soil mixtures (x indicates average colonization extent)
+
+Figure 4. Correlations between AMF hyphal colonization and Q. rubra root length, weight, and number of laterals across all treatments
+
+Figure 5. Correlations between AMF hyphal colonization and Q. rubra stem length, diameter at root collar, and weight across all treatments
+
 ## Discussion
 
 ### *Q. rubra* seedling recruitment by prescribed fire
@@ -896,9 +966,29 @@ Diameter at root collar and extension growth are significantly greater for *Q. r
 
 While mesophytic competitors experience dieback and invest their resources in regrowing, *Q. rubra* seedlings make use of nutrients, space, and light that are more available than ever (Figure 10) to grow taller vertically and horizontally as well as produce leaves to expedite photosynthesis. These photophilic seedlings put on twice the number of live branches (Figures 7-8) and leaves (Figure 9) in the burned stands compared to the control stands. While the mechanisms at play remain unclear, a 2023 mesocosm experiment growing acorns in soils collected from study pairs 4 also showed that seedlings in burned soils have greater DRCs than those in control soils (Cleavitt et al. *in prep*). The study design isolated the effects of burned soils by having acorns sourced from the same mother tree and soils from the same locations to minimize genetic and micro-topographical differences respectively. Arbuscular mycorrhizal fungi (AMF), a symbiotic network that exchanges nutrients with plant roots, was hypothesized to colonize burned soils more extensively but the differences among soil treatments were insignificant. The next step in this investigation of mycorrhizal fungal colonization is analyzing seedling roots harvested from the study sites, in which ectomycorrhizal (EcMF) structures are expected as well.
 
+#### Fire effects on mycorrhizal fungal colonization
+
+##### EcMF
+
+##### AMF
+
+Fire can alter soil resource supply by accelerating nutrient cycling and hence releasing more of them [@chapin2012]. It also can consume more volatile nutrients and lead to their decline. Any temperature above 60∘C is found lethal to fine roots and soil organisms [@watts2018]. A high-intensity fire (420 - 1160∘C) can volatilize soil C and OM to a depth of 10 cm while a low-intensity one (40 - 360∘C) can reach 5 cm. The intensity of the Bemis Fire remained unclear besides that it consumed the Oi and Oe layers, but one year seemed to have been a proficient duration for OM and Mg to recover as their abundances were similar between the burned and unburned samples. On the other hand, there were more K and P in the burned sample than the unburned one -- the Bemis Fire could have been responsible for this increase. The low Ca level in both burned and unburned soil samples suggests that perhaps the soils at Crawford Notch State Park are inherently low in Ca. 
+
+The resulting insignificant differences in hyphal colonization extents among different soil treatments rejected our hypothesis that burned soils would have more extensive colonization. A meta-analysis by @dove2017 supported this result, highlighting no significant response in mycorrhizal colonization post-fire across studies, ecosystems, and fire types. However, it is noted that fire effects were dependent on the assessment method used. For example, the in situ approach reported an average of 21% reduction of mycorrhizal colonization while the ex situ bioassays yielded no significance. A reduction in propagule quantity by heating was also observed in an experimental setting by @pattinson1999 as three *Glomus spp.* underwent a simulated fire of moderate intensity. The hyphal network was most severely disturbed at the soil surface and the effect decreased with depth, despite that normally propagules are densest at the top.
+
+In the field, fire effects on mycorrhizal colonization can vary by biomes and fire types. Three studies on shrublands in different parts of the world with similar times elapsed since fire (1-9 months) found different trends: the wildfire in Australia posed no effect on propagules [@bellgard1994], and so did the prescribed burn in south-central Florida (USA) with root colonization [@anderson1997], but the wildfire in Pakistan decreased propagule viability [@rashid1997]. Fire effects may also change temporally, or not -- Alaskan boreal forest sites 3, 15, 45, and 80 years following fire did not see significant differences in AMF abundance [@treseder2004]. Another confounded variable that could have affected the colonization extent is inoculum density. The inoculum density hypothesis stated that a high inoculum density could prevent a decrease in colonization in response to disturbance [@jasper1991]. @mcgonigle2000 disagreed, finding that high inoculum density facilitated the development of a difference in colonization after a disturbance. Our result may have sided with the latter, assuming low inoculum density occurred across all soil treatments given how low the colonization rates were.
+
+Additionally, the average colonization extents of all AMF structures in burned soils and unburned soils were closer to one another than those in the control treatment. Overall, roots in burned soils had the most extensive colonization rate of 16% while the control barely hosted any (1%). When compared by structure, there were more arbuscules in unburned soils than in their burned counterparts, while coils had the opposite trend. This might mean that the *R. irregularis* spores in the potting mix may have played a trivial role in facilitating AMF colonization compared to existing spores in the burned and unburned soils.
+
+Moreover, hyphal colonization was shown to have insignificant relationships with different seedling measurements. When burned and unburned treatments were grouped together, all correlation coefficients hovered around 0. When observed separately, hyphal colonization was positively correlated to root length and stem weight in unburned samples and to the number of laterals and stem length in burned samples, though not significant either. Regardless, the remaining negative relationships carried little meaning and should be deemed negligible. In other words, AMF colonization extent did not seem to be a good indicator of *Q. rubra* seedling growth and health.
+
 ### Limitations
 
 One major limitation of this study is that specific burn dates are unknown. Knowing only the burn years makes determining when vegetation started its post-disturbance recovery a difficult job, especially when early successional species only take a few months to regenerate and take up space. On top of that, no pre-treatment vegetation surveys were done to have meaningful within-site comparisons. Our between-site comparisons can be impacted by confounded variables like differences in micro-topography, soil properties, and existing seed banks. Lastly, *Q. rubra* is known to allocate more resources belowground in the first few years than aboveground [@kolb1990]. While destructive harvesting of tagged seedlings lies outside of this project, their belowground structures would have provided a more comprehensive understanding of what role fire plays in this resource allocation.
+
+It is also worth noting that the author of this paper was only involved in the processes of root processing, AMF counting, and data analysis -- the mesocosm experiment setup was carried out by others and the author gave limited input into the experimental design. One major concern before starting the experiment was that the soil collection process may have disturbed the mycelium and thus reduced the fungal population in the samples. Following the experiment, root samples were initially observed for ectomycorrhizal structures, which were absent, so they were then checked for arbuscular structures. As previously mentioned, these seedlings were grown from acorns in potted condition with added AMF spores, which may have favored AMF colonization over EcMF. Perhaps the results could have been further solidified were we able to analyze all the 48 harvested root samples instead of 30 as they are heavily skewed towards the burned and unburned treatments (13 each, and only 4 controls). Better storage techniques are needed to prevent fungal growth on the harvested roots. 
+
+## Conclusion
 
 ## Citations
 
