@@ -151,31 +151,37 @@ sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
                                         "POGR","POTR","PRPE","PRSE",
                                         "QURU","TIAM","TSCA"))
 
+#n <- 8
+#qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+#col_vector = unlist(mapply(brewer.pal, 
+#                           qual_col_pals$maxcolors, 
+#                           rownames(qual_col_pals)))
+#pie(rep(1,n), col=sample(col_vector, n))
+
+#viridis_pal(option = "A")(19)
+
+sumba <- sumba %>% mutate(Genus=case_when(
+  Spcode %in% c("ACPE","ACRU","ACSA") ~ "Maples",
+  Spcode %in% c("BEAL","BEPA","BEPO") ~ "Birches",
+  Spcode %in% "FAGR" ~ "A. beech",
+  Spcode %in% "PIST" ~ "W. pine",
+  Spcode %in% c("POGR","POTR") ~ "Aspens",
+  Spcode %in% c("PRPE","PRSE") ~ "Cherries",
+  Spcode %in% "QURU" ~ "R. oak",
+  Spcode %in% c("ABBA","FRAM","OSVI","PIRU","TIAM","TSCA")~"Others"
+))
+
 #let's try to plot this lol
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
-sp <- c( "ABBA"="#000004FF","ACPE"= "#08071EFF","ACRU"= "#180F3EFF",
-         "ACSA"= "#2D1160FF","BEAL"= "#451077FF","BEPA"= "#5C167FFF",
-         "BEPO"="#721F81FF","FAGR"= "#882781FF","FRAM"= "#9F2F7FFF",
-         "OSVI"="#B63679FF","PIRU"= "#CD4071FF","PIST"= "#E24D66FF",
-         "POGR"= "#F1605DFF","POTR"= "#F9795DFF","PRPE"= "#FD9567FF",
-         "PRSE"= "#FEAF77FF","QURU"= "#FEC98DFF","TIAM"= "#FDE3A5FF","TSCA"= "#FCFDBFFF")
-
-n <- 22
-qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
-col_vector = unlist(mapply(brewer.pal, 
-                           qual_col_pals$maxcolors, 
-                           rownames(qual_col_pals)))
-pie(rep(1,n), col=sample(col_vector, n))
-
-viridis_pal(option = "A")(19)
-
-
+sp <- c("Maples"="#88CCEE","R. oak"="#CC6677","Birches"="#DDCC77",
+        "A. beech"="#117733","W. pine"="#FFC20A", "Aspens"="#332288",
+        "Cherries"="#AA4499","Others"="#40B0A6")
 
 sumba %>% 
   ggplot(aes(x=dbhClass,y=m2ha))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
-  geom_col(aes(fill=Spcode))+
+  geom_col(aes(fill=Genus))+
   scale_fill_manual(values=c(p6,sp))+
   facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
   theme_light()+

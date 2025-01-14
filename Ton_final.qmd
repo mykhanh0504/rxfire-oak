@@ -282,7 +282,7 @@ Percent root colonization for each structure (A, V, and C) was calculated as the
 ## Results
 
 | Species code | Scientific name | Common name |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | `ABBA` | *Abies balsamea* | Balsam fir |
 | `ACPE` | *Acer pensylvanicum* | Striped maple |
 | `ACRU` | *Acer rubrum* | Red maple |
@@ -965,7 +965,7 @@ The three soil treatments had similar high levels of Mg and very low levels of P
 Table 1. Test results of soil treatments: colors signify whether values lie within the optimal range (white - very low, red - low, yellow - optimal, green - high)
 
 |  |  |  |  |  |  |  |  |
-|---------|---------|---------|---------|---------|---------|---------|---------|
+|----|----|----|----|----|----|----|----|
 | **Soil** | **pH** | **Ca (ppm)** | **Mg (ppm)** | **K (ppm)** | **P (ppm)** | **Pb (ppm)** | **%OM** |
 | Control | 5.70 | 814.4 | 430 | 202 | 72 | 0.58 | 6.30 |
 | Burned | 5.10 | 614.4 | 255 | 184 | 40 | 2.75 | 10.10 |
@@ -986,7 +986,7 @@ Percent hyphal colonization was not significantly correlated to the six seedling
 Table 2. Correlation coefficients between AMF hyphal colonization and seedling measurements
 
 |  |  |  |  |  |  |
-|------------|------------|------------|------------|------------|------------|
+|----|----|----|----|----|----|
 | Root length (mm) | Root weight (g) | Number of laterals | Stem length (mm) | Stem DRC (mm) | Stem weight (g) |
 | -0.01 (p=0.95) | -0.27 (p=0.40) | 0.08 (p=0.73) | -0.09 (p=0.67) | -0.08 (p=0.71) | 0.03 (p=0.92) |
 
