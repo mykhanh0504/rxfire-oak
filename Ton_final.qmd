@@ -282,7 +282,7 @@ Percent root colonization for each structure (A, V, and C) was calculated as the
 ## Results
 
 | Species code | Scientific name | Common name |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `ABBA` | *Abies balsamea* | Balsam fir |
 | `ACPE` | *Acer pensylvanicum* | Striped maple |
 | `ACRU` | *Acer rubrum* | Red maple |
@@ -356,7 +356,7 @@ count <- comp2 %>% group_by(Pair,Disturbance,Spcode) %>%
   summarize(stemcount=sum(Count))
 
 count <- count %>% group_by(Pair, Disturbance) %>% 
-  slice_max(stemcount,n=4)
+  slice_max(stemcount,n=3)
 
 #scale up to per ha
 b1 <- 66
@@ -401,11 +401,10 @@ ggplot(aes(x=Spcode,y=Density))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
   geom_col(aes(fill=Disturbance),width=0.6,
-           position=position_dodge(width=0.7))+
+           position=position_dodge(preserve='single'))+
   scale_fill_manual(values=c(p6,bc))+
   facet_wrap(vars(Pair),scales='free')+
-  theme_light()+
-  theme(text=element_text(size=8.5))+
+  theme(aspect.ratio=1)+
   xlab("Species")+
   ylab("Stem count (per ha)")
 ```
@@ -509,26 +508,33 @@ sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
 
 ```{r,echo=FALSE, fig.cap="Basal area (per ha) of overstory species in study stands by DBH size classes"}
 #let's try to plot this lol
-sp <- c( "ABBA"="#000004FF","ACPE"= "#08071EFF","ACRU"= "#180F3EFF",
-         "ACSA"= "#2D1160FF","BEAL"= "#451077FF","BEPA"= "#5C167FFF",
-         "BEPO"="#721F81FF","FAGR"= "#882781FF","FRAM"= "#9F2F7FFF",
-         "OSVI"="#B63679FF","PIRU"= "#CD4071FF","PIST"= "#E24D66FF",
-         "POGR"= "#F1605DFF","POTR"= "#F9795DFF","PRPE"= "#FD9567FF",
-         "PRSE"= "#FEAF77FF","QURU"= "#FEC98DFF","TIAM"= "#FDE3A5FF","TSCA"= "#FCFDBFFF")
+sumba <- sumba %>% mutate(Genus=case_when(
+  Spcode %in% c("ACPE","ACRU","ACSA") ~ "Maples",
+  Spcode %in% c("BEAL","BEPA","BEPO") ~ "Birches",
+  Spcode %in% "FAGR" ~ "A. beech",
+  Spcode %in% "PIST" ~ "W. pine",
+  Spcode %in% c("POGR","POTR") ~ "Aspens",
+  Spcode %in% c("PRPE","PRSE") ~ "Cherries",
+  Spcode %in% "QURU" ~ "R. oak",
+  Spcode %in% c("ABBA","FRAM","OSVI","PIRU","TIAM","TSCA")~"Others"
+))
+
+#let's try to plot this lol
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+sp <- c("Maples"="#88CCEE","R. oak"="#CC6677","Birches"="#DDCC77",
+        "A. beech"="#117733","W. pine"="#FFC20A", "Aspens"="#332288",
+        "Cherries"="#AA4499","Others"="#40B0A6")
 
 sumba %>% 
   ggplot(aes(x=dbhClass,y=m2ha))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
-  geom_col(aes(fill=Spcode))+
+  geom_col(aes(fill=Genus))+
   scale_fill_manual(values=c(p6,sp))+
   facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
   theme_light()+
-  theme(text=element_text(size=8.5))+
   xlab("DBH size classes (cm)")+
   ylab("Basal area (per ha)")
-
-#we have not taken into account dead/alive trees
 ```
 
 ### *Q. rubra* seedling density and measurements
@@ -965,7 +971,7 @@ The three soil treatments had similar high levels of Mg and very low levels of P
 Table 1. Test results of soil treatments: colors signify whether values lie within the optimal range (white - very low, red - low, yellow - optimal, green - high)
 
 |  |  |  |  |  |  |  |  |
-|----|----|----|----|----|----|----|----|
+|---------|---------|---------|---------|---------|---------|---------|---------|
 | **Soil** | **pH** | **Ca (ppm)** | **Mg (ppm)** | **K (ppm)** | **P (ppm)** | **Pb (ppm)** | **%OM** |
 | Control | 5.70 | 814.4 | 430 | 202 | 72 | 0.58 | 6.30 |
 | Burned | 5.10 | 614.4 | 255 | 184 | 40 | 2.75 | 10.10 |
@@ -986,7 +992,7 @@ Percent hyphal colonization was not significantly correlated to the six seedling
 Table 2. Correlation coefficients between AMF hyphal colonization and seedling measurements
 
 |  |  |  |  |  |  |
-|----|----|----|----|----|----|
+|------------|------------|------------|------------|------------|------------|
 | Root length (mm) | Root weight (g) | Number of laterals | Stem length (mm) | Stem DRC (mm) | Stem weight (g) |
 | -0.01 (p=0.95) | -0.27 (p=0.40) | 0.08 (p=0.73) | -0.09 (p=0.67) | -0.08 (p=0.71) | 0.03 (p=0.92) |
 
