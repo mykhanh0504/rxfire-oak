@@ -1,0 +1,109 @@
+---
+title: "GIS topographical IMI"
+author: "Khanh Ton"
+institute: "University of New Hampshire"
+date: "Last updated `r format(Sys.time(), '%m/%d/%Y')`"
+bibliography: [references.bib,packages.bib]
+csl: ecology.csl
+documentclass: article
+mainfont: Arial
+fontsize: 11pt
+geometry: margin=1in
+linestretch: 1.5
+papersize: a4
+format: html
+output: bookdown::html_document2
+toc: true
+always_allow_html: true
+editor: visual
+---
+
+```{r, include=FALSE,message=FALSE,warning=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(tinytex)
+library(shiny)
+library(knitcitations)
+library(viridis)
+library(gt)
+library(car)
+library(rstatix)
+library(kableExtra)
+library(trackdown)
+trackdown_auth_configure(path = "client.json")
+```
+
+## Introduction
+
+#### Topography and *Q. rubra* regeneration
+
+Q. rubra is a fast-growing species with moderate nutrient requirements and thrives on a wide range of upland soils [@abramsFireDevelopmentOak1992]. Additionally, it is tolerant of heat and drought [@abrams2000] – making its regeneration advantageous on xeric slopes [@chapman2016]. More specifically, @iverson2003 pointed out that there might be a correlation between oak regeneration and these four topographical variables: hillshade, flow accumulation, curvature, and available water capacity of soil. Hillshade represents solar radiation potential, which is greatest on steep, south-facing slopes. Its value ranges from 0 to 255, with 0 being the darkest and 255 the brightest. Flow accumulation is the accumulated flow of water downslope – the higher the value, the wetter an area can get. Meanwhile, curvature measures the soil concavity – the higher the value, the deeper the depression is. Lastly, available water capacity represents the total amount of water available to plants in the A and B horizons. These variables were then used to model the Integrated Moisture Index: moisture is higher where hillshade is minimized, in lower slope positions and depressions, and in soils capable of storing more water. 
+
+### Research questions and hypotheses
+
+This paper therefore seeks to see if there are any correlations between the IMI, its individual topographical variables, as well as their interactions with prescribed burns with oak seedling abundance at study sites across the White Mountains ecoregion of New Hampshire. It is hypothesized that a lower IMI value correlates with more oak seedling abundance as (1) it facilitates a more suitable growing condition for Q. rubra and (2) it may have promoted greater fire intensity and given the species a regenerative edge its competitors. 
+
+## Methods
+
+### Data visualization and analysis
+
+#### Integrated Moisture Index
+
+LiDAR data of the sites were downloaded from the NH GRANIT portal [@earthsystemsresearchcenter] in the form of Digital Elevation Model (DEM) tiles. Tiles are then filtered and merged.
+
+The conceptual methods of creating the IMI are derived from @iverson2003 . In their paper, Iverson and Prasad employed a weighted sum model with 4 variables and their respective weights: curvature (0.1), flow accumulation (0.3), hillshade (0.4), and available water capacity (0.2). However, this paper omitted the 4th one due to the lack of data (see more in Limitations).
+
+Specific tools were identified to generate the variables and parameters were modified to better match site conditions as follows. Hillshade was generated for each site using the **`Hillshade`** tool under **`Raster terrain analysis`**. The Z factor was kept at the default value of 1, while both azimuth and vertical angle were modified to simulate mean angles during the growing season in the White Mountains (185 and 60 respectively). Profile curvature, along with slope and aspect, was generated with **`r.slope.aspect`** under **`GRASS Raster`**. All the settings were kept at default, except that slope was reported in terms of percentage. Flow accumulation was created using the **`r.flow`** tool under **`GRASS Raster`**. All three variables were rescaled (**`Rescale raster`** under **`Raster analysis`**) and reordered (**`Invert grid`** under **`SAGA Next Gen Raster tools`** if needed) to follow the 0 – 100 value range and facilitate a positive relationship with moisture. A weighted sum model was then made using **`r.series`** under **`GRASS Raster`**, in which curvature, flow accumulation, and curvature are weighted 0.1, 0.4, and 0.3 respectively. Lastly, the IMI was categorized into three classes following thresholds set by @iverson2003 : xeric (0 – 35), intermediate (35 – 50.6), and mesic (50.6 – 100).
+
+Due to the absence of oak seedlings (none or close to none) in the Crawford Notch and Bartlett plots, regeneration analysis was only carried out for Stevens Brook and Hogsback. Values of slope, aspect, hillshade, flow accumulation, curvature, and the IMI were extracted for each plot location using **`Add raster values to points`** under **`SAGA Next Gen Vector <-> raster`**. Regression analyses were then run to see if relationships between these variables and oak seedling abundance exist. 
+
+## Results
+
+### Integrated Moisture Index
+
+The IMI range was fairly similar among sites: 5 – 74 at Bartlett (Figure 7), 0 – 66 at Crawford Notch (Figure 8), and 2 – 61 at both Stevens Brook and Hogsback (Figures 9 and 10). Bartlett, nonetheless, is more mesic with a good amount of the study stands in the intermediate classes. The rest of the stands are mostly in xeric positions, with the exception of the northern portion of the Crawford Notch burn stand and both of the Hogsback burn stands. 
+
+One-way ANOVA shows significant effects of the disturbance treatments (burn versus control) on oak seedling abundance at Stevens Brook (p=0.002, Figure 11) but not Hogsback (p=0.3, Figure 12). Regression analyses for both sites yielded no other significant relationships except for curvature at Hogsback that trends more negatively with higher oak seedling abundance (p=0.016, r²=0.04).  
+
+Figure 7. Integrated Moisture Index of the Bartlett study site
+
+Figure 8. Integrated Moisture Index of the Crawford Notch study site
+
+Figure 9. Integrated Moisture Index of the Stevens Brook study site
+
+Figure 10. Integrated Moisture Index of the Hogsback study site
+
+Figure 11. Oak seedling count per 1m² plot at Stevens Brook study site
+
+Figure 12. Oak seedling count per 1m² plot at the Hogsback study site
+
+Figure 13. Regression analysis of curvature and oak seedling abundance at Hogsback
+
+## Discussion
+
+#### Topography, moisture, and fire
+
+The IMI ranges are similar among sites, implicating homogeneity in topography-driven moisture levels across the White Mountains. Nonetheless, regardless of the moisture level, the Bartlett stands burned well perhaps because they were previously clearcut. Significantly less stand density combined with dry slash that was left behind helped sustain the fire to its intended burning length and intensity. On the other hand, moisture levels dampened the fire intensity in the northern portion of the Crawford Notch burn stand as well as both of the Hogsback burn stands, which were observed on the ground during the summer 2023 field campaign. The surveyed HOG 28/2B is only the western half of the original burn stand as the eastern half was disregarded as too ineffectively burned. 
+
+Topographical variables generally do not correlate with oak seedling abundance in this study, except for curvature at Hogsback. Their negative relationship echoes previous literature, as the more depressed and hence moister an area is, the fewer oak seedlings observed, perhaps due to competition with more mesic species [@chapman2016; @iverson2008]. However, it is worth noting that depressions tend to also accumulate more acorns thanks to gravity – and pull the relationship with oak regeneration in a more positive direction.
+
+### Limitations
+
+#### IMI analysis
+
+One of the four variables – available water capacity, used to model the IMI was left out in this paper due to the lack of data. This can usually be obtained via the USDA web soil survey, but since the sites are within the boundaries of the NH State Parks (Crawford Notch), White Mountain National Forest (Stevens Brook and Hogsback), and Bartlett Experimental Forest, these agencies are responsible for examining their own lands and most of the data are either omitted from online access or missing altogether. Vector data for Crawford Notch was found on the NH GRANIT portal and for Bartlett was generously provided by Matt Vadeboncoeur, but the lack of spatial variation resulted in less desirable IMI results and the variable was hence discarded. 
+
+Another limitation comes with using the default IMI classes defined by Iverson and Prasad 2003. Despite most of the study stand areas being classified as xeric, the IMI range maps show more subtle gradients from xeric to mesic and perhaps better highlight the prevalence of intermediate moisture levels all across. A more fine-tuned classification system can be devised to better represent each moisture class in the White Mountains, since the one used in this paper was developed for southern Ohio. 
+
+Last but not least, as previously mentioned, many variables other than seedling abundance were collected this summer for the oak seedlings. Regression analyses of the relationships between them and the topographic variables might reveal information we have not yet known. We are also planning on coming back and monitoring these seedlings for growth next year.
+
+## Citations
+
+### R packages
+
+```{r generateBibliography,results="asis",echo=FALSE} read.bibtex(file="packages.bib")}
+```
+
+### Literature

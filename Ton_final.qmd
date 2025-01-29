@@ -1,19 +1,21 @@
 ---
-title: "Oak at the Edge"
-author: "Khanh Ton"
-institute: "University of New Hampshire"
-date: "Last updated `r format(Sys.time(), '%m/%d/%Y')`"
 bibliography: [references.bib,packages.bib]
 csl: ecology.csl
 documentclass: article
-mainfont: Arial
-fontsize: 11pt
+mainfont: Times New Roman
+fontsize: 12pt
 geometry: margin=1in
-linestretch: 1.5
+linestretch: 2
 papersize: a4
+toc: true
+lof: true
+lot: true
+always_allow_html: true
+fig-cap-location: bottom
+fig-align: center
+tbl-cap-location: top
 format: pdf
 output: bookdown::html_document2
-always_allow_html: true
 editor: visual
 ---
 
@@ -25,7 +27,6 @@ library(knitr)
 library(tinytex)
 library(shiny)
 library(knitcitations)
-library(viridis)
 library(gt)
 library(car)
 library(rstatix)
@@ -36,45 +37,37 @@ trackdown_auth_configure(path = "client.json")
 
 *You can access my codes here:* <https://github.com/mykhanh0504/rxfire-oak>
 
-## Abstract
+\newpage
 
-\[TITLE IN WORKING PROCESS\]
+# Introduction
 
-By
+## *Quercus rubra* regeneration landscape at present
 
-Khanh Ton
-
-University of New Hampshire, May 2025
-
-## Introduction
-
-### *Quercus rubra* regeneration landscape at present
-
-#### Economic values
+### Economic values
 
 *Quercus rubra* L. (hereafter *Q. rubra*) is an economically and ecologically important tree species in the northeastern United States. It is a fast-growing species and thrives on a wide range of upland soils [@abramsFireDevelopmentOak1992]. Additionally, it is tolerant of heat, drought, and even ground fire [@abramsFireEcologicalHistory2000]. *Q. rubra* produces high-quality timber with high wood density, making it an important lumber commodity and prompting forest managers to be concerned with its sustainable regeneration [@deyReviewDynamicsPrescribed2018].
 
-#### Ecological values
+### Ecological values
 
 *Q. rubra* is managed for other ecological purposes as well. For example, it serves as a habitat and food source for many wildlife species, from birds like turkeys and jays to mammals like mice, squirrels, and deer, and even insects like weevils [@mcsheaForestryMattersDecline2007]. *Q. rubra* drives their population dynamics with its high mast production occurring about every two years.
 
-#### Regeneration challenges
+### Regeneration challenges
 
-##### Acorn germination phase
+#### Acorn germination phase
 
 *Q. rubra* currently faces many regeneration challenges in the northeastern United States, and its recruitment will continue failing without timely and appropriate interventions. One such challenge is acorns becoming a major hard mast source for wildlife consumption since the demise of American chestnut and the spread of beech bark disease. This high seed predation deters successful advance regeneration outside of mast years [@mcsheaForestryMattersDecline2007]. Moreover, if seeds are buried under a thick litter layer, the seed radicle may struggle to reach the mineral soil, and this can negatively affect epicotyl emergence [@arthurRefiningOakFireHypothesis2012].
 
-##### Seedling establishment phase
+#### Seedling establishment phase
 
 Even when seedlings are established, they risk getting eaten, especially by deer [@mcsheaForestryMattersDecline2007]. *Q. rubra* is also susceptible to some fungal pathogens including *Phytophthora* and *Armillaria*, which cause sudden oak death and Armillaria root rot respectively. Lastly, its shade intolerance retards its seedling recruitment when there is insufficient light in the understory [@nowackiDemiseFireMesophication2008]. Seedling growth might be slow due to competition from more shade-tolerant species such as *Acer rubrum* and *Fagus grandifolia*. 
 
-### \[Fire-oak relationship through time\]
+## \[Fire-oak relationship through time\]
 
-#### Pre-settlement fire usage
+### Pre-settlement fire usage
 
 @abramsFireDevelopmentOak1992 hypothesized that prescribed fire might be crucial for oak regeneration. Fire has been integral to upland oak systems in the eastern United States for millennia. Pre-settlement fires occurred as a function of lightning strikes as well as native activities such as cooking, heating, seedbed preparation, hunting, ceramic manufacture, and communication. Burning continued with European settlement and pitched oak as the dominant species in periodically burned areas [@abramsFireDevelopmentOak1992]. Over time, *Q. rubra* became much more adapted to a periodic fire regime than other hardwoods and, as a result, can take advantage of the postfire environment.
 
-#### Fire suppression policy
+### Fire suppression policy
 
 However, fire suppression became mainstream policy in the 1920s and promoted forest mesophication [@nowackiDemiseFireMesophication2008].
 
@@ -82,15 +75,15 @@ Not only does the perception of wildfires differ among groups of people, but it 
 
 Six years later, as many young people enlisted in the military in the aftermath of the attack on Pearl Harbor, the USFS started to worry about its lack of manpower and equipment [@smith1956]. Together with the USDA, the National Association of State Foresters, and the Wartime Advertising Council (Ad Council at present), it created the Cooperative Forest Fire Prevention (CFFP) Program in 1942, through which fire prevention propaganda was produced and distributed in newspapers, radio shows, bus stops, etc. The program was proven to be effective as man-caused forest fires hit an all-time low in 1945, from around 210 thousand fires before World War II to 124728 fires. After the war, the Ad Council and the advertising firm Foote, Cone & Belding (FCB) created the Smokey Bear character, particularly to attract children’s attention. Using the iconic “Only you can prevent forest fires” motto, both the 1942 CFFP Program and the 1945 Smokey Bear Campaign helped relieve the federal firefighting logistical challenges by shifting the bulk of fire-suppressing responsibility onto the public. The campaign was further expanded in the next decade with the 1952 Smokey Bear Act and the 1953 creation of the Junior Forest Ranger (JFR) program. The Smokey Bear Act was passed unanimously in Congress to protect the character from misuse and to issue licenses for the production and sale of Smokey Bear products, whose profits are further used for wildland fire management. The JFR program attracted hundreds of thousands of children, who also ensured that their parents were well-aware of fire prevention.
 
-#### Fire-oak hypothesis
+### Fire-oak hypothesis
 
 As the eastern landscape becomes wetter and more shady, mesic microenvironmental conditions improve and favor the regeneration of shade-tolerant species. This positive feedback loop shrinks suitable habitats for shade-intolerant, fire-adapted species like *Q. rubra* over time. Therefore, it has been argued that it is necessary to bring back fire in a controlled manner to reverse the feedback loop and restore the upland oak ecosystems [@abramsFireDevelopmentOak1992].
 
 “old-growth,” in which natural succession is the dominant agent of change, looks like in New England – dominated by shade-tolerant species like beech and sugar maple in more fertile sites and hemlock and spruce in shallow and rocky soil.
 
-### The future of oak and management directions
+## The future of oak and management directions
 
-#### Climate change-induced oak range expansion
+### Climate change-induced oak range expansion
 
 (USDA) RCPs = representative concentration pathways, scenarios used in CMIP5
 
@@ -108,25 +101,11 @@ Associated numbers represent the expected change in radiative forcing from the y
 
 The other important consideration for oak regeneration is that *Q. rubra* is projected to move further northward due to climate change [@petersClimateChangeTree2020]. In New England, its distribution is projected to increase substantially by 2100 under both RCP 4.5 and 8.5 scenarios due to high adaptability.
 
-#### Adaptive silviculture
+### Adaptive silviculture
 
 Nevertheless, adaptive silviculture can be implemented to ensure a seamless transition for the species north of its current range limit and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations [@iverson2008; @granger2018; @bassett2020; @dee2022]. My study will build on this research and further explore its role in oak range expansion.
 
-#### Topography and *Q. rubra* regeneration
-
-Q. rubra is a fast-growing species with moderate nutrient requirements and thrives on a wide range of upland soils [@abramsFireDevelopmentOak1992]. Additionally, it is tolerant of heat and drought [@abrams2000] – making its regeneration advantageous on xeric slopes [@chapman2016]. More specifically, @iverson2003 pointed out that there might be a correlation between oak regeneration and these four topographical variables: hillshade, flow accumulation, curvature, and available water capacity of soil. Hillshade represents solar radiation potential, which is greatest on steep, south-facing slopes. Its value ranges from 0 to 255, with 0 being the darkest and 255 the brightest. Flow accumulation is the accumulated flow of water downslope – the higher the value, the wetter an area can get. Meanwhile, curvature measures the soil concavity – the higher the value, the deeper the depression is. Lastly, available water capacity represents the total amount of water available to plants in the A and B horizons. These variables were then used to model the Integrated Moisture Index: moisture is higher where hillshade is minimized, in lower slope positions and depressions, and in soils capable of storing more water. 
-
-#### Fire effects on mycorrhizal fungi colonization
-
-##### Ectomycorrhizal fungi (EcMF)
-
-##### Arbuscular mycorrhizal fungi (AMF)
-
-Besides creating new aboveground conditions for vegetation succession, fire modifies the physical, chemical, and biotic soil environment. This comprises soil heating [@choromanska2002], charcoal and ash deposition [@ball2010], alteration of biogeochemical processes [@chapin2012], and changing the microbial community including arbuscular mycorrhizal dynamics. Previous studies show that whether AMF mycorrhizal colonization increases or decreases post-fire is site- and fire-specific. In a literature review by @cairney2007, fire effects on AMF vary by fire type (prescribed or wildfire), vegetation type, and time elapsed since the fire. Even then, none of these factors is a good predictor of AMF colonization. For example, @bentivenga1991 and @dhillion1988 both focused on prescribed fires in the prairie ecosystem and sampled for soil fungi relatively soon after the burning events, but the former found an increase in root colonization while the latter detected a decrease in spore density and root colonization. Other potential variables at play are burning temperature, soil moisture level, sampling depth, and methods of collecting and analyzing data. Regardless, there is very little research on the interactions between fire and AMF colonization in the temperate forest ecosystem. Fulfilling this knowledge gap can help inform whether forest management using prescribed burns can promote mycorrhizal symbiosis or, if it does not, can outweigh the reduction of mycorrhizal benefits to oak regeneration. It is worth noting that *Q. rubra* is ectomycorrhizal in nature, but seedlings involved in our experiment were grown from acorns in soil mediums containing arbuscular mycorrhizae (see Limitations for further clarifications). AMF colonization occurred in place of EcMF as a result.
-
-### Research questions and hypotheses
-
-#### \[Whether prescribed fires promote *Q. rubra* regeneration\]
+## Research questions and hypotheses
 
 Six pairs of burn and control forest stands from four locations across the White Mountains ecoregion are picked for my study. They are part of a novel landscape-scale project implemented by the USFS over the past decade. There is a gradient of burn intensities and silvicultural treatments represented among these locations, along with variable burn intensity at smaller spatial scales within each stand. Assessment of how these factors have affected oak regeneration success will help to inform management considerations. The applied silvicultural prescriptions were all targeted towards oak regeneration, and my study investigates their results to answer the research questions below: 
 
@@ -138,17 +117,9 @@ Six pairs of burn and control forest stands from four locations across the White
 
 **H2:** Fire temporarily increases available nitrogen pools [@wan2001] and fluxes [@wang2014] and seedlings can take advantage of them to grow faster. Additionally, fire reduces pathogen loads that can negatively affect seedling growth [@filip1997]. Once reaching an appropriate height and an appropriate density, *Q. rubra* seedlings can be more competitive against their mesophytic counterparts [@iverson2008].
 
-#### \[Whether topographical effects on fire intensity and oak germination is a factor at play\]
+# Methods
 
-This paper therefore seeks to see if there are any correlations between the IMI, its individual topographical variables, as well as their interactions with prescribed burns with oak seedling abundance at study sites across the White Mountains ecoregion of New Hampshire. It is hypothesized that a lower IMI value correlates with more oak seedling abundance as (1) it facilitates a more suitable growing condition for Q. rubra and (2) it may have promoted greater fire intensity and given the species a regenerative edge its competitors. 
-
-#### \[Whether fire effects on mycorrhizal fungi colonization is a factor at play\]
-
-This study explored whether fire benefits oak regeneration in terms of promoting AMF colonization of seedling roots in a mesocosm setup. In this experimental design, oak seedlings were grown from acorns in burned and unburned soil treatments for four months before having their roots harvested. Our objective was to compare the extent of AMF root colonization across seedlings grown in these soils. We hypothesized that AMF root colonization in the burned soils would be more extensive than that in the unburned soils as the fungal structures took advantage of the nutrients released by the burn.
-
-## Methods
-
-### Study sites
+## Study sites
 
 The selected pairs of burn and control forest stands for this study are located in the White Mountains National Forest (WMNF). They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (Table A, Figure 1). One pair does not have any notable management history, and its burn stand experienced wildfire instead. There is a gradient of burn intensities and silvicultural treatments represented among these projects, along with variable burn intensity at smaller spatial scales within each unit most probably due to topographical variables.
 
@@ -171,13 +142,13 @@ The selected pairs of burn and control forest stands for this study are located 
 
 ![Map of the study sites](images/map.jpg){fig-align="center"}
 
-#### White Mountains National Forest overview
+### White Mountains National Forest overview
 
 \~320000 ha
 
 The WMNF's Land and Resource Management Plan is a collective effort between 1999 to 2005 to define a desired vision for the National Forest's landscape.
 
-#### Stevens Brook (SB, Pair 1)
+### Stevens Brook (SB, Pair 1)
 
 `USDA FS 2005a, 1-16 to 1-22`
 
@@ -187,15 +158,15 @@ Following the field survey, the Alternative 2 plan was written up by a group of 
 
 More specifically, the Plan expected to perpetuate more of the oak-pine habitat type and proposed a shelterwood harvest and prescribed fire in stand 5-15 to reinforce oak dominance. Evidently, stand 3-16 was cut and burned instead while stand 5-15 only received a cut.
 
-#### Hogsback (HOG, Pairs 2-3)
+### Hogsback (HOG, Pairs 2-3)
 
 Hogsback is part of the 2100-ha Oliverian Stewardship Project area, which comprises the Benton Range southern half in Benton and Warren (Grafton County, NH). A pre-management survey showed a landscape dominated by hardwood, mostly mature with only a small area of young forest and no regeneration-age (0-9 years old) forest.
 
 Similar to the Stevens Brook project, this project aimed to produce a sustainable yield of commercial forest products and increase habitat diversity, especially for the regeneration age class, using timber harvesting. Unlike the SB area, however, the oak-pine forest type is less common. Prescribed burning was carried out on about 79 ha to maintain this forest type as well as reduce hazardous fuel loading. This management plan, officially called Alternative 3, was to ensure the provision of about 19300 m^3^ of forest products.
 
-#### Crawford Notch State Park (CF, Pair 4)
+### Crawford Notch State Park (CF, Pair 4)
 
-#### Bartlett Experimental Forest (BEF, Pairs 5-6)
+### Bartlett Experimental Forest (BEF, Pairs 5-6)
 
 These 1050 ha were set aside by the US Forest Service in 1931 to conduct research on the ecology and management of northern forest ecosystems, including forest dynamics and structure as well as wildlife relationship with forest management [@gamal-eldin1998]. The forest was chosen for its typical New England conditions in terms of soils, elevation gradients, climate, and tree species composition. It was selectively logged through the late 19^th^ into the early 20^th^ century for high-value timber, fuel, and building roads. At present, different silvicultural systems are implemented in different compartments to be studied over a long period of time [@leak2011].
 
@@ -211,75 +182,45 @@ Many call Bartlett home and their lives are closely tied to the changing forest 
 
 Two potential major obstacles that could prevent sustainable production are diseases and public perception. A pertinent tree health problem is the invasion of emerald ash borer, which currently has no cure and is projected to wipe out the entire ash population. Public preference for proforestation due to concerns of aesthetics and old-growth carbon accumulation efficiency might interfere with the implementation of even-aged systems. 
 
-### Field data collection
+## Field data collection
 
-#### Site characterization
+### Site characterization
 
 In summer 2023, a number of transects (anywhere between 50 and 225 m long) were laid 30 to 50 m apart in each study stand; they are either parallel or perpendicular from each other. They are marked by wooden stakes every 25 m. Along a transect is a series of 1 m² quadrats (hereafter referred to as “plots") spaced 10 m apart from their centers. In total, there were 43 transects laid in 6 pairs of burn-control stands, amounting to 393 plots. Percent slope, aspect, microtopography, burn evidence, and *Q. rubra* litter presence were recorded for each plot. Percent slope was determined with a hypsometer and later validated with topography maps, and aspect with a compass. Microtopography was described qualitatively, using remarks like “slight slope,” “steep slope,” “mid slope,” “concave,” and “convex.” Burn evidence was confirmed with charcoal presence. Percent cover was estimated for bareground, woody debris, leaf litter, rock (which should all amount to 100%), as well as live vegetation at breast height and below. Woody species with diameter at breast height (DBH) smaller than 2 cm were identified and their stems counted. 
 
 Composite soil samples of the top 10 cm representing each study site were collected to characterize soil parameters of relevance to seedlings.
 
-#### *Q. rubra* seedling measurements
+### *Q. rubra* seedling measurements
 
 If *Q. rubra* seedlings were present, they were tagged, aged, measured for height (cm) and diameter at root collar (DRC, mm), and checked for evidence of herbivory and pathogen damage. In summer 2024, they were resurveyed twice, once at the beginning and again at the end, to capture growth between the two growth seasons and within this season alone. More variables were added to this survey, including number of leaves and number of live and dead branches. Herbivory and pathogen damage were quantified percentage-wise as well as described qualitatively. 
 
 In the 5 m radius of each plot, trees were identified and measured for DBH, providing they were 2cm or larger. The number of *Q. rubra* seedlings was also counted. In summer 2024, seedling abundance was re-estimated twice, once at the beginning and again at the end of the season.
 
-#### *Q. rubra* leaf and root sample collection
+### *Q. rubra* leaf and root sample collection
 
 A 8-mm-diameter hole punch was used to collect leaf samples from tagged *Q. rubra* seedlings in study plots along established transects. For every seedling, a targeted number of 5 holes (3 at minimum and 10 at maximum) were punched to achieve representative C and N contents for analysis. As for roots, samples were destructively obtained from *Q. rubra* seedlings in study stands but outside of established transects. Soils surrounding each seedling were dug lightly to reveal a lateral root, which was then followed through and collected entirely to ensure all tertiary roots were preserved. Samples were brought back to the lab to be analyzed for ectomycorrhizal and arbuscular mycorrhizal colonization rates.
 
-#### LAI measurements
+### LAI measurements
 
 During the peak of the 2024 growth season, leaf area index (LAI) measurements were carried out at the center of each plot to quantify the amount of leaf material in its canopy. The LI-COR LAI-2200C Plant Canopy Analyzer was propped at knee height to simulate the light availability to seedlings and faced away from the sunlight direction. LAI data will be matched, calibrated, and analyzed using the LI-COR FV2200 software.
 
-### Mesocosm experiment setup
+## Lab processing of collected samples
 
-Burned soils were collected at the location of the May 2022 Bemis Fire at Crawford Notch State Park (Hart’s Location, NH) in May 2023. The top 15 cm of soil, including both organic (Oa) and mineral (E, Bh, Bs) horizons, was collected from areas within 5 m of a live, co-dominant *Q. rubra*, selecting microsites where the Oi and Oe layer had been thoroughly consumed by the fire. Leaf litter from fall 2022 was excluded from the sample. Control soils were collected from a similar location adjacent to the burned area, following the same procedure after removing the Oi horizon. Each batch of soil was homogenized after collection, removing only large roots and rocks but keeping the majority of fine roots as part of the sample. Half of each batch was heat-treated at 60∘C for 48 hours. They were then mixed 1:1 with PRO-MIX HPCC MYCORRHIZAE, a potting mix containing *Rhizophagus irregularis*. This potting mix was the leftover from another greenhouse experiment from the previous year. 
-
-A total of 955 acorns were collected from two mother trees in Shelburne and Thornton, NH in fall 2022. After a float test to determine viability, 754 were cold-stratified over the winter. In April 2023, acorns were soaked and the 175 individuals that germinated were planted in pots in May. There were 30-40 replicate pots for each of the five soil treatments: (1) burned soil, (2) unburned soil, (3) heat-treated burned soil, (4) heat-treated unburned soil, and (5) potting mix only (control). Seedlings were placed into rows at random under a mesh tent that lets in moderate sunlight. They were rotated once and watered twice weekly.
-
-### Lab processing of collected samples
-
-#### Soil
+### Soil
 
 Field and unheated experiment soil samples were homogenized and sieved using a 2-mm sieve to filter out gravel and partially weathered parent material. They were then sent to the University of New Hampshire Cooperative Extension in December 2023 to be tested for soil pH and concentrations of calcium (Ca), magnesium (Mg), potassium (K), phosphorus (P), lead (Pb), and organic matter (OM).
 
-#### Isotope weighing of leaf punches
+### Isotope weighing of leaf punches
 
 Leaf punches were oven-dried at 60^o^C overnight and stored in air-tight conditions. They were then cut into small pieces and packed in 8\*5-mm tin capsules to achieve samples weighing 3±1 g. A total of 66 samples and \[\] duplicates were put in the 96-well cell plate to analyze for %C, %N, and C:N ratio following combustion using the Elementar GeoVision elemental analyzer isotope ratio mass spectrometer.
 
-#### Root scoring for ectomycorrhizal (EcM) fungi colonization
+## Data visualization and analysis
 
-#### Root clearing, staining, and scoring for arbuscular mycorrhizal (AM) fungi colonization
-
-In August 2023, a subsample of 48 seedlings from a total of 175 were harvested for their roots. Root lengths and number of lateral roots were counted for all, and a smaller subset (PVF seedling roots) was also weighed. The root clearing, staining, and scoring protocol was adapted from @cleavitt2008 . Roots were bleached and submerged in 20 ml glass vials containing 10% ethanol solutions. However, the solution was not effective at stopping pathogenic fungal growth because, at the time of analysis, 5 samples were completely unusable considering the vast extent of their fungal colonization. Thirty were in usable condition, in which the solutions remained relatively clear and there was little to no fungal colonization; 13 other were salvageable, their solutions less clear with more or less spread out colonization.
-
-The 30 usable samples were cleared and stained in spring 2024. Root segments were taken out of vials into test tubes, submerged in 10% KOH solutions, and placed in a 94∘C water bath. The solutions were changed every half an hour until they stopped changing color. At this point, the roots became somewhat translucent and light brown in color. After that, they were acidified with 10% HCl solutions for one hour and then stained with 1:1 glycerol-vinegar solutions overnight. The following day, roots were rinsed and kept in 1:1 glycerol-vinegar destaining solutions in 20ml glass vials (Figure 8).
-
-Samples were individually mounted on a gridded microscope slide (grid size = 1 mm\*1 mm) with a cover slip. A compound microscope was used at 200x magnification to count for different AMF structures. It is worth noting that only AMF structures were present in these samples, despite *Q. rubra* being typically ectomycorrhizal. At 100 intersections in each sample taken at 1 mm intervals, one of the following categories was determined: NS - no structure present, A - arbuscules, V - vesicles, C - coils, and MH - mycorrhizal hyphae (e.g. Figure 9).
-
-### Data visualization and analysis
-
-#### Observational field data
+### Observational field data
 
 Understory competition and overstory composition were visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius *Q. rubra* seedling counts, these plot-level stem counts and estimated basal areas were scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out in RStudio for each response variable to test if prescribed fire had an effect on them, and if so, whether it was significant.
 
-#### Integrated Moisture Index
-
-LiDAR data of the sites were downloaded from the NH GRANIT portal [@earthsystemsresearchcenter] in the form of Digital Elevation Model (DEM) tiles. Tiles are then filtered and merged.
-
-The conceptual methods of creating the IMI are derived from @iverson2003 . In their paper, Iverson and Prasad employed a weighted sum model with 4 variables and their respective weights: curvature (0.1), flow accumulation (0.3), hillshade (0.4), and available water capacity (0.2). However, this paper omitted the 4th one due to the lack of data (see more in Limitations).
-
-Specific tools were identified to generate the variables and parameters were modified to better match site conditions as follows. Hillshade was generated for each site using the **`Hillshade`** tool under **`Raster terrain analysis`**. The Z factor was kept at the default value of 1, while both azimuth and vertical angle were modified to simulate mean angles during the growing season in the White Mountains (185 and 60 respectively). Profile curvature, along with slope and aspect, was generated with **`r.slope.aspect`** under **`GRASS Raster`**. All the settings were kept at default, except that slope was reported in terms of percentage. Flow accumulation was created using the **`r.flow`** tool under **`GRASS Raster`**. All three variables were rescaled (**`Rescale raster`** under **`Raster analysis`**) and reordered (**`Invert grid`** under **`SAGA Next Gen Raster tools`** if needed) to follow the 0 – 100 value range and facilitate a positive relationship with moisture. A weighted sum model was then made using **`r.series`** under **`GRASS Raster`**, in which curvature, flow accumulation, and curvature are weighted 0.1, 0.4, and 0.3 respectively. Lastly, the IMI was categorized into three classes following thresholds set by @iverson2003 : xeric (0 – 35), intermediate (35 – 50.6), and mesic (50.6 – 100).
-
-Due to the absence of oak seedlings (none or close to none) in the Crawford Notch and Bartlett plots, regeneration analysis was only carried out for Stevens Brook and Hogsback. Values of slope, aspect, hillshade, flow accumulation, curvature, and the IMI were extracted for each plot location using **`Add raster values to points`** under **`SAGA Next Gen Vector <-> raster`**. Regression analyses were then run to see if relationships between these variables and oak seedling abundance exist. 
-
-#### Root EcMF and AMF colonization data
-
-Percent root colonization for each structure (A, V, and C) was calculated as the ratio of the abundance of the specific structure over the total number of observations (O). Percent hyphal colonization was the ratio of the sum of all structures observed (A, V, C, MH) over O. They were then separately analyzed by one-way ANOVA with burning as the main effect. More one-way ANOVA analyses were carried out with percent hyphal colonization as the response variable and individual soil treatment measurements as the factor variables. Additionally, a multiple linear regression was run to tease apart the relationships between percent hyphal colonization and root lateral abundance, root length, root weight, stem length, stem DRC, and stem weight.
-
-## Results
+# Results
 
 | Species code | Scientific name | Common name |
 |------------------------|------------------------|------------------------|
@@ -306,9 +247,9 @@ Percent root colonization for each structure (A, V, and C) was calculated as the
 
 : Species codes
 
-### Stand characterization
+## Stand characterization
 
-#### Understory competition
+### Understory competition
 
 In burned stands, *Q. rubra* mainly competes with early successional seedlings e.g. *Rubus spp.* `RUS`, *A. rubrum* `ACRU`, *B. alleghaniensis* `BEAL` and stump sprouts e.g. *F. grandifolia* `FAGR`.
 
@@ -409,7 +350,7 @@ ggplot(aes(x=Spcode,y=Density))+
   ylab("Stem count (per ha)")
 ```
 
-#### Overstory composition
+### Overstory composition
 
 Burn stands have lower overstory basal areas than control stands. Pairs 5 and 6 stand out especially due to their clearcut treatment i.e. absence of mature trees of 20 cm and above in DBH. Their compositions are also the least diverse, consisting of *Prunus* (`PRPE`,`PRSE`), *Populus* (`POGR`,`POTR`), and *Betula spp.* (`BEAL`,`BEPO`,`BEPA`). The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* spp. of mid-ranged DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *Pinus strobus* `PIST`.
 
@@ -537,9 +478,9 @@ sumba %>%
   ylab("Basal area (per ha)")
 ```
 
-### *Q. rubra* seedling density and measurements
+## *Q. rubra* seedling density and measurements
 
-#### 2023 seedling density
+### 2023 seedling density
 
 Seedling density increased threefold in burned stands (2359+/-211 per ha) relative to control stands (778+/-121 per ha, p\<0.001).
 
@@ -624,7 +565,7 @@ one.way <- aov(OAKcount~Disturbance+Pair,data=count23x)
 summary(one.way)
 ```
 
-#### 2023 diameter at root collar (DRC, mm)
+### 2023 diameter at root collar (DRC, mm)
 
 DRC was greater for seedlings in burned stands (4.6+/-0.3 mm) versus control stands (3.3+/-0.3 mm, p\<0.01).
 
@@ -702,7 +643,7 @@ aov_drc23 <- aov(DRC_mm~Disturbance+Pair,data=ms23x)
 summary(aov_drc23)
 ```
 
-#### 2024 extension growth (cm)
+### 2024 extension growth (cm)
 
 Extension growth was greater for seedlings in burned stands (6.43+/-0.5 cm) versus control stand (2.6+/-0.4 cm, p\<0.001).
 
@@ -786,7 +727,7 @@ aov_exgr24 <- aov(Extension_growth_cm~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_exgr24)
 ```
 
-#### 2024 number of live branches
+### 2024 number of live branches
 
 There were more live branches per seedling in the burned stands than the control stands, respectively 4+/-0 and 2+/-0 (p\<0.001).
 
@@ -821,7 +762,7 @@ aov_lb24 <- aov(nlive_branches~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_lb24)
 ```
 
-#### 2024 number of leaves
+### 2024 number of leaves
 
 Seedlings in burned stands sprouted more leaves (16+/-1) than in control stands (7+/-1, p\<0.001).
 
@@ -858,7 +799,7 @@ comparisons <- strsplit(row.names(sig_pairs), "-")
 comparisons
 ```
 
-### Leaf Area Index (LAI)
+## Leaf Area Index (LAI)
 
 Burned stands have lower LAI values (averaging 3.2+/-0.2) than control stands (5.4+/-0.2, p\<0.001).
 
@@ -944,71 +885,11 @@ comparisons <- strsplit(row.names(sig_pairs), "-")
 comparisons
 ```
 
-### Integrated Moisture Index
+## Leaf nutrient content
 
-The IMI range was fairly similar among sites: 5 – 74 at Bartlett (Figure 7), 0 – 66 at Crawford Notch (Figure 8), and 2 – 61 at both Stevens Brook and Hogsback (Figures 9 and 10). Bartlett, nonetheless, is more mesic with a good amount of the study stands in the intermediate classes. The rest of the stands are mostly in xeric positions, with the exception of the northern portion of the Crawford Notch burn stand and both of the Hogsback burn stands. 
+# Discussion
 
-One-way ANOVA shows significant effects of the disturbance treatments (burn versus control) on oak seedling abundance at Stevens Brook (p=0.002, Figure 11) but not Hogsback (p=0.3, Figure 12). Regression analyses for both sites yielded no other significant relationships except for curvature at Hogsback that trends more negatively with higher oak seedling abundance (p=0.016, r²=0.04).  
-
-Figure 7. Integrated Moisture Index of the Bartlett study site
-
-Figure 8. Integrated Moisture Index of the Crawford Notch study site
-
-Figure 9. Integrated Moisture Index of the Stevens Brook study site
-
-Figure 10. Integrated Moisture Index of the Hogsback study site
-
-Figure 11. Oak seedling count per 1m² plot at Stevens Brook study site
-
-Figure 12. Oak seedling count per 1m² plot at the Hogsback study site
-
-Figure 13. Regression analysis of curvature and oak seedling abundance at Hogsback
-
-### Soil nutrient contents
-
-The three soil treatments had similar high levels of Mg and very low levels of Pb (Table 1). The control sample was the most basic and contained the most Ca and the least OM, while the unburned sample contained the least amounts of K and P. Percent hyphal colonization did not differ significantly among different levels of nutrients (p\>0.1).
-
-Table 1. Test results of soil treatments: colors signify whether values lie within the optimal range (white - very low, red - low, yellow - optimal, green - high)
-
-|  |  |  |  |  |  |  |  |
-|---------|---------|---------|---------|---------|---------|---------|---------|
-| **Soil** | **pH** | **Ca (ppm)** | **Mg (ppm)** | **K (ppm)** | **P (ppm)** | **Pb (ppm)** | **%OM** |
-| Control | 5.70 | 814.4 | 430 | 202 | 72 | 0.58 | 6.30 |
-| Burned | 5.10 | 614.4 | 255 | 184 | 40 | 2.75 | 10.10 |
-| Unburned | 5.05 | 441.0 | 235 | 148 | 29 | 2.30 | 10.33 |
-
-### Leaf nutrient content
-
-### Root mycorrhizal fungal colonization extent
-
-#### EcMF colonization
-
-#### AMF colonization
-
-There were no significant differences in the extent of hyphal colonization among unburned, burned, and control soil treatments (p=0.2). The average hyphal colonization percentages were 13.9±4.3, 15.6±3.9, and 1.0±0.8 respectively (Figure 1). Similarly, arbuscular colonization among soil treatments was not significantly different (p=0.4). The mean arbuscular colonization of roots in unburned soils was 7.4±2.8, in burned soils 6.3±2.1, and in control 0.5±0.3 (Figure 2). Coil colonization also did not significantly differ (p=0.4), with the average extent in unburned soils being 5.2±2.7, burned soils 8.1±2.8, and control 0.5±0.6 (Figure 3).
-
-Percent hyphal colonization was not significantly correlated to the six seedling measurements: root lateral abundance, root length, root weight, stem length, stem DRC, and stem weight (Figures 4 & 5). Hyphal colonization seemed to have a positive relationship with root lateral abundance and stem weight while having an inverse relationship with the remaining variables, but all correlation coefficients were close to 0 (Table 2).
-
-Table 2. Correlation coefficients between AMF hyphal colonization and seedling measurements
-
-|  |  |  |  |  |  |
-|------------|------------|------------|------------|------------|------------|
-| Root length (mm) | Root weight (g) | Number of laterals | Stem length (mm) | Stem DRC (mm) | Stem weight (g) |
-| -0.01 (p=0.95) | -0.27 (p=0.40) | 0.08 (p=0.73) | -0.09 (p=0.67) | -0.08 (p=0.71) | 0.03 (p=0.92) |
-
-Figure 1. AMF hyphal colonization of Q. rubra grown in different soil mixtures (x indicates average colonization extent)
-
-Figure 2. AMF arbuscular colonization of Q. rubra grown in different soil mixtures (x indicates average colonization extent)
-
-Figure 3. AMF coil colonization of Q. rubra grown in different soil mixtures (x indicates average colonization extent)
-
-Figure 4. Correlations between AMF hyphal colonization and Q. rubra root length, weight, and number of laterals across all treatments
-
-Figure 5. Correlations between AMF hyphal colonization and Q. rubra stem length, diameter at root collar, and weight across all treatments
-
-## Discussion
-
-### *Q. rubra* seedling recruitment by prescribed fire
+## *Q. rubra* seedling recruitment by prescribed fire
 
 *Q. rubra* seedling density in burned stands is triple that in control stands, supporting the hypothesis that prescribed fire promotes seedling recruitment (Figure 4). The different cutting treatments did not have significant effects on such recruitment. When these cutting treatments took place, management intentionally left behind mostly *Q. rubra* trees in the highest DBH size classes (Figure 3). The mother trees survived the burns better than their mesophytic competitors and possibly took advantage of their regrowth time to reproduce [@deyReviewDynamicsPrescribed2018]. Their survival rates are higher due to thicker barks and rapid compartmentalization, among other factors. There is evidence that acorn production is positively correlated to tree vigor i.e full-crowned dominant trees of larger DBHs produce more acorns [@bogdziewicz2020]. Even though acorn production is also dependent on tree genetics [@smith2022], meaning that “good” producers are more likely to yield larger crops, thinning and burning to release the healthiest-looking individuals raises the chance of achieving better yields.
 
@@ -1016,60 +897,24 @@ Additionally, fire can alter soil resource supply by accelerating nutrient cycli
 
 It is also worth evaluating fire effects on competitors at the germination and seedling establishment stage. Fire can reduce seed bank abundance [@schuler2010], but it is more likely that the seed bank remains abundant after one-time burns like in our study. In the understory, early successional seedlings are plentiful, mostly comprising *Rubus spp.*, *A. rubrum*, and *Betula spp.* (Figure 2). The latter two produce high volumes of wind-dispersed seeds that germinate well in the postfire exposed mineral soil. *A. rubrum*, together with *F. grandifolia*, also have strong sprouting responses to disturbances. Prescribed burns can only be considered an effective management tool for *Q. rubra* regeneration if their effects are net positive. 
 
-#### Topography, moisture, and fire
-
-The IMI ranges are similar among sites, implicating homogeneity in topography-driven moisture levels across the White Mountains. Nonetheless, regardless of the moisture level, the Bartlett stands burned well perhaps because they were previously clearcut. Significantly less stand density combined with dry slash that was left behind helped sustain the fire to its intended burning length and intensity. On the other hand, moisture levels dampened the fire intensity in the northern portion of the Crawford Notch burn stand as well as both of the Hogsback burn stands, which were observed on the ground during the summer 2023 field campaign. The surveyed HOG 28/2B is only the western half of the original burn stand as the eastern half was disregarded as too ineffectively burned. 
-
-Topographical variables generally do not correlate with oak seedling abundance in this study, except for curvature at Hogsback. Their negative relationship echoes previous literature, as the more depressed and hence moister an area is, the fewer oak seedlings observed, perhaps due to competition with more mesic species [@chapman2016; @iverson2008]. However, it is worth noting that depressions tend to also accumulate more acorns thanks to gravity – and pull the relationship with oak regeneration in a more positive direction.
-
-### *Q. rubra* seedling growth promoted by prescribed fires
+## *Q. rubra* seedling growth promoted by prescribed fires
 
 Diameter at root collar and extension growth are significantly greater for *Q. rubra* seedlings in burned stands versus control stands (Figures 5-6). Seedlings in burned stands also have more leaves and live branches (Figures 7-9). They might have grown bigger diameter-wise by taking advantage of the temporary increases in available nitrogen pools [@wan2001] and fluxes [@wang2014] immediately after fires to store carbon into the stems. On the other hand, the significantly larger annual extension growths and leaf and branch sproutings in the past two summers imply that the positive fire effects still linger 3-7 years post-treatment. Forest recovery generally takes decades after a major disturbance. @cuevas-gonzález2009 found that effect duration is dependent on the dominant forest type. @yang2017 echoed the same sentiments, highlighting that stands in higher latitudes experience it for longer. Other variables include vegetation density, richness, and abundance: dense areas tend to recover slower while plant species richness and abundance increase with more time elapsed since fire [@smith-ramírez2022].
 
 While mesophytic competitors experience dieback and invest their resources in regrowing, *Q. rubra* seedlings make use of nutrients, space, and light that are more available than ever (Figure 10) to grow taller vertically and horizontally as well as produce leaves to expedite photosynthesis. These photophilic seedlings put on twice the number of live branches (Figures 7-8) and leaves (Figure 9) in the burned stands compared to the control stands. While the mechanisms at play remain unclear, a 2023 mesocosm experiment growing acorns in soils collected from study pairs 4 also showed that seedlings in burned soils have greater DRCs than those in control soils (Cleavitt et al. *in prep*). The study design isolated the effects of burned soils by having acorns sourced from the same mother tree and soils from the same locations to minimize genetic and micro-topographical differences respectively. Arbuscular mycorrhizal fungi (AMF), a symbiotic network that exchanges nutrients with plant roots, was hypothesized to colonize burned soils more extensively but the differences among soil treatments were insignificant. The next step in this investigation of mycorrhizal fungal colonization is analyzing seedling roots harvested from the study sites, in which ectomycorrhizal (EcMF) structures are expected as well.
 
-#### Fire effects on mycorrhizal fungal colonization
-
-##### EcMF
-
-##### AMF
-
-Fire can alter soil resource supply by accelerating nutrient cycling and hence releasing more of them [@chapin2012]. It also can consume more volatile nutrients and lead to their decline. Any temperature above 60∘C is found lethal to fine roots and soil organisms [@watts2018]. A high-intensity fire (420 - 1160∘C) can volatilize soil C and OM to a depth of 10 cm while a low-intensity one (40 - 360∘C) can reach 5 cm. The intensity of the Bemis Fire remained unclear besides that it consumed the Oi and Oe layers, but one year seemed to have been a proficient duration for OM and Mg to recover as their abundances were similar between the burned and unburned samples. On the other hand, there were more K and P in the burned sample than the unburned one -- the Bemis Fire could have been responsible for this increase. The low Ca level in both burned and unburned soil samples suggests that perhaps the soils at Crawford Notch State Park are inherently low in Ca. 
-
-The resulting insignificant differences in hyphal colonization extents among different soil treatments rejected our hypothesis that burned soils would have more extensive colonization. A meta-analysis by @dove2017 supported this result, highlighting no significant response in mycorrhizal colonization post-fire across studies, ecosystems, and fire types. However, it is noted that fire effects were dependent on the assessment method used. For example, the in situ approach reported an average of 21% reduction of mycorrhizal colonization while the ex situ bioassays yielded no significance. A reduction in propagule quantity by heating was also observed in an experimental setting by @pattinson1999 as three *Glomus spp.* underwent a simulated fire of moderate intensity. The hyphal network was most severely disturbed at the soil surface and the effect decreased with depth, despite that normally propagules are densest at the top.
-
-In the field, fire effects on mycorrhizal colonization can vary by biomes and fire types. Three studies on shrublands in different parts of the world with similar times elapsed since fire (1-9 months) found different trends: the wildfire in Australia posed no effect on propagules [@bellgard1994], and so did the prescribed burn in south-central Florida (USA) with root colonization [@anderson1997], but the wildfire in Pakistan decreased propagule viability [@rashid1997]. Fire effects may also change temporally, or not -- Alaskan boreal forest sites 3, 15, 45, and 80 years following fire did not see significant differences in AMF abundance [@treseder2004]. Another confounded variable that could have affected the colonization extent is inoculum density. The inoculum density hypothesis stated that a high inoculum density could prevent a decrease in colonization in response to disturbance [@jasper1991]. @mcgonigle2000 disagreed, finding that high inoculum density facilitated the development of a difference in colonization after a disturbance. Our result may have sided with the latter, assuming low inoculum density occurred across all soil treatments given how low the colonization rates were.
-
-Additionally, the average colonization extents of all AMF structures in burned soils and unburned soils were closer to one another than those in the control treatment. Overall, roots in burned soils had the most extensive colonization rate of 16% while the control barely hosted any (1%). When compared by structure, there were more arbuscules in unburned soils than in their burned counterparts, while coils had the opposite trend. This might mean that the *R. irregularis* spores in the potting mix may have played a trivial role in facilitating AMF colonization compared to existing spores in the burned and unburned soils.
-
-Moreover, hyphal colonization was shown to have insignificant relationships with different seedling measurements. When burned and unburned treatments were grouped together, all correlation coefficients hovered around 0. When observed separately, hyphal colonization was positively correlated to root length and stem weight in unburned samples and to the number of laterals and stem length in burned samples, though not significant either. Regardless, the remaining negative relationships carried little meaning and should be deemed negligible. In other words, AMF colonization extent did not seem to be a good indicator of *Q. rubra* seedling growth and health.
-
-### Limitations
-
-#### Field observations
+## Limitations
 
 One major limitation of this study is that specific burn dates are unknown. Knowing only the burn years makes determining when vegetation started its post-disturbance recovery a difficult job, especially when early successional species only take a few months to regenerate and take up space. On top of that, no pre-treatment vegetation surveys were done to have meaningful within-site comparisons. Our between-site comparisons can be impacted by confounded variables like differences in micro-topography, soil properties, and existing seed banks. Lastly, *Q. rubra* is known to allocate more resources belowground in the first few years than aboveground [@kolb1990]. While destructive harvesting of tagged seedlings lies outside of this project, their belowground structures would have provided a more comprehensive understanding of what role fire plays in this resource allocation.
 
-#### IMI analysis
+# Conclusion
 
-One of the four variables – available water capacity, used to model the IMI was left out in this paper due to the lack of data. This can usually be obtained via the USDA web soil survey, but since the sites are within the boundaries of the NH State Parks (Crawford Notch), White Mountain National Forest (Stevens Brook and Hogsback), and Bartlett Experimental Forest, these agencies are responsible for examining their own lands and most of the data are either omitted from online access or missing altogether. Vector data for Crawford Notch was found on the NH GRANIT portal and for Bartlett was generously provided by Matt Vadeboncoeur, but the lack of spatial variation resulted in less desirable IMI results and the variable was hence discarded. 
+# Citations
 
-Another limitation comes with using the default IMI classes defined by Iverson and Prasad 2003. Despite most of the study stand areas being classified as xeric, the IMI range maps show more subtle gradients from xeric to mesic and perhaps better highlight the prevalence of intermediate moisture levels all across. A more fine-tuned classification system can be devised to better represent each moisture class in the White Mountains, since the one used in this paper was developed for southern Ohio. 
-
-Last but not least, as previously mentioned, many variables other than seedling abundance were collected this summer for the oak seedlings. Regression analyses of the relationships between them and the topographic variables might reveal information we have not yet known. We are also planning on coming back and monitoring these seedlings for growth next year.
-
-#### Mycorrhizal fungi colonization analysis
-
-It is also worth noting that the author of this paper was only involved in the processes of root processing, AMF counting, and data analysis -- the mesocosm experiment setup was carried out by others and the author gave limited input into the experimental design. One major concern before starting the experiment was that the soil collection process may have disturbed the mycelium and thus reduced the fungal population in the samples. Following the experiment, root samples were initially observed for ectomycorrhizal structures, which were absent, so they were then checked for arbuscular structures. As previously mentioned, these seedlings were grown from acorns in potted condition with added AMF spores, which may have favored AMF colonization over EcMF. Perhaps the results could have been further solidified were we able to analyze all the 48 harvested root samples instead of 30 as they are heavily skewed towards the burned and unburned treatments (13 each, and only 4 controls). Better storage techniques are needed to prevent fungal growth on the harvested roots. 
-
-## Conclusion
-
-## Citations
-
-### R packages
+## R packages
 
 ```{r generateBibliography,results="asis",echo=FALSE}
 read.bibtex(file="packages.bib")
 ```
 
-### Literature
+## Literature
