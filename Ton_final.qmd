@@ -31,6 +31,7 @@ library(gt)
 library(car)
 library(rstatix)
 library(kableExtra)
+library(bookdown)
 library(trackdown)
 trackdown_auth_configure(path = "client.json")
 ```
@@ -41,79 +42,17 @@ trackdown_auth_configure(path = "client.json")
 
 # Introduction
 
-## *Quercus rubra* regeneration landscape at present
+*Quercus rubra* L. (hereafter *Q. rubra*) is an economically and ecologically important tree species in the northeastern United States. It is a fast-growing species and thrives on a wide range of upland soils [@abramsFireDevelopmentOak1992]. Additionally, it is tolerant of heat, drought, and even ground fire [@abramsFireEcologicalHistory2000]. *Q. rubra* produces high-quality timber with high wood density, making it an important lumber commodity and prompting forest managers to be concerned with its sustainable regeneration [@deyReviewDynamicsPrescribed2018]. *Q. rubra* is managed for other ecological purposes as well. For example, it serves as a habitat and food source for many wildlife species, from birds like turkeys and jays to mammals like mice, squirrels, and deer, and even insects like weevils [@mcsheaForestryMattersDecline2007]. *Q. rubra* drives their population dynamics with its high mast production occurring about every two years.
 
-### Economic values
+*Q. rubra* currently faces many regeneration challenges in the northeastern US, and its recruitment will continue failing without timely and appropriate interventions. One such challenge is acorns becoming a major hard mast source for wildlife consumption since the demise of American chestnut and the spread of beech bark disease. This high seed predation deters successful advance regeneration outside of mast years [@mcsheaForestryMattersDecline2007]. Moreover, if seeds are buried under a thick litter layer, the seed radicle may struggle to reach the mineral soil, and this can negatively affect epicotyl emergence [@arthurRefiningOakFireHypothesis2012]. Even when seedlings are established, they risk getting eaten, especially by deer [@mcsheaForestryMattersDecline2007]. *Q. rubra* is also susceptible to some fungal pathogens including *Phytophthora* and *Armillaria*, which cause sudden oak death and Armillaria root rot respectively. Lastly, its shade intolerance retards its seedling recruitment when there is insufficient light in the understory [@nowackiDemiseFireMesophication2008]. Seedling growth might be slow due to competition from more shade-tolerant species such as *Acer rubrum* and *Fagus grandifolia*. 
 
-*Quercus rubra* L. (hereafter *Q. rubra*) is an economically and ecologically important tree species in the northeastern United States. It is a fast-growing species and thrives on a wide range of upland soils [@abramsFireDevelopmentOak1992]. Additionally, it is tolerant of heat, drought, and even ground fire [@abramsFireEcologicalHistory2000]. *Q. rubra* produces high-quality timber with high wood density, making it an important lumber commodity and prompting forest managers to be concerned with its sustainable regeneration [@deyReviewDynamicsPrescribed2018].
+@abramsFireDevelopmentOak1992 hypothesized that prescribed fire might be crucial for oak regeneration. Fire has been integral to upland oak systems in the eastern US for millennia. Pre-settlement fires occurred as a function of lightning strikes as well as native activities such as cooking, heating, seedbed preparation, hunting, ceramic manufacture, and communication. Burning continued with European settlement and pitched oak as the dominant species in periodically burned areas [@abramsFireDevelopmentOak1992]. Over time, *Q. rubra* became much more adapted to a periodic fire regime than other hardwoods and, as a result, can take advantage of the postfire environment. However, fire suppression became mainstream policy in the 1920s against the backdrop of the "Big Burn" in 1910, the largest wildfire in the US history that spread across a million hectares in Idaho and western Montana [@nowackiDemiseFireMesophication2008]. The newly established and extremely short-staffed US Forest Service was determined to codify suppression as the main tool to fire management. Its “10 AM” policy went into effect in 1935, requiring all forest fires to be suppressed before 10 AM the next day [@donovan2007]. Together with the 1911 Weeks Act that funded states with fire suppression plans, this policy kick-started almost a century of fire suppression legacy in the US. Fire absence has led to forest mesophication in the eastern landscape, a condition in which stands become wetter and more shady. It promotes mesic microenvironmental conditions, which in turn favor the regeneration of shade-tolerant species. This positive feedback loop shrinks suitable habitats for shade-intolerant, fire-adapted species like *Q. rubra* over time. Therefore, it has been argued that it is necessary to bring back fire in a controlled manner to reverse the feedback loop and restore the upland oak ecosystems [@abramsFireDevelopmentOak1992].
 
-### Ecological values
+The other important consideration for oak regeneration is that *Q. rubra* is projected to move further northward due to climate change [@petersClimateChangeTree2020]. In New England, its distribution is projected to increase substantially by 2100 under both representative concentration pathways (RCP) 4.5 and 8.5 due to high adaptability. These scenarios are based entirely on greenhouse gas concentrations, assuming we follow the same industrial path as usual for RCP 4.5 (an increase of 4.5W/m^2^ in radiative forcing between the years 1750-2100) or increase its intensity in RCP 8.5 (an increase of 8.5W/m^2^ in the same period) \[USDA CITATION HERE\]. Policymakers use RCPs to plan for the type of future they hope to help create, making it also critical for foresters, landowners, and scientist with an interest in *Q. rubra* regeneration to understand and prepare ahead to ease its expansion beyond its current Northern range limit. Adaptive silviculture can be implemented to ensure this seamless transition and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations [@iverson2008; @granger2018; @bassett2020; @dee2022]. This study will build on previous research and further explore prescribed fire's role in oak range expansion.
 
-*Q. rubra* is managed for other ecological purposes as well. For example, it serves as a habitat and food source for many wildlife species, from birds like turkeys and jays to mammals like mice, squirrels, and deer, and even insects like weevils [@mcsheaForestryMattersDecline2007]. *Q. rubra* drives their population dynamics with its high mast production occurring about every two years.
-
-### Regeneration challenges
-
-#### Acorn germination phase
-
-*Q. rubra* currently faces many regeneration challenges in the northeastern United States, and its recruitment will continue failing without timely and appropriate interventions. One such challenge is acorns becoming a major hard mast source for wildlife consumption since the demise of American chestnut and the spread of beech bark disease. This high seed predation deters successful advance regeneration outside of mast years [@mcsheaForestryMattersDecline2007]. Moreover, if seeds are buried under a thick litter layer, the seed radicle may struggle to reach the mineral soil, and this can negatively affect epicotyl emergence [@arthurRefiningOakFireHypothesis2012].
-
-#### Seedling establishment phase
-
-Even when seedlings are established, they risk getting eaten, especially by deer [@mcsheaForestryMattersDecline2007]. *Q. rubra* is also susceptible to some fungal pathogens including *Phytophthora* and *Armillaria*, which cause sudden oak death and Armillaria root rot respectively. Lastly, its shade intolerance retards its seedling recruitment when there is insufficient light in the understory [@nowackiDemiseFireMesophication2008]. Seedling growth might be slow due to competition from more shade-tolerant species such as *Acer rubrum* and *Fagus grandifolia*. 
-
-## \[Fire-oak relationship through time\]
-
-### Pre-settlement fire usage
-
-@abramsFireDevelopmentOak1992 hypothesized that prescribed fire might be crucial for oak regeneration. Fire has been integral to upland oak systems in the eastern United States for millennia. Pre-settlement fires occurred as a function of lightning strikes as well as native activities such as cooking, heating, seedbed preparation, hunting, ceramic manufacture, and communication. Burning continued with European settlement and pitched oak as the dominant species in periodically burned areas [@abramsFireDevelopmentOak1992]. Over time, *Q. rubra* became much more adapted to a periodic fire regime than other hardwoods and, as a result, can take advantage of the postfire environment.
-
-### Fire suppression policy
-
-However, fire suppression became mainstream policy in the 1920s and promoted forest mesophication [@nowackiDemiseFireMesophication2008].
-
-Not only does the perception of wildfires differ among groups of people, but it also changes through time. In the United States, such perception has framed the “ebbs and flows” of federal wildland fire management policies since the inception of forestry as a professional field in the late 1800s. The first generation of professional foresters was educated in humid Germany, where native forests had long ceased to exist [@donovan2007]. To them, fires were a menace to timber and should be put out at all costs. Frederick Olmsted, considered one of the founders of American forestry, made the following argument in 1911: “This is not forestry; not conservation; it is simple destruction… the Government, first of all, must keep its land producing timber crops indefinitely, and \[...\] bring to maturity every bit of natural young growth.” [@carle2002]. On the other hand, timberland owners had already recognized that light burning could manage fuels and reduce future wildfire risks [@hoxie1910]. Nonetheless, this argument was completely extinguished by the “Big Burn” in 1910, the largest wildfire in US history that spread across 1 million hectares in Idaho and western Montana. The newly established and extremely short-staffed USFS was determined to codify suppression as the main tool to fire management. Its “10 AM” policy went into effect in 1935, requiring all forest fires to be suppressed before 10 AM the next day [@donovan2007]. Together with the 1911 Weeks Act that funded states with fire suppression plans, this policy kick-started almost a century of fire suppression legacy in the United States. 
-
-Six years later, as many young people enlisted in the military in the aftermath of the attack on Pearl Harbor, the USFS started to worry about its lack of manpower and equipment [@smith1956]. Together with the USDA, the National Association of State Foresters, and the Wartime Advertising Council (Ad Council at present), it created the Cooperative Forest Fire Prevention (CFFP) Program in 1942, through which fire prevention propaganda was produced and distributed in newspapers, radio shows, bus stops, etc. The program was proven to be effective as man-caused forest fires hit an all-time low in 1945, from around 210 thousand fires before World War II to 124728 fires. After the war, the Ad Council and the advertising firm Foote, Cone & Belding (FCB) created the Smokey Bear character, particularly to attract children’s attention. Using the iconic “Only you can prevent forest fires” motto, both the 1942 CFFP Program and the 1945 Smokey Bear Campaign helped relieve the federal firefighting logistical challenges by shifting the bulk of fire-suppressing responsibility onto the public. The campaign was further expanded in the next decade with the 1952 Smokey Bear Act and the 1953 creation of the Junior Forest Ranger (JFR) program. The Smokey Bear Act was passed unanimously in Congress to protect the character from misuse and to issue licenses for the production and sale of Smokey Bear products, whose profits are further used for wildland fire management. The JFR program attracted hundreds of thousands of children, who also ensured that their parents were well-aware of fire prevention.
-
-### Fire-oak hypothesis
-
-As the eastern landscape becomes wetter and more shady, mesic microenvironmental conditions improve and favor the regeneration of shade-tolerant species. This positive feedback loop shrinks suitable habitats for shade-intolerant, fire-adapted species like *Q. rubra* over time. Therefore, it has been argued that it is necessary to bring back fire in a controlled manner to reverse the feedback loop and restore the upland oak ecosystems [@abramsFireDevelopmentOak1992].
-
-“old-growth,” in which natural succession is the dominant agent of change, looks like in New England – dominated by shade-tolerant species like beech and sugar maple in more fertile sites and hemlock and spruce in shallow and rocky soil.
-
-## The future of oak and management directions
-
-### Climate change-induced oak range expansion
-
-(USDA) RCPs = representative concentration pathways, scenarios used in CMIP5
-
--   coupled model inter-comparison project, 5th phase
-
--   based entirely on greenhouse gas concentrations in the atmosphere
-
--   used by policymakers to plan for the type of future they hope to help create
-
-Associated numbers represent the expected change in radiative forcing from the year 1750 to 2100. RCP 4.5 would mean an increase of 4.5W/m^2^ in this period.
-
--   RCP 4.5, middle of the road: the world follows a path in which social, economic, and technological trends do not shift markedly from historical pattern
-
--   RCP 8.5, fossil-fueled development: the world places increasing faith in competitive markets, innovation and participatory societies to produce rapid technological progress and development of human capital as the path to sustainable development
-
-The other important consideration for oak regeneration is that *Q. rubra* is projected to move further northward due to climate change [@petersClimateChangeTree2020]. In New England, its distribution is projected to increase substantially by 2100 under both RCP 4.5 and 8.5 scenarios due to high adaptability.
-
-### Adaptive silviculture
-
-Nevertheless, adaptive silviculture can be implemented to ensure a seamless transition for the species north of its current range limit and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations [@iverson2008; @granger2018; @bassett2020; @dee2022]. My study will build on this research and further explore its role in oak range expansion.
-
-## Research questions and hypotheses
-
-Six pairs of burn and control forest stands from four locations across the White Mountains ecoregion are picked for my study. They are part of a novel landscape-scale project implemented by the USFS over the past decade. There is a gradient of burn intensities and silvicultural treatments represented among these locations, along with variable burn intensity at smaller spatial scales within each stand. Assessment of how these factors have affected oak regeneration success will help to inform management considerations. The applied silvicultural prescriptions were all targeted towards oak regeneration, and my study investigates their results to answer the research questions below: 
-
-**Q1:** Does prescribed fire promote the recruitment of *Q. rubra* seedlings relative to other forest management practices, and if so, what mechanisms are at play?
+Six pairs of burn and control forest stands across the White Mountains ecoregion are picked for this study. There is a gradient of burn intensities and silvicultural treatments represented among these locations, along with variable burn intensity at smaller spatial scales within each stand. Assessment of how these factors have affected oak regeneration success will help to inform management considerations. The applied silvicultural prescriptions were all targeted towards oak regeneration, and this study investigates their results to determine whether prescribed fire promotes the recruitment of *Q. rubra* seedlings and improves their growth relative to other forest management practices. Additionally, this study also strives to find clues to and shed light on the mechanisms at play.
 
 **H1:** *Q. rubra* possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots [@abramsFireDevelopmentOak1992]. Mother trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback [@deyReviewDynamicsPrescribed2018]. Prescribed fire burns can promote *Q. rubra* regeneration at any and all critical life stages including pollination, flowering, seed set, and germination [@arthurRefiningOakFireHypothesis2012].
-
-**Q2:** Does prescribed fire improve the growth of *Q. rubra* seedlings relative to other forest management practices, and if so, what key mechanisms are at play?
 
 **H2:** Fire temporarily increases available nitrogen pools [@wan2001] and fluxes [@wang2014] and seedlings can take advantage of them to grow faster. Additionally, fire reduces pathogen loads that can negatively affect seedling growth [@filip1997]. Once reaching an appropriate height and an appropriate density, *Q. rubra* seedlings can be more competitive against their mesophytic counterparts [@iverson2008].
 
@@ -121,7 +60,7 @@ Six pairs of burn and control forest stands from four locations across the White
 
 ## Study sites
 
-The selected pairs of burn and control forest stands for this study are located in the White Mountains National Forest (WMNF). They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (Table A, Figure 1). One pair does not have any notable management history, and its burn stand experienced wildfire instead. There is a gradient of burn intensities and silvicultural treatments represented among these projects, along with variable burn intensity at smaller spatial scales within each unit most probably due to topographical variables.
+The selected pairs of burn and control forest stands for this study are located in the approximately 320000-ha White Mountains National Forest (WMNF) and are part of a novel landscape-scale project guided by the forest's Land and Resource Management Plan (1999-2005) and implemented by the USFS over the past decade. They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned. One pair does not have any notable management history, and its burn stand experienced wildfire instead.
 
 | Pair | Stand | Burn year | Harvest year | Harvest treatment |
 |----|----|----|----|----|
@@ -140,47 +79,33 @@ The selected pairs of burn and control forest stands for this study are located 
 
 : Stand pairs in each study site
 
-![Map of the study sites](images/map.jpg){fig-align="center"}
-
-### White Mountains National Forest overview
-
-\~320000 ha
-
-The WMNF's Land and Resource Management Plan is a collective effort between 1999 to 2005 to define a desired vision for the National Forest's landscape.
+![Map of the study sites](images/map.jpg){#map fig-align="center"}
 
 ### Stevens Brook (SB, Pair 1)
 
 `USDA FS 2005a, 1-16 to 1-22`
 
-SB Project area is located in the Stevens Brook drainage in Rumney and Wentworth (Grafton County, NH) and spanning 400 ha of the WMNF. A 2009 pre-management field survey showed a forested landscape with well-defined forest roads. In the past half a century, management on this area was carried out to retain wildlife habitat and forest products e.g., timber, which was last harvested in the early 1990s. Additionally, a number of recreational activities take place here: hiking, snowshoeing, wildlife watching, hunting, and firewood gathering.
+SB Project area is located in the Stevens Brook drainage in Rumney and Wentworth (Grafton County, NH) and spanning 400 ha of the WMNF. A 2009 pre-management field survey showed a forested landscape with well-defined forest roads. In the past half a century, management on this area was carried out to retain wildlife habitat and forest products e.g., timber, which was last harvested in the early 1990s. Following the field survey, the Alternative 2 plan was written up by a group of interdisciplinary resource specialists to address wildlife habitat management, vegetation, as well as transportation objectives \[@usdaforestservice2005\]. With regards to vegetation, three goals are specified: (1) to diversify habitat type and age class, (2) to achieve a sustainable yield of commercial forest products like high-quality sawtimber, and (3) to promote residual tree health and vigor through harvesting, timber stand improvement, and prescribed burns. More specifically, the Plan expected to perpetuate more of the oak-pine habitat type and proposed a shelterwood harvest and prescribed fire in stand 5-15 to reinforce oak dominance. Evidently, stand 3-16 was cut and burned instead while stand 5-15 only received a cut.
 
-Following the field survey, the Alternative 2 plan was written up by a group of interdisciplinary resource specialists to address wildlife habitat management, vegetation, as well as transportation objectives [@usdaforestservice2005]. With regards to vegetation, three goals are specified: (1) to diversify habitat type and age class, (2) to achieve a sustainable yield of commercial forest products like high-quality sawtimber, and (3) to promote residual tree health and vigor through harvesting, timber stand improvement, and prescribed burns.
+![Stevens Brook (SB, Pair 1) site](images/SBmap.png){#sb fig-align="center"}
 
-More specifically, the Plan expected to perpetuate more of the oak-pine habitat type and proposed a shelterwood harvest and prescribed fire in stand 5-15 to reinforce oak dominance. Evidently, stand 3-16 was cut and burned instead while stand 5-15 only received a cut.
+### Hogsback (HOG, Pairs 2-3) \[ALSO CITE THIS\]
 
-### Hogsback (HOG, Pairs 2-3)
+Hogsback is part of the 2100-ha Oliverian Stewardship Project area, which comprises the Benton Range southern half in Benton and Warren (Grafton County, NH). A pre-management survey showed a landscape dominated by hardwood, mostly mature with only a small area of young forest and no regeneration-age (0-9 years old) forest. Similar to the Stevens Brook project, this project aimed to produce a sustainable yield of commercial forest products and increase habitat diversity, especially for the regeneration age class, using timber harvesting. Unlike the SB area, however, the oak-pine forest type is less common. Prescribed burning was carried out on about 79 ha to maintain this forest type as well as reduce hazardous fuel loading. This management plan, officially called Alternative 3, was to ensure the provision of about 19300 m^3^ of forest products.
 
-Hogsback is part of the 2100-ha Oliverian Stewardship Project area, which comprises the Benton Range southern half in Benton and Warren (Grafton County, NH). A pre-management survey showed a landscape dominated by hardwood, mostly mature with only a small area of young forest and no regeneration-age (0-9 years old) forest.
-
-Similar to the Stevens Brook project, this project aimed to produce a sustainable yield of commercial forest products and increase habitat diversity, especially for the regeneration age class, using timber harvesting. Unlike the SB area, however, the oak-pine forest type is less common. Prescribed burning was carried out on about 79 ha to maintain this forest type as well as reduce hazardous fuel loading. This management plan, officially called Alternative 3, was to ensure the provision of about 19300 m^3^ of forest products.
+![Hogsback (HOG, Pairs 2-3) site](images/HOGmap.png){fig-align="center"}
 
 ### Crawford Notch State Park (CF, Pair 4)
 
+\[WRITE SOMETHING BRO\]
+
+![Crawford Notch (CF, Pair 4) site](images/Map2.png){#hog fig-align="center"}
+
 ### Bartlett Experimental Forest (BEF, Pairs 5-6)
 
-These 1050 ha were set aside by the US Forest Service in 1931 to conduct research on the ecology and management of northern forest ecosystems, including forest dynamics and structure as well as wildlife relationship with forest management [@gamal-eldin1998]. The forest was chosen for its typical New England conditions in terms of soils, elevation gradients, climate, and tree species composition. It was selectively logged through the late 19^th^ into the early 20^th^ century for high-value timber, fuel, and building roads. At present, different silvicultural systems are implemented in different compartments to be studied over a long period of time [@leak2011].
+These 1050 hectares were set aside by the US Forest Service in 1931 to conduct research on the ecology and management of northern forest ecosystems, including forest dynamics and structure as well as wildlife relationship with forest management [@gamal-eldin1998]. The forest was chosen for its typical New England conditions in terms of soils, elevation gradients, climate, and tree species composition. It was selectively logged through the late 19^th^ into the early 20^th^ century for high-value timber, fuel, and building roads. At present, different silvicultural systems are implemented in different compartments to be studied over a long period of time [@leak2011]. With regards to the even-aged silvicultural treament, three compartments were clear-cut in 2018, and half of each also received prescribed fires in 2021. Whole tree harvesting as such promoted multi-species composition, especially allowing the successional paper birch and aspen to regenerate. Managing for this composition is of utter importance following two findings: that natural succession is the dominant agent of change that steers a northern forest towards dominance by shade-tolerant species, and that something more than single tree selection is needed to maintain a diverse component. The ultimate goal is to make Bartlett a mixed stand with multiple age classes, a diverse tree species composition, and appropriate levels of stocking.
 
-There are three types of stands at Bartlett: (1) unmanaged since last logged in the early 20^th^ century, (2) managed by different silvicultural treatments in different compartments, and (3) reserves which are the last 1300 ha to the south and east of the experimental forest added in 2005 (Figure 1). The managed stands consist of both even-aged and uneven-aged systems. With regards to the even-aged silvicultural treament, three compartments were clear-cut in 2018, and half of each also received prescribed fires in 2021. Whole tree harvesting as such promoted multi-species composition, especially allowing the successional paper birch and aspen to regenerate.
-
-Over almost a century of research, scientific findings at Bartlett have better our understanding of managing New England forests for specific timber species as well as the general patterns of regeneration and growth. For example, 25 years after the 1933 clearcut of 9 ha, heavy thinning around crop trees was demonstrated to extremely benefit birch by doubling their growth, while keeping a balanced proportion of slower-growing maple and beech [@gamal-eldin1998]. Even-aged management as such is emphasized to regenerate shade-intolerant early successional species as selection systems were found to favor shade-tolerant species. 
-
-Managing for multi-species composition is of utter importance following two findings: that natural succession is the dominant agent of change that steers a northern forest towards dominance by shade-tolerant species, and that something more than single tree selection is needed to maintain a diverse component. Different-size and -density cuts with varied rotation cycle lengths depending on site quality (100 years on average, shorter for poorer sites) are hence implemented to explore this topic. Regenerating successional species is a connected issue, which researchers seem to have found the answer to, “cut and cut hard.”
-
-The ultimate goal is to make Bartlett a mixed stand with multiple age classes, a diverse tree species composition, and appropriate levels of stocking. Diversity is a fantastic bet-hedging strategy because it helps with “staggering” life histories. With regards to carbon sequestration, despite the common misunderstanding of old-growth forests having the largest potential, foresters pay more attention to how carbon is accumulated in relation to stock and rate. From this point of view, any form of harvest is beneficial because it encourages regeneration and growth. Long-term management studies will continue to inform us on their effects on forest dynamics and structure as well as their relationships to wildlife. 
-
-Many call Bartlett home and their lives are closely tied to the changing forest structure. A number of bird species end up fledging and starting to migrate from disturbed stands even though their parents may have nested in older stands. This is because they tend to have higher insect diversity, higher fruit abundance, better cover, and sometimes standing cavity trees that serve as good nesting habitats. Depending on the percent residual density after a cut, it is possible to recruit early successional birds. The moose population at Bartlett also benefits from disturbed stands – especially those between 10 – 15 years old for similar reasons – more forage of higher nutrient value. 
-
-Two potential major obstacles that could prevent sustainable production are diseases and public perception. A pertinent tree health problem is the invasion of emerald ash borer, which currently has no cure and is projected to wipe out the entire ash population. Public preference for proforestation due to concerns of aesthetics and old-growth carbon accumulation efficiency might interfere with the implementation of even-aged systems. 
+![Bartlett (BEF, Pairs 5-6) site](images/BEFmap.png){fig-align="center"}
 
 ## Field data collection
 
@@ -450,21 +375,21 @@ sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
 ```{r,echo=FALSE, fig.cap="Basal area (per ha) of overstory species in study stands by DBH size classes"}
 #let's try to plot this lol
 sumba <- sumba %>% mutate(Genus=case_when(
-  Spcode %in% c("ACPE","ACRU","ACSA") ~ "Maples",
-  Spcode %in% c("BEAL","BEPA","BEPO") ~ "Birches",
-  Spcode %in% "FAGR" ~ "A. beech",
-  Spcode %in% "PIST" ~ "W. pine",
-  Spcode %in% c("POGR","POTR") ~ "Aspens",
-  Spcode %in% c("PRPE","PRSE") ~ "Cherries",
-  Spcode %in% "QURU" ~ "R. oak",
+  Spcode %in% c("ACPE","ACRU","ACSA") ~ "ACRU, ACSA, ACPE",
+  Spcode %in% c("BEAL","BEPA","BEPO") ~ "BEAL, BEPA, BEPO",
+  Spcode %in% "FAGR" ~ "FAGR",
+  Spcode %in% "PIST" ~ "PIST",
+  Spcode %in% c("POGR","POTR") ~ "POGR, POTR",
+  Spcode %in% c("PRPE","PRSE") ~ "PRPE, PRSE",
+  Spcode %in% "QURU" ~ "QURU",
   Spcode %in% c("ABBA","FRAM","OSVI","PIRU","TIAM","TSCA")~"Others"
 ))
 
 #let's try to plot this lol
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
-sp <- c("Maples"="#88CCEE","R. oak"="#CC6677","Birches"="#DDCC77",
-        "A. beech"="#117733","W. pine"="#FFC20A", "Aspens"="#332288",
-        "Cherries"="#AA4499","Others"="#40B0A6")
+sp <- c("ACRU, ACSA, ACPE"="#88CCEE","QURU"="#CC6677","BEAL, BEPA, BEPO"="#DDCC77",
+        "FAGR"="#117733","PIST"="#FFC20A", "POGR, POTR"="#332288",
+        "PRPE, PRSE"="#AA4499","Others"="#40B0A6")
 
 sumba %>% 
   ggplot(aes(x=dbhClass,y=m2ha))+
