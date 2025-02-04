@@ -60,7 +60,7 @@ Six pairs of burn and control forest stands across the White Mountains ecoregion
 
 ## Study sites
 
-The selected pairs of burn and control forest stands for this study are located in the approximately 320000-ha White Mountains National Forest (WMNF) and are part of a novel landscape-scale project guided by the forest's Land and Resource Management Plan (1999-2005) and implemented by the USFS over the past decade. They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (@tbl-pairs, @fig-map). One pair does not have any notable management history, and its burn stand experienced wildfire instead.
+The selected pairs of burn and control forest stands for this study are located in the approximately 320000-ha White Mountains National Forest (WMNF) and are part of a novel landscape-scale project guided by the forest's Land and Resource Management Plan (1999-2005, [@usdaforestservice2005]) and implemented by the USFS over the past decade. They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (@tbl-pairs, @fig-map). One pair does not have any notable management history, and its burn stand experienced wildfire instead.
 
 | Pair | Stand | Burn year | Harvest year | Harvest treatment |
 |----|----|----|----|----|
@@ -77,35 +77,35 @@ The selected pairs of burn and control forest stands for this study are located 
 | 6 | Bartlett Experimental Forest `BEF_46B` | 2021 | 2019 | Clearcut |
 | 6 | `BEF_46C` | \- | 2019 | Clearcut |
 
-: Stand pairs in each study site {#tbl-pairs}
+: Six burn and control stand pairs for the study. Stands are paired by where they are located (SB, HOG, CF, or BEF, how they were harvested (shelterwood, seed tree, or clearcut), and that they were harvested concurrently. {#tbl-pairs}
 
-![Map of the study sites](images/map.jpg){#fig-map fig-align="center"}
+![Map of where stand pairs are located. Burn years are displayed for burned stands, and a color is assigned to each pair: SB shelterwoods (1) in orange, HOG seed tree harvests (2) in yellow and shelterwoods (3) in grey, CF wildfire (4) in green, and BEF clearcuts (5, 6) in blue.](images/officialmap.png){#fig-map fig-align="center"}
 
 ### Stevens Brook (SB, Pair 1)
 
 `USDA FS 2005a, 1-16 to 1-22`
 
-SB Project area is located in the Stevens Brook drainage in Rumney and Wentworth (Grafton County, NH) and spanning 400 ha of the WMNF (@fig-sb). A 2009 pre-management field survey showed a forested landscape with well-defined forest roads. In the past half a century, management on this area was carried out to retain wildlife habitat and forest products e.g., timber, which was last harvested in the early 1990s. Following the field survey, the Alternative 2 plan was written up by a group of interdisciplinary resource specialists to address wildlife habitat management, vegetation, as well as transportation objectives [@usdaforestservice2005]. With regards to vegetation, three goals are specified: (1) to diversify habitat type and age class, (2) to achieve a sustainable yield of commercial forest products like high-quality sawtimber, and (3) to promote residual tree health and vigor through harvesting, timber stand improvement, and prescribed burns. More specifically, the Plan expected to perpetuate more of the oak-pine habitat type and proposed a shelterwood harvest and prescribed fire in stand 5-15 to reinforce oak dominance. Evidently, stand 3-16 was cut and burned instead while stand 5-15 only received a cut.
+SB Project area is located in the Stevens Brook drainage in Rumney and Wentworth (Grafton County, NH) and spanning 400 ha of the WMNF (@fig-sb). A 2009 pre-management field survey showed a forested landscape with well-defined forest roads. In the past half a century, management on this area was carried out to retain wildlife habitat and forest products e.g., timber, which was last harvested in the early 1990s [@fuller2009]. Following the field survey, the Alternative 2 plan was written up by a group of interdisciplinary resource specialists to address wildlife habitat management, vegetation, as well as transportation objectives laid out in the WMNF Forest Plan [@usdaforestservice2005]. With regards to vegetation, three goals are specified: (1) to diversify habitat type and age class, (2) to achieve a sustainable yield of commercial forest products like high-quality sawtimber, and (3) to promote residual tree health and vigor through harvesting, timber stand improvement, and prescribed burns [@fuller2009]. More specifically, the Plan expected to perpetuate more of the oak-pine habitat type and proposed a shelterwood harvest and prescribed fire in stand 5-15 to reinforce oak dominance. Evidently, stand 3-16 was cut and burned instead while stand 5-15 only received a cut.
 
-![Stevens Brook (SB, Pair 1) site](images/SBmap.png){#fig-sb fig-align="center"}
+![Map of Stevens Brook (SB, Pair 1) site. The burn stand is colored in red and the control stand in blue. Respective colored lines within the stands are transects establish for data collection.](images/SBmap.png){#fig-sb fig-align="center"}
 
-### Hogsback (HOG, Pairs 2-3) \[ALSO CITE THIS\]
+### Hogsback (HOG, Pairs 2-3)
 
-Hogsback is part of the 2100-ha Oliverian Stewardship Project area, which comprises the Benton Range southern half in Benton and Warren (Grafton County, NH) (@fig-hog). A pre-management survey showed a landscape dominated by hardwood, mostly mature with only a small area of young forest and no regeneration-age (0-9 years old) forest. Similar to the Stevens Brook project, this project aimed to produce a sustainable yield of commercial forest products and increase habitat diversity, especially for the regeneration age class, using timber harvesting. Unlike the SB area, however, the oak-pine forest type is less common. Prescribed burning was carried out on about 79 ha to maintain this forest type as well as reduce hazardous fuel loading. This management plan, officially called Alternative 3, was to ensure the provision of about 19300 m^3^ of forest products.
+Hogsback is part of the 2100-ha Oliverian Stewardship Project area, which comprises the Benton Range southern half in Benton and Warren (Grafton County, NH) (@fig-hog). A pre-management survey showed a landscape dominated by hardwood, mostly mature with only a small area of young forest and no regeneration-age (0-9 years old) forest [@bayer2010]. Similar to the Stevens Brook project, this project aimed to produce a sustainable yield of commercial forest products and increase habitat diversity, especially for the regeneration age class, using timber harvesting. Unlike the SB area, however, the oak-pine forest type is less common. Prescribed burning was carried out on about 79 ha to maintain this forest type as well as reduce hazardous fuel loading. This management plan, officially called Alternative 3, was to ensure the provision of about 19300 m^3^ of forest products.
 
-![Hogsback (HOG, Pairs 2-3) site](images/HOGmap.png){#fig-hog fig-align="center"}
+![Map of Hogsback (HOG, Pairs 2-3) site, with 20/2B and 3/1C being the seed tree harvests and 28/2B and 12/2C being shelterwoods. Burn stands are colored in red and control stands in blue. Respective colored lines within the stands are transects establish for data collection.](images/HOGmap.png){#fig-hog fig-align="center"}
 
 ### Crawford Notch State Park (CF, Pair 4)
 
 \[WRITE SOMETHING BRO\]
 
-![Crawford Notch (CF, Pair 4) site](images/Map2.png){#fig-cf fig-align="center"}
+![Map of Crawford Notch (CF, Pair 4) site. The burn stand is colored in red and the control stand in blue. Respective colored lines within the stands are transects establish for data collection.](images/Map2.png){#fig-cf fig-align="center"}
 
 ### Bartlett Experimental Forest (BEF, Pairs 5-6)
 
 These 1050 hectares were set aside by the US Forest Service in 1931 to conduct research on the ecology and management of northern forest ecosystems, including forest dynamics and structure as well as wildlife relationship with forest management (@fig-bef) [@gamal-eldin1998]. The forest was chosen for its typical New England conditions in terms of soils, elevation gradients, climate, and tree species composition. It was selectively logged through the late 19^th^ into the early 20^th^ century for high-value timber, fuel, and building roads. At present, different silvicultural systems are implemented in different compartments to be studied over a long period of time [@leak2011]. With regards to the even-aged silvicultural treament, three compartments were clear-cut in 2018, and half of each also received prescribed fires in 2021. Whole tree harvesting as such promoted multi-species composition, especially allowing the successional paper birch and aspen to regenerate. Managing for this composition is of utter importance following two findings: that natural succession is the dominant agent of change that steers a northern forest towards dominance by shade-tolerant species, and that something more than single tree selection is needed to maintain a diverse component. The ultimate goal is to make Bartlett a mixed stand with multiple age classes, a diverse tree species composition, and appropriate levels of stocking.
 
-![Bartlett (BEF, Pairs 5-6) site](images/BEFmap.png){#fig-bef fig-align="center"}
+![Map of Bartlett (BEF, Pairs 5-6) site. The burn stand is colored in red and the control stand in blue. Respective colored lines within the stands are transects establish for data collection.](images/BEFmap.png){#fig-bef fig-align="center"}
 
 ## Field data collection
 
@@ -170,7 +170,7 @@ Understory competition and overstory composition were visualized by bar graphs t
 | `TIAM` | *Tilia americana* | American basswood |
 | `TSCA` | *Tsuga canadensis* | Eastern hemlock |
 
-: Species codes
+: List of four-letter codes for common woody species (and brambles genus) at the study sites.
 
 ## Stand characterization
 
@@ -257,7 +257,7 @@ count <- count %>% mutate(Density=if_else(
 count$Density <- round(count$Density,0)
 ```
 
-```{r fig-understory,echo=FALSE,fig.cap="Stem density (per ha) of understory species in study stands",fig.height=4,fig.width=10,fig.pos="H"}
+```{r fig-understory,echo=FALSE,fig.cap="Stem density per hectare of the most abundant understory species in 2023 by stand pairs.",fig.height=4,fig.width=10,fig.pos="H"}
 #visualize stem density
 bc <- c("B"="#CC6677","C"="#88CCEE")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
@@ -375,7 +375,7 @@ sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
                                         "QURU","TIAM","TSCA"))
 ```
 
-```{r fig-overstory,echo=FALSE, fig.cap="Basal area (per ha) of overstory species in study stands by DBH size classes",fig.width=10,fig.height=10,fig.pos="H"}
+```{r fig-overstory,echo=FALSE, fig.cap="Basal area per hectare of overstory species in 2023 (y-axis) by burn treatments (columns), study stands (rows), and DBH size classes (x-axis).",fig.width=10,fig.height=10,fig.pos="H"}
 #let's try to plot this lol
 sumba <- sumba %>% mutate(Genus=case_when(
   Spcode %in% c("ACPE","ACRU","ACSA") ~ "Acer spp.",
@@ -470,10 +470,10 @@ stats_count23c <- stats_count23c %>% mutate(Disturbance="C")
 stats_count23c <- stats_count23c %>% filter(variable=="Density") %>% select(Disturbance,min,max,median,mean,sd,se)
 
 stats_count23 <- stats_count23b %>% full_join(stats_count23c)
-stats_count23 %>% kable(caption="Summarized statistics of 2023 oak seedling density per ha") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+stats_count23 %>% kable(caption="Summarized statistics of Q. rubra seedling density per hectare in 2023.") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
 ```
 
-```{r fig-count23,echo=FALSE,warning=FALSE,fig.cap="2023 oak seedling density per ha of study stands",fig.pos="H"}
+```{r fig-count23,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.pos="H"}
 #visualize stem density
 count23x %>% filter(Pair==c("1","2","3","4")) %>% 
   ggplot(aes(x=Pair,y=Density,fill=Disturbance))+
@@ -551,11 +551,11 @@ stats_ms23c <- stats_ms23c %>%
 
 stats_ms23 <- stats_ms23b %>% full_join(stats_ms23c)
 stats_ms23 %>% 
-  kable(caption="Summarized statistics of 2023 oak seedling measurements") %>%
+  kable(caption="Summarized statistics of Q. rubra seedling measurements in 2023.") %>%
   kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
 ```
 
-```{r fig-drc23,echo=FALSE,warning=FALSE,fig.cap="2023 seedling DRCs by study stands",fig.pos="H"}
+```{r fig-drc23,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling diameters at root collar in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.pos="H"}
 ms23x %>% 
   ggplot(aes(x=Pair,y=DRC_mm,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -636,10 +636,10 @@ stats_ms24c <- stats_ms24c %>%
                          "nleaves","nlive_branches","ndead_branches"))
 
 stats_ms24 <- stats_ms24b %>% full_join(stats_ms24c)
-stats_ms24 %>% kable(caption="Summarized statistics of 2024 oak seedling measurements") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+stats_ms24 %>% kable(caption="Summarized statistics of Q. rubra seedling measurements in 2024.") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
 ```
 
-```{r fig-xgr24,echo=FALSE,fig.cap="2024 seedling extension growths by study stands",fig.pos="H"}
+```{r fig-xgr24,echo=FALSE,fig.cap="Q. rubra seedling extension growths in 2024 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.pos="H"}
 ms24x %>%
   ggplot(aes(x=Pair,y=Extension_growth_cm,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -663,7 +663,7 @@ summary(aov_exgr24)
 
 There were more live branches per seedling in the burned stands than the control stands, respectively 4+/-0 and 2+/-0 (p\<0.001) (@tbl-oak24, @fig-lbr24).
 
-```{r fig-lbr24,echo=FALSE,fig.cap="2024 number of live branches per seedling by study stands and surveys",fig.pos="H"}
+```{r fig-lbr24,echo=FALSE,fig.cap="Number of live branches per Q.rubra seedling in 2024 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.pos="H"}
 ms24x %>% filter(Survey=="2") %>% 
   ggplot(aes(x=Pair,y=nlive_branches,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -672,7 +672,7 @@ ms24x %>% filter(Survey=="2") %>%
   scale_fill_manual(values=c(p6,bc))+
   facet_grid(~Pair,scales='free_x')+
   theme_minimal()+
-  ylab("2024 number of live branches, survey 2")+
+  ylab("2024 number of live branches")+
   labs(fill="Pairs")
 ```
 
@@ -687,7 +687,7 @@ summary(aov_lb24)
 
 Seedlings in burned stands sprouted more leaves (16+/-1) than in control stands (7+/-1, p\<0.001) (@tbl-oak24, @fig-nleaves24).
 
-```{r fig-nleaves24,echo=FALSE,fig.cap="2024 number of leaves per seedling by study stands",fig.pos="H"}
+```{r fig-nleaves24,echo=FALSE,fig.cap="Number of leaves per Q. rubra seedling in 2024 (y-axis) by stand pairs (y-axis),error bars = ±1 SE.",fig.pos="H"}
 ms24x %>% 
   ggplot(aes(x=Pair,y=nleaves,fill=Disturbance))+
   geom_rect(aes(fill=Pair),alpha=0.5,
@@ -766,10 +766,10 @@ stats_laic <- stats_laic %>% filter(variable=="avgLAI") %>%
   select(Disturbance,min,max,median,mean,sd,se)
 
 stats_lai <- stats_laib %>% full_join(stats_laic)
-stats_lai %>% kable(caption="Summarized statistics of LAI values") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+stats_lai %>% kable(caption="Summarized statistics of leaf area index (LAI) values in 2024.") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
 ```
 
-```{r fig-lai,echo=FALSE,fig.cap="LAI values by study stands",fig.pos="H"}
+```{r fig-lai,echo=FALSE,fig.cap="Leaf area index (LAI) values in 2024 (y-axis) by stand pairs (x-axis),error bars = ±1 SE.",fig.pos="H"}
 #LAI! plot by pair and burn y/n
 bc <- c("B"="#CC6677","C"="#88CCEE")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
