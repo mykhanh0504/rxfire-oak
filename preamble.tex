@@ -1,0 +1,6 @@
+\usepackage{setspace}
+\AtBeginDocument{\doublespacing} % Double spacing for main text
+
+% Single spacing for citations
+\usepackage{etoolbox}
+\patchcmd{\bibsetup}{\doublespacing}{\singlespacing}{}{}

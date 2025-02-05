@@ -14,7 +14,9 @@ always_allow_html: true
 fig-cap-location: bottom
 fig-align: center
 tbl-cap-location: top
-format: pdf
+format: 
+  pdf: 
+    include-in-header: preamble.tex
 output: bookdown::html_document2
 editor: visual
 ---
@@ -141,8 +143,6 @@ Leaf punches were oven-dried at 60^o^C overnight and stored in air-tight conditi
 
 ## Data visualization and analysis
 
-### Observational field data
-
 Understory competition and overstory composition were visualized by bar graphs to illustrate the stand structures of each sites. Together with the annual 5-m radius *Q. rubra* seedling counts, these plot-level stem counts and estimated basal areas were scaled up to the stand level of per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out in RStudio for each response variable to test if prescribed fire had an effect on them, and if so, whether it was significant.
 
 # Results
@@ -174,9 +174,7 @@ Understory competition and overstory composition were visualized by bar graphs t
 
 ## Stand characterization
 
-### Understory competition
-
-In burned stands, *Q. rubra* mainly competes with early successional seedlings e.g. *Rubus spp.* `RUS`, *A. rubrum* `ACRU`, *B. alleghaniensis* `BEAL` and stump sprouts e.g. *F. grandifolia* `FAGR` (@fig-understory).
+In the understory of burned stands, *Q. rubra* mainly competes with early successional seedlings e.g. *Rubus spp.*, *A. rubrum*, *B. alleghaniensis* and stump sprouts e.g. *F. grandifolia* (@fig-understory). *Rubus* is prevalent in all but Pair 4, ranging from 14000 individuals per hectare in Pair 5 to 101786 in Pair 6. *A. rubrum* populates only among Pairs 1, 2, and 3 and is more abundant in burned stands than in control stands e.g., with a seedling density of 56818 per hectare in the former versus 39783 in the latter in Pair 1. *B. alleghaniensis* follows a similar pattern while *F. grandifolia* is most common in Pair 4, especially the burned stand with 17209 seedlings per hectare compared to 2105 in the control stand.
 
 ```{r,include=FALSE,message=FALSE,warning=FALSE}
 comp <- read_csv("competition.csv")
@@ -278,9 +276,9 @@ ggplot(aes(x=Spcode,y=Density))+
   ylab("Stem count (per ha)")
 ```
 
-### Overstory composition
+Study stands' basal areas is a reflection of their harvesting methods more than whether or not they were burned (@fig-overstory). Having been clearcut and hence absent of mature trees of 20 cm and above in DBH, Pairs 5 and 6 have substantially lower basal areas, all under 1 m^2^ per hectare, compared to others with 18.3 (burned stand in Pair 2) to 37.9 m^2^ (burned stand in Pair 1).
 
-Burn stands have lower overstory basal areas than control stands (@fig-overstory). Pairs 5 and 6 stand out especially due to their clearcut treatment i.e. absence of mature trees of 20 cm and above in DBH. Their compositions are also the least diverse, consisting of *Prunus* (`PRPE`,`PRSE`), *Populus* (`POGR`,`POTR`), and *Betula spp.* (`BEAL`,`BEPO`,`BEPA`). The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* spp. of mid-ranged DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *Pinus strobus* `PIST`.
+Their compositions are also the least diverse, consisting of *Prunus*, *Populus*, and *Betula spp*. The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* spp. of mid-ranged DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *Pinus strobus*.
 
 ```{r, include=FALSE,message=FALSE,warning=FALSE}
 trees <- read_csv("overstory.csv")
@@ -414,7 +412,7 @@ sumba %>%
 
 ### 2023 seedling density
 
-Seedling density increased threefold in burned stands (2359+/-211 per ha) relative to control stands (778+/-121 per ha, p\<0.001) (@tbl-count23, @fig-count23).
+Seedling density increased threefold in burned stands (2887+/-240 per ha) relative to control stands (1030+/-154 per ha, p\<0.001) (@tbl-count23).
 
 ```{r,include=FALSE,message=FALSE,warning=FALSE}
 count23 <- read_csv("oakcount5m2023.csv")
