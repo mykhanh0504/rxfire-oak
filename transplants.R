@@ -11,9 +11,10 @@ transplants <- read_csv("transplants.csv")
 transplants <- transplants %>% filter(Presence=="1",
                                       Block %in% c("1","3","5","7","9",
                                                    "11","13","15","17","19"))
-transplants <- transplants %>% select(Survey,AcornID,Soil.type,Sterilized,Height_cm,
-                                      Egrowth_cm,nleaves,nlive_branches,
-                                      ndead_branches)
+
+#transplants <- transplants %>% select(Survey,AcornID,Soil.type,Sterilized,Height_cm,
+                                      #Egrowth_cm,nleaves,nlive_branches,
+                                      #ndead_branches)
 
 transplants <- transplants %>% 
   mutate(Survey=as.factor(Survey),
@@ -38,7 +39,18 @@ transplants %>% filter(Survey=="2") %>%
   scale_fill_manual(values=ster)
 
 aov_height <- aov(Height_cm~Soil.type+Sterilized+Survey,data=transplants)
-summary(aov_growth)
+summary(aov_height)
+
+tukey2 <- TukeyHSD(aov_height)
+tukey2
+
+tukey2_df <- as.data.frame(tukey2$Soil.type)
+names(tukey2_df)[names(tukey2_df) == "p adj"] <- "p.adj"
+sig_pairs2 <- subset(tukey2_df,p.adj < 0.05)
+tukey2_df
+
+comparisons2 <- strsplit(row.names(sig_pairs2), "-")
+comparisons2
 
 #egrowth survey 1
 transplants %>% filter(Survey=="1") %>%  

@@ -37,7 +37,11 @@ trees2 <- trees2 %>%
          Disturbance=as.factor(Disturbance),
          Treatment=as.factor(Treatment),
          Pair=as.factor(Pair),
-         Spcode=as.factor(Spcode))
+         Spcode=as.factor(Spcode),
+         Condition=as.factor(Condition))
+
+trees2 <- trees2 %>% mutate(Condition=fct_recode(Condition,
+                                                 "Alive"="1","Dead"="0"))
 
 #spcode count
 tally <- trees2 %>% group_by(Pair,Disturbance,Spcode) %>% 
@@ -111,8 +115,8 @@ trees2 <- trees2 %>% mutate(dbhClass=fct_relevel(dbhClass,"2-5","5-10","10-20",
 #basal areas
 trees2 <- trees2 %>% mutate(ba=0.00007854*(`DBH (cm)`^2))
 
-sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba)
-sumba <- sumba %>% group_by(Pair,Disturbance,Spcode,dbhClass) %>% 
+sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba,Condition)
+sumba <- sumba %>% group_by(Pair,Disturbance,Spcode,dbhClass,Condition) %>% 
   summarize(sumba=sum(ba))
 
 #scale up to per ha
@@ -176,6 +180,7 @@ p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6
 sp <- c("Maples"="#88CCEE","R. oak"="#CC6677","Birches"="#DDCC77",
         "A. beech"="#117733","W. pine"="#FFC20A", "Aspens"="#332288",
         "Cherries"="#AA4499","Others"="#40B0A6")
+da <- c("Dead"="#5b84b1","Alive"="#fc766a")
 
 sumba %>% 
   ggplot(aes(x=dbhClass,y=m2ha))+
@@ -188,4 +193,19 @@ sumba %>%
   xlab("DBH size classes (cm)")+
   ylab("Basal area (per ha)")
 
-#we have not taken into account dead/alive trees
+#we have not taken into account dead/alive trees. and now we are tackling it!
+sumba2 <- sumba %>% filter(dbhClass %in% c("30-40","40-50","50-60",">60"))
+sumba2 %>% 
+  ggplot(aes(x=Genus,y=m2ha))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_col(aes(fill=Condition))+
+  scale_fill_manual(values=c(p6,da))+
+  facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
+  theme_light()+
+  xlab("Genus")+
+  ylab("Basal area (per ha)")
+
+stats <- sumba2 %>% filter(Genus=="Q. rubra") %>% select(Disturbance,
+                                                         Condition,m2ha)
+get_summary_stats(stats)

@@ -46,11 +46,11 @@ trackdown_auth_configure(path = "client.json")
 
 *Quercus rubra* L. (hereafter *Q. rubra*) is an economically and ecologically important tree species in the northeastern United States. It is a fast-growing species and thrives on a wide range of upland soils [@abramsFireDevelopmentOak1992]. Additionally, it is tolerant of heat, drought [@coble2017; @asbjornsen2021], and even ground fire [@abramsFireEcologicalHistory2000]. *Q. rubra* produces high-quality timber with high wood density, making it an important lumber commodity and prompting forest managers to be concerned with its sustainable regeneration [@deyReviewDynamicsPrescribed2018]. *Q. rubra* is managed for other ecological values as well. For example, it serves as a habitat and food source for many wildlife species, from birds like turkeys and jays to mammals like mice, squirrels, and deer, and even insects like weevils [@mcsheaForestryMattersDecline2007]. *Q. rubra* drives their population dynamics with its high mast production occurring about every two years [@sork1993].
 
-*Q. rubra* currently faces many regeneration challenges in the northeastern US, and its recruitment may continue failing without timely and appropriate interventions. Oak-dominated forests are at their peak capacity to produce acorns at present; however, if forest aging continued for the next 50 years without sufficient regeneration to maintain its age structure, a population bottleneck may ensue [@dey2014]. Acorns have become a major hard mast source for wildlife consumption since the demise of American chestnut and the spread of beech bark disease, but their production declines in older stands [@mcewan2006]. Weevils can also make the acorns non-viable before they are fully mature. This high seed predation strongly limits successful advance regeneration outside of mast years [@mcsheaForestryMattersDecline2007]. Moreover, if seeds are buried under a thick litter layer, the seed radicle may struggle to reach the mineral soil, and this can negatively affect epicotyl emergence [@arthurRefiningOakFireHypothesis2012]. Even when seedlings are established, they risk getting eaten, especially by deer [@mcsheaForestryMattersDecline2007]. *Q. rubra* is also susceptible to some fungal pathogens including *Phytophthora* and *Armillaria*, which cause sudden oak death and Armillaria root rot respectively. Lastly, its shade intolerance retards its seedling recruitment when there is insufficient light in the understory [@nowackiDemiseFireMesophication2008]. Seedling growth might be slow due to competition from more shade-tolerant species such as *Acer rubrum* and *Fagus grandifolia*. 
+*Q. rubra* currently faces many regeneration challenges in the northeastern US, and its recruitment may continue failing without timely and appropriate interventions. Oak-dominated forests are at their peak capacity to produce acorns at present; however, if forest aging continued for the next 50 years without sufficient regeneration to maintain its age structure, a population bottleneck may ensue [@dey2014]. Acorns have become a major hard mast source for wildlife consumption since the demise of American chestnut and the spread of beech bark disease, but their production declines in older stands [@mcewan2006]. Weevils can also make the acorns non-viable before they are fully mature. This high seed predation strongly limits successful advance regeneration outside of mast years [@mcsheaForestryMattersDecline2007]. Moreover, seedling root penetration into underlying soils can be hindered by thick litter layers and can result in long and weak stems. [@arthurRefiningOakFireHypothesis2012]. Even when seedlings are established, they risk getting eaten, especially by deer [@mcsheaForestryMattersDecline2007]. *Q. rubra* is also susceptible to some fungal pathogens later in its life cycle including *Bretziella fagacearum* and *Armillaria mellea*, which cause oak wilt and Armillaria root rot respectively. While the former disease is spread from tree to tree through root grafts and travels longer distances by *Nitidulidae* and *Pseudopityophthorus spp.*, the latter grows parasitically on trees weakened by fire, drought, insects, or other diseases [@sander1990]. Lastly, its shade intolerance retards its seedling recruitment when there is insufficient light in the understory [@nowackiDemiseFireMesophication2008]. Seedling growth might be slow due to competition from more shade-tolerant species such as *Acer rubrum* and *Fagus grandifolia*. 
 
 @abramsFireDevelopmentOak1992 hypothesized that ground fire might be crucial for oak regeneration. Fire has been integral to upland oak systems in the eastern US for millennia. Pre-settlement fires occurred as a function of lightning strikes as well as native activities such as cooking, heating, seedbed preparation, hunting, ceramic manufacture, and communication. Burning continued with European settlement and pitched oak as the dominant species in periodically burned areas [@abramsFireDevelopmentOak1992]. Over time, *Q. rubra* became much more adapted to a periodic fire regime than other hardwoods and, as a result, can take advantage of the postfire environment. However, fire suppression became mainstream policy in the 1920s against the backdrop of the "Big Burn" in 1910, the largest wildfire in the US history that spread across a million hectares in Idaho and western Montana [@nowackiDemiseFireMesophication2008]. The newly established and extremely short-staffed US Forest Service was determined to codify suppression as the main tool to fire management. Its “10 AM” policy went into effect in 1935, requiring all forest fires to be suppressed before 10 AM the next day [@donovan2007]. Together with the 1911 Weeks Act that funded states with fire suppression plans, this policy kick-started almost a century of fire suppression legacy in the US. Fire absence has led to forest mesophication in the eastern landscape, a condition in which stands become wetter and more shady. It promotes mesic microenvironmental conditions, which in turn favor the regeneration of shade-tolerant species. This positive feedback loop shrinks suitable habitats for shade-intolerant, fire-adapted species like *Q. rubra* over time. Therefore, it has been argued that it is necessary to bring back fire in a controlled manner to reverse the feedback loop and restore the upland oak ecosystems [@abramsFireDevelopmentOak1992].
 
-The other important consideration for oak regeneration is that *Q. rubra* is projected to move further northward due to climate change [@petersClimateChangeTree2020]. In New England, its distribution is projected to increase substantially by 2100 under both representative concentration pathways (RCP) 4.5 and 8.5 due to high adaptability. These scenarios are based entirely on greenhouse gas concentrations, assuming we follow the same industrial path as usual for RCP 4.5 (an increase of 4.5W/m^2^ in radiative forcing between the years 1750-2100) or increase its intensity in RCP 8.5 (an increase of 8.5W/m^2^ in the same period) [@joyce2020]. This presents an opportunity for foresters, landowners, and scientists with an interest in *Q. rubra* regeneration to better understand regeneration concerns near its current Northern range limit so they can devise silvicultural strategies to introduce or increase its density as part of their species mix. Adaptive silviculture can be implemented to ensure this seamless transition and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations [@iverson2008; @granger2018; @bassett2020; @dee2022]. This study will build on previous research and further explore prescribed fire's role in oak range expansion.
+The other important consideration for oak regeneration is that *Q. rubra* is projected to move further northward due to climate change [@petersClimateChangeTree2020]. In New England, its distribution is projected to increase substantially by 2100, particularly in northern New York, Vermont, New Hampshire, and Maine, under both representative concentration pathways (RCP) 4.5 and 8.5 due to high adaptability. These scenarios are based entirely on greenhouse gas concentrations, assuming we follow the same industrial path as usual for RCP 4.5 (an increase of 4.5W/m^2^ in radiative forcing between the years 1750-2100) or increase its intensity in RCP 8.5 (an increase of 8.5W/m^2^ in the same period) [@joyce2020]. This presents an opportunity for foresters, landowners, and scientists with an interest in *Q. rubra* regeneration to better understand regeneration concerns near its current Northern range limit so they can devise silvicultural strategies to introduce or increase its density as part of their species mix. Adaptive silviculture can be implemented to ensure this seamless transition and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations [@iverson2008; @granger2018; @bassett2020; @dee2022]. This study will build on previous research and further explore prescribed fire's role in oak range expansion.
 
 We studied six pairs of burn and control forest stands across the White Mountains ecoregion. Three pairs were intentionally cut and burn to improve oak regeneration. Two other pairs lack an oak seed source but can provide insights into regeneration dynamics following prescribed burns. The last pair were unmanaged and experienced a wildfire instead, making it a fitting comparison. An additional pair was included for soil sampling, but not extensively studied beyond that. This study investigates whether prescribed fire promotes the recruitment of *Q. rubra* seedlings and improves their growth relative to other forest management practices. We hypothesized that *Q. rubra* possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots [@abramsFireDevelopmentOak1992]. Mother trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback [@deyReviewDynamicsPrescribed2018]. Prescribed fire burns can promote *Q. rubra* regeneration at any and all critical life stages including pollination, flowering, seed set, and germination [@arthurRefiningOakFireHypothesis2012]. Additionally, this study also strives to find clues to and shed light on the mechanisms at play. We hypothesized that fire temporarily increases available nitrogen pools [@wan2001] and fluxes [@wang2014] and seedlings can take advantage of them to grow faster. Additionally, fire reduces pathogen loads that can negatively affect seedling growth [@filip1997]. Once reaching an appropriate height and an appropriate density, *Q. rubra* seedlings can be more competitive against their mesophytic counterparts [@iverson2008].
 
@@ -77,7 +77,7 @@ The selected pairs of burn and control forest stands for this study are located 
 
 : Six burn and control stand pairs for the study. Stands are paired by where they are located (SB, HOG, CF, or BEF, how they were harvested (shelterwood, seed tree, or clearcut), and that they were harvested concurrently. {#tbl-pairs}
 
-![Map of where stand pairs are located. Burn years are displayed for burned stands, and a color is assigned to each pair: SB shelterwoods (1) in orange, HOG seed tree harvests (2) in yellow and shelterwoods (3) in grey, CF wildfire (4) in green, and BEF clearcuts (5, 6) in blue.](images/officialmap.png){#fig-map fig-align="center"}
+![Map of where stand pairs are located. Burn years are displayed for burned stands, and a color is assigned to each pair: SB shelterwoods (1) in orange, HOG seed tree harvests (2) in yellow and shelterwoods (3) in grey, CF wildfire (4) in green, and BEF clearcuts (5, 6) in blue.](images/finalmap2.png){#fig-map fig-align="center"}
 
 ### Stevens Brook (SB, Pair 1)
 
@@ -131,15 +131,15 @@ During the peak of the 2024 growth months, leaf area index (LAI) measurements we
 
 ### Soil
 
-Soil samples were air-dried, homogenized, and sieved to 2 mm. They were then sent to the University of New Hampshire Cooperative Extension in December 2023 to be tested for soil pH and concentrations of calcium (Ca), magnesium (Mg), potassium (K), phosphorus (P), lead (Pb), and organic matter (OM).
+Soil samples were air-dried, homogenized, and sieved to 2 mm. They were then sent to the University of New Hampshire Cooperative Extension in December 2023 to be tested for soil pH and concentrations of calcium (Ca), magnesium (Mg), potassium (K), phosphorus (P), lead (Pb), and organic matter (OM). In February 2025, more samples were sent to the Pennsylvania State University College of Agricultural Sciences' Agricultural Analytical Services Laboratory to be tested for nitrate nitrogen (NO~3~) and ammonium nitrogen (NH~4~).
 
 ### Isotope weighing of leaf punches
 
-Leaf punches were oven-dried at 60^o^C overnight and stored in air-tight conditions. They were then subsampled using a razor blade and packed in 9\*5-mm tin capsules to achieve samples weighing 3±1 g. A total of 66 samples and \[\] duplicates were put in the 96-well cell plate to analyze for %C, %N, C:N ratio, as well as C and N isotope ratios following combustion using the Elementar GeoVision elemental analyzer isotope ratio mass spectrometer.
+Leaf punches were oven-dried at 60^o^C overnight and stored in air-tight conditions. They were then subsampled using a razor blade and packed in 8\*5-mm tin capsules to achieve samples weighing 3±1 g. A total of 66 samples and \[\] duplicates were put in the 96-well cell plate and sent to the Washington State University Stable Isotope Core Laboratory to analyze for %C, %N, C:N ratio, as well as C and N isotope ratios.
 
 ## Data visualization and analysis
 
-Plot-level stem and seedling counts and basal areas were expressed per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out in RStudio for each response variable to test for hypothesized differences between prescribed fire and control pairs.
+Plot-level stem and seedling counts and basal areas were expressed per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out in RStudio version 2024.12.1.563 for each response variable to test for hypothesized differences between prescribed fire and control pairs. Data visualization and analysis packages included `forcats`, `ggplot2`, `tidyverse`, `dplyr`, `gt`, `car`, `rstatix`, and `kableExtra`.
 
 # Results
 
@@ -272,9 +272,9 @@ ggplot(aes(x=Spcode,y=Density))+
   ylab("Stem count (per ha)")
 ```
 
-Study stands' basal areas are a reflection of their harvesting methods more than whether or not they were burned (@fig-overstory). Having been clearcut more recently and hence absent of mature trees of 20 cm and above in DBH, Pairs 5 and 6 have substantially lower basal areas, all under 1 m^2^ per hectare, compared to others with 18.3 (burned stand in Pair 2) to 37.9 m^2^ (burned stand in Pair 1).
+Study stands' basal areas are a reflection of their harvesting methods more than whether or not they were burned (@fig-overstory). Having been clearcut more recently and hence absent of trees of 20 cm and above in DBH, Pairs 5 and 6 have substantially lower basal areas, all under 1 m^2^ per hectare, compared to others with 18.3 (burned stand in Pair 2) to 37.9 m^2^ (burned stand in Pair 1). Their compositions are also the least diverse, consisting of *Prunus*, *Populus*, and *Betula spp*. The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* spp. of mid-ranged DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *Pinus strobus*.
 
-Their compositions are also the least diverse, consisting of *Prunus*, *Populus*, and *Betula spp*. The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* spp. of mid-ranged DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *Pinus strobus*.
+@fig-overstory2 shows basal areas of mature trees of 30 cm and above in DBH by whether they were dead standing or alive at the time of survey. *Q. rubra*'s basal areas were about and 10 m^2^/ha across all stands, far exceeding those of other dominant genera. More standing dead trees were recorded in the burned stands, with *F. grandifolia* suffering the highest mortality rate.
 
 ```{r, include=FALSE,message=FALSE,warning=FALSE}
 trees <- read_csv("overstory.csv")
@@ -305,12 +305,15 @@ trees2 <- trees2 %>% mutate(Location=as.factor(Location)) %>%
                              "SB"="Stevens Brook (Plummers Ledge)"))
 
 trees2 <- trees2 %>% 
-  mutate(Location=as.factor(Location),
-         Unit=as.factor(Unit),
+  mutate(Unit=as.factor(Unit),
          Disturbance=as.factor(Disturbance),
          Treatment=as.factor(Treatment),
          Pair=as.factor(Pair),
-         Spcode=as.factor(Spcode))
+         Spcode=as.factor(Spcode),
+         Condition=as.factor(Condition))
+
+trees2 <- trees2 %>% mutate(Condition=fct_recode(Condition,
+                                                 "Alive"="1","Dead"="0"))
 
 #dbh classes
 trees2 <- trees2 %>% mutate(dbhClass=if_else(
@@ -328,8 +331,8 @@ trees2 <- trees2 %>% mutate(dbhClass=fct_relevel(dbhClass,"2-5","5-10","10-20",
 #basal areas
 trees2 <- trees2 %>% mutate(ba=0.00007854*(`DBH (cm)`^2))
 
-sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba)
-sumba <- sumba %>% group_by(Pair,Disturbance,Spcode,dbhClass) %>% 
+sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba,Condition)
+sumba <- sumba %>% group_by(Pair,Disturbance,Spcode,dbhClass,Condition) %>% 
   summarize(sumba=sum(ba))
 
 #scale up to per ha
@@ -372,21 +375,22 @@ sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
 ```{r fig-overstory,echo=FALSE, fig.cap="Basal area per hectare of overstory species in 2023 (y-axis) by burn treatments (columns), study stands (rows), and DBH size classes (x-axis).",fig.width=10,fig.height=10,fig.pos="H"}
 #let's try to plot this lol
 sumba <- sumba %>% mutate(Genus=case_when(
-  Spcode %in% c("ACPE","ACRU","ACSA") ~ "Acer spp.",
-  Spcode %in% c("BEAL","BEPA","BEPO") ~ "Betula spp.",
+  Spcode %in% c("ACPE","ACRU","ACSA") ~ "Acer",
+  Spcode %in% c("BEAL","BEPA","BEPO") ~ "Betula",
   Spcode %in% "FAGR" ~ "F. grandifolia",
   Spcode %in% "PIST" ~ "P. strobus",
-  Spcode %in% c("POGR","POTR") ~ "Populus spp.",
-  Spcode %in% c("PRPE","PRSE") ~ "Prunus spp.",
+  Spcode %in% c("POGR","POTR") ~ "Populus",
+  Spcode %in% c("PRPE","PRSE") ~ "Prunus",
   Spcode %in% "QURU" ~ "Q. rubra",
   Spcode %in% c("ABBA","FRAM","OSVI","PIRU","TIAM","TSCA")~"Others"
 ))
 
 #let's try to plot this lol
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
-sp <- c("Acer spp."="#88CCEE","Q. rubra"="#CC6677","Betula spp."="#DDCC77",
-        "F. grandifolia"="#117733","P. strobus"="#FFC20A", "Populus spp."="#332288",
-        "Prunus spp."="#AA4499","Others"="#40B0A6")
+sp <- c("Acer"="#88CCEE","Q. rubra"="#CC6677","Betula"="#DDCC77",
+        "F. grandifolia"="#117733","P. strobus"="#FFC20A", "Populus"="#332288",
+        "Prunus"="#AA4499","Others"="#40B0A6")
+da <- c("Dead"="#5b84b1","Alive"="#fc766a")
 
 sumba %>% 
   ggplot(aes(x=dbhClass,y=m2ha))+
@@ -401,6 +405,20 @@ sumba %>%
     legend.text=element_text(size=12),
   )+
   xlab("DBH size classes (cm)")+
+  ylab("Basal area (per ha)")
+```
+
+```{r fig-overstory2,echo=FALSE, fig.cap="Basal area per hectare of dead/alive overstory trees with DBH>=30 cm in 2023 (y-axis) by burn treatments (columns), study stands (rows), and genus (x-axis).",fig.width=10,fig.height=10,fig.pos="H"}
+sumba2 <- sumba %>% filter(dbhClass %in% c("30-40","40-50","50-60",">60"))
+sumba2 %>% 
+  ggplot(aes(x=Genus,y=m2ha))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_col(aes(fill=Condition))+
+  scale_fill_manual(values=c(p6,da))+
+  facet_grid(rows=vars(Pair),cols=vars(Disturbance),scales='free')+
+  theme_light()+
+  xlab("Genera")+
   ylab("Basal area (per ha)")
 ```
 
@@ -806,15 +824,15 @@ comparisons
 
 ## *Q. rubra* seedling recruitment by prescribed fire
 
-*Q. rubra* seedling density in burned stands is nearly triple that in control stands, supporting the hypothesis that prescribed fire promotes seedling recruitment (Figure 4). The different cutting treatments did not have significant effects on such recruitment. When these cutting treatments took place, management intentionally left behind mostly *Q. rubra* trees in the highest DBH size classes (Figure 3). The mother trees survived the burns better than their mesophytic competitors and possibly took advantage of their regrowth time to reproduce [@deyReviewDynamicsPrescribed2018]. Their survival rates are higher due to thicker bark and rapid compartmentalization, among other factors. There is evidence that acorn production is positively correlated to tree vigor i.e full-crowned dominant trees of larger DBHs produce more acorns [@bogdziewicz2020]. Even though acorn production is also dependent on tree genetics [@smith2022], meaning that “good” producers are more likely to yield larger crops, thinning and burning to release the healthiest-looking individuals raises the chance of achieving better yields.
+*Q. rubra* seedling density in burned stands is nearly triple that in control stands, supporting the hypothesis that prescribed fire promotes seedling recruitment (@fig-count23). We did not find any significant effect the different cutting treatments may have had on such recruitment; though the cuttings took place at different years, making it not a true comparison. When these cutting treatments took place, management left behind mostly *Q. rubra* trees in the highest DBH size classes, 30 cm and above (@fig-overstory). The mother trees survived the burns better than their mesophytic competitors (@fig-overstory2) and possibly took advantage of their regrowth time to reproduce [@deyReviewDynamicsPrescribed2018]. Their survival rates are higher due to thicker bark and rapid compartmentalization, among other factors. There is evidence that acorn production is positively correlated to tree vigor i.e full-crowned dominant trees of larger DBHs produce more acorns [@bogdziewicz2020]. Even though acorn production is also dependent on tree genetics [@smith2022], meaning that “good” producers are more likely to yield larger crops, thinning and burning to release the healthiest-looking individuals raises the chance of achieving better yields.
 
-Additionally, fire can alter soil resource supply by accelerating nutrient cycling and hence releasing more of them [@chapin2012]. A sudden increase in nitrogen availability in the nitrogen-limited temperate forest [@bae2015] may help promote flowering and acorn production [@callahan2008]. In terms of acorn germination success, fire is assumed to decrease acorn herbivory, which can lead to nonviable seeds or low-vigor seedlings, by interfering with insects’ life cycle portions spent in the soil [@riccardi2004]. Another benefit fire provides is lessening the litter thickness, which in turns aids root penetration and avoids long and weak stems growing through thick litter [@hutchinson2024].
+Additionally, fire can alter soil resource supply by accelerating nitrogen cycling, which in turns releases more of it into the soil [@chapin2012]. A sudden increase in nitrogen availability in the nitrogen-limited temperate forest [@bae2015] may help promote flowering and acorn production [@callahan2008]. In terms of acorn germination success, fire is assumed to decrease acorn herbivory, which can lead to nonviable seeds or low-vigor seedlings, by interfering with insects’ life cycle portions spent in the soil [@riccardi2004]. For example, *Conotrachelus spp.* and *Curculio spp.* and could be killed by fire while exiting from fallen acorns or while in the forest floor layers attempting to reach the soil. Fire consumption of the forest floor removes their hiding areas and presents them to greater predation by small mammals. Another benefit fire provides is lessening the litter thickness, which in turns aids root penetration and avoids long and weak stems growing through thick litter [@hutchinson2024].
 
 It is also worth evaluating fire effects on competitors at the germination and seedling establishment stage. Fire can reduce seed bank abundance [@schuler2010], but it is more likely that the seed bank remains abundant after one-time burns like in our study. In the understory, early successional seedlings are plentiful, mostly comprising *Rubus spp.*, *A. rubrum*, and *Betula spp.* (Figure 2). The latter two produce high volumes of wind-dispersed seeds that germinate well in the postfire exposed mineral soil. *A. rubrum*, together with *F. grandifolia*, also have strong sprouting responses to disturbances. Prescribed burns can only be considered an effective management tool for *Q. rubra* regeneration if their effects are net positive. 
 
 ## *Q. rubra* seedling growth promoted by prescribed fires
 
-Diameter at root collar and extension growth are significantly greater for *Q. rubra* seedlings in burned stands versus control stands (Figures 5-6). Seedlings in burned stands also have more leaves and live branches (Figures 7-9). They might have grown bigger diameter-wise by taking advantage of the temporary increases in available nitrogen pools [@wan2001] and fluxes [@wang2014] immediately after fires to store carbon into the stems. On the other hand, the significantly larger annual extension growths and leaf and branch sproutings in the past two summers imply that the positive fire effects still linger 3-7 years post-treatment. Forest recovery generally takes decades after a major disturbance. @cuevas-gonzález2009 found that effect duration is dependent on the dominant forest type. @yang2017 echoed the same sentiments, highlighting that stands in higher latitudes experience it for longer. Other variables include vegetation density, richness, and abundance: dense areas tend to recover slower while plant species richness and abundance increase with more time elapsed since fire [@smith-ramírez2022].
+Diameter at root collar and extension growth are significantly greater for *Q. rubra* seedlings in burned stands versus control stands (Figures 5-6). Seedlings in burned stands also have more leaves and live branches (Figures 7-9). They might have grown bigger diameter-wise by taking advantage of the temporary increases in available nitrogen pools [@wan2001] and fluxes [@wang2014] immediately after fires to store carbon into the stems. On the other hand, the significantly larger annual extension growths and leaf and branch sproutings in the past two summers imply that the positive fire effects still linger 3-7 years post-treatment. [MORE CONNECTIONS TO OTHER MEASUREMENTS HERE] Forest recovery generally takes decades after a major disturbance. @cuevas-gonzález2009 found that effect duration is dependent on the dominant forest type. @yang2017 echoed the same sentiments, highlighting that stands in higher latitudes experience it for longer. Other variables include vegetation density, richness, and abundance: dense areas tend to recover slower while plant species richness and abundance increase with more time elapsed since fire [@smith-ramírez2022].
 
 While mesophytic competitors experience dieback and invest their resources in regrowing, *Q. rubra* seedlings make use of nutrients, space, and light that are more available than ever (Figure 10) to grow taller vertically and horizontally as well as produce leaves to expedite photosynthesis. These photophilic seedlings put on twice the number of live branches (Figures 7-8) and leaves (Figure 9) in the burned stands compared to the control stands. While the mechanisms at play remain unclear, a 2023 mesocosm experiment growing acorns in soils collected from study pairs 4 also showed that seedlings in burned soils have greater DRCs than those in control soils (Cleavitt et al. *in prep*). The study design isolated the effects of burned soils by having acorns sourced from the same mother tree and soils from the same locations to minimize genetic and micro-topographical differences respectively. Arbuscular mycorrhizal fungi (AMF), a symbiotic network that exchanges nutrients with plant roots, was hypothesized to colonize burned soils more extensively but the differences among soil treatments were insignificant. The next step in this investigation of mycorrhizal fungal colonization is analyzing seedling roots harvested from the study sites, in which ectomycorrhizal (EcMF) structures are expected as well.
 

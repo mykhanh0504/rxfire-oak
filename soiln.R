@@ -27,8 +27,8 @@ soiln2 <- soiln2 %>% mutate(Pair2=case_when(Stand %in% c("3/16","5/15")~"1",
                                        Stand %in% c("44","46N")~"5",
                                        Stand=="46"~"6"))
 
-soiln2 <- soiln2 %>% select(Site,Stand,Treatment,
-                            NO3_mgkg,NH4_mgkg,Cut,Pair2,OM_pct)
+#soiln2 <- soiln2 %>% select(Site,Stand,Treatment,
+                            #NO3_mgkg,NH4_mgkg,Cut,Pair2,OM_pct)
 
 soiln2 <- soiln2 %>% 
   mutate(Pair2=as.factor(Pair2),

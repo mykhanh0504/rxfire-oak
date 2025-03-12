@@ -35,20 +35,20 @@ ecm <- ecm %>% mutate(pct_colonized=colonized_tips/(colonized_tips+uncolonized_t
 ecmb <- ecm %>% filter(Disturbance=="B")
 stats_ecmb <- get_summary_stats(ecmb)
 stats_ecmb <- stats_ecmb %>% mutate(Disturbance="B")
-stats_ecmb <- stats_ecmb %>% 
-  select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
-  filter(variable %in% c("Age","Height_cm","Extension_growth_cm","DRC_mm",
-                         "nleaves","nlive_branches","ndead_branches",
-                         "Herbivory_pct","Pathogen_damage_pct","pct_colonized"))
+#stats_ecmb <- stats_ecmb %>% 
+  #select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
+  #filter(variable %in% c("Age","Height_cm","Extension_growth_cm","DRC_mm",
+                         #"nleaves","nlive_branches","ndead_branches",
+                         #"Herbivory_pct","Pathogen_damage_pct","pct_colonized"))
 
 ecmc <- ecm %>% filter(Disturbance=="C")
 stats_ecmc <- get_summary_stats(ecmc)
 stats_ecmc <- stats_ecmc %>% mutate(Disturbance="C")
-stats_ecmc <- stats_ecmc %>% 
-  select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
-  filter(variable %in% c("Age","Height_cm","Extension_growth_cm","DRC_mm",
-                         "nleaves","nlive_branches","ndead_branches",
-                         "Herbivory_pct","Pathogen_damage_pct","pct_colonized"))
+#stats_ecmc <- stats_ecmc %>% 
+  #select(Disturbance,variable,min,max,median,mean,sd,se) %>% 
+  #filter(variable %in% c("Age","Height_cm","Extension_growth_cm","DRC_mm",
+                         #"nleaves","nlive_branches","ndead_branches",
+                         #"Herbivory_pct","Pathogen_damage_pct","pct_colonized"))
 
 stats_ecm <- stats_ecmb %>% full_join(stats_ecmc)
 stats_ecm %>% kable(caption="Summarized statistics of 
