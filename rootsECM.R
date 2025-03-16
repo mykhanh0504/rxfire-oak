@@ -6,6 +6,7 @@ library(car)
 library(multcomp)
 library(rstatix)
 library(kableExtra)
+library(ggpubr)
 
 ecm <- read_csv("rootsECM.csv")
 
@@ -31,6 +32,8 @@ ecm <- ecm %>%
          Pair=as.factor(Pair))
 
 ecm <- ecm %>% mutate(pct_colonized=colonized_tips/(colonized_tips+uncolonized_tips)*100)
+
+ecm <- ecm %>% filter(Pair %in% c("1","2","3"))
 
 ecmb <- ecm %>% filter(Disturbance=="B")
 stats_ecmb <- get_summary_stats(ecmb)
@@ -81,6 +84,15 @@ ecm %>%
   xlab("Height")+
   ylab("pct colonized")
 
-ggplot(data=ecm,aes(x=Height_cm,y=pct_colonized))+
+ecm2 <- ecm %>% pivot_longer(cols=-c(Location,Unit,Disturbance,
+                                     Tag,Treatment,Pair,pct_colonized,
+                                     colonized_tips,uncolonized_tips,
+                                     nleaves,nlive_branches,Herbivory_pct,
+                                     DRC_mm,ndead_branches,Age),
+                             names_to='Variable',values_to='Value')
+
+ecm2 %>% ggplot(aes(x=Value,y=pct_colonized))+
   geom_point()+
-  geom_smooth(method='lm')
+  facet_grid(rows=vars(Disturbance),cols=vars(Variable),scales='free_x')+
+  geom_smooth(method='lm')+
+  stat_cor(method="pearson",label.x=1,label.y=1)

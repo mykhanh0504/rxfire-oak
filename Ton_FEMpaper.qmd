@@ -49,15 +49,15 @@ Present/permanent address:
 
 \newpage
 
-# Abstract  {.unnumbered}
+# Abstract {.unnumbered}
 
 (250 words)
 
-## Keywords  {.unnumbered}
+## Keywords {.unnumbered}
 
-(1-7 keywords)
+(1-7 keywords) climate resilience, plant-soil feedback, prescribed fire, Quercus rubra, regeneration
 
-## Highlights  {.unnumbered}
+## Highlights {.unnumbered}
 
 (separate editable file)
 
@@ -71,15 +71,9 @@ Present/permanent address:
 
 *Q. rubra* currently faces many regeneration challenges in the northeastern US, and its recruitment may continue failing without timely and appropriate interventions. Oak-dominated forests are at their peak capacity to produce acorns at present; however, if forest aging continued for the next 50 years without sufficient regeneration to maintain its age structure, a population bottleneck may ensue [@dey2014]. Acorns have become a major hard mast source for wildlife consumption since the demise of American chestnut and the spread of beech bark disease, but their production declines in older stands [@mcewan2006]. Weevils can also make the acorns non-viable before they are fully mature. This high seed predation strongly limits successful advance regeneration outside of mast years [@mcsheaForestryMattersDecline2007]. Moreover, seedling root penetration into underlying soils can be hindered by thick litter layers and can result in long and weak stems. [@arthurRefiningOakFireHypothesis2012]. Even when seedlings are established, they risk getting eaten, especially by deer [@mcsheaForestryMattersDecline2007]. *Q. rubra* is also susceptible to some fungal pathogens later in its life cycle including *Bretziella fagacearum* and *Armillaria mellea*, which cause oak wilt and Armillaria root rot respectively. While the former disease is spread from tree to tree through root grafts and travels longer distances by *Nitidulidae* and *Pseudopityophthorus spp.*, the latter grows parasitically on trees weakened by fire, drought, insects, or other diseases [@sander1990]. Lastly, its shade intolerance retards its seedling recruitment when there is insufficient light in the understory [@nowackiDemiseFireMesophication2008]. Seedling growth might be slow due to competition from more shade-tolerant species such as *Acer rubrum* and *Fagus grandifolia*. 
 
-@abramsFireDevelopmentOak1992 hypothesized that ground fire might be crucial for oak regeneration. Fire has been integral to upland oak systems in the eastern US for millennia. Pre-settlement fires occurred as a function of lightning strikes as well as native activities such as cooking, heating, seedbed preparation, hunting, ceramic manufacture, and communication. Burning continued with European settlement and pitched oak as the dominant species in periodically burned areas [@abramsFireDevelopmentOak1992]. Over time, *Q. rubra* became much more adapted to a periodic fire regime than other hardwoods and, as a result, can take advantage of the postfire environment.
+@abramsFireDevelopmentOak1992 hypothesized that ground fire might be crucial for oak regeneration. Fire has been integral to upland oak systems in the eastern US for millennia, evidenced by the co-presence of charcoal and oak dominance. Pre-settlement fires occurred as a function of lightning strikes as well as native activities such as cooking, heating, seedbed preparation, hunting, ceramic manufacture, and communication. European settlement continued the periodic burning and, at the same time, logged white pine forests which in turn promote oak regeneration [@abramsFireDevelopmentOak1992]. However, fire suppression became mainstream policy in the 1920s against the backdrop of the "Big Burn" in 1910, the largest wildfire in the US history that spread across a million hectares in Idaho and western Montana [@nowackiDemiseFireMesophication2008]. The newly established and extremely short-staffed US Forest Service was determined to codify suppression as the main tool to fire management. Its “10 AM” policy went into effect in 1935, requiring all forest fires to be suppressed before 10 AM the next day [@donovan2007]. Together with the 1911 Weeks Act that funded states with fire suppression plans, this policy kick-started almost a century of fire suppression legacy in the US. Fire absence has led to forest mesophication in the eastern landscape, a condition in which stands become wetter and more shady. It promotes mesic microenvironmental conditions, which in turn favor the regeneration of shade-tolerant species. This positive feedback loop shrinks suitable habitats for shade-intolerant, fire-adapted species like *Q. rubra* over time. Therefore, it has been argued that it is necessary to bring back fire in a controlled manner to reverse the feedback loop and restore the upland oak ecosystems [@abramsFireDevelopmentOak1992].
 
-\[where does q. rubra fit into the oak phylogeny and how fire-adapted it is?\]
-
-However, fire suppression became mainstream policy in the 1920s against the backdrop of the "Big Burn" in 1910, the largest wildfire in the US history that spread across a million hectares in Idaho and western Montana [@nowackiDemiseFireMesophication2008]. The newly established and extremely short-staffed US Forest Service was determined to codify suppression as the main tool to fire management. Its “10 AM” policy went into effect in 1935, requiring all forest fires to be suppressed before 10 AM the next day [@donovan2007]. Together with the 1911 Weeks Act that funded states with fire suppression plans, this policy kick-started almost a century of fire suppression legacy in the US. Fire absence has led to forest mesophication in the eastern landscape, a condition in which stands become wetter and more shady. It promotes mesic microenvironmental conditions, which in turn favor the regeneration of shade-tolerant species. This positive feedback loop shrinks suitable habitats for shade-intolerant, fire-adapted species like *Q. rubra* over time. Therefore, it has been argued that it is necessary to bring back fire in a controlled manner to reverse the feedback loop and restore the upland oak ecosystems [@abramsFireDevelopmentOak1992].
-
-\[has climate change also contributed to mesophication?\]
-
-The other important consideration for oak regeneration is that *Q. rubra* is projected to move further northward due to climate change [@petersClimateChangeTree2020]. In New England, its distribution is projected to increase substantially by 2100, particularly in northern New York, Vermont, New Hampshire, and Maine, under both representative concentration pathways (RCP) 4.5 and 8.5 due to high adaptability. These scenarios are based entirely on greenhouse gas concentrations, assuming we follow the same industrial path as usual for RCP 4.5 (an increase of 4.5W/m^2^ in radiative forcing between the years 1750-2100) or increase its intensity in RCP 8.5 (an increase of 8.5W/m^2^ in the same period) [@joyce2020]. This presents an opportunity for foresters, landowners, and scientists with an interest in *Q. rubra* regeneration to better understand regeneration concerns near its current Northern range limit so they can devise silvicultural strategies to introduce or increase its density as part of their species mix. Adaptive silviculture can be implemented to ensure this seamless transition and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations [@iverson2008; @granger2018; @bassett2020; @dee2022]. This study built on previous research and further explored prescribed fire's role in oak range expansion.
+The other important consideration for oak regeneration is that *Q. rubra* is projected to move further northward due to climate change [@petersClimateChangeTree2020]. Previously, it was pushed southward to its modern-day distributions during the Eocene-Oligocene climate transition 34 million years ago due to a 3-5^o^C increase in temperature at high latitudes [@hipp2018]. However, its distribution is now projected to increase substantially in New England by 2100, particularly in northern New York, Vermont, New Hampshire, and Maine, under both representative concentration pathways (RCP) 4.5 and 8.5 due to high adaptability. These scenarios are based entirely on greenhouse gas concentrations, assuming we follow the same industrial path as usual for RCP 4.5 (an increase of 4.5W/m^2^ in radiative forcing between the years 1750-2100) or increase its intensity in RCP 8.5 (an increase of 8.5W/m^2^ in the same period) [@joyce2020]. This presents an opportunity for foresters, landowners, and scientists with an interest in *Q. rubra* regeneration to better understand regeneration concerns near its current Northern range limit so they can devise silvicultural strategies to introduce or increase its density as part of their species mix. Adaptive silviculture can be implemented to ensure this seamless transition and contribute towards long-term resilience on the stand level [@nagel2017]. Methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations [@iverson2008; @granger2018; @bassett2020; @dee2022]. This study built on previous research and further explored prescribed fire's role in oak range expansion.
 
 **\[Paragraph on impact of fire on soil biota?\]**
 
@@ -178,7 +172,7 @@ Leaf punches were oven-dried at 60^o^C overnight and stored in air-tight conditi
 
 ### Roots
 
-\[need to add ecmf protocol\]
+*\[need to add ecmf protocol\]*
 
 Root samples from the mesocosm were cleared and stained in spring 2024 using a protocol detailed by @cleavitt2008. Root segments were taken out of vials into test tubes, submerged in 10% KOH solutions, and placed in a 94∘C water bath. The solutions were changed every half an hour until they stopped changing color. At this point, the roots became somewhat translucent and light brown in color. After that, they were acidified with 10% HCl solutions for one hour and then stained with 1:1 glycerol-vinegar solutions overnight. The following day, roots were rinsed and kept in 1:1 glycerol-vinegar destaining solutions in 20ml glass vials.
 
@@ -194,7 +188,6 @@ Plot-level stem and seedling counts and basal areas were expressed per hectare. 
 
 | Species code | Scientific name | Common name |
 |------------------------|------------------------|------------------------|
-| `ABBA` | *Abies balsamea* | Balsam fir |
 | `ACPE` | *Acer pensylvanicum* | Striped maple |
 | `ACRU` | *Acer rubrum* | Red maple |
 | `ACSA` | *Acer saccharum* | Sugar maple |
@@ -202,9 +195,7 @@ Plot-level stem and seedling counts and basal areas were expressed per hectare. 
 | `BEPA` | *Betula papyrifera* | Paper birch |
 | `BEPO` | *Betula populifolia* | Gray birch |
 | `FAGR` | *Fagus grandifolia* | American beech |
-| `FRAM` | *Fraxinus americana* | White ash |
 | `OSVI` | *Ostrya virginiana* | American hophornbeam |
-| `PIRU` | *Picea rubens* | Red spruce |
 | `PIST` | *Pinus strobus* | White pine |
 | `POGR` | *Populus grandidentata* | Bigtooth aspen |
 | `POTR` | *Populus tremuloides* | Quaking aspen |
@@ -212,12 +203,8 @@ Plot-level stem and seedling counts and basal areas were expressed per hectare. 
 | `PRSE` | *Prunus serotina* | Black cherry |
 | `RUS` | *Rubus spp.* | Brambles genus, including raspberries and blackberries |
 | `QURU` | *Quercus rubra* | Northern red oak |
-| `TIAM` | *Tilia americana* | American basswood |
-| `TSCA` | *Tsuga canadensis* | Eastern hemlock |
 
 : List of four-letter codes for common woody species (and brambles genus) at the study sites.
-
-\[combine this table into a separate glossary document\]
 
 ## Stand characterization
 
@@ -895,7 +882,23 @@ While mesophytic competitors experience dieback and invest their resources in re
 
 -   implications for understanding the larger field
 
-# Citations
+\newpage
+
+# Acknowledgements
+
+Khanh Ton: Data curation, Formal analysis, Methodology, Software, Visualization, Writing - original draft
+
+Matt Vadeboncoeur: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Supervision, Validation, Writing - review & editing
+
+Nat Cleavitt: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Supervision, Validation, Writing - review & editing
+
+Heidi Asbjornsen: Funding acquisition, Resources, Supervision, Validation
+
+This study was funded by the Northeastern States Research Cooperative through funding made available by the USDA Forest Service. The conclusions and opinions in this paper are those of the authors and not of the NSRC, the Forest Service, or the USDA. This institution is an equal opportunity provider.
+
+\newpage
+
+# References
 
 ## R packages
 
