@@ -142,7 +142,7 @@ Plot-level stem and seedling counts and basal areas were expressed per hectare. 
 # Results
 
 | Species code | Scientific name | Common name |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | `ABBA` | *Abies balsamea* | Balsam fir |
 | `ACPE` | *Acer pensylvanicum* | Striped maple |
 | `ACRU` | *Acer rubrum* | Red maple |
