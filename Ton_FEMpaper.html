@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Effects of silvicultural burns on Quercus rubra regeneration near its northern range limit</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="Ton_FEMpaper_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Ton_FEMpaper_files/libs/quarto-html/quarto.js"></script>
+<script src="Ton_FEMpaper_files/libs/quarto-html/popper.min.js"></script>
+<script src="Ton_FEMpaper_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Ton_FEMpaper_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Ton_FEMpaper_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Ton_FEMpaper_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Ton_FEMpaper_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Ton_FEMpaper_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Ton_FEMpaper_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Effects of silvicultural burns on Quercus rubra regeneration near its northern range limit</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Author names: Khanh Ton <sup>a</sup>, Matt Vadeboncoeur <sup>a</sup>, Nat Cleavitt <sup>b</sup>, Heidi Asbjornsen <sup>a</sup></p>
+<p><sup>a</sup> Earth Systems Research Center, University of New Hampshire, Durham, NH, USA</p>
+<p><sup>b</sup> Department of Natural Resources and the Environment, Cornell University, Ithaca, NY, USA</p>
+<p>Corresponding author:</p>
+<p>Present/permanent address:</p>
+<p><em>You can access my codes here:</em> <a href="https://github.com/mykhanh0504/rxfire-oak" class="uri">https://github.com/mykhanh0504/rxfire-oak</a></p>
+<div style="page-break-after: always;"></div>
+<section id="abstract" class="level1 unnumbered">
+<h1 class="unnumbered">Abstract</h1>
+<p>(250 words)</p>
+<section id="keywords" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="keywords">Keywords</h2>
+<p>(1-7 keywords) climate resilience, plant-soil feedback, prescribed fire, Quercus rubra, regeneration</p>
+</section>
+<section id="highlights" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="highlights">Highlights</h2>
+<p>(separate editable file)</p>
+<p>(3-5 bullet points, each a maximum of 85 characters including space)</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p><em>Quercus rubra</em> L. (hereafter <em>Q. rubra</em>) is an economically and ecologically important tree species in the northeastern United States. It is a fast-growing species and thrives on a wide range of upland soils <span class="citation" data-cites="abramsFireDevelopmentOak1992">(<a href="#ref-abramsFireDevelopmentOak1992" role="doc-biblioref">Abrams 1992</a>)</span>. Additionally, it is tolerant of heat, drought <span class="citation" data-cites="coble2017 asbjornsen2021">(<a href="#ref-coble2017" role="doc-biblioref">Coble et al. 2017</a>, <a href="#ref-asbjornsen2021" role="doc-biblioref">Asbjornsen et al. 2021</a>)</span>, and ground fire <span class="citation" data-cites="abramsFireEcologicalHistory2000">(<a href="#ref-abramsFireEcologicalHistory2000" role="doc-biblioref">Abrams 2000</a>)</span>. <em>Q. rubra</em> produces high-quality timber with high wood density, making it an important lumber commodity and prompting forest managers to be concerned with its sustainable regeneration <span class="citation" data-cites="deyReviewDynamicsPrescribed2018">(<a href="#ref-deyReviewDynamicsPrescribed2018" role="doc-biblioref">Dey and Schweitzer 2018</a>)</span>. <em>Q. rubra</em> is managed for other ecological values as well. For example, it serves as a habitat and food source for many wildlife species, from birds like turkeys and jays to mammals like mice, squirrels, and deer, and even insects like weevils <span class="citation" data-cites="mcsheaForestryMattersDecline2007">(<a href="#ref-mcsheaForestryMattersDecline2007" role="doc-biblioref">Mcshea et al. 2007</a>)</span>. <em>Q. rubra</em> drives their population dynamics with its high mast production occurring about every two years <span class="citation" data-cites="sork1993">(<a href="#ref-sork1993" role="doc-biblioref">Sork et al. 1993</a>)</span>.</p>
+<p><em>Q. rubra</em> currently faces many regeneration challenges in the northeastern US, and its recruitment may continue failing without timely and appropriate interventions. Oak-dominated forests are at their peak capacity to produce acorns at present; however, if forest aging continued for the next 50 years without sufficient regeneration to maintain its age structure, a population bottleneck may ensue <span class="citation" data-cites="dey2014">(<a href="#ref-dey2014" role="doc-biblioref">Dey 2014</a>)</span>. Acorns have become a major hard mast source for wildlife consumption since the demise of American chestnut and the spread of beech bark disease, but their production declines in older stands <span class="citation" data-cites="mcewan2006">(<a href="#ref-mcewan2006" role="doc-biblioref">McEwan and Muller 2006</a>)</span>. Weevils can also make the acorns non-viable before they are fully mature. This high seed predation strongly limits successful advance regeneration outside of mast years <span class="citation" data-cites="mcsheaForestryMattersDecline2007">(<a href="#ref-mcsheaForestryMattersDecline2007" role="doc-biblioref">Mcshea et al. 2007</a>)</span>. Moreover, seedling root penetration into underlying soils can be hindered by thick litter layers and can result in long and weak stems. <span class="citation" data-cites="arthurRefiningOakFireHypothesis2012">(<a href="#ref-arthurRefiningOakFireHypothesis2012" role="doc-biblioref">Arthur et al. 2012</a>)</span>. Even when seedlings are established, they risk getting eaten, especially by deer <span class="citation" data-cites="mcsheaForestryMattersDecline2007">(<a href="#ref-mcsheaForestryMattersDecline2007" role="doc-biblioref">Mcshea et al. 2007</a>)</span>. <em>Q. rubra</em> is also susceptible to some fungal pathogens later in its life cycle including <em>Bretziella fagacearum</em> and <em>Armillaria mellea</em>, which cause oak wilt and Armillaria root rot respectively. While the former disease is spread from tree to tree through root grafts and travels longer distances by <em>Nitidulidae</em> and <em>Pseudopityophthorus spp.</em>, the latter grows parasitically on trees weakened by fire, drought, insects, or other diseases <span class="citation" data-cites="sander1990">(<a href="#ref-sander1990" role="doc-biblioref">Sander 1990</a>)</span>. Lastly, its relative shade intolerance retards its seedling recruitment when there is insufficient light in the understory <span class="citation" data-cites="nowackiDemiseFireMesophication2008">(<a href="#ref-nowackiDemiseFireMesophication2008" role="doc-biblioref">Nowacki and Abrams 2008</a>)</span>. Seedling growth might be slow due to competition from more shade-tolerant species such as <em>Acer rubrum</em> and <em>Fagus grandifolia</em>.&nbsp;</p>
+<p><span class="citation" data-cites="abramsFireDevelopmentOak1992">Abrams (<a href="#ref-abramsFireDevelopmentOak1992" role="doc-biblioref">1992</a>)</span> hypothesized that ground fire might be crucial for oak regeneration. Fire has been integral to upland oak systems in the eastern US for millennia, evidenced by the co-presence of charcoal and oak dominance. Pre-settlement fires occurred as a function of lightning strikes as well as native activities such as cooking, heating, seedbed preparation, hunting, ceramic manufacture, and communication <span class="citation" data-cites="nowacki2024">(<a href="#ref-nowacki2024" role="doc-biblioref">Nowacki and Thomas-Van Gundy 2024</a>)</span>. European settlement continued the periodic burning; furthermore, they spent the first half of the 19<sup>th</sup> clearing land for agriculture, then the second half abandoning such farmland. Abandoned fields quickly became <em>Pinus strobus</em>-dominated forests, which was promptly logged as timber. <em>Q. rubra</em> was released from the understory and became dominant in the mid-20<sup>th</sup> century at last <span class="citation" data-cites="nowackiDemiseFireMesophication2008">(<a href="#ref-nowackiDemiseFireMesophication2008" role="doc-biblioref">Nowacki and Abrams 2008</a>)</span>. Oak recruitment, however, sharply declined shortly afterward as forests were becoming wetter and more shady. Implementation of aggressive federal fire suppression efforts, combined with land conversion and overgrazing legacy, started to promote forest mesophication. Mesic microenvironmental conditions in turn favored the regeneration of shade-tolerant species. This positive feedback loop shrinks suitable habitats for shade-intolerant, fire-adapted species like <em>Q. rubra</em> over time. Therefore, it has been argued that it is necessary to bring back fire in a controlled manner to reverse the feedback loop and restore the upland oak ecosystems <span class="citation" data-cites="abramsFireDevelopmentOak1992">(<a href="#ref-abramsFireDevelopmentOak1992" role="doc-biblioref">Abrams 1992</a>)</span>.</p>
+<p>The other important consideration for oak regeneration is that <em>Q. rubra</em> distribution is projected to move further northward due to climate change <span class="citation" data-cites="petersClimateChangeTree2020">(<a href="#ref-petersClimateChangeTree2020" role="doc-biblioref">Peters et al. 2020a</a>)</span>. Previously, it was pushed southward to its modern-day distributions during the Eocene-Oligocene climate transition 34 million years ago due to a 3-5<sup>o</sup>C decrease in temperature at high latitudes <span class="citation" data-cites="hipp2018">(<a href="#ref-hipp2018" role="doc-biblioref">Hipp et al. 2018</a>)</span>. However, its distribution is now projected to increase substantially in New England by 2100, particularly in northern New York, Vermont, New Hampshire, and Maine, under both representative concentration pathways (RCP) 4.5 and 8.5 due to high adaptability to a changing climate <span class="citation" data-cites="peters2020">(<a href="#ref-peters2020" role="doc-biblioref">Peters et al. 2020b</a>)</span>. This presents an opportunity for foresters, landowners, and scientists with an interest in introducing or increasing <em>Q. rubra</em> density as part of their species mix in these areas using silvicultural strategies to better understand what limits its regeneration near its northern range limit. Adaptive silviculture can be implemented to ensure this seamless transition and contribute towards long-term resilience on the stand level <span class="citation" data-cites="nagel2017">(<a href="#ref-nagel2017" role="doc-biblioref">Nagel et al. 2017</a>)</span>. Adding <em>Q. rubra</em> to the species mix can increase an ecosystem’s functional diversity, potentially stabilizing it and mitigating future stresses and disturbances such as drought impacts <span class="citation" data-cites="yuan2025">(<a href="#ref-yuan2025" role="doc-biblioref">Yu’an 2025</a>)</span>. Silvicultural methods range from different ways of thinning and artificial planting to prescribed burns and combinations of them. Many previous studies have demonstrated that fire, alone or when combined with thinning, strengthens or re-establishes its dominance in different ecosystems by playing to its fire resistance and easing other regeneration limitations <span class="citation" data-cites="iverson2008 granger2018 bassett2020 dee2022">(<a href="#ref-iverson2008" role="doc-biblioref">Iverson et al. 2008</a>, <a href="#ref-granger2018" role="doc-biblioref">Granger et al. 2018</a>, <a href="#ref-bassett2020" role="doc-biblioref">Bassett et al. 2020</a>, <a href="#ref-dee2022" role="doc-biblioref">Dee et al. 2022</a>)</span>. This study built on previous research and further explored prescribed fire’s role in oak range expansion.</p>
+<p>This study investigates whether prescribed fire promotes the recruitment of <em>Q. rubra</em> seedlings and improves their growth relative to other forest management practices. We studied six pairs of burn and control forest stands across the White Mountains ecoregion in New Hampshire, USA. Three pairs were intentionally harvested and prescribed burn treatments applied with the objective of improving oak regeneration. Two other pairs lack an oak seed source but can provide insights into northern hardwood regeneration dynamics following prescribed burns. The last pair were unmanaged and experienced a wildfire instead, making it a fitting comparison. An additional unharvested pair with a prescribed burn was included for soil sampling only. We hypothesized that <em>Q. rubra</em> possesses fire-tolerant traits that give them an edge over more mesophytic species such as thick bark and deep roots <span class="citation" data-cites="abramsFireDevelopmentOak1992">(<a href="#ref-abramsFireDevelopmentOak1992" role="doc-biblioref">Abrams 1992</a>)</span>. Mother trees hence have greater survival rates, giving them more time and better chances at reproducing while their competitors experience dieback <span class="citation" data-cites="deyReviewDynamicsPrescribed2018">(<a href="#ref-deyReviewDynamicsPrescribed2018" role="doc-biblioref">Dey and Schweitzer 2018</a>)</span>. Prescribed fire burns can promote <em>Q. rubra</em> regeneration at any and all critical life stages including pollination, flowering, seed set, and germination <span class="citation" data-cites="arthurRefiningOakFireHypothesis2012">(<a href="#ref-arthurRefiningOakFireHypothesis2012" role="doc-biblioref">Arthur et al. 2012</a>)</span>.</p>
+</section>
+<section id="methods" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Methods</h1>
+<section id="study-sites" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="study-sites"><span class="header-section-number">2.1</span> Study sites</h2>
+<p>The selected pairs of burn and control forest stands for this study are located in the approximately 320,000-ha White Mountains National Forest (WMNF) in New Hampshire (USA), three of which are part of a novel landscape-scale project guided by the forest’s Land and Resource Management Plan (1999-2005, <span class="citation" data-cites="usdaforestservice2005">(<a href="#ref-usdaforestservice2005" role="doc-biblioref">USDA Forest Service 2005</a>)</span>) and implemented by the USFS over the past two decades. They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (<a href="#tbl-pairs" class="quarto-xref">Table&nbsp;1</a>, <a href="#fig-map" class="quarto-xref">Figure&nbsp;1</a>). One pair does not have any recent management history, but was sampled opportunistically following a wildfire that resulted in patchy mortality of canopy trees in a mature stand. The remaining two pairs at Bartlett Experimental Forest were burned rather opportunistically, as a way to study how a combination of clearcut and prescribed fire can impact overall vegetation regeneration. While there existed some <em>Q. rubra</em> seedlings in the surrounding forest stands and even burned acorns in the study stands, no seed source was present after the treatments. Mature trees were presumed to be harvested during the clearcuts.</p>
+<div id="tbl-pairs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pairs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Six burn and control stand pairs for the study. Stands are paired by where they are located (SB, HOG, CF, or BEF, how they were harvested (shelterwood, seed tree, or clearcut), and that they were harvested concurrently.
+</figcaption>
+<div aria-describedby="tbl-pairs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Pair</th>
+<th>Stand</th>
+<th>Burn year</th>
+<th>Harvest year</th>
+<th>Harvest treatment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Stevens Brooks <code>SB_3/16B</code></td>
+<td>2017</td>
+<td>2010</td>
+<td>Shelterwood</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><code>SB_5/15C</code></td>
+<td>-</td>
+<td>2011</td>
+<td>Shelterwood</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Hogsback <code>HOG_20/2B</code></td>
+<td>2017</td>
+<td>2012</td>
+<td>Seedtree</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>HOG_3/1C</code></td>
+<td>-</td>
+<td>2012</td>
+<td>Seedtree</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Hogsback <code>HOG_28/2B</code></td>
+<td>2018</td>
+<td>2014</td>
+<td>Shelterwood</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><code>HOG_12/2C</code></td>
+<td>-</td>
+<td>2013</td>
+<td>Shelterwood</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Crawford Notch State Park <code>CF_B</code></td>
+<td>2022</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>CF_C</code></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Bartlett Experimental Forest <code>BEF_44B</code></td>
+<td>2021</td>
+<td>2019</td>
+<td>Clearcut</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><code>BEF_45C</code></td>
+<td>-</td>
+<td>2019</td>
+<td>Clearcut</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Bartlett Experimental Forest <code>BEF_46B</code></td>
+<td>2021</td>
+<td>2019</td>
+<td>Clearcut</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>BEF_46C</code></td>
+<td>-</td>
+<td>2019</td>
+<td>Clearcut</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-map" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/finalmap2.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Map of where stand pairs are located. Burn years are displayed for burned stands, and a color is assigned to each pair: SB shelterwoods (1) in orange, HOG seed tree harvests (2) in yellow and shelterwoods (3) in grey, CF wildfire (4) in green, and BEF clearcuts (5, 6) in blue.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="field-data-collection" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="field-data-collection"><span class="header-section-number">2.2</span> Field data collection</h2>
+<section id="site-characterization" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="site-characterization"><span class="header-section-number">2.2.1</span> Site characterization</h3>
+<p>In summer 2023, transects (50 -225 m long) were laid 30 to 50 m apart to sample the variety of light and soil conditions in each study stand. Along a transect is a series of 1 m² quadrats (hereafter referred to as “plots”) spaced 10 m apart from their centers. In total, there were 43 transects laid in 6 pairs of burn-control stands, amounting to 393 plots. Percent slope, aspect, microtopography, burn evidence, and Q. rubra litter presence were recorded for each plot. Slope was determined with a hypsometer and later validated with topography maps, and aspect with a compass. Microtopography was described qualitatively, using remarks like “slight slope,” “steep slope,” “mid slope,” “concave,” and “convex.” Burn evidence at the plot scale was confirmed with charcoal presence under the litter layer. Surface cover was estimated in categories including bare soil, woody debris, leaf litter, and rock. Live vegetation cover below breast height was also estimated visually. Woody species with diameter at breast height (DBH) smaller than 2 cm were identified and their stems counted.</p>
+<p>In July-August 2024, leaf area index (LAI) measurements were made at the center of each plot as a metric of light availability. The LI-COR LAI-2200C Plant Canopy Analyzer was positioned at ~50 cm height to assess the light availability to seedlings. LAI data was then matched, calibrated, and analyzed using the LI-COR FV2200 software.</p>
+</section>
+<section id="seedling-measurements-and-sample-collection" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="seedling-measurements-and-sample-collection"><span class="header-section-number">2.2.2</span> Seedling measurements and sample collection</h3>
+<p>If <em>Q. rubra</em> seedlings were present in the 1 m<sup>2</sup> plots, they were tagged, aged, measured for height (cm) and diameter at root collar (DRC, mm), and checked for evidence of herbivory and pathogen damage. In summer 2024, they were resurveyed twice, once in June and again in August, to quantify growth between the two growth seasons and within this season alone. At this time, we also counted the number of leaves and number of live and dead branches. Herbivory and pathogen damage were quantified percentage-wise as well as described qualitatively.&nbsp;</p>
+<p>Within a 5 m radius of each plot center, trees &gt;2 cm DBH were identified and measured. The number of <em>Q. rubra</em> seedlings was also counted. In summer 2024, seedling abundance was re-estimated twice, once at the beginning and again at the end of the season.</p>
+</section>
+</section>
+<section id="data-visualization-and-analysis" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="data-visualization-and-analysis"><span class="header-section-number">2.3</span> Data visualization and analysis</h2>
+<p>Plot-level stem and seedling counts and basal areas were expressed per hectare. Box plot graphs of seedling counts and various abovementioned growth measurements as well as LAI measurements were also constructed. Suitable statistical analyses, mostly analysis of variance (ANOVA) with blocking, were carried out in R version 4.4.0 for each response variable to test for hypothesized differences between prescribed fire and control pairs. Response variables included, but not limiting to, LAI values, seedling density, DRC, extension growth, and number of leaves. Data visualization and analysis packages included <code>forcats</code>, <code>ggplot2</code>, <code>tidyverse</code>, <code>dplyr</code>, <code>gt</code>, <code>car</code>, <code>rstatix</code>, and <code>ggpubr</code>.</p>
+</section>
+</section>
+<section id="results" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Results</h1>
+<section id="stand-characterization" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="stand-characterization"><span class="header-section-number">3.1</span> Stand characterization</h2>
+<p>In the understory of the burned stands, <em>Q. rubra</em> mainly competes with early successional seedlings e.g.&nbsp;<em>Rubus spp.</em>, <em>A. rubrum</em>, <em>B. alleghaniensis</em> and stump sprouts e.g.&nbsp;<em>F. grandifolia</em> (<a href="#fig-understory" class="quarto-xref">Figure&nbsp;2</a>). <em>Rubus</em> is prevalent in all but Pair 4, ranging from 14000 individuals per hectare in Pair 5 to 102000 in Pair 6. <em>A. rubrum</em> was abundant only among Pairs 1, 2, and 3 and is more abundant in burned stands than in control stands e.g., with a seedling density of 57000 per hectare in the former versus 40000 in the latter in Pair 1. <em>B. alleghaniensis</em> follows a similar pattern while <em>F. grandifolia</em> is most common in Pair 4, especially the burned stand with 17000 seedlings per hectare compared to 2000 in the control stand.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-understory" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-understory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-understory-1.png" class="img-fluid figure-img" data-fig-pos="H" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-understory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Stem density per hectare of the most abundant understory species in 2023 by stand pairs.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Study stands’ basal areas are a reflection of their harvesting methods more than whether or not they were burned (<a href="#fig-overstory" class="quarto-xref">Figure&nbsp;3</a>). Having been clearcut more recently and hence absent of trees of 20 cm and above in DBH, Pairs 5 and 6 have substantially lower basal areas, all under 1 m<sup>2</sup> per hectare, compared to others with 18.3 (burned stand in Pair 2) to 37.9 m<sup>2</sup> (burned stand in Pair 1). Their compositions are also the least diverse, consisting of <em>Prunus</em>, <em>Populus</em>, and <em>Betula spp</em>. The remaining stands have a significant presence of mature <em>Q. rubra</em> as well as <em>Acer</em> and <em>Betula</em> spp. of mid-ranged DBH classes. Additionally, Pair 1’s overstory composition includes a large basal area of high-DBH <em>P. strobus</em>.</p>
+<p><a href="#fig-overstory2" class="quarto-xref">Figure&nbsp;4</a> shows basal areas of mature trees of 30 cm and above in DBH by whether they were dead or alive at the time of survey. <em>Q. rubra</em>’s basal areas were about 10 m<sup>2</sup>/ha across all stands, far exceeding those of other dominant genera. More standing dead trees were recorded in the burned stands, with <em>F. grandifolia</em> suffering the highest mortality rate.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-overstory" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-overstory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-overstory-1.png" class="img-fluid figure-img" data-fig-pos="H" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-overstory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Basal area per hectare of overstory species in 2023 (y-axis) by burn treatments (columns), study stands (rows), and DBH size classes (x-axis).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-overstory2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-overstory2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-overstory2-1.png" class="img-fluid figure-img" data-fig-pos="H" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-overstory2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Basal area per hectare of dead/alive overstory trees with DBH&gt;=30 cm in 2023 (y-axis) by burn treatments (columns), study stands (rows), and genus (x-axis).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="leaf-area-index-lai" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="leaf-area-index-lai"><span class="header-section-number">3.2</span> Leaf Area Index (LAI)</h2>
+<p>Burned stands have lower LAI values (averaging 3.2+/-0.2) than control stands (5.4+/-0.2, p&lt;0.001) (<a href="#fig-lai" class="quarto-xref">Figure&nbsp;5</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-lai" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lai-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-lai-1.png" class="img-fluid figure-img" data-fig-pos="H" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lai-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Leaf area index (LAI) values in 2024 (y-axis) by stand pairs (x-axis),error bars = ±1 SE.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="q.-rubra-seedling-density-and-measurements-in-the-field" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="q.-rubra-seedling-density-and-measurements-in-the-field"><span class="header-section-number">3.3</span> <em>Q. rubra</em> seedling density and measurements in the field</h2>
+<p>Seedling density in 2023 increased threefold in burned stands (2887±240 per ha) relative to control stands (1030±154 per ha, p&lt;0.001) (<a href="#fig-count23" class="quarto-xref">Figure&nbsp;6</a>). Seedlings in burned stands also grew better than in control stands, evidenced by greater DRC in 2023 (4.6±0.3 mm versus 3.3±0.3 mm, p&lt;0.01) (<a href="#fig-drc23" class="quarto-xref">Figure&nbsp;7</a>), greater extension growth in 2024 (6.43±0.5 cm versus 2.6±0.4 cm, p&lt;0.001) (<a href="#fig-xgr24" class="quarto-xref">Figure&nbsp;8</a>), and more leaves sprouted (16±1 versus 7±1, p&lt;0.001) (<a href="#fig-nleaves24" class="quarto-xref">Figure&nbsp;9</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-count23" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-count23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-count23-1.png" class="img-fluid figure-img" data-fig-pos="H" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-count23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-drc23" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-drc23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-drc23-1.png" class="img-fluid figure-img" data-fig-pos="H" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-drc23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Q. rubra seedling diameters at root collar in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-xgr24" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-xgr24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-xgr24-1.png" class="img-fluid figure-img" data-fig-pos="H" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-xgr24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Q. rubra seedling extension growths in 2024 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-nleaves24" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-nleaves24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Ton_FEMpaper_files/figure-html/fig-nleaves24-1.png" class="img-fluid figure-img" data-fig-pos="H" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nleaves24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Number of leaves per Q. rubra seedling in 2024 (y-axis) by stand pairs (y-axis),error bars = ±1 SE.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="discussion" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Discussion</h1>
+<p><em>Q. rubra</em> seedling density in burned stands is nearly triple that in control stands, supporting the hypothesis that prescribed fire promotes seedling recruitment (<a href="#fig-count23" class="quarto-xref">Figure&nbsp;6</a>). We did not find any significant effect the different cutting treatments may have had on such recruitment; though the cuttings took place at different years, complicating the comparison. When these cutting treatments took place, management left behind mostly <em>Q. rubra</em> trees in the highest DBH size classes, 30 cm and above (<a href="#fig-overstory" class="quarto-xref">Figure&nbsp;3</a>). The mother trees survived the burns better than their mesophytic competitors (<a href="#fig-overstory2" class="quarto-xref">Figure&nbsp;4</a>) and continued to reproduce while their competition took time to regrow <span class="citation" data-cites="deyReviewDynamicsPrescribed2018">(<a href="#ref-deyReviewDynamicsPrescribed2018" role="doc-biblioref">Dey and Schweitzer 2018</a>)</span>. Their survival rates are higher potentially due to thicker bark and rapid compartmentalization, among other factors. There is evidence that acorn production is positively correlated to tree vigor i.e full-crowned dominant trees of larger DBHs produce more acorns <span class="citation" data-cites="bogdziewicz2020">(<a href="#ref-bogdziewicz2020" role="doc-biblioref">Bogdziewicz et al. 2020</a>)</span>. Even though acorn production is also dependent on tree genetics <span class="citation" data-cites="smith2022">(<a href="#ref-smith2022" role="doc-biblioref">Smith et al. 2022</a>)</span>, meaning that “good” producers are more likely to yield larger crops, thinning and burning to release the healthiest-looking individuals raises the chance of achieving better yields.</p>
+<p>Additionally, fire can alter soil resource supply by accelerating nitrogen cycling, which in turns releases more of it into the soil <span class="citation" data-cites="chapin2012">(<a href="#ref-chapin2012" role="doc-biblioref">Chapin and Vitousek 2012</a>)</span>. A sudden increase in nitrogen availability in the nitrogen-limited temperate forest <span class="citation" data-cites="vadeboncoeur2010">(<a href="#ref-vadeboncoeur2010" role="doc-biblioref">Vadeboncoeur 2010</a>)</span> may help promote flowering and acorn production <span class="citation" data-cites="callahan2008">(<a href="#ref-callahan2008" role="doc-biblioref">Callahan et al. 2008</a>)</span>. Nitrogen is volatile, however, and some in the litter layer can become lost permanently from the ecosystem rather than being tightly recycled in decomposition. In terms of acorn germination success, fire is assumed to decrease acorn herbivory, which can lead to nonviable seeds or low-vigor seedlings, by interfering with insects’ life cycle portions spent in the soil <span class="citation" data-cites="riccardi2004">(<a href="#ref-riccardi2004" role="doc-biblioref">Riccardi et al. 2004</a>)</span>. For example, <em>Conotrachelus spp.</em> and <em>Curculio spp.</em> and could be killed by fire while exiting from fallen acorns or while in the forest floor layers attempting to reach the soil. Fire consumption of the forest floor removes their hiding areas and presents them to greater predation by small mammals. Another benefit fire provides is lessening the litter thickness, which in turns aids root penetration and avoids long and weak stems growing through thick litter <span class="citation" data-cites="hutchinson2024">(<a href="#ref-hutchinson2024" role="doc-biblioref">Hutchinson et al. 2024</a>)</span>.</p>
+<p>Diameter at root collar, extension growth, and number of leaves were significantly greater for <em>Q. rubra</em> seedlings in burned stands versus control stands (<a href="#fig-drc23" class="quarto-xref">Figure&nbsp;7</a>, <a href="#fig-xgr24" class="quarto-xref">Figure&nbsp;8</a>, <a href="#fig-nleaves24" class="quarto-xref">Figure&nbsp;9</a>). While mesophytic competitors experience dieback and invest their resources in regrowing, <em>Q. rubra</em> seedlings make use of nutrients, space, and light that are more available than ever (<a href="#fig-lai" class="quarto-xref">Figure&nbsp;5</a>) to grow taller vertically and horizontally as well as produce leaves to expedite photosynthesis. Additionally, they might have grown better by taking advantage of the temporary increases in available nitrogen pools <span class="citation" data-cites="wan2001">(<a href="#ref-wan2001" role="doc-biblioref">Wan et al. 2001</a>)</span> and fluxes <span class="citation" data-cites="wang2014">(<a href="#ref-wang2014" role="doc-biblioref">Wang et al. 2014</a>)</span> immediately after fires to store carbon into the stems. On the other hand, the significantly larger annual extension growths and leaf sproutings in the past two summers imply that the positive fire effects still linger 3-7 years post-treatment.</p>
+<p>It is also worth evaluating fire effects on competitors at the germination and seedling establishment stage. Fire can reduce seed bank abundance <span class="citation" data-cites="schuler2010">(<a href="#ref-schuler2010" role="doc-biblioref">Schuler et al. 2010</a>)</span>, but it is more likely that the seed bank remains abundant after one-time burns like in our study. In the understory, early successional seedlings are plentiful, mostly comprising <em>Rubus spp.</em>, <em>A. rubrum</em>, and <em>Betula spp.</em> (<a href="#fig-understory" class="quarto-xref">Figure&nbsp;2</a>). <em>Rubus</em> seeds are dispersed by birds and mammals that survive in the soil when buried <span class="citation" data-cites="zasada2008">(<a href="#ref-zasada2008" role="doc-biblioref">Zasada and Tappeiner III 2008</a>)</span>. The latter two do not survive well in the soil when a prescribed burn takes place but, if mother trees survived the fire, they are capable of producing high volumes of wind-dispersed seeds that germinate well in the postfire exposed mineral soil <span class="citation" data-cites="walters1990">Erdmann (<a href="#ref-erdmann1990" role="doc-biblioref">1990</a>)</span>. On the other hand, acorns neither survives in the soil for multiple years nor disperse far <span class="citation" data-cites="sander1990">(<a href="#ref-sander1990" role="doc-biblioref">Sander 1990</a>)</span>. Nevertheless, <em>Q. rubra</em> has comparably strong sprouting responses to disturbances much like <em>A. rubrum</em> and <em>F. grandifolia</em> <span class="citation" data-cites="tubbs1990">(<a href="#ref-tubbs1990" role="doc-biblioref">Tubbs and Houston 1990</a>)</span>.</p>
+<p>Prescribed burns can only be considered an effective management tool for <em>Q. rubra</em> regeneration if their effects are net positive. This means doing less damage to our target species than its existing competitors, and promote its regeneration over them. Our study demonstrates such positive effects for both oak recruitment and establishment near its northern range limit in North America and affirms prescribed fire as a potentially beneficial silvicultural management tool in introducing the species north of its current distribution and ensuring forest resiliency in time of climate change. The study, nevertheless, can become more meaningful when belowground variables are explored. <em>Q. rubra</em> is known to allocate more resources belowground in the first few years than aboveground <span class="citation" data-cites="kolb1990">(<a href="#ref-kolb1990" role="doc-biblioref">Kolb et al. 1990</a>)</span>. While destructive harvesting of seedlings lies outside of this project, their belowground structures would have provided a more comprehensive understanding of what role fire plays in this resource allocation. Other mechanisms at play, especially fire-soil interactions, can further illuminate how fire influences nutrient pools and fluxes as well as mycorrhizal fungal colonization and soil microbial communities.</p>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="acknowledgements" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Acknowledgements</h1>
+<p>Khanh Ton: Data curation, Formal analysis, Methodology, Software, Visualization, Writing - original draft</p>
+<p>Matt Vadeboncoeur: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Supervision, Validation, Writing - review &amp; editing</p>
+<p>Nat Cleavitt: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Supervision, Validation, Writing - review &amp; editing</p>
+<p>Heidi Asbjornsen: Funding acquisition, Resources, Supervision, Validation</p>
+<p>This study was funded by the Northeastern States Research Cooperative through funding made available by the USDA Forest Service. The conclusions and opinions in this paper are those of the authors and not of the NSRC, the Forest Service, or the USDA. This institution is an equal opportunity provider.</p>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="references" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
+<section id="r-packages" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="r-packages"><span class="header-section-number">6.1</span> R packages</h2>
+<p>[1] F. Aust. <em>citr: RStudio Add-in to Insert Markdown Citations</em>. R package version 0.3.2. 2019. <a href="https://github.com/crsh/citr" class="uri">https://github.com/crsh/citr</a>.</p>
+<p>[2] C. Boettiger. <em>knitcitations: Citations for Knitr Markdown Files</em>. R package version 1.0.12. 2021. <a href="https://github.com/cboettig/knitcitations" class="uri">https://github.com/cboettig/knitcitations</a>.</p>
+<p>[3] W. Chang, J. Cheng, J. Allaire, et al.&nbsp;<em>shiny: Web Application Framework for R</em>. R package version 1.9.1. 2024. <a href="https://CRAN.R-project.org/package=shiny" class="uri">https://CRAN.R-project.org/package=shiny</a>.</p>
+<p>[4] G. Grolemund and H. Wickham. “Dates and Times Made Easy with lubridate”. In: <em>Journal of Statistical Software</em> 40.3 (2011), pp. 1-25. <a href="https://www.jstatsoft.org/v40/i03/" class="uri">https://www.jstatsoft.org/v40/i03/</a>.</p>
+<p>[5] K. Müller and H. Wickham. <em>tibble: Simple Data Frames</em>. R package version 3.2.1. 2023. <a href="https://CRAN.R-project.org/package=tibble" class="uri">https://CRAN.R-project.org/package=tibble</a>.</p>
+<p>[6] R Core Team. <em>R: A Language and Environment for Statistical Computing</em>. R Foundation for Statistical Computing. Vienna, Austria, 2022. <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</p>
+<p>[7] V. Spinu, G. Grolemund, and H. Wickham. <em>lubridate: Make Dealing with Dates a Little Easier</em>. R package version 1.9.3. 2023. <a href="https://CRAN.R-project.org/package=lubridate" class="uri">https://CRAN.R-project.org/package=lubridate</a>.</p>
+<p>[8] H. Wickham. <em>forcats: Tools for Working with Categorical Variables (Factors)</em>. R package version 1.0.0. 2023. <a href="https://CRAN.R-project.org/package=forcats" class="uri">https://CRAN.R-project.org/package=forcats</a>.</p>
+<p>[9] H. Wickham. <em>ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York, 2016. ISBN: 978-3-319-24277-4. <a href="https://ggplot2.tidyverse.org" class="uri">https://ggplot2.tidyverse.org</a>.</p>
+<p>[10] H. Wickham. <em>stringr: Simple, Consistent Wrappers for Common String Operations</em>. R package version 1.5.1. 2023. <a href="https://CRAN.R-project.org/package=stringr" class="uri">https://CRAN.R-project.org/package=stringr</a>.</p>
+<p>[11] H. Wickham. <em>tidyverse: Easily Install and Load the Tidyverse</em>. R package version 2.0.0. 2023. <a href="https://CRAN.R-project.org/package=tidyverse" class="uri">https://CRAN.R-project.org/package=tidyverse</a>.</p>
+<p>[12] H. Wickham, M. Averick, J. Bryan, et al.&nbsp;“Welcome to the tidyverse”. In: <em>Journal of Open Source Software</em> 4.43 (2019), p.&nbsp;1686. DOI: 10.21105/joss.01686.</p>
+<p>[13] H. Wickham, W. Chang, L. Henry, et al.&nbsp;<em>ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics</em>. R package version 3.5.1. 2024. <a href="https://CRAN.R-project.org/package=ggplot2" class="uri">https://CRAN.R-project.org/package=ggplot2</a>.</p>
+<p>[14] H. Wickham, R. François, L. Henry, et al.&nbsp;<em>dplyr: A Grammar of Data Manipulation</em>. R package version 1.1.4. 2023. <a href="https://CRAN.R-project.org/package=dplyr" class="uri">https://CRAN.R-project.org/package=dplyr</a>.</p>
+<p>[15] H. Wickham and L. Henry. <em>purrr: Functional Programming Tools</em>. R package version 1.0.2. 2023. <a href="https://CRAN.R-project.org/package=purrr" class="uri">https://CRAN.R-project.org/package=purrr</a>.</p>
+<p>[16] H. Wickham, J. Hester, and J. Bryan. <em>readr: Read Rectangular Text Data</em>. R package version 2.1.5. 2024. <a href="https://CRAN.R-project.org/package=readr" class="uri">https://CRAN.R-project.org/package=readr</a>.</p>
+<p>[17] H. Wickham, D. Vaughan, and M. Girlich. <em>tidyr: Tidy Messy Data</em>. R package version 1.3.1. 2024. <a href="https://CRAN.R-project.org/package=tidyr" class="uri">https://CRAN.R-project.org/package=tidyr</a>.</p>
+<p>[18] Y. Xie. <em>Dynamic Documents with R and knitr</em>. 2nd. ISBN 978-1498716963. Boca Raton, Florida: Chapman and Hall/CRC, 2015. <a href="https://yihui.org/knitr/" class="uri">https://yihui.org/knitr/</a>.</p>
+<p>[19] Y. Xie. “knitr: A Comprehensive Tool for Reproducible Research in R”. In: <em>Implementing Reproducible Computational Research</em>. Ed. by V. Stodden, F. Leisch and R. D. Peng. ISBN 978-1466561595. Chapman and Hall/CRC, 2014.</p>
+<p>[20] Y. Xie. <em>knitr: A General-Purpose Package for Dynamic Report Generation in R</em>. R package version 1.42. 2023. <a href="https://yihui.org/knitr/" class="uri">https://yihui.org/knitr/</a>.</p>
+<p>[21] Y. Xie. “TinyTeX: A lightweight, cross-platform, and easy-to-maintain LaTeX distribution based on TeX Live”. In: <em>TUGboat</em> 40.1 (2019), pp.&nbsp;30-32. <a href="https://tug.org/TUGboat/Contents/contents40-1.html" class="uri">https://tug.org/TUGboat/Contents/contents40-1.html</a>.</p>
+<p>[22] Y. Xie. <em>tinytex: Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents</em>. R package version 0.53. 2024. <a href="https://github.com/rstudio/tinytex" class="uri">https://github.com/rstudio/tinytex</a>.</p>
+</section>
+<section id="literature" class="level2 unnumbered" data-number="6.2">
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">6.2 Literature</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-abramsFireDevelopmentOak1992" class="csl-entry" role="listitem">
+Abrams, M. D. 1992. <a href="https://doi.org/10.2307/1311781">Fire and the <span>Development</span> of <span>Oak Forests</span></a>. BioScience 42:346–353.
+</div>
+<div id="ref-abramsFireEcologicalHistory2000" class="csl-entry" role="listitem">
+Abrams, M. D. 2000. Fire and the ecological history of oak forests in the eastern <span>United States</span>. Proceedings: Workshop on fire, people, and the central hardwoods landscape:12–14.
+</div>
+<div id="ref-arthurRefiningOakFireHypothesis2012" class="csl-entry" role="listitem">
+Arthur, M. A., H. D. Alexander, D. C. Dey, C. J. Schweitzer, and D. L. Loftis. 2012. <a href="https://doi.org/10.5849/jof.11-080">Refining the <span>Oak-Fire Hypothesis</span> for <span>Management</span> of <span>Oak-Dominated Forests</span> of the <span>Eastern United States</span></a>. Journal of Forestry 110:257–266.
+</div>
+<div id="ref-asbjornsen2021" class="csl-entry" role="listitem">
+Asbjornsen, H., C. D. McIntire, M. A. Vadeboncoeur, K. A. Jennings, A. P. Coble, and Z. C. Berry. 2021. <a href="https://doi.org/10.1093/treephys/tpab056">Sensitivity and threshold dynamics of pinus strobus and quercus spp. In response to experimental and naturally occurring severe droughts</a>. Tree Physiology 41:1819–1835.
+</div>
+<div id="ref-bassett2020" class="csl-entry" role="listitem">
+Bassett, T. J., D. A. Landis, and L. A. Brudvig. 2020. <a href="https://doi.org/10.1016/j.foreco.2020.118047">Effects of experimental prescribed fire and tree thinning on oak savanna understory plant communities and ecosystem structure</a>. Forest Ecology and Management 464:118047.
+</div>
+<div id="ref-bogdziewicz2020" class="csl-entry" role="listitem">
+Bogdziewicz, M., J. Szymkowiak, R. Calama, E. E. Crone, J. M. Espelta, P. Lesica, S. Marino, M. A. Steele, B. Tenhumberg, A. Tyre, M. Żywiec, and D. Kelly. 2020. <a href="https://doi.org/10.1093/aob/mcaa118">Does masting scale with plant size? High reproductive variability and low synchrony in small and unproductive individuals</a>. Annals of Botany 126:971–979.
+</div>
+<div id="ref-callahan2008" class="csl-entry" role="listitem">
+Callahan, H. S., K. Del Fierro, A. E. Patterson, and H. Zafar. 2008. <a href="https://doi.org/10.1111/j.1365-2486.2007.01483.x">Impacts of elevated nitrogen inputs on oak reproductive and seed ecology</a>. Global Change Biology 14:285–293.
+</div>
+<div id="ref-chapin2012" class="csl-entry" role="listitem">
+Chapin, F., and P. Vitousek. 2012. Principles of terrestrial ecosystem ecology. Springer Science &amp; Business Media.
+</div>
+<div id="ref-coble2017" class="csl-entry" role="listitem">
+Coble, A. P., M. A. Vadeboncoeur, Z. C. Berry, K. A. Jennings, C. D. McIntire, J. L. Campbell, L. E. Rustad, P. H. Templer, and H. Asbjornsen. 2017. <a href="https://doi.org/10.1186/s13717-017-0100-x">Are Northeastern U.S. forests vulnerable to extreme drought?</a> Ecological Processes 6:34.
+</div>
+<div id="ref-dee2022" class="csl-entry" role="listitem">
+Dee, J. R., M. C. Stambaugh, and D. C. Dey. 2022. <a href="https://doi.org/10.3159/TORREY-D-21-00027.1">Age, growth, longevity, and post-fire/thinning response of chinkapin oak seedlings in a kansas upland hardwood forest</a>. The Journal of the Torrey Botanical Society 149.
+</div>
+<div id="ref-dey2014" class="csl-entry" role="listitem">
+Dey, D. C. 2014. Sustaining oak forests in eastern north america: Regeneration and recruitment, the pillars of sustainability. Forest Science 60:926–942.
+</div>
+<div id="ref-deyReviewDynamicsPrescribed2018" class="csl-entry" role="listitem">
+Dey, D., and C. Schweitzer. 2018. <a href="https://doi.org/10.3390/f9080461">A <span>Review</span> on the <span>Dynamics</span> of <span>Prescribed Fire</span>, <span>Tree Mortality</span>, and <span>Injury</span> in <span>Managing Oak Natural Communities</span> to <span>Minimize Economic Loss</span> in <span>North America</span></a>. Forests 9:461.
+</div>
+<div id="ref-erdmann1990" class="csl-entry" role="listitem">
+Erdmann, G. 1990. Betula alleghaniensis britton. Silvics of North America 2:133–147.
+</div>
+<div id="ref-granger2018" class="csl-entry" role="listitem">
+Granger, J. J., D. S. Buckley, T. L. Sharik, J. M. Zobel, W. W. DeBord, J. P. Hartman, J. G. Henning, T. L. Keyser, and J. M. Marshall. 2018. <a href="https://doi.org/10.1016/j.foreco.2018.06.003">Northern red oak regeneration: 25-year results of cutting and prescribed fire in Michigan oak and pine stands</a>. Forest Ecology and Management 429:467–479.
+</div>
+<div id="ref-hipp2018" class="csl-entry" role="listitem">
+Hipp, A. L., P. S. Manos, A. González-Rodríguez, M. Hahn, M. Kaproth, J. D. McVay, S. V. Avalos, and J. Cavender-Bares. 2018. <a href="https://doi.org/10.1111/nph.14773">Sympatric parallel diversification of major oak clades in the Americas and the origins of Mexican species diversity</a>. New Phytologist 217:439–452.
+</div>
+<div id="ref-hutchinson2024" class="csl-entry" role="listitem">
+Hutchinson, T. F., B. T. Adams, M. B. Dickinson, M. Heckel, A. A. Royo, and M. A. Thomas-Van Gundy. 2024. <a href="https://doi.org/10.1002/eap.2948">Sustaining eastern oak forests: Synergistic effects of fire and topography on vegetation and fuels</a>. Ecological Applications 34:e2948.
+</div>
+<div id="ref-iverson2008" class="csl-entry" role="listitem">
+Iverson, L. R., T. F. Hutchinson, A. M. Prasad, and M. P. Peters. 2008. <a href="https://doi.org/10.1016/j.foreco.2007.09.088">Thinning, fire, and oak regeneration across a heterogeneous landscape in the eastern U.S.: 7-year results</a>. Forest Ecology and Management 255:3035–3050.
+</div>
+<div id="ref-kolb1990" class="csl-entry" role="listitem">
+Kolb, T. E., K. C. Steiner, L. H. McCormick, and T. W. Bowersox. 1990. <a href="https://doi.org/10.1016/0378-1127(90)90086-Q">Growth response of northern red-oak and yellow-poplar seedlings to light, soil moisture and nutrients in relation to ecological strategy</a>. Forest Ecology and Management 38:65–78.
+</div>
+<div id="ref-mcewan2006" class="csl-entry" role="listitem">
+McEwan, R. W., and R. N. Muller. 2006. <a href="https://doi.org/10.1139/x06-046">Spatial and temporal dynamics in canopy dominance of an old-growth central Appalachian forest</a>. Canadian Journal of Forest Research 36:1536–1550.
+</div>
+<div id="ref-mcsheaForestryMattersDecline2007" class="csl-entry" role="listitem">
+Mcshea, W. J., W. M. Healy, P. Devers, T. Fearer, F. H. Koch, D. Stauffer, and J. Waldon. 2007. <a href="https://doi.org/10.2193/2006-169">Forestry <span>Matters</span>: <span>Decline</span> of <span>Oaks Will Impact Wildlife</span> in <span>Hardwood Forests</span></a>. The Journal of Wildlife Management 71:1717–1728.
+</div>
+<div id="ref-nagel2017" class="csl-entry" role="listitem">
+Nagel, L. M., B. J. Palik, M. A. Battaglia, A. W. D’Amato, J. M. Guldin, C. W. Swanston, M. K. Janowiak, M. P. Powers, L. A. Joyce, C. I. Millar, D. L. Peterson, L. M. Ganio, C. Kirschbaum, and M. R. Roske. 2017. <a href="https://doi.org/10.5849/jof.16-039">Adaptive Silviculture for Climate Change: A National Experiment in Manager-Scientist Partnerships to Apply an Adaptation Framework</a>. Journal of Forestry 115:167–178.
+</div>
+<div id="ref-nowackiDemiseFireMesophication2008" class="csl-entry" role="listitem">
+Nowacki, G. J., and M. D. Abrams. 2008. <a href="https://doi.org/10.1641/B580207">The <span>Demise</span> of <span>Fire</span> and <span>“<span>Mesophication</span>”</span> of <span>Forests</span> in the <span>Eastern United States</span></a>. BioScience 58:123–138.
+</div>
+<div id="ref-nowacki2024" class="csl-entry" role="listitem">
+Nowacki, G. J., and M. A. Thomas-Van Gundy. 2024. <a href="https://doi.org/10.1186/s42408-024-00247-1">Using witness trees as pyro-indicators to depict past fire environments across the eastern United States</a>. Fire Ecology 20:13.
+</div>
+<div id="ref-petersClimateChangeTree2020" class="csl-entry" role="listitem">
+Peters, M. P., S. N. Matthews, and L. R. Iverson. 2020a. <a href="https://www.nrs.fs.fed.us/atlas">Climate change tree atlas, <span>Version</span> 4</a>. U.S. Forest Service, Northern Research Station and Northern Institute of Applied Climate Science, Delaware, OH.
+</div>
+<div id="ref-peters2020" class="csl-entry" role="listitem">
+Peters, M. P., S. N. Matthews, and L. R. Iverson. 2020b. <a href="https://www.nrs.fs.fed.us/atlas">Climate change tree atlas, version 4</a>. U.S. Forest Service, Northern Research Station and Northern Institute of Applied Climate Science, Delaware, OH.
+</div>
+<div id="ref-riccardi2004" class="csl-entry" role="listitem">
+Riccardi, C., B. C. McCarthy, and R. Long. 2004. Oak seed production, weevil (coleoptera: Curculionidae) populations, and predation rates in mixed-oak forests of southeast ohio. Pages 10–21. Wooster, OH.
+</div>
+<div id="ref-sander1990" class="csl-entry" role="listitem">
+Sander, I. 1990. Quercus rubra l. Northern red oak. Silvics of North America 2:727–733.
+</div>
+<div id="ref-schuler2010" class="csl-entry" role="listitem">
+Schuler, T. M., M. T. Van-Gundy, M. B. Adams, and W. M. Ford. 2010. Seed bank repsonse to prescribed fire in the central appalachians. Page 9.
+</div>
+<div id="ref-smith2022" class="csl-entry" role="listitem">
+Smith, S. J., B. C. McCarthy, T. F. Hutchinson, and R. S. Snell. 2022. <a href="https://doi.org/10.1016/j.foreco.2022.120029">Individual-level variation in reproductive effort in chestnut oak (Quercus montana Willd.) and black oak (Q. Velutina Lam.)</a>. Forest Ecology and Management 508:120029.
+</div>
+<div id="ref-sork1993" class="csl-entry" role="listitem">
+Sork, V. L., J. Bramble, and O. Sexton. 1993. <a href="https://doi.org/10.2307/1939313">Ecology of Mast<span>-</span>Fruiting in Three Species of North American Deciduous Oaks</a>. Ecology 74:528–541.
+</div>
+<div id="ref-tubbs1990" class="csl-entry" role="listitem">
+Tubbs, C., and D. Houston. 1990. Fagus grandifolia ehrh. American beech. Silvics of North America 2:325.
+</div>
+<div id="ref-usdaforestservice2005" class="csl-entry" role="listitem">
+USDA Forest Service. 2005. <a href="https://www.fs.usda.gov/detail/whitemountain/landmanagement/planning/?cid=STELPRDB5199941">Land and resource management plan</a>. Laconia, NH.
+</div>
+<div id="ref-vadeboncoeur2010" class="csl-entry" role="listitem">
+Vadeboncoeur, M. A. 2010. <a href="https://doi.org/10.1139/X10-127">Meta-analysis of fertilization experiments indicates multiple limiting nutrients in northeastern deciduous forests</a>. Canadian Journal of Forest Research 40:1766–1780.
+</div>
+<div id="ref-walters1990" class="csl-entry" role="listitem">
+Walters, R., and H. Yawney. 1990. Acer rubrum l. Red maple. Silvics of North America 2:60–69.
+</div>
+<div id="ref-wan2001" class="csl-entry" role="listitem">
+Wan, S., D. Hui, and Y. Luo. 2001. <a href="https://doi.org/10.1890/1051-0761(2001)011[1349:FEONPA]2.0.CO;2">FIRE EFFECTS ON NITROGEN POOLS AND DYNAMICS IN TERRESTRIAL ECOSYSTEMS: A META-ANALYSIS</a>. Ecological Applications 11:1349–1365.
+</div>
+<div id="ref-wang2014" class="csl-entry" role="listitem">
+Wang, Y., Z. Xu, and Q. Zhou. 2014. <a href="https://doi.org/10.1007/s11368-014-0879-3">Impact of fire on soil gross nitrogen transformations in forest ecosystems</a>. Journal of Soils and Sediments 14:1030–1040.
+</div>
+<div id="ref-yuan2025" class="csl-entry" role="listitem">
+Yu’an, W. 2025. Plant biodiversity and drought resilience: Insights from a resilience model study in north america. Ecological Frontiers 45:507–513.
+</div>
+<div id="ref-zasada2008" class="csl-entry" role="listitem">
+Zasada, J., and J. Tappeiner III. 2008. Rubus l. Blackberry, raspberry. Woody Plant Seed Manual 727:984–996.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
