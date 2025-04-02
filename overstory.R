@@ -3,6 +3,7 @@ library(dplyr)
 library(ggplot2)
 library(RColorBrewer)
 library(viridis)
+library(rstatix)
 
 trees <- read_csv("overstory.csv")
 
@@ -115,8 +116,8 @@ trees2 <- trees2 %>% mutate(dbhClass=fct_relevel(dbhClass,"2-5","5-10","10-20",
 #basal areas
 trees2 <- trees2 %>% mutate(ba=0.00007854*(`DBH (cm)`^2))
 
-sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba,Condition)
-sumba <- sumba %>% group_by(Pair,Disturbance,Spcode,dbhClass,Condition) %>% 
+#sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba,Condition)
+sumba <- trees2 %>% group_by(Pair,Disturbance,Spcode,dbhClass,Condition) %>% 
   summarize(sumba=sum(ba))
 
 #scale up to per ha
@@ -173,7 +174,9 @@ sumba <- sumba %>% mutate(Genus=case_when(
   Spcode %in% c("PRPE","PRSE") ~ "Cherries",
   Spcode %in% "QURU" ~ "R. oak",
   Spcode %in% c("ABBA","FRAM","OSVI","PIRU","TIAM","TSCA")~"Others"
-))
+)) 
+
+sumba <- sumba %>% mutate(Genus=as.factor(Genus))
 
 #let's try to plot this lol
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
@@ -194,7 +197,15 @@ sumba %>%
   ylab("Basal area (per ha)")
 
 #we have not taken into account dead/alive trees. and now we are tackling it!
-sumba2 <- sumba %>% filter(dbhClass %in% c("30-40","40-50","50-60",">60"))
+sumba2 <- sumba %>% filter(dbhClass %in% c("30-40","40-50","50-60",">60")) %>% 
+  mutate(Genus=as.factor(Genus),
+         Pair=as.factor(Pair),
+         Condition=as.factor(Condition),
+         Disturbance=as.factor(Disturbance)) %>% select(-sumba)
+
+sumba3 <- sumba2 %>% group_by(Genus,Pair,Condition,Disturbance) %>% 
+  summarize(m2ha_sum=sum(m2ha,na.rm=TRUE),.groups="drop")
+
 sumba2 %>% 
   ggplot(aes(x=Genus,y=m2ha))+
   geom_rect(aes(fill=Pair),alpha=0.5,
