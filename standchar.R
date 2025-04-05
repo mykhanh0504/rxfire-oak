@@ -40,12 +40,30 @@ char2 <- char2 %>% na.omit() %>%
   mutate(Density=OAKcount/plotarea)
 char2$Density <- round(char2$Density,0)
 
+bc <- c("B"="#CC6677","C"="#88CCEE")
 mt <- c("STS"="#D60407","MDS"="#FF7909","SLS"="#EAEF04","FLT"="#02D68B","CVX"="#017DFF","CCV"="#6B0DCC")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
         "4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
 
-fig_mictop <- char2 %>% filter(Pair==c("1","2","3","4")) %>% 
-  ggplot(aes(x=Location,y=Density,fill=Microtopography))+
+#try a new graph
+fig_micnew <- char2 %>% 
+  ggplot(aes(x=Disturbance,y=Density,fill=Microtopography))+
+  geom_rect(aes(fill=Disturbance),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  scale_fill_manual(values=c(bc,mt))+
+  geom_boxplot(aes(fill=Microtopography),width=0.6,position=position_dodge(width=0.7))+
+  facet_grid(~Disturbance,scales='free_x')+
+  theme_minimal()+
+  ylab("Stem count (per ha)")
+
+fig_micnew + stat_compare_means(aes(label=paste0("p=",after_stat(p.format))))
+
+aov_char2 <- aov(Density~Microtopography+Disturbance+Pair,data=char2)
+summary(aov_char2)
+  
+#mictop by location  
+fig_mictop <- char2 %>% filter(Pair==c("1","2","3")) %>% 
+  ggplot(aes(x=Disturbance,y=Density,fill=Microtopography))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
   scale_fill_manual(values=p6,name="Pairs")+
@@ -58,13 +76,12 @@ fig_mictop <- char2 %>% filter(Pair==c("1","2","3","4")) %>%
 
 fig_mictop + stat_compare_means(aes(label=paste0("p=",after_stat(p.format))))
 
-char2 %>% filter(Pair==c("1","2","3")) %>% 
-  ggplot(aes(x=BareSoil_pct,y=Density))+
-  geom_rect(aes(fill=Pair),alpha=0.5,
-            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
-  geom_point(aes(color=Disturbance))+
+char2 %>% 
+  ggplot(aes(x=BareSoil_pct,y=Density,fill=Disturbance))+
+  geom_point(aes(fill=Disturbance))+
+  xlim(0,100)+
+  ylim(0,17500)+
   geom_smooth(method='lm')+
-  scale_fill_manual(values=c(p6,bc))+
-  facet_wrap(vars(Pair),scales='free')+
+  facet_wrap(vars(Disturbance))+
   xlab("Bare soil %")+
   ylab("Seedling density ha-1")

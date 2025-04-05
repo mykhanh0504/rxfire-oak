@@ -71,4 +71,3 @@ soiln2 %>%
   xlab("Pair")+
   ylab("NH4 (mg/kg soil)")+
   labs(fill="Pairs")
-

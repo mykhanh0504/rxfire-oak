@@ -1,0 +1,311 @@
+---
+title: "Appendix"
+documentclass: article
+mainfont: Times New Roman
+fontsize: 12pt
+geometry: margin=1in
+linestretch: 2
+papersize: a4
+always_allow_html: true
+fig-cap-location: bottom
+fig-align: center
+tbl-cap-location: top
+format: 
+  pdf: 
+    number-sections: true
+editor: visual
+---
+
+```{r, include=FALSE,message=FALSE,warning=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(tinytex)
+library(shiny)
+library(knitcitations)
+library(gt)
+library(car)
+library(rstatix)
+library(kableExtra)
+library(bookdown)
+library(trackdown)
+trackdown_auth_configure(path = "client.json")
+library(ggpubr)
+library(ggnewscale)
+```
+
+# Stand characterization
+
+```{r tbl-basalarea,echo=FALSE,message=FALSE}
+trees <- read_csv("overstory.csv")
+
+#Add Treatment & Pair columns
+trees2 <- trees %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+trees2 <- trees2 %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+trees2 <- trees2 %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","20/3","20/4","3/1")~"2",
+  Unit %in% c("28/2","12/2","12/3","12/4","12/5","12/6",
+              "12/7","12/8","12/9","12/10","12/11")~"3",
+  Unit=="Unnamed"~"4",
+  Unit %in% c("44B","45C")~"5",
+  Unit %in% c("46B","46C")~"6"))
+
+trees2 <- trees2 %>% mutate(Location=as.factor(Location)) %>% 
+  mutate(Location=fct_recode(Location,
+                             "BEF"="Bartlett Experimental Forest",
+                             "CF"="Crawford Notch State Park",
+                             "HOG"="Hogsback (Blueberry Mountain)",
+                             "SB"="Stevens Brook (Plummers Ledge)"))
+
+trees2 <- trees2 %>% 
+  mutate(Location=as.factor(Location),
+         Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair),
+         Spcode=as.factor(Spcode),
+         Condition=as.factor(Condition))
+
+trees2 <- trees2 %>% mutate(Condition=fct_recode(Condition,
+                                                 "Alive"="1","Dead"="0"))
+
+#dbh classes
+trees2 <- trees2 %>% mutate(dbhClass=if_else(
+  `DBH (cm)`<=5,"2-5",if_else(`DBH (cm)`>5 & `DBH (cm)`<=10,
+                "5-10",if_else(`DBH (cm)`>10 & `DBH (cm)`<=20,
+                "10-20",if_else(`DBH (cm)`>20 & `DBH (cm)`<=30,
+                "20-30",if_else(`DBH (cm)`>30 & `DBH (cm)`<=40,
+                "30-40",if_else(`DBH (cm)`>40 & `DBH (cm)`<=50,
+                "40-50",if_else(`DBH (cm)`>50 & `DBH (cm)`<=60,
+                "50-60",">60"))))))))
+
+trees2 <- trees2 %>% mutate(dbhClass=fct_relevel(dbhClass,"2-5","5-10","10-20",
+                                                "20-30","30-40","40-50","50-60",">60"))
+
+#basal areas
+trees2 <- trees2 %>% mutate(ba=0.00007854*(`DBH (cm)`^2))
+
+#sumba <- trees2 %>% select(Pair,Disturbance,Spcode,dbhClass,ba,Condition)
+sumba <- trees2 %>% group_by(Pair,Disturbance,Spcode,dbhClass,Condition) %>% 
+  summarize(sumba=sum(ba))
+
+#scale up to per ha
+b1 <- 66
+c1 <- 46
+b2 <- 31
+c2 <- 30
+b3 <- 30
+c3 <- 45
+b4 <- 43
+c4 <- 19
+b5 <- 10 
+c5 <- 13
+b6 <- 28
+c6 <- 32
+
+plotarea <- 0.00785398163397448
+
+sumba <- sumba %>% mutate(m2ha=if_else(
+  Pair=="1" & Disturbance=="B",
+  sumba/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
+  sumba/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
+  sumba/b2/plotarea,if_else(Pair=="2" & Disturbance=="C",
+  sumba/c2/plotarea,if_else(Pair=="3" & Disturbance=="B",
+  sumba/b3/plotarea,if_else(Pair=="3" & Disturbance=="C",
+  sumba/c3/plotarea,if_else(Pair=="4" & Disturbance=="B",
+  sumba/b4/plotarea,if_else(Pair=="4" & Disturbance=="C",
+  sumba/c4/plotarea,if_else(Pair=="5" & Disturbance=="B",
+  sumba/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
+  sumba/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
+  sumba/b6/plotarea,sumba/c6/plotarea)))))))))))) 
+
+sumba <- sumba %>% filter(Spcode %in% c("ABBA","ACPE","ACRU","ACSA",
+                                        "BEAL","BEPA","BEPO","FAGR",
+                                        "FRAM","OSVI","PIRU","PIST",
+                                        "POGR","POTR","PRPE","PRSE",
+                                        "QURU","TIAM","TSCA"))
+
+sumba <- sumba %>% mutate(Genus=case_when(
+  Spcode %in% c("ACPE","ACRU","ACSA") ~ "Acer",
+  Spcode %in% c("BEAL","BEPA","BEPO") ~ "Betula",
+  Spcode %in% "FAGR" ~ "F. grandifolia",
+  Spcode %in% "PIST" ~ "P. strobus",
+  Spcode %in% c("POGR","POTR") ~ "Populus",
+  Spcode %in% c("PRPE","PRSE") ~ "Prunus",
+  Spcode %in% "QURU" ~ "Q. rubra",
+  Spcode %in% c("ABBA","FRAM","OSVI","PIRU","TIAM","TSCA")~"Others"
+))
+
+sumba <- sumba %>% mutate(Genus=as.factor(Genus))
+
+sumba2 <- sumba %>% filter(dbhClass %in% c("30-40","40-50","50-60",">60")) %>% 
+  mutate(Genus=as.factor(Genus),
+         Pair=as.factor(Pair),
+         Condition=as.factor(Condition),
+         Disturbance=as.factor(Disturbance)) %>% select(-sumba)
+
+sumba3 <- sumba2 %>% group_by(Genus,Pair,Condition,Disturbance) %>% 
+  summarize(m2ha_sum=round(sum(m2ha,na.rm=TRUE),1),.groups="drop") %>% 
+  select(Pair,Disturbance,Genus,Condition,m2ha_sum) %>% 
+  arrange(Pair,Disturbance,Genus,desc(Condition))
+
+sumba3 %>% kable(caption="Basal area per hectare of dead/alive overstory trees with DBH>=30 cm in 2023 by study stands, burn treatments, and genus.") %>% kable_styling(html_font="Arial",bootstrap_options = c("striped", "hover","condensed", "responsive"))
+```
+
+\newpage
+
+```{r fig-baresoil,echo=FALSE,message=FALSE,warning=FALSE,fig.cap="Q. rubra density per hectare in 2023 (y-axis) by percent bare soil (x-axis), error bars = ±1 SE.",fig.height=4,fig.width=10,fig.pos="H"}
+char <- read_csv("standchar.csv")
+
+#Add Treatment & Pair columns
+char2 <- char %>% mutate(Treatment=case_when(Unit %in% c("3/16","5/15","28/2","12/2") 
+                                           ~ "Shelterwood",
+                                           Unit %in% c("20/2","3/1") 
+                                           ~ "Seedtree",
+                                           Unit %in% c("44B","45C","46B","46C") 
+                                           ~ "Clearcut"))
+
+char2 <- char2 %>% replace_na(list(Unit="Unnamed",Treatment="Unmanaged"))
+
+char2 <- char2 %>% mutate(Pair=case_when(Unit %in% c("3/16","5/15")~"1",
+                                       Unit %in% c("20/2","3/1")~"2",
+                                       Unit %in% c("28/2","12/2")~"3",
+                                       Unit=="Unnamed"~"4",
+                                       Unit %in% c("44B","45C")~"5",
+                                       Unit %in% c("46B","46C")~"6"))
+
+char2 <- char2 %>% 
+  mutate(Location=as.factor(Location),
+         Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair),
+         Microtopography=as.factor(Microtopography))
+
+#summarize data
+plotarea <- 0.00785398163397448
+char2 <- char2 %>% na.omit() %>% 
+  mutate(Density=OAKcount/plotarea)
+char2$Density <- round(char2$Density,0)
+
+bc <- c("B"="#CC6677","C"="#88CCEE")
+mt <- c("STS"="#D60407","MDS"="#FF7909","SLS"="#EAEF04","FLT"="#02D68B","CVX"="#017DFF","CCV"="#6B0DCC")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
+        "4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+char2 %>% 
+  ggplot(aes(x=BareSoil_pct,y=Density,fill=Disturbance))+
+  geom_point(aes(fill=Disturbance))+
+  xlim(0,100)+
+  ylim(0,17500)+
+  geom_smooth(method='lm')+
+  facet_wrap(vars(Disturbance))+
+  xlab("Bare soil %")+
+  ylab("Stem count (per ha)")
+```
+
+```{r fig-microtopography,echo=FALSE,message=FALSE,warning=FALSE,fig.cap="Q. rubra density per hectare in 2023 (y-axis) by microtopography (x-axis), error bars = ±1 SE. Six microtopography categories include concave (CCV), convex (CVX), flat (FLT), midslope (MDS), slight slope (SLS), and steep slope (STS).",fig.height=4,fig.width=10,fig.pos="H"}
+#try a new graph
+fig_micnew <- char2 %>% 
+  ggplot(aes(x=Disturbance,y=Density,fill=Microtopography))+
+  geom_rect(aes(fill=Disturbance),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  scale_fill_manual(values=bc,name="Disturbance")+
+  new_scale_fill()+
+  geom_boxplot(aes(fill=Microtopography),width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=mt,name="Microtopography")+
+  facet_grid(~Disturbance,scales='free_x')+
+  theme_minimal()+
+  ylab("Stem count (per ha)")
+
+fig_micnew + stat_compare_means(aes(label=paste0("p=",after_stat(p.format))))
+```
+
+# Soil sampling and analysis
+
+## Methods
+
+Composite soil samples of the top 10 cm representing each study site were collected along study transects in fall 2023 to characterize soil parameters of relevance to seedlings.
+
+Soil samples were air-dried, homogenized, and sieved to 2 mm. They were then sent to the University of New Hampshire Cooperative Extension in December 2023 to be tested for soil pH and concentrations of calcium (Ca), magnesium (Mg), potassium (K), phosphorus (P), lead (Pb), and organic matter (OM). In February 2025, more samples were sent to the Pennsylvania State University College of Agricultural Sciences' Agricultural Analytical Services Laboratory to be tested for nitrate nitrogen (NO~3~) and ammonium nitrogen (NH~4~).
+
+## Results
+
+```{r fig-ammonium,echo=FALSE,message=FALSE,warning=FALSE,fig.cap="Ammonium concetration in the soil (y-axis) by stand pairs (x-axis).",fig.height=4,fig.width=10,fig.pos="H"}
+soiln <- read_csv("soilN.csv")
+
+soiln <- soiln %>% filter(Pair %in% c("2","3","4","5","6","8"))
+soiln <- soiln[-c(2),]
+
+soiln2 <- soiln %>% mutate(Cut=case_when(Stand %in% c("3/16","5/15","28/2","12/2") 
+                                           ~ "Shelterwood",
+                                           Stand %in% c("20/2","3/1") 
+                                           ~ "Seedtree",
+                                           Stand %in% c("44","46N","46") 
+                                           ~ "Clearcut"))
+
+soiln2 <- soiln2 %>% replace_na(list(Stand="Unnamed",Cut="Unmanaged"))
+
+soiln2 <- soiln2 %>% mutate(Pair2=case_when(Stand %in% c("3/16","5/15")~"1",
+                                       Stand %in% c("20/2","3/1")~"2",
+                                       Stand %in% c("28/2","12/2")~"3",
+                                       Stand=="Unnamed"~"4",
+                                       Stand %in% c("44","46N")~"5",
+                                       Stand=="46"~"6"))
+
+#soiln2 <- soiln2 %>% select(Site,Stand,Treatment,
+                            #NO3_mgkg,NH4_mgkg,Cut,Pair2,OM_pct)
+
+soiln2 <- soiln2 %>% 
+  mutate(Pair2=as.factor(Pair2),
+         Site=as.factor(Site),
+         Treatment=as.factor(Treatment),
+         Cut=as.factor(Cut))
+
+bc <- c("B"="#CC6677","C"="#88CCEE")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
+        "4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+#totN, N/OMpct
+soiln2 <-  soiln2 %>% mutate(TotN=NO3_mgkg+NH4_mgkg,
+                             NO3_OM=NO3_mgkg/(OM_pct/100),
+                             NH4_OM=NH4_mgkg/(OM_pct/100),
+                             TotN_OM=NO3_OM+NH4_OM)
+
+#NH4 graph
+soiln2 %>% 
+  ggplot(aes(x=Site,y=NH4_OM,fill=Treatment))+
+  geom_rect(aes(fill=Pair2),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_col(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair2,scales='free_x')+
+  theme_minimal()+
+  xlab("Pair")+
+  ylab("NH4 (mg/kg soil)")+
+  labs(fill="Pairs")
+```
+
+```{r fig-nitrate,echo=FALSE,message=FALSE,warning=FALSE,fig.cap="Nitrate concetration in the soil (y-axis) by stand pairs (x-axis).",fig.height=4,fig.width=10,fig.pos="H"}
+
+#NO3 graph
+soiln2 %>% 
+  ggplot(aes(x=Pair2,y=NO3_OM,fill=Treatment))+
+  geom_rect(aes(fill=Pair2),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_col(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair2,scales='free_x')+
+  theme_minimal()+
+  xlab("Pair")+
+  ylab("NO3 (mg/kg soil)")+
+  labs(fill="Pairs")
+```
