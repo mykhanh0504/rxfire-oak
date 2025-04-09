@@ -204,7 +204,9 @@ sumba2 <- sumba %>% filter(dbhClass %in% c("30-40","40-50","50-60",">60")) %>%
          Disturbance=as.factor(Disturbance)) %>% select(-sumba)
 
 sumba3 <- sumba2 %>% group_by(Genus,Pair,Condition,Disturbance) %>% 
-  summarize(m2ha_sum=sum(m2ha,na.rm=TRUE),.groups="drop")
+  summarize(m2ha_sum=sum(m2ha,na.rm=TRUE),.groups="drop") %>% 
+  select(Pair,Disturbance,Genus,Condition,m2ha_sum) %>% 
+  arrange(Pair,Disturbance,Genus,desc(Condition))
 
 sumba2 %>% 
   ggplot(aes(x=Genus,y=m2ha))+

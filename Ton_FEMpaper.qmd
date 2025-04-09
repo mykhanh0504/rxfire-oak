@@ -13,7 +13,7 @@ fig-cap-location: bottom
 fig-align: center
 tbl-cap-location: top
 format: 
-  pdf: 
+  docx: 
     number-sections: true
 editor: visual
 ---
@@ -47,17 +47,21 @@ Author names: Khanh Ton ^a^, Matt Vadeboncoeur ^a^, Nat Cleavitt ^b^, Heidi Asbj
 
 # Abstract {.unnumbered}
 
-(250 words)
+Northern red oak (*Quercus rubra*) is predicted to expand its range northward in the northeastern United States with climate change and could greatly improve forest resilience by expanding the functional diversity of its new habitats. However, red oak regeneration currently faces many challenges including predation, pathogens, and consequences of forest mesophication such as light insufficiency and competition with more mesic species. The latter challenges are potentially caused by the absence of fire in forested landscapes since the early 1900s. Therefore, prescribed burns may help address these challenges and hence promote oak establishment and recruitment. We studied six prescribed burn/unburn pairs of stands from across the White Mountain National Forest in New Hampshire, most of which were managed over the past decade, plus one unmanaged stand where a wildfire occurred. In summers 2023 and 2024, we surveyed naturally regenerated oak seedlings along transects representing gradients of burn intensity, distance from edge, overstory density, and soil disturbance. Seedlings were aged, measured for height and diameter at root collar, and assessed for herbivory and pathogen damage. We found seedling density to be three times greater in prescribed burn stands relative to their paired unburn controls. Seedlings in burned stands also grew better, evidenced by greater diameter at root collar, greater extension growth, and more sprouted leaves. Our study demonstrates positive effects for red oak regeneration near its northern range limit in North America and affirms prescribed fire as a potentially beneficial silvicultural management tool in introducing the species north of its current distribution.
 
 ## Keywords {.unnumbered}
 
-(1-7 keywords) climate resilience, plant-soil feedback, prescribed fire, Quercus rubra, regeneration
+climate resilience, plant-soil feedback, prescribed fire, Quercus rubra, regeneration
 
 ## Highlights {.unnumbered}
 
-(separate editable file)
+-   Prescribed fire helps establish, develop, and release of *Quercus rubra* regeneration
 
-(3-5 bullet points, each a maximum of 85 characters including space)
+-   *Quercus rubra* mature trees survive fire better than its mesophytic counterparts
+
+-   Fire induces higher acorn yields and germination rates in the following 3 years
+
+-   *Quercus rubra* seedlings are more abundant and grow better in burned stands
 
 \newpage
 
@@ -77,7 +81,7 @@ This study investigates whether prescribed fire promotes the recruitment of *Q. 
 
 ## Study sites
 
-The selected pairs of burn and control forest stands for this study are located in the approximately 320,000-ha White Mountains National Forest (WMNF) in New Hampshire (USA), three of which are part of a novel landscape-scale project guided by the forest's Land and Resource Management Plan (1999-2005, [@usdaforestservice2005]) and implemented by the USFS over the past two decades. They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (@tbl-pairs, @fig-map). One pair does not have any recent management history, but was sampled opportunistically following a wildfire that resulted in patchy mortality of canopy trees in a mature stand. The remaining two pairs at Bartlett Experimental Forest were burned rather opportunistically, as a way to study how a combination of clearcut and prescribed fire can impact overall vegetation regeneration. While there existed some *Q. rubra* seedlings in the surrounding forest stands and even burned acorns in the study stands, no seed source was present after the treatments. Mature trees were presumed to be harvested during the clearcuts.
+The selected pairs of burn and control forest stands for this study are located in the approximately 320,000-ha White Mountains National Forest (WMNF) in New Hampshire (USA), three of which are part of a novel landscape-scale project guided by the forest's Land and Resource Management Plan (1999-2005, [@usdaforestservice2005]) and implemented by the USFS over the past two decades (Appendix, Figures 1-4). They are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (@tbl-pairs, @fig-map). One pair does not have any recent management history, but was sampled opportunistically following a wildfire that resulted in patchy mortality of canopy trees in a mature stand. The remaining two pairs at Bartlett Experimental Forest were burned rather opportunistically, as a way to study how a combination of clearcut and prescribed fire can impact overall vegetation regeneration. While there existed some *Q. rubra* seedlings in the surrounding forest stands and even burned acorns in the study stands, no seed source was present after the treatments. Mature trees were presumed to be harvested during the clearcuts.
 
 | Pair | Stand | Burn year | Harvest year | Harvest treatment | Presence of seed source |
 |------------|------------|------------|------------|------------|------------|
@@ -421,9 +425,9 @@ lai2 %>%
 
 ## *Q. rubra* seedling density and measurements in the field
 
-Acorn germination rates increased in at least 3 years folllowing the burns; pair 1 specifically experienced five years of substantially more germination in the burned stand versus the control stand (@fig-germination). Seedling density in 2023 was three times greater in burned stands (2887±240 per ha) than in control stands (1030±154 per ha, p\<0.001) (@fig-merged a). Seedlings in burned stands also grew better than in control stands, evidenced by greater DRC in 2023 (4.6±0.3 mm versus 3.3±0.3 mm, p\<0.01) (@fig-merged b), greater extension growth in 2024 (6.43±0.5 cm versus 2.6±0.4 cm, p\<0.001) (@fig-merged c), and more leaves sprouted (16±1 versus 7±1, p\<0.001) (@fig-merged d).
+A significant portion of living seedlings in 2023 germinated in at least the 3 years following the burns; pair 1 specifically experienced five years of substantially more germination in the burned stand versus the control stand (@fig-germination). Seedling density in 2023 was three times greater in burned stands (2887±240 per ha) than in control stands (1030±154 per ha, p\<0.001) (@fig-merged a). Seedlings in burned stands also grew better than in control stands, evidenced by greater DRC in 2023 (4.6±0.3 mm versus 3.3±0.3 mm, p\<0.01) (@fig-merged b), greater extension growth in 2024 (6.43±0.5 cm versus 2.6±0.4 cm, p\<0.001) (@fig-merged c), and more leaves sprouted (16±1 versus 7±1, p\<0.001) (@fig-merged d).
 
-![Acorn germination rates before and following burn years, which are indicated by the red dashed lines.](graphs/germ.jpg){#fig-germination fig-align="center"}
+![Germination years of living seedlings in 2023; burn years are indicated by the red dashed lines.](graphs/germ.jpg){#fig-germination fig-align="center" width="1087"}
 
 ![a. (top left) Q. rubra density per hectare in 2023; b. (top right) Seedling diameters at root collar in 2023; c. (bottom left) Seedling extension growths in 2024; d. (bottom right) Number of leaves per seedling in 2024 by stand pairs, error bars = ±1 SE.](graphs/Ton_figmerge.jpg){#fig-merged fig-align="center"}
 
@@ -607,13 +611,17 @@ fig_nleaves24 + stat_compare_means(method="t.test",aes(label=paste0("p=",after_s
 
 # Discussion
 
-*Q. rubra* seedling density in burned stands is nearly triple that in control stands, supporting the hypothesis that prescribed fire promotes seedling recruitment (@fig-merged a). We did not find any significant effect the different cutting treatments may have had on such recruitment; though the cuttings were of different intensities and took place at different years, complicating the comparison. When these cutting treatments took place, management left behind mostly *Q. rubra* trees in the highest DBH size classes, 30 cm and above (@fig-overstory). The mother trees survived the burns better than their mesophytic competitors (Appendix, Table 1) and continued to reproduce while their competition took time to regrow. Only 3% of *Q. rubra*'s basal area in 2023 was made up by dead standing mature trees, as opposed to 43% by dead *F. grandifolia* individuals. Their survival rates are higher potentially due to thicker bark and rapid compartmentalization, among other factors [@deyReviewDynamicsPrescribed2018]. Furthermore, there is evidence that acorn production is positively correlated to tree vigor i.e full-crowned dominant trees of larger DBHs produce more acorns [@bogdziewicz2020]. Even though acorn production is also dependent on tree genetics [@smith2022], meaning that “good” producers are more likely to yield larger crops, thinning and burning to release the healthiest-looking individuals raises the chance of achieving better yields. In our study, acorn germination rates only greatly increased following the burn events and continued for up to five years (@fig-germination). It can interpreted that burned stands were having larger acorn yields and, also, that these stands possessed qualities that better enable the germination process itself.
+## *Q. rubra* seedling recruitment promoted by prescribed fire
 
-One such quality could be the altered soil resource supply by fire. Fire increases gross nitrogen mineralization rate, which in turns releases more of it into the soil [@chapin2012]. A sudden increase in nitrogen availability in the nitrogen-limited temperate forest [@vadeboncoeur2010] may help promote flowering and acorn production [@callahan2008]. However, fire decreases microbial nitrate immobilization and subsequently inhibit nitrate retention [@su2022]. As a result, nitrous oxide and nitric oxide emissions rise following a burn and become lost permanently from the ecosystem rather than being tightly recycled in decomposition [@stephens2023]. While such emissions tend to last under a year, nitrogen loss by leaching can persist in the long term [@zhu2024]. Our study burns were already at least two years old at the time of data collection, except for the wildfire in pair 4 that had occurred the previous year. Regardless, the short term increases in ammonium concentrations in the soils seemed to have diminished for all but pairs 2 and 6 (Appendix, Figure 3). Nitrate concentrations are minimal compared to ammonium, but they were similar for both burned and control stands across all pairs, signaling that leaching might not be of great concern in this ecosystem (Appendix, Figure 4).
+*Q. rubra* regeneration can be promoted by prescribed burns at any and all critical life stages including acorn production, germination, establishment, seedling development, and release into canopy [@arthurRefiningOakFireHypothesis2012]. First of all, oak mother trees survive fire better than their mesophytic competitors (Appendix, Table 1) with thicker barks and rapid compartmentalization [@deyReviewDynamicsPrescribed2018]. Only 3% of *Q. rubra*'s basal area in 2023 was made up by dead standing mature trees, as opposed to 43% by dead *F. grandifolia* individuals. They hence have a time advantage to continue reproducing while their competition took time to regrow. Moreover, there is evidence that acorn production is positively correlated to tree vigor i.e full-crowned dominant trees of larger DBHs produce more acorns [@bogdziewicz2020]. Even though acorn production is also dependent on tree genetics [@smith2022], meaning that “good” producers are more likely to yield larger crops, thinning and burning to release the healthiest-looking individuals raises the chance of achieving better yields. This is in line with the shelterwood and seed tree cuttings in Pairs 1-3, where management left behind mostly *Q. rubra* trees in the highest DBH size classes, 30 cm and above (@fig-overstory).
 
-In terms of acorn germination success, fire is assumed to decrease acorn herbivory, which can lead to nonviable seeds or low-vigor seedlings, by interfering with insects’ life cycle portions spent in the soil [@riccardi2004]. For example, weevils (*Conotrachelus spp.* and *Curculio spp.*) and could be killed by fire while exiting from fallen acorns or while in the forest floor layers attempting to reach the soil. Fire consumption of the forest floor removes their hiding areas and presents them to greater predation by small mammals. Another benefit fire provides is lessening the litter thickness and increasing bare soil surfaces, which in turns aids root penetration and avoids long and weak stems growing through thick litter [@hutchinson2024]. Percent bare soil in this study, however, did not correlate with seedling density (Appendix, Figure 1). We also explored whether interactions between fire and microtopography could be beneficial to *Q. rubra* regeneration e.g., a concave microsite can accumulate acorns as well as leaf litter, and fire can help consume such litter, but no patterns of advantage were observed in the burned stands (Appendix, Figure 2).
+In terms of acorn germination success, fire is assumed to decrease acorn herbivory, which can lead to nonviable seeds or low-vigor seedlings, by interfering with insects’ life cycle portions spent in the soil [@riccardi2004]. For example, weevils (*Conotrachelus spp.* and *Curculio spp.*) and could be killed by fire while exiting from fallen acorns or while in the forest floor layers attempting to reach the soil. Fire consumption of the forest floor removes their hiding areas and presents them to greater predation by small mammals. Another benefit fire provides is lessening the litter thickness and increasing bare soil surfaces, which in turns aids root penetration and avoids long and weak stems growing through thick litter [@hutchinson2024]. Percent bare soil in this study, however, did not correlate with seedling density at the plot scale (Appendix, Figure 5). We also explored whether interactions between fire and microtopography affected *Q. rubra* regeneration. For example, acorn accumulation may occur in a concave microsite and increase the germination probability here. However, the concave microsite can also gather germination barriers like leaf litter and rain water. Fire can help consume litter and alleviate the soil moisture, but no patterns of advantage were observed in the burned stands (Appendix, Figure 6).
 
-Diameter at root collar, extension growth, and number of leaves were significantly greater for *Q. rubra* seedlings in burned stands versus control stands (@fig-merged b, c, d). While mesophytic competitors experience dieback and invest their resources in regrowing, *Q. rubra* seedlings make use of nutrients, space, and light that are more available than ever (@fig-lai) to grow taller vertically and horizontally as well as produce leaves to expedite photosynthesis. Additionally, they might have grown better by taking advantage of the temporary increases in available nitrogen pools [@wan2001] and fluxes [@wang2014] immediately after fires to store carbon into the stems. On the other hand, the significantly larger annual extension growths and leaf sproutings in the past two summers imply that the positive fire effects still linger 3-7 years post-treatment.
+While no pre-treatment data exists for this study to directly answer the question of whether burned stands experienced larger acorn yields or greater germination rates, the majority of the living *Q. rubra* seedlings in 2023 germinated in the 3-5 years following the burn events (@fig-germination). Furthermore, the seedling density in burned stands itself is nearly triple that in control stands, supporting the hypothesis that prescribed fire promotes seedling recruitment (@fig-merged a). One of the potential mechanisms of accelerating this recruitment is altered soil resource supply by fire. Fire increases gross nitrogen mineralization rate, which in turns releases more of it into the soil [@chapin2012]. A sudden increase in nitrogen availability in the nitrogen-limited temperate forest [@vadeboncoeur2010] may help promote flowering and acorn production [@callahan2008]. However, fire decreases microbial nitrate immobilization and subsequently inhibit nitrate retention [@su2022]. As a result, nitrous oxide and nitric oxide emissions rise following a burn and become lost permanently from the ecosystem rather than being tightly recycled in decomposition [@stephens2023]. While such emissions tend to last under a year, nitrogen loss by leaching can persist in the long term and up to a 308% rate of change [@zhu2024]. Our study burns were already at least two years old at the time of data collection, except for the wildfire in pair 4 that had occurred the previous year. Regardless, the short term increases in ammonium concentrations in the soils seemed to have diminished for all but pairs 2 and 6 (Appendix, Figure 7). Nitrate concentrations are minimal compared to ammonium, but they were similar for both burned and control stands across all pairs, signaling that leaching might not be of great concern in this ecosystem (Appendix, Figure 8).
+
+## *Q. rubra* seedling growth promoted by prescribed fires
+
+Diameter at root collar, extension growth, and number of leaves were significantly greater for *Q. rubra* seedlings in burned stands versus control stands (@fig-merged b, c, d). While mesophytic competitors experience dieback and invest their resources in regrowing, *Q. rubra* seedlings make use of the increased nutrients, space, and light (@fig-lai) to grow taller vertically and horizontally as well as produce leaves to expedite photosynthesis. Additionally, they might have grown better by taking advantage of the temporary increases up to a year since the burn events in available nitrogen pools [@wan2001] and fluxes [@wang2014] immediately after fires to store carbon into the stems. On the other hand, the significantly larger annual extension growths and leaf production in the past two summers imply that the positive fire effects still linger 3-7 years post-treatment.
 
 It is also worth evaluating fire effects on competitors at the germination and seedling establishment stage. Fire can reduce seed bank abundance [@schuler2010], but it is more likely that the seed bank remains abundant, especially in cases where the burn was of low or patchy intensity. In the understory, early successional seedlings are plentiful, mostly comprising *Rubus spp.*, *A. rubrum*, and *Betula spp.* (@fig-understory). *Rubus* seeds are dispersed by birds and mammals that survive in the soil when buried [@zasada2008]. The latter two do not survive well in the soil when a prescribed burn takes place but, if mother trees survived the fire, or if they are present near the edge of the burned unit, they are capable of producing high volumes of wind-dispersed seeds that germinate well in the postfire exposed mineral soil [@walters1990, @erdmann1990]. On the other hand, acorns neither survives in the soil for multiple years nor disperse far [@sander1990]. Nevertheless, *Q. rubra* has comparably strong basal sprouting responses following the death of the main stem, much like *A. rubrum* and *F. grandifolia* [@tubbs1990].
 
@@ -623,8 +631,6 @@ Prescribed burns can only be considered an effective management tool for *Q. rub
 
 # Acknowledgements
 
-Field work assistants: Abigail Powell (Duquesne University, Summer NSF REU administered by the Hubbard Brook Research Foundation); Elena Gonzalez, Chris Owen, and Anthony Pera III (Cornell University, funded by the HBR-LTER; NSF Award \# 2224545).
-
 Khanh Ton: Data curation, Formal analysis, Methodology, Software, Visualization, Writing - original draft
 
 Matt Vadeboncoeur: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Supervision, Validation, Writing - review & editing
@@ -633,13 +639,17 @@ Nat Cleavitt: Conceptualization, Data curation, Funding acquisition, Methodology
 
 Heidi Asbjornsen: Funding acquisition, Resources, Supervision, Validation
 
+Advisers and collaborators: Steve Eisenhaure (UNH Woodlands), Andrew Fast (UNH Extension), Erin Lane (USFS Northern Research Station), John Neely (USFS, WMNF), Mariko Yamasaki (USFS Northern Research Station)
+
+Field work assistants: Abigail Powell (Duquesne University, Summer NSF REU administered by the Hubbard Brook Research Foundation); Elena Gonzalez, Chris Owen, and Anthony Pera III (Cornell University, funded by the HBR-LTER; NSF Award \# 2224545).
+
 This study was funded by the Northeastern States Research Cooperative through funding made available by the USDA Forest Service. The conclusions and opinions in this paper are those of the authors and not of the NSRC, the Forest Service, or the USDA. This institution is an equal opportunity provider.
 
 \newpage
 
 # References
 
-## R packages
+## R packages {.unnumbered}
 
 ```{r generateBibliography,results="asis",echo=FALSE}
 read.bibtex(file="packages.bib")

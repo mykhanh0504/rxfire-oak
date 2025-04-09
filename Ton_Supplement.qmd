@@ -1,5 +1,6 @@
 ---
 title: "Appendix"
+bibliography: [references.bib,packages.bib]
 documentclass: article
 mainfont: Times New Roman
 fontsize: 12pt
@@ -11,7 +12,7 @@ fig-cap-location: bottom
 fig-align: center
 tbl-cap-location: top
 format: 
-  pdf: 
+  docx: 
     number-sections: true
 editor: visual
 ---
@@ -34,6 +35,32 @@ trackdown_auth_configure(path = "client.json")
 library(ggpubr)
 library(ggnewscale)
 ```
+
+# Study sites
+
+## Stevens Brook (SB, Pair 1)
+
+The SB Project area is located in the Stevens Brook drainage in Rumney and Wentworth (Grafton County, NH) and spanning 400 ha of the WMNF (@fig-sb). A 2009 pre-management field survey showed a forested landscape with well-defined forest roads. In the past half a century, management on this area was carried out to retain wildlife habitat and forest products e.g., timber, which was last harvested in the early 1990s [@fuller2009]. Following the field survey, the Alternative 2 plan was written up by a group of interdisciplinary resource specialists to address wildlife habitat management, vegetation, as well as transportation objectives laid out in the WMNF Forest Plan [@usdaforestservice2005]. With regards to vegetation, three goals are specified: (1) to diversify habitat type and age class, (2) to achieve a sustainable yield of commercial forest products like high-quality sawtimber, and (3) to promote residual tree health and vigor through harvesting, timber stand improvement, and prescribed burns [@fuller2009]. More specifically, the Plan expected to perpetuate more of the oak-pine habitat type and proposed a shelterwood harvest and prescribed fire in stand 5-15 to reinforce oak dominance. Evidently, stand 3-16 was cut and burned instead while stand 5-15 only received a cut.
+
+![Map of Stevens Brook (SB, Pair 1) site. The burn stand is colored in red and the control stand in blue. Respective colored lines within the stands are transects establish for data collection.](images/SBmap.png){#fig-sb fig-align="center"}
+
+## Hogsback (HOG, Pairs 2-3)
+
+HOG is part of the 2100-ha Oliverian Stewardship Project area, which comprises the Benton Range southern half in Benton and Warren (Grafton County, NH) (@fig-hog). A pre-management survey showed a landscape dominated by hardwood, mostly mature with only a small area of young forest and no regeneration-age (0-9 years old) forest [@bayer2010]. Similar to the Stevens Brook project, this project aimed to produce a sustainable yield of commercial forest products and increase habitat diversity, especially for the regeneration age class, using timber harvesting. Unlike the SB area, however, the oak-pine forest type is less common. Prescribed burning was carried out on about 79 ha to maintain this forest type as well as reduce hazardous fuel loading. This management plan, officially called Alternative 3, was to ensure the provision of about 19300 m^3^ of forest products.
+
+![Map of Hogsback (HOG, Pairs 2-3) site, with 20/2B and 3/1C being the seed tree harvests and 28/2B and 12/2C being shelterwoods. Burn stands are colored in red and control stands in blue. Respective colored lines within the stands are transects establish for data collection.](images/HOGmap.png){#fig-hog fig-align="center"}
+
+## Crawford Notch State Park (CF, Pair 4)
+
+This 2400-ha state park was acquired in 1913 by the State of New Hampshire, as a result of a bill passed in 1912 to protect the northern region of Hart's Location from excessive timber harvest [@nhstateparks2010]. Our study stand (CF) is specifically situated at the south end of the notch, through which a railroad has run since 1875. In May 2022, the Bemis Fire burned 106 acres uphill from the train tracks for 14 days [@angers2022]. Other than that, the stand has been unmanaged since its acquisition, with disturbance patches primarily formed by windthrow [@foster1983]. The study vegetation zone is a northern hardwood-spruce phase forest at the lowermost portion of the slope up to an elevation of 700 m, dominated by *A. grandifolia*, *A. saccharum,* and *B. allenghensis*.
+
+![Map of Crawford Notch (CF, Pair 4) site. The burn stand is colored in red and the control stand in blue. Respective colored lines within the stands are transects establish for data collection.](images/Map2.png){#fig-cf fig-align="center"}
+
+## Bartlett Experimental Forest (BEF, Pairs 5-6)
+
+1050 hectares were set aside by the US Forest Service in 1931 to conduct research on the ecology and management of northern forest ecosystems, including forest dynamics and structure as well as wildlife relationship with forest management (@fig-bef) [@gamal-eldin1998]. The forest was chosen for its typical New England conditions in terms of soils, elevation gradients, climate, and tree species composition. It was selectively logged through the late 19^th^ into the early 20^th^ century for high-value timber, fuel, and building roads. At present, different silvicultural systems are implemented in different compartments to be studied over a long period of time [@leak2011]. With regards to the even-aged silvicultural treatment, three compartments were clear-cut in 2018, and half of each also received prescribed fires in 2021. Whole tree harvesting as such promoted multi-species composition, especially allowing the successional paper birch and aspen to regenerate. The ultimate goal is to make Bartlett a mixed stand with multiple age classes, a diverse tree species composition, and appropriate levels of stocking.
+
+![Map of Bartlett (BEF, Pairs 5-6) site. The burn stand is colored in red and the control stand in blue. Respective colored lines within the stands are transects establish for data collection.](images/BEFmap.png){#fig-bef fig-align="center"}
 
 # Stand characterization
 
@@ -309,3 +336,15 @@ soiln2 %>%
   ylab("NO3 (mg/kg soil)")+
   labs(fill="Pairs")
 ```
+
+\newpage
+
+# References
+
+## R packages {.unnumbered}
+
+```{r generateBibliography, results="asis",echo=FALSE}
+read.bibtex(file="packages.bib")
+```
+
+## Literature
