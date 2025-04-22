@@ -1,24 +1,5 @@
 ---
-bibliography: [references.bib,packages.bib]
-csl: ecology.csl
-documentclass: article
-mainfont: Times New Roman
-fontsize: 12pt
-geometry: margin=1in
-linestretch: 2
-papersize: a4
-toc: true
-lof: true
-lot: true
-always_allow_html: true
-fig-cap-location: bottom
-fig-align: center
-tbl-cap-location: top
-format: 
-  pdf: 
-    include-in-header: preamble.tex
-output: bookdown::html_document2
-editor: visual
+
 ---
 
 ```{r, include=FALSE,message=FALSE,warning=FALSE}
@@ -142,7 +123,7 @@ Plot-level stem and seedling counts and basal areas were expressed per hectare. 
 # Results
 
 | Species code | Scientific name | Common name |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `ABBA` | *Abies balsamea* | Balsam fir |
 | `ACPE` | *Acer pensylvanicum* | Striped maple |
 | `ACRU` | *Acer rubrum* | Red maple |
