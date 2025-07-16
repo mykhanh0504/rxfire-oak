@@ -11,7 +11,7 @@ always_allow_html: true
 fig-cap-location: bottom
 fig-align: center
 tbl-cap-location: top
-format: pdf 
+format: html 
 editor: visual
 ---
 
@@ -28,8 +28,6 @@ library(car)
 library(rstatix)
 library(kableExtra)
 library(bookdown)
-library(trackdown)
-trackdown_auth_configure(path = "client.json")
 library(ggpubr)
 library(ggnewscale)
 ```
@@ -175,7 +173,7 @@ sumba2 <- sumba %>% filter(dbhClass %in% c("30-40","40-50","50-60",">60")) %>%
   mutate(Genus=as.factor(Genus),
          Pair=as.factor(Pair),
          Condition=as.factor(Condition),
-         Disturbance=as.factor(Disturbance)) %>% select(-sumba)
+         Disturbance=as.factor(Disturbance)) #%>% select(-sumba)
 
 sumba3 <- sumba2 %>% group_by(Genus,Pair,Condition,Disturbance) %>% 
   summarize(m2ha_sum=round(sum(m2ha,na.rm=TRUE),1),.groups="drop") %>% 

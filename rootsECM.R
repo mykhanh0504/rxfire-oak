@@ -94,5 +94,7 @@ ecm2 <- ecm %>% pivot_longer(cols=-c(Location,Unit,Disturbance,
 ecm2 %>% ggplot(aes(x=Value,y=pct_colonized))+
   geom_point()+
   facet_grid(rows=vars(Disturbance),cols=vars(Variable),scales='free_x')+
-  geom_smooth(method='lm')+
+  geom_smooth(method='lm')+                 
   stat_cor(method="pearson",label.x=1,label.y=1)
+
+am <- read_csv("rootsAM.csv")

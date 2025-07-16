@@ -1,0 +1,202 @@
+---
+bibliography: [references.bib,packages.bib]
+csl: ecology.csl
+documentclass: article
+mainfont: Times New Roman
+fontsize: 12pt
+geometry: margin=1in
+linestretch: 2
+papersize: a4
+toc: true
+lof: true
+lot: true
+always_allow_html: true
+fig-cap-location: bottom
+fig-align: center
+tbl-cap-location: top
+format: html 
+editor: visual
+---
+
+```{r, include=FALSE,message=FALSE,warning=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(tinytex)
+library(shiny)
+library(knitcitations)
+library(gt)
+library(car)
+library(rstatix)
+library(kableExtra)
+library(bookdown)
+library(ggpubr)
+library(ggnewscale)
+```
+
+## EcMF
+
+```{r fig-ecm,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.width=6,fig.pos="H"}
+
+ecm <- read_csv("rootsECM.csv")
+
+#Add Treatment & Pair columns
+ecm <- ecm %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+ecm <- ecm %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+ecm <- ecm %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","3/1")~"2",
+  Unit %in% c("28/2","12/2")~"3",
+  Unit=="Unnamed"~"4"))
+
+ecm <- ecm %>% 
+  mutate(Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair))
+
+ecm <- ecm %>% mutate(pct_colonized=colonized_tips/(colonized_tips+uncolonized_tips)*100)
+
+ecm <- ecm %>% filter(Pair %in% c("1","2","3"))
+
+bc <- c("B"="#CC6677","C"="#88CCEE")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+fig_ecm <- ecm %>% 
+  ggplot(aes(x=Location,y=pct_colonized,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("% EcMF colonized")+
+  labs(fill="Pairs")
+
+fig_ecm + stat_compare_means(method="t.test",aes(label=paste0("p=",after_stat(p.format))))
+```
+
+## AMF
+
+```{r fig-am,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.width=6,fig.pos="H"}
+am <- read_csv("rootsAM.csv")
+
+#Add Treatment & Pair columns
+am <- am %>% mutate(Treatment=case_when(
+  Unit %in% c("3/16","5/15","28/2","12/2") ~ "Shelterwood",
+  Unit %in% c("20/2","3/1") ~ "Seedtree",
+  Unit %in% c("44B","45C","46B","46C") ~ "Clearcut"))
+
+am <- am %>% replace_na(list(
+  Unit="Unnamed",Treatment="Unmanaged"))
+
+am <- am %>% replace_na(list(Blue_hyphae=0,Vesicles=0,Coils=0,Arbuscules=0))
+
+am <- am %>% mutate(Pair=case_when(
+  Unit %in% c("3/16","5/15")~"1",
+  Unit %in% c("20/2","3/1")~"2",
+  Unit %in% c("28/2","12/2")~"3",
+  Unit=="Unnamed"~"4"))
+
+am <- am %>% 
+  mutate(Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Treatment=as.factor(Treatment),
+         Pair=as.factor(Pair))
+
+am <- am %>% mutate(pct_hyphcolon=(Blue_hyphae+Vesicles+
+                                     Coils+Arbuscules)/(No_structure+Blue_hyphae+
+                                        Vesicles+Coils+Arbuscules)*100)
+
+am <- am %>% filter(Pair %in% c("1","2","3"))
+
+fig_am <- am %>% 
+  ggplot(aes(x=Location,y=pct_hyphcolon,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("%AMF colonized")+
+  labs(fill="Pairs")
+
+fig_am + stat_compare_means(method="t.test",aes(label=paste0("p=",after_stat(p.format))))
+```
+
+```{r fig-cnratio,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.width=6,fig.pos="H"}
+foliar <- read_csv("foliar.csv")
+foliar <- foliar %>% mutate(Pair=case_when(Unit %in% c("3/16","5/15")~"1",
+                                         Unit %in% c("20/2","3/1")~"2",
+                                         Unit %in% c("28/2","12/2")~"3",
+                                         Unit=="Unnamed"~"4",
+                                         Unit %in% c("44B","45C")~"5",
+                                         Unit %in% c("46B","46C")~"6"))
+
+foliar <- foliar %>% 
+  mutate(Location=as.factor(Location),
+         Unit=as.factor(Unit),
+         Disturbance=as.factor(Disturbance),
+         Pair=as.factor(Pair))
+
+bc <- c("B"="#CC6677","C"="#88CCEE")
+p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8",
+        "4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
+
+#cn <- 
+foliar %>% 
+  ggplot(aes(x=Location,y=Cnratio,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(#width=0.6,position=position_dodge(width=0.7)
+  )+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("C:N ratio")+
+  labs(fill="Pairs")
+
+#cn + stat_compare_means(aes(label=paste0("p=",after_stat(p.format))))
+```
+
+```{r fig-13C,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.width=6,fig.pos="H"}
+#c13 <- 
+  foliar %>% 
+  ggplot(aes(x=Location,y=delta13C,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(#width=0.6,position=position_dodge(width=0.7)
+    )+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("δ13C")+
+  labs(fill="Pairs")
+
+#c13 + stat_compare_means(aes(label=paste0("p=",after_stat(p.format))))
+```
+
+```{r fig-15N,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.width=6,fig.pos="H"}
+
+#n15 <- 
+  foliar %>% 
+  ggplot(aes(x=Location,y=delta15N,fill=Disturbance))+
+  geom_rect(aes(fill=Pair),alpha=0.5,
+            xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(#width=0.6,position=position_dodge(width=0.7)
+  )+
+  scale_fill_manual(values=c(p6,bc))+
+  facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("δ15N")+
+  labs(fill="Pairs")
+
+#n15 + stat_compare_means(aes(label=paste0("p=",after_stat(p.format))))
+```

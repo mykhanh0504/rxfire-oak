@@ -14,7 +14,7 @@ always_allow_html: true
 fig-cap-location: bottom
 fig-align: center
 tbl-cap-location: top
-format: pdf 
+format: html 
 editor: visual
 ---
 
@@ -31,8 +31,6 @@ library(car)
 library(rstatix)
 library(kableExtra)
 library(bookdown)
-library(trackdown)
-trackdown_auth_configure(path = "client.json")
 library(ggpubr)
 library(ggnewscale)
 ```
@@ -127,7 +125,7 @@ comp2 <- comp2 %>% filter(Spcode %in%
                               "BEAL","BEPA","BEPO","FAGR",
                               "FRAM","OSVI","PIST","POGR",
                               "POTR","PRPE","RUS","SACA",
-                              "TSCA"))
+                              "TSCA","SARA","RHHI"))
 
 comp2 <- comp2 %>% 
   mutate(Location=as.factor(Location),
@@ -141,8 +139,23 @@ comp2 <- comp2 %>%
 count <- comp2 %>% group_by(Pair,Disturbance,Spcode) %>% 
   summarize(stemcount=sum(Count))
 
-count <- count %>% group_by(Pair, Disturbance) %>% 
-  slice_max(stemcount,n=3)
+# Step 1: Get top 3 species per Pair + Disturbance
+top_species <- count %>%
+  group_by(Pair, Disturbance, Spcode) %>%
+  summarise(total_stemcount = sum(stemcount), .groups = 'drop') %>%
+  group_by(Pair, Disturbance) %>%
+  slice_max(total_stemcount, n = 3, with_ties = FALSE) %>%
+  ungroup()
+
+# Step 2: Keep union of those species within each Pair (ignore Disturbance)
+species_union <- top_species %>%
+  distinct(Pair, Spcode)
+
+# Step 3: Filter count to only those species
+filtered_count <- count %>%
+  semi_join(species_union, by = c("Pair", "Spcode"))
+
+#count <- count %>% group_by(Pair, Disturbance) %>% slice_max(stemcount,n=3)
 
 #scale up to per ha
 b1 <- 66
@@ -158,9 +171,9 @@ c5 <- 13
 b6 <- 28
 c6 <- 32
 
-plotarea <- 0.0001
+plotarea <- 1
 
-count <- count %>% mutate(Density=if_else(
+filtered_count <- filtered_count %>% mutate(Density=if_else(
   Pair=="1" & Disturbance=="B",
   stemcount/b1/plotarea,if_else(Pair=="1" & Disturbance=="C",
   stemcount/c1/plotarea,if_else(Pair=="2" & Disturbance=="B",
@@ -173,8 +186,6 @@ count <- count %>% mutate(Density=if_else(
   stemcount/b5/plotarea,if_else(Pair=="5" & Disturbance=="C",
   stemcount/c5/plotarea,if_else(Pair=="6" & Disturbance=="B",
   stemcount/b6/plotarea,stemcount/c6/plotarea)))))))))))) 
-
-count$Density <- round(count$Density,0)
 ```
 
 ```{r fig-understory,echo=FALSE,fig.cap="Stem density per hectare of the most abundant understory species in 2023 by stand pairs.",fig.height=4,fig.width=10,fig.pos="H"}
@@ -182,7 +193,7 @@ count$Density <- round(count$Density,0)
 bc <- c("B"="#CC6677","C"="#88CCEE")
 p6 <- c("1"="#FBE3D6","2"="#FFFFCC","3"="#E8E8E8","4"="#C2F1C8","5"="#DCEAF7","6"="#DCEAF7")
 
-count %>% 
+filtered_count %>% 
 ggplot(aes(x=Spcode,y=Density))+
   geom_rect(aes(fill=Pair),alpha=0.5,
             xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
@@ -195,7 +206,7 @@ ggplot(aes(x=Spcode,y=Density))+
     legend.text=element_text(size=12)
   )+
   xlab("Species")+
-  ylab("Stem count (per ha)")
+  ylab("Stem count (per m2)")
 ```
 
 Study stands' basal areas reflect past harvesting methods more than whether or not they were burned (@fig-overstory). Having been clearcut more recently and hence absent of trees with DBH of 20 cm and above, Pairs 5 and 6 have effectively zero basal area compared to others with 18.3 (burned stand in Pair 2) to 37.9 m^2^ (burned stand in Pair 1). Their compositions are also the least diverse, consisting of cherries (*Prunus*), aspens (*Populus*), and *Betula spp*. The remaining stands have a significant presence of mature *Q. rubra* as well as *Acer* and *Betula* *spp*. of mid-range DBH classes. Additionally, Pair 1's overstory composition includes a large basal area of high-DBH *P. strobus*, though only made up by a few individual trees. *Q. rubra*'s basal areas averaged 11±2 m^2^/ha across all stands, far exceeding those of other dominant genera (Appendix, Table 1). More standing dead trees were recorded in the burned stands, with *F. grandifolia* suffering the highest mortality rate (43% of basal area occupied by dead trees).
@@ -436,16 +447,16 @@ count23x <- count23x %>%
          Treatment=as.factor(Treatment),
          Pair=as.factor(Pair))
 
-plotarea <- 0.00785398163397448
+plotarea <- 78.5398163397448
 
 #summarize data
 count23x <- count23x %>% na.omit() %>% 
   mutate(Density=OAKcount/plotarea)
 
-count23x$Density <- round(count23x$Density,0)
+#count23x$Density <- round(count23x$Density,0)
 ```
 
-```{r fig-count23,include=FALSE,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.width=6,fig.pos="H"}
+```{r fig-count23,include=TRUE,echo=FALSE,warning=FALSE,fig.cap="Q. rubra seedling density per hectare in 2023 (y-axis) by stand pairs (x-axis), error bars = ±1 SE.",fig.width=6,fig.pos="H"}
 #visualize stem density
 fig_count23 <- count23x %>% filter(Pair==c("1","2","3","4")) %>% 
   ggplot(aes(x=Location,y=Density,fill=Disturbance))+
@@ -457,7 +468,7 @@ fig_count23 <- count23x %>% filter(Pair==c("1","2","3","4")) %>%
   scale_fill_manual(values=bc,name="Disturbance")+
   facet_grid(~Pair,scales='free_x')+
   theme_minimal()+
-  ylab("Stem count (per ha)")
+  ylab("Oak seedlings (per m2)")
 
 fig_count23 + stat_compare_means(method="t.test",aes(label=paste0("p=",after_stat(p.format))))
 ```
