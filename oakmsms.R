@@ -31,9 +31,13 @@ ms23x <- ms23x %>% mutate(Pair=case_when(
 
 ms23x <- ms23x %>% 
   mutate(Unit=as.factor(Unit),
+         Age=as.factor(Age),
          Disturbance=as.factor(Disturbance),
          Treatment=as.factor(Treatment),
          Pair=as.factor(Pair))
+
+ms23x$Age <- factor(ms23x$Age,levels=c('1','2','3','4','5','6','7',
+                                       '8','9','10','11','UNK'))
 
 #Repeat for ms24
 ms24 <- read_csv("oakmsms24.csv")
@@ -74,6 +78,23 @@ ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
   as.numeric()
 
 #Stats 2023
+stats23 <- ms23x %>% group_by(Age) %>% get_summary_stats()
+stats23 <- stats23 %>% select(Age,variable,min,max,median,mean,sd,se) %>% 
+  filter(variable %in% c("Height_cm","DRC_mm"))
+
+ms23x %>% 
+  ggplot(aes(x=Age,y=Height_cm
+             #,fill=Disturbance
+             ))+
+  #geom_rect(aes(fill=Pair),alpha=0.5,
+            #xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)+
+  geom_boxplot(width=0.6,position=position_dodge(width=0.7))+
+  #scale_fill_manual(values=c(p6,bc))+
+  #facet_grid(~Pair,scales='free_x')+
+  theme_minimal()+
+  ylab("2023 height (cm)")+
+  labs(fill="Pairs")
+
 ms23b <- ms23x %>% filter(Disturbance=="B")
 stats_ms23b <- get_summary_stats(ms23b)
 stats_ms23b <- stats_ms23b %>% select(variable,min,max,median,mean,sd,se) %>% 
@@ -89,6 +110,17 @@ stats_ms23c <- stats_ms23c %>% select(variable,min,max,median,mean,sd,se) %>%
 stats_ms23c
 
 #DRC 2023
+stand_ms23 <- ms23x %>% group_by(Disturbance, Pair) %>% 
+  summarize(
+    #mHeight=mean(Height_cm,na.rm=TRUE),
+            mDRC=mean(DRC_mm, na.rm=TRUE),.groups="drop")
+
+wide23 <- stand_ms23 %>% pivot_wider(names_from=Disturbance,
+                                     values_from=mDRC)
+
+t.test(wide23$B,wide23$C,paired=TRUE)
+aov_drc23 <- aov(mDRC~Disturbance+Pair,data=stand_ms23)
+
 aov_drc23 <- aov(DRC_mm~Disturbance+Pair,data=ms23x)
 summary(aov_drc23)
 

@@ -54,7 +54,7 @@ This study investigates whether prescribed fire promotes the recruitment of *Q. 
 The six pairs of burn and control forest stands selected for this study are located in the approximately 320,000-ha White Mountains National Forest (WMNF) in New Hampshire (USA), three of which are part of a novel landscape-scale project guided by the WMNF's Land and Resource Management Plan (1999-2005, [@usdaforestservice2005]) and implemented by the USFS over the past two decades (Appendix, Figures 1-4). Stands are paired by project and treatment date, with one stand harvested and the paired site harvested and burned (@tbl-pairs, @fig-map). One pair does not have any recent management history, but was sampled opportunistically following a wildfire that resulted in patchy mortality of canopy trees in a mature stand. The remaining two pairs at Bartlett Experimental Forest were burned to study how a combination of clearcut and prescribed fire can impact overall tree regeneration. While we observed a few *Q. rubra* seedlings in the surrounding forest stands and even burned acorns in the study stands, no local seed source was apparently present after the treatments. Mature trees were presumed to be harvested during the clearcuts. We collected data from these stands to compare oak regeneration success among different harvest treatments and their combinations with prescribed burns.
 
 | Pair | Stand | Burn year | Harvest year | Harvest treatment | Presence of seed source |
-|------------|------------|------------|------------|------------|------------|
+|----|----|----|----|----|----|
 | 1 | Stevens Brooks `SB_3/16B` | 2017 | 2010 | Shelterwood | Yes |
 | 1 | `SB_5/15C` | \- | 2011 | Shelterwood | Yes |
 | 2 | Hogsback `HOG_20/2B` | 2017 | 2012 | Seedtree | Yes |

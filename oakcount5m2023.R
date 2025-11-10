@@ -6,6 +6,11 @@ library(car)
 library(multcomp)
 library(rstatix)
 
+library(glmmTMB)
+library(DHARMa)
+library(emmeans)
+library(lme4)
+
 count23 <- read_csv("oakcount5m2023.csv")
 
 #Add Treatment & Pair columns
@@ -34,7 +39,7 @@ count23x <- count23x %>% mutate(Location=as.factor(Location)) %>%
 
 count23x <- count23x %>% 
   mutate(Unit=as.factor(Unit),
-         Disturbance=as.factor(Disturbance),
+         Disturbance=factor(Disturbance,levels=c("C","B")),
          Treatment=as.factor(Treatment),
          Pair=as.factor(Pair))
 
@@ -122,3 +127,24 @@ stats_count23c <- get_summary_stats(count23c)
 stats_count23c <- stats_count23c %>% filter(variable=="Density") %>% 
   select(variable,min,max,median,mean,sd,se)
 stats_count23c
+
+summary(count23x$OAKcount)
+
+## NB GLMM
+
+df <- count23x %>% filter(!Location %in% c("BEF","CF"))
+
+m_nb <- glmmTMB(OAKcount~Disturbance+(1|Location/Unit),
+                ziformula=~1,family=nbinom2,data=df)
+
+summary(m_nb)
+
+ranef(m_nb)
+
+simres <- simulateResiduals(m_nb)
+plot(simres)
+testDispersion(simres)
+testZeroInflation(simres)
+
+emm <- emmeans(m_nb,pairwise~Disturbance,type="response")
+plot(emm)
