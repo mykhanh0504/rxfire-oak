@@ -75,7 +75,7 @@ ms24x <- ms24x %>% mutate(herbivory_pct=na_if(herbivory_pct,"na")) %>%
   mutate(Pathogen_damage_pct=na_if(Pathogen_damage_pct,"na"))
 
 ms24x$nleaves <- replace(ms24x$nleaves,ms24x$nleaves=="100+","100") %>%
-  as.numeric()
+  as.integer()
 
 #Stats 2023
 stats23 <- ms23x %>% group_by(Age) %>% get_summary_stats()
@@ -268,3 +268,91 @@ tukey_df
 
 comparisons <- strsplit(row.names(sig_pairs), "-")
 comparisons
+
+# mixed model
+library(ggplot2)
+ggplot(ms24x, aes(x = Disturbance, y = nleaves)) +
+  geom_boxplot() +
+  facet_wrap(~Treatment)
+
+ggplot(ms24x, aes(x = Extension_growth_cm)) +
+  geom_histogram(bins = 30, color = "black", fill = "skyblue") +
+  ggtitle("Distribution of Height_cm")
+
+ggplot(ms24x, aes(x = nleaves)) +
+  geom_histogram(bins = 30, color = "black", fill = "skyblue") +
+  ggtitle("Distribution of DRC_mm")
+
+library(e1071)
+skewness(ms23x$Height_cm, na.rm = TRUE)
+skewness(ms23x$DRC_mm, na.rm = TRUE)
+
+library(lme4)
+ms23x$logHeight <- log(ms23x$Height_cm)
+ms23x$logDRC <- log(ms23x$DRC_mm)
+
+ms23x$Plot_unique <- with(ms23x,paste(Location, Unit, Transect, Plot, sep="_"))
+
+m_drc <- lmer(logDRC ~ Disturbance+(1|Plot_unique),data=ms23x)
+
+summary(m_drc)
+ranef(m_drc)
+
+library(DHARMa)
+simres <- simulateResiduals(m_drc)
+plot(simres)
+
+library(emmeans)
+emm_drc <- emmeans(m_drc,~Disturbance)
+emm_drc
+#back transform
+emmeans(m_drc,~Disturbance,type="response")
+#pairwise contrast
+emmeans(m_drc,pairwise~Disturbance,type="response")
+plot(emmeans(m_drc, ~ Disturbance, type = "response"))
+
+# mixed model - xg 2024
+library(e1071)
+skewness(ms24x$Extension_growth_cm, na.rm = TRUE)
+skewness(ms24x$nleaves, na.rm = TRUE)
+
+library(lme4)
+ms24x$logXG <- log(ms24x$Extension_growth_cm+1)
+
+ms24x$Plot_unique <- with(ms24x,paste(Location, Unit, Transect, Plot, sep="_"))
+
+m_xg <- lmer(logXG ~ Disturbance+(1|Plot_unique),data=ms24x)
+
+summary(m_xg)
+ranef(m_xg)
+
+library(DHARMa)
+simres <- simulateResiduals(m_xg)
+plot(simres)
+#question whatever this shows
+
+library(emmeans)
+emm_xg <- emmeans(m_xg,~Disturbance)
+emm_xg
+#back transform
+emmeans(m_xg,~Disturbance,type="response")
+#pairwise contrast
+emmeans(m_xg,pairwise~Disturbance,type="response")
+plot(emmeans(m_xg, ~ Disturbance, type = "response"))
+
+# mixed model - leaves 2024
+library(glmmTMB)
+m_leaves <- glmmTMB(nleaves~Disturbance+(1|Location/Unit/Plot_unique),
+                    family=nbinom2, data=ms24x)
+
+summary(m_leaves)
+
+ranef(m_leaves)
+
+simres <- simulateResiduals(m_leaves)
+plot(simres)
+testDispersion(simres)
+testZeroInflation(simres)
+
+emm <- emmeans(m_leaves,pairwise~Disturbance,type="response")
+plot(emm)
