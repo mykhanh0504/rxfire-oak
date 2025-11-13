@@ -121,7 +121,7 @@ wide23 <- stand_ms23 %>% pivot_wider(names_from=Disturbance,
 t.test(wide23$B,wide23$C,paired=TRUE)
 aov_drc23 <- aov(mDRC~Disturbance+Pair,data=stand_ms23)
 
-aov_drc23 <- aov(DRC_mm~Disturbance+Pair,data=ms23x)
+aov_drc23 <- aov(DRC_mm~Disturbance+Error(Location/Unit),data=ms23x)
 summary(aov_drc23)
 
 bc <- c("B"="#CC6677","C"="#88CCEE")
@@ -155,7 +155,8 @@ stats_ms24c <- stats_ms24c %>% select(variable,min,max,median,mean,sd,se) %>%
 stats_ms24c
 
 #height 2024
-aov_height24 <- aov(Height_cm~Disturbance+Pair+Survey,data=ms24x)
+df <- ms24x %>% filter(Survey=="2")
+aov_height24 <- aov(Height_cm~Disturbance+Error(Location/Unit),data=df)
 summary(aov_height24)
 
 ms24x %>% 
@@ -170,7 +171,7 @@ ms24x %>%
   labs(fill="Pairs")
 
 #EXTENSION GROWTH 2024
-aov_exgr24 <- aov(Extension_growth_cm~Disturbance+Pair+Survey,data=ms24x)
+aov_exgr24 <- aov(Extension_growth_cm~Disturbance+Error(Location/Unit),data=ms24x)
 summary(aov_exgr24)
 
 ms24x %>% 
@@ -185,7 +186,7 @@ ms24x %>%
   labs(fill="Pairs")
 
 #DRC 2024
-aov_drc24 <- aov(DRC_mm~Disturbance+Pair+Survey,data=ms24x)
+aov_drc24 <- aov(DRC_mm~Disturbance+Error(Location/Unit),data=df)
 summary(aov_drc24)
 
 ms24x %>% 
@@ -200,7 +201,7 @@ ms24x %>%
   labs(fill="Pairs")
 
 #LIVE BRANCHES 2024
-aov_lb24 <- aov(nlive_branches~Disturbance+Pair+Survey,data=ms24x)
+aov_lb24 <- aov(nlive_branches~Disturbance+Error(Location/Unit),data=df)
 summary(aov_lb24)
 
 ms24x %>% filter(Survey=="1") %>% 
@@ -255,8 +256,6 @@ aov_damage24 <- aov(Pathogen_damage_pct~Disturbance+Pair+Survey,data=ms24x)
 summary(aov_damage24)
 
 #LEAVES 2024
-aov_leaves24 <- aov(nleaves~Disturbance+Pair+Survey,data=ms24x)
-summary(aov_leaves24)
 
 tukey <- TukeyHSD(aov_leaves24)
 tukey
@@ -292,6 +291,7 @@ ms23x$logHeight <- log(ms23x$Height_cm)
 ms23x$logDRC <- log(ms23x$DRC_mm)
 
 ms23x$Plot_unique <- with(ms23x,paste(Location, Unit, Transect, Plot, sep="_"))
+ms23x$Plot_unique <- as.factor(ms23x$Plot_unique)
 
 m_drc <- lmer(logDRC ~ Disturbance+(1|Plot_unique),data=ms23x)
 

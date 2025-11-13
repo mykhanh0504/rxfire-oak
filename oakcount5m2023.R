@@ -26,7 +26,7 @@ count23x <- count23x %>% mutate(Pair=case_when(
   Unit %in% c("3/16","5/15")~"1",
   Unit %in% c("20/2","20/3","20/4","20/5","3/1")~"2",
   Unit %in% c("28/2","28/3","12/2")~"3",
-  Unit=="Unnamed"~"4",
+  Unit %in% c("Unnamed_B","Unnamed_C")~"4",
   Unit %in% c("44B","45C")~"5",
   Unit %in% c("46B","46C")~"6"))
 
