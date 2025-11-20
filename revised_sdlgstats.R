@@ -42,7 +42,7 @@ count23x <- count23x %>%
 count23x$Plot_unique <- with(count23x,paste(Location, Unit, Transect, Plot, sep="_"))
 count23x$Plot_unique <- as.factor(count23x$Plot_unique)
 
-df <- count23x %>% filter(!Location %in% c("BEF","CF"))
+df <- count23x %>% filter(!Location %in% c("BEF"))
 
 # ANOVA count -------------------------------------------------------------
 
@@ -85,11 +85,15 @@ ms23x <- ms23x %>%
          Treatment=as.factor(Treatment),
          Pair=as.factor(Pair))
 
-ms23x$Age <- factor(ms23x$Age,levels=c('1','2','3','4','5','6','7',
-                                       '8','9','10','11','UNK'))
+ms23x <- ms23x %>% filter(!Age %in% c("UNK"))
+
+ms23x$Age <- as.numeric(ms23x$Age)
 
 ms23x$Plot_unique <- with(ms23x,paste(Location, Unit, Transect, Plot, sep="_"))
 ms23x$Plot_unique <- as.factor(ms23x$Plot_unique)
+
+df <- ms23x %>% filter(Age %in% c('4','5','6','7',
+                                  '8','9','10','11'))
 
 # ANOVA DRC ---------------------------------------------------------------
 
@@ -144,6 +148,16 @@ ms24x$Plot_unique <- as.factor(ms24x$Plot_unique)
 
 ms24x <- ms24x %>% filter(Survey=="2")
 
+ms24x <- ms24x %>% left_join(ms23x %>% select(Plot_unique,Tag,Age),
+                             by=c("Plot_unique","Tag")) 
+
+ms24x$Age <- as.numeric(ms24x$Age)
+
+ms24x <- ms24x %>% mutate(age_2024=Age+1)
+
+df2 <- ms24x %>% filter(Age %in% c('4','5','6','7',
+                                  '8','9','10','11'))
+
 # ANOVA XG nleaves --------------------------------------------------------
 
 aov_xg24 <- aov(Extension_growth_cm~Disturbance+Pair+Error(Unit),data=ms24x)
@@ -152,44 +166,90 @@ summary(aov_xg24)
 aov_leaves24 <- aov(nleaves~Disturbance+Error(Unit),data=ms24x)
 summary(aov_leaves24)
 
-# LMMs --------------------------------------------------------------------
-
-#sdlg count
+# LMMs sdlg count --------------------------------------------------------------------
 library(glmmTMB)
-m_count <- glmmTMB(OAKcount~Disturbance+Pair+(1|Unit),
-                ziformula=~1,family=nbinom2,data=df)
+m_count <- glmmTMB(OAKcount~Disturbance*Pair+(1|Unit)+(1|Plot_unique),
+                    ziformula=~Disturbance,
+                    family=nbinom2,data=df)
+
 summary(m_count)
 
-library(emmeans)
-emmeans(m_count,pairwise~Disturbance,type="response")
-plot(emmeans(m_count,pairwise~Disturbance,type="response"))
+#diagnostics
+library(DHARMa)
+simres <- simulateResiduals(m_count)
+plot(simres)
+testDispersion(simres)
+testZeroInflation(simres)
 
-#drc 2023 
+library(emmeans)
+emm <- emmeans(m_count,~Disturbance*Pair,type="response")
+emm_df <- as.data.frame(emm)
+
+ggplot(emm_df, aes(x=Pair, y=response, fill=Disturbance)) +
+  geom_col(position=position_dodge(width=1)) +
+  geom_errorbar(aes(ymin=asymp.LCL, ymax=asymp.UCL),
+                position=position_dodge(width=0.8), width=0.2) +
+  ylab("Estimated count of OAK") +
+  theme_minimal()
+
+pairs(emm)
+contrast(emm,interaction="pairwise")
+
+plot(emm,comparisons = TRUE)
+
+# LMM DRC 2023 ------------------------------------------------------------
 library(lme4)
 ms23x$logDRC <- log(ms23x$DRC_mm)
-m_drc <- lmer(logDRC ~ Disturbance+Pair+(1|Unit/Plot_unique),data=ms23x)
+#m_drc <- lmer(logDRC ~ Disturbance+Pair+(1|Unit)+(1|Plot_unique),data=ms23x)
+
+m_drc <- glmmTMB(DRC_mm~Disturbance+Pair+(1|Unit)+(1|Plot_unique),data=df,
+               family=Gamma(link="log"))
+
 summary(m_drc)
 
+#diagnostics
+library(DHARMa)
+simres <- simulateResiduals(m_drc)
+plot(simres)
+
 #back transform
-emmeans(m_drc,~Disturbance,type="response")
+emm_drc <- emmeans(m_drc,~Disturbance+Pair,type="response")
+pairs(emm_drc)
+contrast(emm_drc,interaction="pairwise")
+
 #pairwise contrast
 emmeans(m_drc,pairwise~Disturbance,type="response")
 plot(emmeans(m_drc, ~ Disturbance, type = "response"))
 
-#drc 2024
-ms24x$logDRC <- log(ms24x$DRC_mm)
-m_drc2 <- lmer(logDRC ~ Disturbance+Pair+(1|Unit/Plot_unique),data=ms24x)
-summary(m_drc2)
+plot(emm_drc,comparisons = TRUE)
+
+# LMM XG 2024 -------------------------------------------------------------
+
+m_xg <- glmmTMB(Extension_growth_cm~Disturbance+Pair+(1|Unit)+(1|Plot_unique),
+                data=df2,
+                  family=tweedie(link="log"))
+summary(m_xg)
+
+#diagnostics
+library(DHARMa)
+simres <- simulateResiduals(m_xg)
+plot(simres)
 
 #back transform
-emmeans(m_drc2,~Disturbance,type="response")
+emm_xg <- emmeans(m_xg,~Disturbance*Pair,type="response")
+emm_xg
+pairs(emm_xg)
+contrast(emm_xg,interaction="pairwise")
+
 #pairwise contrast
-emmeans(m_drc2,pairwise~Disturbance,type="response")
-plot(emmeans(m_drc2, ~ Disturbance, type = "response"))
+emmeans(m_drc,pairwise~Disturbance,type="response")
+plot(emmeans(m_drc, ~ Disturbance, type = "response"))
+
+plot(emm_xg,comparisons = TRUE)
 
 #xg 2024
 ms24x$logXG <- log(ms24x$Extension_growth_cm+1)
-m_xg <- lmer(logXG ~ Disturbance+Pair+(1|Unit/Plot_unique),data=ms24x)
+m_xg <- lmer(logXG ~ Disturbance+Pair+(1|Unit)+(1|Plot_unique),data=ms24x)
 summary(m_xg)
 
 #back transform
@@ -199,10 +259,29 @@ emm_xg
 emmeans(m_xg,pairwise~Disturbance,type="response")
 plot(emmeans(m_xg, ~ Disturbance, type = "response"))
 
-#nleaves 2024
-m_leaves <- glmmTMB(nleaves~Disturbance+Pair+(1|Unit/Plot_unique),
-                    family=nbinom2, data=ms24x)
+# LMM nleaves 2024 --------------------------------------------------------
+m_leaves <- glmmTMB(nleaves~Disturbance+Pair+(1|Unit)+(1|Plot_unique),
+                    family=nbinom2, data=df2)
 summary(m_leaves)
 
-emmeans(m_leaves,pairwise~Disturbance,type="response")
-plot(emmeans(m_leaves,pairwise~Disturbance,type="response"))
+#diagnostics
+library(DHARMa)
+simres <- simulateResiduals(m_leaves)
+plot(simres)
+
+summary(m_leaves)
+
+emm_l <- emmeans(m_leaves,~Disturbance+Pair,type="response")
+emm_df <- as.data.frame(emm_l)
+
+ggplot(emm_df, aes(x=Pair, y=response, fill=Disturbance)) +
+  geom_col(position=position_dodge(width=1)) +
+  geom_errorbar(aes(ymin=asymp.LCL, ymax=asymp.UCL),
+                position=position_dodge(width=0.8), width=0.2) +
+  ylab("Estimated count of OAK") +
+  theme_minimal()
+
+pairs(emm_l)
+contrast(emm_l,interaction="pairwise")
+
+plot(emm_l,comparisons = TRUE)
